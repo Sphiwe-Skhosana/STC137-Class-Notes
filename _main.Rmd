@@ -1,0 +1,138 @@
+--- 
+title: "STC 137 Class Notes"
+author: "Department of Statistics, University of Pretoria"
+date: 'Last Updated: `r Sys.Date()`'
+site: bookdown::bookdown_site
+documentclass: book
+bibliography:
+- book.bib
+- packages.bib
+description: |
+  This is a minimal example of using the bookdown package to write a book.
+  set in the _output.yml file.
+  The HTML output format for this example is bookdown::gitbook,
+link-citations: true
+graphics: true
+github-repo: "sphiwe-skhosana/STC137-Class-Notes"
+cover-image: "images/UP-NAS-logo.jpeg"
+---
+
+<!--chapter:end:index.Rmd-->
+
+
+# An Overview of Data literacy
+
+Placeholder
+
+
+## Introduction {#sec1-1}
+### Definition
+### The importance of being data literate in modern society
+### Data Literacy Skills
+### Data Literacy in Practice
+#### Being able to interpret or understand and use the information contained in a chart or graph.
+#### Being able to contextualize a number given in the media:
+#### Recognising and being able to identify and avoid wrong interpretations of statistical information in the media.
+### Exercises to Section 1.1
+## Data
+### What is data?
+### Properties of a data set
+#### Elements
+#### Variables
+#### Observations
+### Observational and experimental data
+### Cross-sectional and time-series data
+### Population and sample
+### Exercises to Section 1.2
+## Data Management - Foundations and Concepts {#sec1-3}
+### Data management process
+### The benefits of data management in modern society
+### The challenges of data management in modern society
+### Strategies for data management
+### Exercises to Section 1.3
+## Data Ethics {#sec1-4}
+### The importance of data ethics
+### Data ethics principles
+### Exercises to Section 1.4
+## Data Exploration – Foundations and Concepts {#sec1-5}
+### Approaches to exploratory data analysis
+### Advantages and disadvantages of data exploration
+### Stages in the exploratory data analysis process
+### Exercises to Section 1.5
+## Data visualization – Foundations and Concepts {#sec1-6}
+### Common uses of data visualization in modern society
+### Types of data visualizations
+### Components of a data visualization tool
+### Advantages and Disadvantages of data visualization
+### Exercises to Section 1.6
+## Data analysis – Foundations and Concepts
+### The Data Analysis process
+### Approaches to Data Analysis
+### Uses of data analysis in modern society
+### Data analysis techniques
+### Computational tools and software for data analysis
+### Exercises to Section 1.7
+
+<!--chapter:end:01-DataLiteracy.Rmd-->
+
+
+# Sources and types of data{#sec1-8}
+
+Add content here.
+
+
+<!--chapter:end:03-SourcesAndTypesOfData.Rmd-->
+
+
+# Data importing{#ch2}
+
+Placeholder
+
+
+## Change decimal separator settings in Excel
+## Opening a .xlsx file in Excel
+## Importing a .txt file in Excel
+### Example {.unnumbered .unlisted}
+## Importing data from a website
+
+<!--chapter:end:04-DataImporting.Rmd-->
+
+
+# Data cleaning
+
+Placeholder
+
+
+## Example: Data cleaning in Excel {.unnumbered .unlisted}
+### Correct the formatting of a cell {.unnumbered .unlisted}
+### Inconsistent naming of categories {.unnumbered .unlisted}
+### Inconsistent capitalisations {.unnumbered .unlisted}
+### Correcting the date format {.unnumbered .unlisted}
+## Exercises {.unnumbered .unlisted}
+
+<!--chapter:end:05-DataCleaning.Rmd-->
+
+
+# Data manipulation
+
+Placeholder
+
+
+## Example: Super Animals {.unlisted}
+### The VLOOKUP function {.unnumbered .unlisted}
+### Conditional formatting {.unnumbered .unlisted}
+### Numerical calculations in Excel {.unnumbered .unlisted}
+## Example: Orion sales {.unlisted}
+### Combining data sets {.unnumbered .unlisted}
+### Splitting columns {.unnumbered .unlisted}
+### Combining columns {.unnumbered .unlisted}
+
+<!--chapter:end:06-DataManipulation.Rmd-->
+
+# Sampling and Collecting data{#ch3} 
+
+Add content here.
+
+
+<!--chapter:end:07-Sampling.Rmd-->
+

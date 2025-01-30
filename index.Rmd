@@ -19,6 +19,4 @@ cover-image: "images/UP-NAS-logo.jpeg"
 
 # Preface {.unnumbered}
 
-This is an introductory book on the basics of statistics and data analysis. The topics that will be covered include descriptive statistics, data cleaning, wrangling and visualisation.
-
-Data literacy in modern society: fundamental understanding of data and its presentation. Data ethics, importing, cleaning, manipulation and handling. Sources and types of data. Sampling methods and the collection of data. Statistical concepts are demonstrated and interpreted through Excel (practical coding) and simulation within a data science framework.
+In modern society, whether you are reading a magazine, watching TV or scrolling through social media, you encounter statistics. You can't avoid it! Data collection, analysis and communication have become part of day-to-day activities. If you want to be an educated consumer and citizen, you need to understand how statistics are used and also misused in our daily lives.  
