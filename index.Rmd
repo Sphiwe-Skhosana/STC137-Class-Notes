@@ -1,13 +1,13 @@
 --- 
-title: "A Minimal Book Example"
-author: "John Doe"
+title: "STC 137 Class Notes"
+author: "Department of Statistics, University of Pretoria"
 date: "`r Sys.Date()`"
+cover-image: "images/UP-NAS-logo.jpeg"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography:
 - book.bib
 - packages.bib
-cover-image: "images/UP-NAS-logo.jpeg"
 description: |
   This is a minimal example of using the bookdown package to write a book.
   set in the _output.yml file.

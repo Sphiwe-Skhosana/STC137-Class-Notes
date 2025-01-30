@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Page not found | STC 137 Class Notes</title>
+  <title>2.2 Data | STC 137 Class Notes</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
 The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Page not found | STC 137 Class Notes" />
+  <meta property="og:title" content="2.2 Data | STC 137 Class Notes" />
   <meta property="og:type" content="book" />
   <meta property="og:image" content="/images/UP-NAS-logo.jpeg" />
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Page not found | STC 137 Class Notes" />
+  <meta name="twitter:title" content="2.2 Data | STC 137 Class Notes" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
@@ -36,8 +36,8 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-
+<link rel="prev" href="sec1-1.html"/>
+<link rel="next" href="sec1-3.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -181,19 +181,150 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="page-not-found" class="section level1">
-<h1>Page not found</h1>
-<p>The page you requested cannot be found (perhaps it was moved or renamed).</p>
-<p>You may want to try searching to find the page's new location, or use
-the table of contents to find the page you are looking for.</p>
+<div id="data" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Data<a href="data.html#data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="what-is-data" class="section level3 hasAnchor" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> What is data?<a href="data.html#what-is-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Data are the raw facts and figures, about objects or events, that are collected, analyzed and summarized for presentation and interpretation in order to make informed decisions. Data typically arises as a result of a <strong>study</strong>. For instance, suppose the South African Reserve Bank (SARB) wants to forecast inflation in the next 12 months (the study). They will collect data about the inflation rate in the previous years and other factors influencing inflation. All the data collected by the SARB is referred to as a <strong>data set</strong>.</p>
+<p>Table 1 gives a data set containing information about the 9 provinces of South Africa. The data was obtained from the 2022 South African census. The South African census is conducted every 10 years. A census provides information on the demographic, socioeconomic and geographic characteristics of the entire population, as well as household characteristics.</p>
+<div class="float">
+<img src="images/clipboard-533064056.png" alt="Table 1: Data set on information about the 9 provinces of South Africa" />
+<div class="figcaption">Table 1: Data set on information about the 9 provinces of South Africa</div>
+</div>
+</div>
+<div id="properties-of-a-data-set" class="section level3 hasAnchor" number="2.2.2">
+<h3><span class="header-section-number">2.2.2</span> Properties of a data set<a href="data.html#properties-of-a-data-set" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Any data set has three essential properties, namely</p>
+<div id="elements" class="section level4 hasAnchor" number="2.2.2.1">
+<h4><span class="header-section-number">2.2.2.1</span> Elements<a href="data.html#elements" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>These are the entities or objects on which the data are collected. Each of the nine provinces in Table 1 are the elements of the data.</p>
+</div>
+<div id="variables" class="section level4 hasAnchor" number="2.2.2.2">
+<h4><span class="header-section-number">2.2.2.2</span> Variables<a href="data.html#variables" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>These are the characteristics of interest about the elements. The data set in Table 1 has eight variables:</p>
+<p><strong>Coastal or Inland</strong>: The province’s area of location in South Africa; It can be either coastal or inland.</p>
+<p><strong>Population size</strong>: The number of people in a province.</p>
+<p><strong>% of households with no internet access</strong>: The number of households that have no access to the internet in a province as a percentage of the total population in a province.</p>
+<p><strong>Sex ratio</strong>: The number of males for every 100 females in a province. A value above 100 indicates that there are more males than females.</p>
+<p><strong>Median age</strong></p>
+<p><strong>Province where most of the population migrate</strong>: A province in South Africa where most of the population in another province migrate to.</p>
+<p><strong>% of population with no schooling</strong>: The number of persons in a province with no formal schooling as a percentage of the total number of persons in the province.</p>
+<p><strong>% of homeless persons</strong>: The number of homeless persons in a province as a percentage of the total number of homeless persons in South Africa.</p>
+</div>
+<div id="observations" class="section level4 hasAnchor" number="2.2.2.3">
+<h4><span class="header-section-number">2.2.2.3</span> Observations<a href="data.html#observations" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>These are the sets of measurements obtained from each element. From Table 1, the first element (Eastern Cape) has the following measurements:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>7230204</td>
+<td>34.390</td>
+<td>90</td>
+<td>27</td>
+<td>WC</td>
+<td>7.2</td>
+<td>7.2</td>
+</tr>
+</tbody>
+</table>
+<p>The second element (Free State) has the following measurements:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>2</td>
+<td>2964412</td>
+<td>20.8</td>
+<td>90.4</td>
+<td>28</td>
+<td>GP</td>
+<td>5</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+<p>and so on. The data set with 9 elements has 9 observations.</p>
+</div>
+</div>
+<div id="observational-and-experimental-data" class="section level3 hasAnchor" number="2.2.3">
+<h3><span class="header-section-number">2.2.3</span> Observational and experimental data<a href="data.html#observational-and-experimental-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Data can come from an observational study or an experimental study. <strong>Observational data</strong> are records of what is actually taking place in a particular situation. The data in Table 1 are an example of observational data. As another example of observational data, a bank might observe client visits at one of their branches to collect data on variables such as the length of time a typical client spends at the branch, the number of clients visiting the branch on a given day (e.g. Monday or last day of the month), the age of the clients and so on. Statistical analysis of this data may, for instance, help bank management decide whether or not to close the branch in order to reduce operational costs.</p>
+<p><strong>Experimental data</strong> is data that is obtained under controlled conditions. It is typically used to test a hypothetical statement. For instance, suppose a pharmaceutical company would like to test whether a new drug they developed is effective for weight loss. To obtain the data, researchers select a sample of individuals. The individuals are instructed to follow the same diet. One group (treatment group) of individuals is given a dose of the new drug and another group (control group) is not given the new drug. After two months, we collect data on the weight of individuals in each group and compare it with the weight data collected before the experiment. Statistical analysis of the data can help determine whether the average weight loss of the treatment group is significantly greater than that of the control group. </p>
+</div>
+<div id="cross-sectional-and-time-series-data" class="section level3 hasAnchor" number="2.2.4">
+<h3><span class="header-section-number">2.2.4</span> Cross-sectional and time-series data<a href="data.html#cross-sectional-and-time-series-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>For appropriate analysis, interpretation and communication with the collected data, a distinction must be made between <strong>cross-sectional data</strong> and <strong>time series data</strong>. Cross-sectional data are data collected at the same point in time about two or more elements. The data in Table 1 are cross-sectional because they describe eight variables about the nine provinces (elements) at the same point in time (2022). Time series data are data collected over several time periods. For instance, the figure below shows the estimated Life Expectancy at birth in South Africa for the period 2002 to 2024. Time series plots, such as the figure below, are very useful in understanding what happened in the past, identifying whether there are any trends over time and, often, forecast future values of the time series.</p>
+<p>A time series plot is typically easy to understand and interpret. For example, from the figure, we can see that life expectancy at birth declined between 2002 and 2006. Incidentally, this was a period of increasing HIV prevalence and lack of awareness and information about prevention measures. However, due to increased awareness of HIV, expansion programmes to prevent mother-to-child transmission coupled with access to ARVs, life expectancy at birth increased from 2006 before declining in 2020 due to COVID-19. </p>
+<div class="float">
+<img src="images/clipboard-2840066963.png" width="500" alt="Figure: Life expectancy at birth in South Africa over time 2002 – 2024" />
+<div class="figcaption">Figure: Life expectancy at birth in South Africa over time 2002 – 2024</div>
+</div>
+</div>
+<div id="population-and-sample" class="section level3 hasAnchor" number="2.2.5">
+<h3><span class="header-section-number">2.2.5</span> Population and sample<a href="data.html#population-and-sample" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Typically, the elements in a study consist of a large number of objects or events. For instance, suppose an accounting firm, such as KPMG, wants to determine whether the amount of accounts receivable reflected on a client’s financial statement fairly represents the actual amount of accounts receivable. Usually large industrial or manufacturing businesses, such as Bidvest Group, will have a large number of accounts receivables which will make reviewing and validating every account too costly and time-consuming. As a common practice, the audit staff selects a subset of all the accounts. This subset of accounts is known as a <strong>sample</strong> and all of the accounts receivable are known as a <strong>population</strong>. The process of collecting the data is called <strong>sampling</strong>.</p>
+<p>Note that, although the elements of the data in Table 1 are the provinces, the data itself was collected from individuals from the population of South Africa. Therefore, the elements in a census survey or study are a population.</p>
+</div>
+<div id="exercises-to-section-1.2" class="section level3 hasAnchor" number="2.2.6">
+<h3><span class="header-section-number">2.2.6</span> Exercises to Section 1.2<a href="data.html#exercises-to-section-1.2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Question 1</strong></p>
+<p>What is a data set?</p>
+<p><strong>Question 2</strong></p>
+<p>Name the properties of a data set.</p>
+<p><strong>Question 3</strong></p>
+<p>In 2023, FNB commissioned a retirement survey to find out how prepared South African consumers were for retirement. Is the data obtained from the survey respondents experimental or observational?</p>
+<p><strong>Question 4</strong></p>
+<p>Suppose a study is conducted to find out whether vaping (or e-cigarette smoking) is less harmful compared to tobacco smoking. Is the data obtained from the study experimental or observational?</p>
+<p><strong>Question 5</strong></p>
+<p>The figure below gives a bar chart showing the annual revenue of Shoprite over a ten-year period from 2014 to 2023 (The data were obtained from the annual financial statements of Shoprite<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a> and the graph was plotted using Excel).</p>
+<p><img src="images/clipboard-3088691256.png" width="500" /></p>
+<p>a. What is the variable of interest?</p>
+<p>b. Are the data cross-sectional or time-series?</p>
+<p>c. What can you say about the trend in Shoprite’s revenue overtime?</p>
+<p><strong>Question 6</strong></p>
+<p>The figure below shows the quarterly FNB/BER Consumer Confidence Index for the period 2014, 1<sup>st</sup> quarter, to 2024, 2<sup>nd</sup> quarter<a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a>. The index measures confidence among South African consumers based on their outlook on the economy and their household financial position. A higher value indicates high confidence<a href="#fn11" class="footnote-ref" id="fnref11"><sup>11</sup></a>.</p>
+<p><img src="images/clipboard-2186963206.png" width="600" /></p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Are the data cross-sectional or time-series?</p></li>
+<li><p>Comment on the confidence of the South African consumer over time.</p></li>
+</ol>
+<p><br />
+<strong>Question 7</strong></p>
+<p>The South African Bureau of Economic Research collects data from South African adults living in predominantly urban areas to measure consumer confidence in South Africa. Survey respondents are asked about</p>
+<ul>
+<li><p>their expectation about the performance of the economy;</p></li>
+<li><p>their expectation about the financial position of households;</p></li>
+<li><p>their rating of the present time to buy durable goods (e.g. electronic appliances).</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>What is the population being studied?</p></li>
+<li><p>Is surveying mostly people in the urban areas a good way to get a good picture of consumer confidence in a country like South Africa?</p></li>
+</ol></li>
+</ul>
+<p><strong>Question 8</strong></p>
+<p>The 2024 Annual FNB Retirement survey collected data from a sample of 1072 South African consumers to, amongst other things, uncover their preparedness for retirement. Almost half of the respondents indicated that they do not have a retirement plan in place and 20% of the respondents indicated an annual income of more than R 850 000.</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>What is the population of interest in this survey?</p></li>
+<li><p>Is the data collected from the survey observational or experimental?</p></li>
+<li><p>Does this survey involve cross-sectional data or time-series data?</p></li>
+<li><p>Describe any useful insights for FNB that can be obtained from the collected data.</p></li>
+</ol>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="9">
+<li id="fn9"><p><a href="https://www.shopriteholdings.co.za/shareholders-investors/financial-results-archive.html?p=1" class="uri">https://www.shopriteholdings.co.za/shareholders-investors/financial-results-archive.html?p=1</a><a href="data.html#fnref9" class="footnote-back">↩︎</a></p></li>
+<li id="fn10"><p><a href="https://www.fnb.co.za/blog/investments/articles/EconomicsWeekly-20240913/?blog=investments&amp;category=Economics&amp;articleName=EconomicsWeekly-20240913" class="uri">https://www.fnb.co.za/blog/investments/articles/EconomicsWeekly-20240913/?blog=investments&amp;category=Economics&amp;articleName=EconomicsWeekly-20240913</a><a href="data.html#fnref10" class="footnote-back">↩︎</a></p></li>
+<li id="fn11"><p><a href="https://www.ber.ac.za/Documents/Index/FNBBER-Consumer-Confidence-Index" class="uri">https://www.ber.ac.za/Documents/Index/FNBBER-Consumer-Confidence-Index</a><a href="data.html#fnref11" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-
+<a href="sec1-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sec1-3.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -224,7 +355,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/USERNAME/REPO/edit/BRANCH/%s",
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-DataLiteracy.Rmd",
 "text": "Edit"
 },
 "history": {
