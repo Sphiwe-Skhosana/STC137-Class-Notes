@@ -96,7 +96,7 @@ From Figure \@ref(fig1), we can see that, in 2022, the Western Cape and Northern
 
     ![Figure 2: A heatmap of the United States showing the data centers' share of total power consumption by state in 2023](images/Data_Centers.png){#fig2 width="500"}
 
-    From Figure \@ref(fig:fig2), we can see that in the state of Michigan (Mich.), for instance, data centers consume a small share (0 – 3%) of the total power consumed by the state. Whereas, in the state of Virginia (Va.) data centers consume a large share (26%) of the total power consumed in the state.
+    From Figure \@ref(fig2), we can see that in the state of Michigan (Mich.), for instance, data centers consume a small share (0 – 3%) of the total power consumed by the state. Whereas, in the state of Virginia (Va.) data centers consume a large share (26%) of the total power consumed in the state.
 
 #### Being able to contextualize a number given in the media:
 
