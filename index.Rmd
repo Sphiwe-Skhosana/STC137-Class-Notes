@@ -2,7 +2,7 @@
 title: "STC 137 Class Notes"
 author: "Department of Statistics, University of Pretoria"
 date: "Last Updated: `r Sys.Date()`"
-cover-image: "images/UP-NAS-logo.jpeg"
+cover-image: images/UP-NAS-logo.jpeg
 site: bookdown::bookdown_site
 documentclass: book
 bibliography:
@@ -13,11 +13,12 @@ description: |
   set in the _output.yml file.
   The HTML output format for this example is bookdown::gitbook,
 link-citations: true
-github-repo: "rstudio/bookdown-demo"
+graphics: true
+github-repo: sphiwe-skhosana/STC137-Class-Notes
 ---
 
 # Preface {.unnumbered}
 
-This is an introduction to statistics and data analysis. Topics covered will include descriptive statistics, data cleaning, wrangling and visualisation.
+This is an introductory book on the basics of statistics and data analysis. The topics that will be covered include descriptive statistics, data cleaning, wrangling and visualisation.
 
 Data literacy in modern society: fundamental understanding of data and its presentation. Data ethics, importing, cleaning, manipulation and handling. Sources and types of data. Sampling methods and the collection of data. Statistical concepts are demonstrated and interpreted through Excel (practical coding) and simulation within a data science framework.
