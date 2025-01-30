@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.30)  30 JAN 2025 08:45
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.1.30)  30 JAN 2025 13:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -833,10 +833,10 @@ Chapter 1.
 
 [9]
 
-Package hyperref Warning: Suppressing empty link on input line 138.
+Package hyperref Warning: Suppressing empty link on input line 136.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--165
+Underfull \hbox (badness 10000) in paragraph at lines 163--163
 [][][][]$[][][][][] [] [] [] [][][] [] [][][][][] [] [][][] [] [][][] [] [][][][][][][][][][][][] [] [][][][][][][][][] [][] [][][][][] [][] [][][] [][] [][][][][][][][][][] [][] [][][] [][] [][][][] [][]
  []
 
@@ -848,7 +848,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 165--165
 File: images/HIV-Prevalence_2022.png Graphic file (type bmp)
 <images/HIV-Prevalence_2022.png>
 
-Overfull \hbox (31.41913pt too wide) in paragraph at lines 220--221
+Overfull \hbox (31.41913pt too wide) in paragraph at lines 218--219
  [][] 
  []
 
@@ -860,17 +860,14 @@ Overfull \hbox (31.41913pt too wide) in paragraph at lines 220--221
 File: images/Data_Centers.png Graphic file (type bmp)
 <images/Data_Centers.png>
 
-Overfull \hbox (31.42711pt too wide) in paragraph at lines 235--236
+Overfull \hbox (31.42711pt too wide) in paragraph at lines 233--234
  [][] 
  []
-
-
-LaTeX Warning: Reference `fig:fig2' on page 14 undefined on input line 239.
 
 File: images/clipboard-712778398.png Graphic file (type bmp)
 <images/clipboard-712778398.png>
 
-Overfull \hbox (56.43327pt too wide) in paragraph at lines 249--250
+Overfull \hbox (56.43327pt too wide) in paragraph at lines 247--248
 [][] 
  []
 
@@ -880,34 +877,34 @@ Overfull \hbox (56.43327pt too wide) in paragraph at lines 249--250
 File: images/clipboard-4056060037.png Graphic file (type bmp)
 <images/clipboard-4056060037.png>
 
-Overfull \hbox (56.43327pt too wide) in paragraph at lines 251--252
+Overfull \hbox (56.43327pt too wide) in paragraph at lines 249--250
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 252--252
 [][][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][] [] [][][] [] [][] [] [][][][][][] [][] [][][] [][] [][][][][][][][] [][] [][][][][][][] [][] [][][][][][][][] [][] [][][][] [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--263
+Underfull \hbox (badness 10000) in paragraph at lines 261--261
 [][][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][] [] [][] [] [][] [] [][] [] [][][][][][][][][] [] [][][][][][][][] [][] [][][] [][] [][][][][][][][][][] [] [][][][] [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--263
+Underfull \hbox (badness 10000) in paragraph at lines 261--261
 [][] [][] [][] [][] [][][] [][] [][] [][] [][][][][][][][] [][] [][] [][] [][] [][] [][] [][] [][] [][] [][] [] [] [] [] [] [][][][] [] [][][][][][] [] [][][][][][][][][][] [] [][][][][][][][][][][] []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--263
+Underfull \hbox (badness 10000) in paragraph at lines 261--261
 [][][][][][][][][][][][] [] [][][][][][][] [][] [][][][][] [] [][][][][][][][] [] [][][][][][] [] [][][][][] [] [][][][][][][][][][][][][][][][][] [] [][][] [] [][][][][] []
  []
 
 File: images/clipboard-338848850.png Graphic file (type bmp)
 <images/clipboard-338848850.png>
 
-Overfull \hbox (56.42401pt too wide) in paragraph at lines 265--266
+Overfull \hbox (56.42401pt too wide) in paragraph at lines 263--264
 [][] 
  []
 
@@ -933,7 +930,7 @@ File: images/clipboard-533064056.png Graphic file (type bmp)
 File: images/clipboard-2840066963.png Graphic file (type bmp)
 <images/clipboard-2840066963.png>
 
-Overfull \hbox (31.4056pt too wide) in paragraph at lines 489--490
+Overfull \hbox (31.4056pt too wide) in paragraph at lines 487--488
  [][] 
  []
 
@@ -942,26 +939,26 @@ Overfull \hbox (31.4056pt too wide) in paragraph at lines 489--490
 [21]
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 519--519
+Underfull \hbox (badness 10000) in paragraph at lines 517--517
 [][][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][] [] [][] [] [][] [] [][][][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][] [][] [][][][][][][] [][] [][][][][][][] []
  []
 
 File: images/clipboard-3088691256.png Graphic file (type bmp)
 <images/clipboard-3088691256.png>
 
-Overfull \hbox (31.40724pt too wide) in paragraph at lines 521--522
+Overfull \hbox (31.40724pt too wide) in paragraph at lines 519--520
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 531--531
+Underfull \hbox (badness 10000) in paragraph at lines 529--529
 [][][][]$[][][][][] [] [] [] [][][] [] [][][] [] [][] [] [][] [] [][][][] [] [][][][][][][][][][][] [] [][][][][][][][] [] [][][][][][][][][][][][][][][] [][] [][][][][][][][] [] [][][][][] []
  []
 
 File: images/clipboard-2186963206.png Graphic file (type bmp)
 <images/clipboard-2186963206.png>
 
-Overfull \hbox (106.68248pt too wide) in paragraph at lines 533--534
+Overfull \hbox (106.68248pt too wide) in paragraph at lines 531--532
 [][] 
  []
 
@@ -1006,7 +1003,7 @@ File: Figures-Chapter1/Scatter.png Graphic file (type bmp)
 
 [37]
 
-LaTeX Warning: Reference `sec1-7' on page 38 undefined on input line 1040.
+LaTeX Warning: Reference `sec1-7' on page 38 undefined on input line 1038.
 
 
 
@@ -1193,12 +1190,12 @@ File: Figures/super-animals.png Graphic file (type bmp)
 File: Figures/super-animals2.png Graphic file (type bmp)
 <Figures/super-animals2.png>
 
-Underfull \hbox (badness 2503) in paragraph at lines 1875--1876
+Underfull \hbox (badness 2503) in paragraph at lines 1873--1874
 []\TU/lmr/m/n/10 The information from these cards are collected in a data set called
  []
 
 
-Overfull \hbox (1.5pt too wide) in paragraph at lines 1902--1903
+Overfull \hbox (1.5pt too wide) in paragraph at lines 1900--1901
 []\TU/lmtt/m/n/10 =VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup]) 
  []
 
@@ -1250,10 +1247,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 19817 strings out of 475851
- 374534 string characters out of 5772782
+ 19816 strings out of 475851
+ 374524 string characters out of 5772782
  887543 words of memory out of 5000000
- 42390 multiletter control sequences out of 15000+600000
+ 42389 multiletter control sequences out of 15000+600000
  565747 words of font info for 96 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  90i,9n,123p,1451b,579s stack positions out of 10000i,1000n,20000p,200000b,200000s
