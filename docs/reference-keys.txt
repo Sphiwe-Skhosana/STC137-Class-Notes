@@ -1,7 +1,9 @@
-about
-usage
-render-book
-preview-book
+fig:unnamed-chunk-1
+fig:unnamed-chunk-2
+fig:covid-1
+fig:covid-2
+eq:eq1
+eq:eq2
 an-overview-of-data-literacy
 sec1-1
 definition
@@ -50,9 +52,6 @@ uses-of-data-analysis-in-modern-society
 data-analysis-techniques
 computational-tools-and-software-for-data-analysis
 exercises-to-section-1.7
-data-ethics
-data-ethics-principles-1
-exercise
 sec1-8
 ch2
 change-decimal-separator-settings-in-excel
@@ -64,9 +63,3 @@ data-manipulation
 example-super-animals
 example-orion-sales
 ch3
-fig:unnamed-chunk-1
-fig:unnamed-chunk-2
-fig:covid-1
-fig:covid-2
-eq:eq1
-eq:eq2

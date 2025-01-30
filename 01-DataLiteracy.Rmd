@@ -272,7 +272,7 @@ These are the sets of measurements obtained from each element. From Table 1, the
 
 |     |         |        |     |     |     |     |     |
 |-----|---------|--------|-----|-----|-----|-----|-----|
-| 1   | 7230204 | 34.390 | 90  | 27  | WC  | 7.2 | 7.2 |
+| 1   | 7230204 | 34.3   | 90  | 27  | WC  | 7.2 | 7.2 |
 
 The second element (Free State) has the following measurements:
 
