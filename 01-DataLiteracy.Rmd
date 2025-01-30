@@ -20,7 +20,7 @@ In modern society, we frequently see the following types of statements in the me
 
 -   Released this week, the sixth South African HIV prevalence, incidence, and behaviour Survey (SABSSM VI) found a 7.4% HIV prevalence rate in the province [Western Cape] for 2022, down from 8.6% in 2017. (Mail & Guardian, 29 September 2024)
 
-    The numerical facts in the preceding statements – 80%, 16%, 8%, 29%, 2%, 9%, 10.4%, 7%, 2.9%, 20%, 7.4% and 8.6% - are referred to as **statistics or statistical information**. This type of information can help us understand the trends in economics, business, health and employment and thus enable us to make more informed decisions. Statistical information is **data** that has been recorded, classified, organized, related, or interpreted within a framework so that meaning emerges[^1]. Thus, an essential skill towards effectively making use of statistical information is data literacy. In this Chapter, we give an overview of data literacy, including key data literacy skills that will be covered more broadly in the coming chapters. Thus, this chapter lays the foundation for the rest of the book.
+The numerical facts in the preceding statements – 80%, 16%, 8%, 29%, 2%, 9%, 10.4%, 7%, 2.9%, 20%, 7.4% and 8.6% - are referred to as **statistics or statistical information**. This type of information can help us understand the trends in economics, business, health and employment and thus enable us to make more informed decisions. Statistical information is **data** that has been recorded, classified, organized, related, or interpreted within a framework so that meaning emerges[^1]. Thus, an essential skill towards effectively making use of statistical information is data literacy. In this Chapter, we give an overview of data literacy, including key data literacy skills that will be covered more broadly in the coming chapters. Thus, this chapter lays the foundation for the rest of the book.
 
 [^1]: <https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch1/definitions/5214853-eng.htm>[ ](https://www.media.mit.edu/publications/designing-tools-and-activities-for-data-literacy-learners/)
 
@@ -96,7 +96,7 @@ From Figure \@ref(fig1), we can see that, in 2022, the Western Cape and Northern
 
     ![Figure 2: A heatmap of the United States showing the data centers' share of total power consumption by state in 2023](images/Data_Centers.png){#fig2 width="500"}
 
-    From Figure \@ref(fig2), we can see that in the state of Michigan (Mich.), for instance, data centers consume a small share (0 – 3%) of the total power consumed by the state. Whereas, in the state of Virginia (Va.) data centers consume a large share (26%) of the total power consumed in the state.
+    From Figure \@ref(fig:fig2), we can see that in the state of Michigan (Mich.), for instance, data centers consume a small share (0 – 3%) of the total power consumed by the state. Whereas, in the state of Virginia (Va.) data centers consume a large share (26%) of the total power consumed in the state.
 
 #### Being able to contextualize a number given in the media:
 
