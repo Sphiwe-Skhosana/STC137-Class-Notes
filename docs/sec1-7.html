@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1.7 Data analysis – Foundations and Concepts | STC 137 Class Notes</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="1.7 Data analysis – Foundations and Concepts | STC 137 Class Notes" />
+  <meta property="og:type" content="book" />
+  <meta property="og:image" content="/images/UP-NAS-logo.jpeg" />
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
+  <meta name="github-repo" content="sphiwe-skhosana/STC137-Class-Notes" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="1.7 Data analysis – Foundations and Concepts | STC 137 Class Notes" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
+  <meta name="twitter:image" content="/images/UP-NAS-logo.jpeg" />
+
+<meta name="author" content="Department of Statistics, University of Pretoria" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="sec1-6.html"/>
+<link rel="next" href="sec1-8.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">STC137 Class Notes</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="an-overview-of-data-literacy.html"><a href="an-overview-of-data-literacy.html"><i class="fa fa-check"></i><b>1</b> An Overview of Data literacy</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="sec1-1.html"><a href="sec1-1.html"><i class="fa fa-check"></i><b>1.1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="sec1-1.html"><a href="sec1-1.html#definition"><i class="fa fa-check"></i><b>1.1.1</b> Definition</a></li>
+<li class="chapter" data-level="1.1.2" data-path="sec1-1.html"><a href="sec1-1.html#the-importance-of-being-data-literate-in-modern-society"><i class="fa fa-check"></i><b>1.1.2</b> The importance of being data literate in modern society</a></li>
+<li class="chapter" data-level="1.1.3" data-path="sec1-1.html"><a href="sec1-1.html#data-literacy-skills"><i class="fa fa-check"></i><b>1.1.3</b> Data Literacy Skills</a></li>
+<li class="chapter" data-level="1.1.4" data-path="sec1-1.html"><a href="sec1-1.html#data-literacy-in-practice"><i class="fa fa-check"></i><b>1.1.4</b> Data Literacy in Practice</a></li>
+<li class="chapter" data-level="1.1.5" data-path="sec1-1.html"><a href="sec1-1.html#exercises-to-section-1.1"><i class="fa fa-check"></i><b>1.1.5</b> Exercises to Section 1.1</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>1.2</b> Data</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="data.html"><a href="data.html#what-is-data"><i class="fa fa-check"></i><b>1.2.1</b> What is data?</a></li>
+<li class="chapter" data-level="1.2.2" data-path="data.html"><a href="data.html#properties-of-a-data-set"><i class="fa fa-check"></i><b>1.2.2</b> Properties of a data set</a></li>
+<li class="chapter" data-level="1.2.3" data-path="data.html"><a href="data.html#observational-and-experimental-data"><i class="fa fa-check"></i><b>1.2.3</b> Observational and experimental data</a></li>
+<li class="chapter" data-level="1.2.4" data-path="data.html"><a href="data.html#cross-sectional-and-time-series-data"><i class="fa fa-check"></i><b>1.2.4</b> Cross-sectional and time-series data</a></li>
+<li class="chapter" data-level="1.2.5" data-path="data.html"><a href="data.html#population-and-sample"><i class="fa fa-check"></i><b>1.2.5</b> Population and sample</a></li>
+<li class="chapter" data-level="1.2.6" data-path="data.html"><a href="data.html#exercises-to-section-1.2"><i class="fa fa-check"></i><b>1.2.6</b> Exercises to Section 1.2</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="sec1-3.html"><a href="sec1-3.html"><i class="fa fa-check"></i><b>1.3</b> Data Management - Foundations and Concepts</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="sec1-3.html"><a href="sec1-3.html#data-management-process"><i class="fa fa-check"></i><b>1.3.1</b> Data management process</a></li>
+<li class="chapter" data-level="1.3.2" data-path="sec1-3.html"><a href="sec1-3.html#the-benefits-of-data-management-in-modern-society"><i class="fa fa-check"></i><b>1.3.2</b> The benefits of data management in modern society</a></li>
+<li class="chapter" data-level="1.3.3" data-path="sec1-3.html"><a href="sec1-3.html#the-challenges-of-data-management-in-modern-society"><i class="fa fa-check"></i><b>1.3.3</b> The challenges of data management in modern society</a></li>
+<li class="chapter" data-level="1.3.4" data-path="sec1-3.html"><a href="sec1-3.html#strategies-for-data-management"><i class="fa fa-check"></i><b>1.3.4</b> Strategies for data management</a></li>
+<li class="chapter" data-level="1.3.5" data-path="sec1-3.html"><a href="sec1-3.html#exercises-to-section-1.3"><i class="fa fa-check"></i><b>1.3.5</b> Exercises to Section 1.3</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="sec1-4.html"><a href="sec1-4.html"><i class="fa fa-check"></i><b>1.4</b> Data Ethics</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="sec1-4.html"><a href="sec1-4.html#the-importance-of-data-ethics"><i class="fa fa-check"></i><b>1.4.1</b> The importance of data ethics</a></li>
+<li class="chapter" data-level="1.4.2" data-path="sec1-4.html"><a href="sec1-4.html#data-ethics-principles"><i class="fa fa-check"></i><b>1.4.2</b> Data ethics principles</a></li>
+<li class="chapter" data-level="1.4.3" data-path="sec1-4.html"><a href="sec1-4.html#exercises-to-section-1.4"><i class="fa fa-check"></i><b>1.4.3</b> Exercises to Section 1.4</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="sec1-5.html"><a href="sec1-5.html"><i class="fa fa-check"></i><b>1.5</b> Data Exploration – Foundations and Concepts</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="sec1-5.html"><a href="sec1-5.html#approaches-to-exploratory-data-analysis"><i class="fa fa-check"></i><b>1.5.1</b> Approaches to exploratory data analysis</a></li>
+<li class="chapter" data-level="1.5.2" data-path="sec1-5.html"><a href="sec1-5.html#advantages-and-disadvantages-of-data-exploration"><i class="fa fa-check"></i><b>1.5.2</b> Advantages and disadvantages of data exploration</a></li>
+<li class="chapter" data-level="1.5.3" data-path="sec1-5.html"><a href="sec1-5.html#stages-in-the-exploratory-data-analysis-process"><i class="fa fa-check"></i><b>1.5.3</b> Stages in the exploratory data analysis process</a></li>
+<li class="chapter" data-level="1.5.4" data-path="sec1-5.html"><a href="sec1-5.html#exercises-to-section-1.5"><i class="fa fa-check"></i><b>1.5.4</b> Exercises to Section 1.5</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="sec1-6.html"><a href="sec1-6.html"><i class="fa fa-check"></i><b>1.6</b> Data visualization – Foundations and Concepts</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="sec1-6.html"><a href="sec1-6.html#common-uses-of-data-visualization-in-modern-society"><i class="fa fa-check"></i><b>1.6.1</b> Common uses of data visualization in modern society</a></li>
+<li class="chapter" data-level="1.6.2" data-path="sec1-6.html"><a href="sec1-6.html#types-of-data-visualizations"><i class="fa fa-check"></i><b>1.6.2</b> Types of data visualizations</a></li>
+<li class="chapter" data-level="1.6.3" data-path="sec1-6.html"><a href="sec1-6.html#components-of-a-data-visualization-tool"><i class="fa fa-check"></i><b>1.6.3</b> Components of a data visualization tool</a></li>
+<li class="chapter" data-level="1.6.4" data-path="sec1-6.html"><a href="sec1-6.html#advantages-and-disadvantages-of-data-visualization"><i class="fa fa-check"></i><b>1.6.4</b> Advantages and Disadvantages of data visualization</a></li>
+<li class="chapter" data-level="1.6.5" data-path="sec1-6.html"><a href="sec1-6.html#exercises-to-section-1.6"><i class="fa fa-check"></i><b>1.6.5</b> Exercises to Section 1.6</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="sec1-7.html"><a href="sec1-7.html"><i class="fa fa-check"></i><b>1.7</b> Data analysis – Foundations and Concepts</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="sec1-7.html"><a href="sec1-7.html#the-data-analysis-process"><i class="fa fa-check"></i><b>1.7.1</b> The Data Analysis process</a></li>
+<li class="chapter" data-level="1.7.2" data-path="sec1-7.html"><a href="sec1-7.html#approaches-to-data-analysis"><i class="fa fa-check"></i><b>1.7.2</b> Approaches to Data Analysis</a></li>
+<li class="chapter" data-level="1.7.3" data-path="sec1-7.html"><a href="sec1-7.html#uses-of-data-analysis-in-modern-society"><i class="fa fa-check"></i><b>1.7.3</b> Uses of data analysis in modern society</a></li>
+<li class="chapter" data-level="1.7.4" data-path="sec1-7.html"><a href="sec1-7.html#data-analysis-techniques"><i class="fa fa-check"></i><b>1.7.4</b> Data analysis techniques</a></li>
+<li class="chapter" data-level="1.7.5" data-path="sec1-7.html"><a href="sec1-7.html#computational-tools-and-software-for-data-analysis"><i class="fa fa-check"></i><b>1.7.5</b> Computational tools and software for data analysis</a></li>
+<li class="chapter" data-level="1.7.6" data-path="sec1-7.html"><a href="sec1-7.html#exercises-to-section-1.7"><i class="fa fa-check"></i><b>1.7.6</b> Exercises to Section 1.7</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="sec1-8.html"><a href="sec1-8.html"><i class="fa fa-check"></i><b>2</b> Sources and types of data</a></li>
+<li class="chapter" data-level="3" data-path="ch2.html"><a href="ch2.html"><i class="fa fa-check"></i><b>3</b> Data importing</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="change-decimal-separator-settings-in-excel.html"><a href="change-decimal-separator-settings-in-excel.html"><i class="fa fa-check"></i><b>3.1</b> Change decimal separator settings in Excel</a></li>
+<li class="chapter" data-level="3.2" data-path="opening-a-.xlsx-file-in-excel.html"><a href="opening-a-.xlsx-file-in-excel.html"><i class="fa fa-check"></i><b>3.2</b> Opening a .xlsx file in Excel</a></li>
+<li class="chapter" data-level="3.3" data-path="importing-a-.txt-file-in-excel.html"><a href="importing-a-.txt-file-in-excel.html"><i class="fa fa-check"></i><b>3.3</b> Importing a .txt file in Excel</a></li>
+<li class="chapter" data-level="3.4" data-path="importing-data-from-a-website.html"><a href="importing-data-from-a-website.html"><i class="fa fa-check"></i><b>3.4</b> Importing data from a website</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="data-cleaning.html"><a href="data-cleaning.html"><i class="fa fa-check"></i><b>4</b> Data cleaning</a></li>
+<li class="chapter" data-level="5" data-path="data-manipulation.html"><a href="data-manipulation.html"><i class="fa fa-check"></i><b>5</b> Data manipulation</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="example-super-animals.html"><a href="example-super-animals.html"><i class="fa fa-check"></i><b>5.1</b> Example: Super Animals</a></li>
+<li class="chapter" data-level="5.2" data-path="example-orion-sales.html"><a href="example-orion-sales.html"><i class="fa fa-check"></i><b>5.2</b> Example: Orion sales</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="ch3.html"><a href="ch3.html"><i class="fa fa-check"></i><b>6</b> Sampling and Collecting data</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">STC 137 Class Notes</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sec1-7" class="section level2 hasAnchor" number="1.7">
+<h2><span class="header-section-number">1.7</span> Data analysis – Foundations and Concepts<a href="sec1-7.html#sec1-7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Data analysis is the process of systematically using statistical techniques to explore, clean, transform and model data with the purpose of discovering useful information which can then be used to support decision-making.</p>
+<div id="the-data-analysis-process" class="section level3 hasAnchor" number="1.7.1">
+<h3><span class="header-section-number">1.7.1</span> The Data Analysis process<a href="sec1-7.html#the-data-analysis-process" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Data analysis can be viewed as a sequence of steps combining some of the data literacy skills we have already discussed so far in this book. This process can be summarized as follows:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Define the study</strong></p>
+<p>The first and important step in the data analysis process is to clearly define the problem that the analysis aims to address by stating the objectives and specific questions that the analysis aims to answer.</p></li>
+<li><p><strong>Data collection</strong></p>
+<p>Once the study is defined, the next step is to collect the relevant data. This can be done using various methods to be discussed in Chapter <a href="ch3.html#ch3">6</a>. The choice of method used to collect data depends on the nature of the problem and the questions being asked.</p></li>
+<li><p><strong>Data cleaning</strong></p>
+<p>After collecting the data, the next step is to clean the data. This involves identifying and rectify errors, missing values and inconsistencies in the data. Data cleaning will be further discussed and practically demonstrated in Chapter <a href="ch2.html#ch2">3</a>.</p>
+<p><strong>Note:</strong> The second and third step are part of data management. See Section <a href="sec1-3.html#sec1-3">1.3</a> for more details.</p></li>
+<li><p><strong>Data exploration</strong></p>
+<p>After cleaning the data, we conduct a preliminary analysis to understand the characteristics of the data. See Section <a href="sec1-5.html#sec1-5">1.5</a> for more details on how this is done in practice.</p></li>
+<li><p><strong>Data transformation</strong></p>
+<p>Following from the results of the exploration phase of the data analysis, the data is prepared for analysis by encoding categorical variables, scaling (normalizing or standardizing) some numerical variables and, if necessary, handling outliers.</p></li>
+<li><p><strong>Data modelling (analysis)</strong></p>
+<p>Now the data is ready for the actual analysis. This step involves using statistical and mathematical techniques on the data to discover patterns, relationships, similarities or trends.</p></li>
+<li><p><strong>Interpretation and visualization</strong></p>
+<p>After the data analysis, the next step is to interpret the obtained results and present them in a manner that can be easily understood. This can be done through visualization.</p></li>
+</ol>
+</div>
+<div id="approaches-to-data-analysis" class="section level3 hasAnchor" number="1.7.2">
+<h3><span class="header-section-number">1.7.2</span> Approaches to Data Analysis<a href="sec1-7.html#approaches-to-data-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>There are different types of data analysis and each one serves a unique purpose. The choice of which one to use will depend on the nature of your study and what kind of questions you seek to answer.</p>
+<ol style="list-style-type: decimal">
+<li><strong>Descriptive analysis</strong> is used to describe and summarize the collected data to understand what happened in the past. For example, a university might use descriptive analysis to find out how many first-year students passed last year.</li>
+<li><strong>Diagnostic analysis</strong> follows descriptive analysis by going a step further to explain or diagnose why something happened. For example, suppose the number of first years that passed last year dropped significantly, diagnostic analysis can be used to find out why this happened.</li>
+<li><strong>Predictive analysis</strong> is used to forecast or predict what might happen in the future based on historical data. For example, a university can use predictive analysis to predict the number of first-year students that will pass next year. In other words, based on what has happened in the past we can find out what could happen in the future.</li>
+<li><strong>Prescriptive analysis</strong> is used to make recommendations on what course of action to take in order to reach a desired outcome. For example, suppose a university wants to increase the pass rate for first-year students, a prescriptive analysis might suggest the best course of action towards reaching this outcome.</li>
+</ol>
+</div>
+<div id="uses-of-data-analysis-in-modern-society" class="section level3 hasAnchor" number="1.7.3">
+<h3><span class="header-section-number">1.7.3</span> Uses of data analysis in modern society<a href="sec1-7.html#uses-of-data-analysis-in-modern-society" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Data analysis is a very important data literacy skill that finds application across various fields and domains of application such as:</p>
+<ul>
+<li><p><strong>Marketing research</strong>, where it can be used to assist businesses to understand market trends, consumer preferences and help identify opportunities for product development.</p></li>
+<li><p><strong>Medical diagnosis</strong>, where it can be used to interpret medical images (e.g. MRI scans) and also assist in early detection of a disease.</p></li>
+<li><p><strong>Medical drug discovery</strong>, where it is used by pharmaceutical companies, such as Johnson and Johnson, to develop a drug by conducting clinical trials and testing the effectiveness of the drug.</p></li>
+<li><p><strong>Fraud detection</strong>, where it can be use by banks to identify unusual transaction patterns and detect fraudulent activities.</p></li>
+<li><p><strong>Risk management</strong>, where it is used by financial services companies to assess a client’s credit risk (i.e. will they be able to pay back the loan) and model risks in the forex market or stock market.</p></li>
+<li><p><strong>Quality control</strong>, where it is used to monitor and control the quality of products on the production line.</p></li>
+<li><p><strong>Social science research</strong>, where it is used to analyze survey data to study overall human behavior and sentiment.</p></li>
+<li><p><strong>Recommendation systems</strong>, where it used by platforms such as Spotify and Netflix to recommend music or shows that you might like based on the content that you viewed in the past.</p></li>
+<li><p><strong>Environmental monitoring</strong>, where geographical (remote sensing) data is used to monitor ecological changes such as deforestation, water quality and air pollution.</p></li>
+</ul>
+</div>
+<div id="data-analysis-techniques" class="section level3 hasAnchor" number="1.7.4">
+<h3><span class="header-section-number">1.7.4</span> Data analysis techniques<a href="sec1-7.html#data-analysis-techniques" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>There are many techniques used in data analysis and each one serves a unique purpose and application. In section [Data exploration], we discussed data exploration. This is the most basic technique for data analysis. In this section, we will briefly discuss some of the most commonly used and emerging techniques.</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Correlation analysis</strong></p>
+<p>Correlation analysis is a technique used to understand the linear relationship between two or more numerical variables. A simple measure that is commonly used to describe this relationship is the <strong>correlation coefficient</strong>, usually denoted by <span class="math inline">\(r\)</span>. The correlation coefficient is used to quantify the strength of the linear relationship between two numerical variables. The value of <span class="math inline">\(r\)</span> will always lies between <span class="math inline">\(-1\)</span> and <span class="math inline">\(1\)</span>. Values close to <span class="math inline">\(-1\)</span> or <span class="math inline">\(+1\)</span> indicate a strong linear relationship. The closer the value of <span class="math inline">\(r\)</span> is to zero, say less than 0.5 or more than -0.5, the weaker the linear relationship. As an example of the use of the correlation coefficient, suppose we want to know the strength of the relationship between a student’s matric final mark and their final mark at the end of their first-year of study at a university. Given a correlation coefficient of <span class="math inline">\(r=0.93\)</span>, we can say that there is a strong positive linear relationship between a student’s matric final mark and their first-year final mark. In other words, a larger final matric mark is strongly associated with a larger first-year final mark. Finally, please note that correlation measures the linear association between two numerical variables and not necessarily causality. In other words, a high correlation between two variables does not mean changes in one variable will cause changes in the other variable.</p></li>
+<li><p><strong>Regression analysis</strong></p>
+<p>Regression analysis is a statistical technique used to understand the dependence of one variable, known as a dependent variable, on one or more other variables, known as independent variables. It is commonly used for predictive analysis. A simple and widely applicable approach to regression analysis is the least squares line. Consider two numerical variables <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> which are assumed to follow a straight line pattern. The relationship between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> can be described using a straight line given by the equation</p></li>
+</ol>
+<p><span class="math display" id="eq:eq1">\[\begin{equation}
+y=A+Bx \tag{1.1}                                            
+\end{equation}\]</span></p>
+<p>where <span class="math inline">\(y\)</span> is the dependent variable, assumed to depend on <span class="math inline">\(x\)</span> known as the independent variable. The term <span class="math inline">\(A\)</span> is the y-intercept and <span class="math inline">\(B\)</span> is the slope which represents an increase in <span class="math inline">\(y\)</span> for every unit-increase in <span class="math inline">\(x\)</span>. For a given sample of <span class="math inline">\((x,y)\)</span> points, we can obtain an estimate of <a href="sec1-7.html#eq:eq1">(1.1)</a>, given by,</p>
+<p><span class="math display" id="eq:eq2">\[\begin{equation}
+\hat{y}=a+bx \tag{1.2}                                          
+\end{equation}\]</span></p>
+<p>where <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are estimates of <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, respectively, obtained by the method of least squares. Hence, equation <a href="sec1-7.html#eq:eq2">(1.2)</a> is known as the least-squares regression line.</p>
+<p>Equation <a href="sec1-7.html#eq:eq2">(1.2)</a> can be used to:</p>
+<ul>
+<li>describe the dependence of <span class="math inline">\(y\)</span> on <span class="math inline">\(x\)</span> allowing us to learn more about the process that produces <span class="math inline">\(y\)</span>.</li>
+<li>comment on the type of linear pattern between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> (whether its positive, <span class="math inline">\(b&gt;0\)</span>, negative, <span class="math inline">\(b&lt;0\)</span>, or no pattern exists, <span class="math inline">\(b=0\)</span>).</li>
+<li>measure the influence that <span class="math inline">\(x\)</span> has on <span class="math inline">\(y\)</span> based on the magnitude of the value of <span class="math inline">\(b\)</span>.</li>
+<li>predict the future value of <span class="math inline">\(y\)</span> for a given value of <span class="math inline">\(x\)</span>.</li>
+</ul>
+<p>As an example of the use of the least-squares line for regression analysis, consider the least squares line <span class="math inline">\(\hat{y}=60+5x\)</span> estimated to a data set on student population (in 1000s), <span class="math inline">\(x\)</span>, and quarterly pizza sales (R 1000s), <span class="math inline">\(y\)</span>, for a sample of 10 restaurants located near university campuses. The following points can be made about the fitted least-squares line:</p>
+<ul>
+<li><p><span class="math inline">\(b=5&gt;0\)</span> which implies that as student population, <span class="math inline">\(x\)</span>, increases, quarterly sales increase.</p></li>
+<li><p><span class="math inline">\(a=60\)</span>, which means for a restaurant that is not located close to a university (that is, <span class="math inline">\(x=0\)</span>), the quarterly sales are <span class="math inline">\(R60000\)</span>.</p></li>
+</ul>
+<p>Lastly, we can use the least-squares line to predict the quarterly sales for a given size of the student population. For <span class="math inline">\(x=16\)</span>, representing 16000 students, the quarterly sales are predicted to be <span class="math inline">\(\hat{y}=60+5(16)=140\)</span> or <span class="math inline">\(R140000\)</span>.</p>
+<ol start="3" style="list-style-type: decimal">
+<li><p><strong>Cluster analysis</strong></p>
+<p>Cluster analysis is used to group a set of objects or entities in such a way that objects in the same group (or cluster) are more similar than those in other clusters. It is commonly used in recommendation systems and market research to find consumers with similar preferences.</p></li>
+<li><p><strong>Dimension reduction</strong></p>
+<p>As implied by the name, this technique is used to reduce a large number of variables into few variables in such a way that the remaining variables capture the maximum possible information from the original variables. It is commonly used in conjunction with some of the already-mentioned techniques such as cluster analysis for medical diagnosis.</p></li>
+<li><p><strong>Hypothesis testing</strong></p>
+<p>This technique is used to make inference or statements about population characteristics (such as the mean) using sample data. It is commonly used in the control and monitoring of quality in a production process.</p></li>
+<li><p><strong>Time series analysis</strong></p>
+<p>This technique is used for the analysis of time-series data. It is commonly used for predictive analysis and understanding the trend overtime. It is commonly used in forecasting or predictive analysis.</p></li>
+<li><p><strong>Sentiment analysis</strong></p>
+<p>This technique is used to extract the emotional tone (negative, positive or neutral) behind text data. It is commonly used to understand customer feedback.</p></li>
+<li><p><strong>Spatial data analysis</strong></p>
+<p>This technique is used for the analysis of geographical (remote sensing) data, that is data with a spatial component (e.g. geographic location represented by coordinates). The most important use of this technique is in disease tracking to identify hotspots.</p></li>
+</ol>
+</div>
+<div id="computational-tools-and-software-for-data-analysis" class="section level3 hasAnchor" number="1.7.5">
+<h3><span class="header-section-number">1.7.5</span> Computational tools and software for data analysis<a href="sec1-7.html#computational-tools-and-software-for-data-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Modern data analysis is carried out using sophisticated computational tools and software that cater for different needs and levels of expertise. This includes</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Python</strong></p>
+<p>Python is the most popular high-level general-purpose programming language that can be used for a variety of tasks including data analysis. It is relatively easy to learn and has a range of libraries (pandas, NumPy and Matplotlib) that make it a favorite data analysis and visualization tool among data analysts and data scientists.</p></li>
+<li><p><strong>R programming language</strong></p>
+<p>R is an open source (free software) programming language developed specifically for statistical computing and visualization. Overtime, R has evolved to have a wide set of capabilities such as statistical software development and scientific text editing. It is a popular software among statisticians because it features tools such as hypothesis tests, correlation analysis, regression analysis, among many others.  </p></li>
+<li><p><strong>SQL (Structured Query Language)</strong></p>
+<p>SQL is a language for managing and manipulating data that is sored in databases.</p>
+<p>Note that it is not necessary to know programming in order to do data analysis. The following are the most popular non-programming data analysis tools used in industry:</p></li>
+<li><p><strong>Excel</strong></p>
+<p>Microsoft Excel is a spreadsheet that is most widely used for data analysis because it is easier to use. It offers a range of features for data collection (using the Sampling tool), exploration (using the Descriptive Analysis tool), modelling (using the Regression Analysis tool) and visualization (using the Charts tool).</p></li>
+<li><p><strong>SAS (Statistical Analysis System)</strong></p>
+<p>SAS is an advanced license-based software developed specifical for statistical data analysis and visualization. It is made up of procedures that can perform tasks such as data exploration (PROC MEANS), hypothesis testing (PROC TTEST) and many others.</p></li>
+<li><p><strong>Power BI</strong></p>
+<p>Power BI is a powerful business analytics tool developed by Microsoft. It enables users to create interactive visualizations with self-service business intelligence capabilities. Power BI is used to transform raw data into useful insights that are easy to understand through dashboards and reports.</p></li>
+<li><p><strong>Tableau</strong></p>
+<p>Tableau is a business analytics tool used to create interactive and shareable dashboards that show trends, variations and densities for important day-to-day business metrics through charts and graphs.</p></li>
+</ol>
+</div>
+<div id="exercises-to-section-1.7" class="section level3 hasAnchor" number="1.7.6">
+<h3><span class="header-section-number">1.7.6</span> Exercises to Section 1.7<a href="sec1-7.html#exercises-to-section-1.7" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Question 1</strong></p>
+<p>For each of the following case studies, specify which type of data analysis is appropriate:</p>
+<p>a. Eskom wants to reduce overall electricity waste and improve the stability of the national electricity grid. To achieve this, they want to propose energy-saving strategies to its customers.</p>
+<p>b. Absa has noticed a decrease in their corporate clients overtime. They want to know what could be behind this.</p>
+<p>c. In order to inform her decision on many warm clothing to bring on her trip to Essen, Germany in January, Renate wants to know what the average temperature will be in Essen, Germany in January.</p>
+<p>d. In order to inform their decision on the interest rate at their next meeting, the South African Reserve Bank wants to know what the inflation rate will be in the next 12 months [predictive].</p>
+<p>e. A general practitioner (GP) wants to know how many COVID-19 patients she treated between 2020 – 2022.</p>
+<p><strong>Question 2</strong></p>
+<p>For each of the following case studies, specify which data analysis tool (s) is/are appropriate:</p>
+<p>a. Given past data on electricity consumption, Eskom wants to determine the amount of electricity that will be consumed in the next winter season.</p>
+<p>b. A plant physiologist wants to understand dependence of plant growth on factors such as water availability, temperature and soil nutrient levels.</p>
+<p>c. Suppose that you want to study the response of a plant to changes in temperature, drought, salinity.</p>
+<p>d. A biochemist wants to classify proteins with similar structural characteristics.</p>
+<p>e. The World Health Organization (WHO) wants to identify geographic hotspots for the monkeypox disease.</p>
+<p>f. The WHO wants to understand public opinion about a new strain of virus from social media posts.</p>
+<p>g. In order to inform their decision on the interest rate, the South African Reserve Bank (SARB) wants to forecast the average value of the rand per US dollar in the next 12 months.</p>
+
+</div>
+</div>
+<!-- </div> -->
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sec1-6.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sec1-8.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/sphiwe-skhosana/STC137-Class-Notes/edit/main/01-DataLiteracy.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

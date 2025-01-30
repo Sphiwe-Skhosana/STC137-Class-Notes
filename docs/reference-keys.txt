@@ -39,7 +39,7 @@ types-of-data-visualizations
 components-of-a-data-visualization-tool
 advantages-and-disadvantages-of-data-visualization
 exercises-to-section-1.6
-data-analysis-foundations-and-concepts
+sec1-7
 the-data-analysis-process
 approaches-to-data-analysis
 uses-of-data-analysis-in-modern-society
