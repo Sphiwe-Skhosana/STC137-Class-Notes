@@ -144,6 +144,25 @@ The article talks about the growth in future copper demand from data centers as 
 
     All the monkeypox cases in the US are men. Thus, falsely, implying that men are more likely to get monkeypox (99% chance!).
 
+3.  A study is conducted to assess the effectiveness of a new weight loss drug across two age groups: young adults (20-30 years) and older adults (50-60 years). The results are as follows:
+
+```{r crosstab1, echo=FALSE, out.width="30%"}
+knitr::include_graphics("Figures-Chapter1/Simpson.png")
+```
+
+Based on the combined results, we can conclude that the drug was effective across the board. However, if we consider Young adults separate from Older adults, we can see that the drug was only effective for younger adults but not for Older adults. Thus, if we only look at the combined data without considering the age groups, we make the wrong conclusion that the drug is equally effective for all ages, while in reality the effectiveness varies between age groups. This reversal of conclusion based on combined and separate data is called **Simpson's Paradox**.
+
+4.  A study showed that 90% of drought-tolerant plants have a certain gene X. Moreover, 20% of plants with gene X are drought tolerant.
+
+ - Incorrect interpretation
+   
+    Menzi, a plant physiologist at the University of Cape Town, concludes that, since 90% of the drought-tolerant plants have gene X, having gene X causes or is a strong indicator that a plant is drought-tolerant. 
+ 
+ - Correct interpretation
+ 
+    Hlengiwe, a plant physiologist at the Univeristy of Pretoria, concludes that although gene X is common among drought-tolerant plants (shown by a large percentage 90%!), it is not a strong indicator of drought tolerance on its own. Other factors, such as environmental conditions or additional genes, may play a significant role.
+ 
+
 ### Exercises to Section 1.1
 
 **Question 1**
@@ -351,7 +370,6 @@ knitr::include_graphics("images/clipboard-2186963206.png")
 a.  Are the data cross-sectional or time-series?
 
 b.  Comment on the confidence of the South African consumer over time.
-
 
 **Question 7**
 
