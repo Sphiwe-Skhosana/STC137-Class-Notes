@@ -14,28 +14,8 @@ description: |
 link-citations: true
 graphics: true
 github-repo: "sphiwe-skhosana/STC137-Class-Notes"
-cover-image: "images/UP-NAS-logo.jpg"
-output:
-  bookdown::pdf_book:
-    includes:
-      in_header: preamble.tex
-  bookdown::html_document2:
-    css: styles.css
 ---
-```{=latex}
-\begin{titlepage}
-  \centering
-  \includegraphics[width=0.8\textwidth]{images/UP-NAS-logo.jpg} \\
-  \vspace{1cm}
-  {\Huge\textbf{Your Book Title}} \\
-  \vspace{0.5cm}
-  {\large\textit{Your Subtitle}} \\
-  \vspace{2cm}
-  {\Large\textbf{Your Name}} \\
-  \vspace{1cm}
-  {\large\today}
-\end{titlepage}
-```
+
 # Preface {.unnumbered}
 
 In modern society, whether you are reading a magazine, watching TV or scrolling through social media, you encounter statistics. You can't avoid it! Data collection, analysis and communication have become part of day-to-day activities. If you want to be an educated consumer and citizen, you need to understand how statistics are used and also misused in our daily lives. In other words, you need to be _data literate_. The purpose of this book is to give students, in any field of study, a conceptual and practical introduction to the field of statistics. The main focus is on the use of basic statistical techniques for, among others, _collecting data_, _understanding the data_ by exploring it, _analyzing the data_, _interpreting the data_ and _communicating the data_ to facilitate data-driven decision-making. The book is application oriented. The discussion of each technique is followed by application examples. This book is written with the needs of the practitioner in mind. The mathematical prerequisite is matric (Grade 12) level mathematics. 

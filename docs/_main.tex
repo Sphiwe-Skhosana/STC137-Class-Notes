@@ -70,17 +70,6 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
 \usepackage{booktabs}
-\usepackage{graphicx}
-\title{
-  \vspace{2cm}
-  \includegraphics[width=0.8\textwidth]{images/UP-NAS-logo.jpg} \\
-  \vspace{1cm}
-  \textbf{Your Book Title} \\
-  \vspace{0.5cm}
-  \large{Your Subtitle}
-}
-\author{Your Name}
-\date{\today}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -111,7 +100,7 @@
 
 \title{STC 137 Class Notes}
 \author{Department of Statistics, University of Pretoria}
-\date{Last Updated: 2025-01-30}
+\date{Last Updated: 2025-02-01}
 
 \begin{document}
 \maketitle
@@ -294,11 +283,9 @@ The article talks about the growth in future copper demand from data centers as 
 
   Of all the reported monkeypox cases in the US, 99\% of them were men.
 
-  \textbf{It doesn't mean that}
+  \textbf{It doesn't mean that:}
 
-  All the monkeypox cases in the US are men. Thus, falsely, implying that men are more likely to get
-
-  monkeypox (99\% chance!).
+  All the monkeypox cases in the US are men. Thus, falsely, implying that men are more likely to get monkeypox (99\% chance!).
 \end{enumerate}
 
 \subsection{Exercises to Section 1.1}\label{exercises-to-section-1.1}
@@ -601,11 +588,11 @@ The data management process is made up of the following components:
 
 \begin{itemize}
 \item
-  \textbf{Data collection} is the process of gathering the necessary data from the various data sources about the variables of interest for a particular study. This process typically involves a process referred to as sampling (see Chapter \ref{ch3}).
+  \textbf{Data collection} is the process of gathering the necessary data from the various data sources about the variables of interest for a particular study. This process typically involves a process referred to as sampling (see Chapter \ref{ch4}).
 \item
-  \textbf{Data organization} involves integrating different types of data, such as structured and unstructured data (see Section \ref{sec1-8}). This process is also referred to as data warehousing.
+  \textbf{Data organization} involves integrating different types of data, such as structured and unstructured data (see Chapter \ref{ch2}). This process is also referred to as data warehousing.
 \item
-  \textbf{Data preparation} involves cleaning and transforming raw data into a form that is suitable for further processing and analysis. This process is important for identifying and removing errors and duplicates in the data and also filling in missing data. This increases the accuracy and quality of the data. Data preparation is also known as data wrangling (see Chapter \ref{ch2}).
+  \textbf{Data preparation} involves cleaning and transforming raw data into a form that is suitable for further processing and analysis. This process is important for identifying and removing errors and duplicates in the data and also filling in missing data. This increases the accuracy and quality of the data. Data preparation is also known as data wrangling (see Chapter \ref{ch3}).
 \item
   \textbf{Data governance} involves, amongst others, the processes and practices used to ensure data protection, security and privacy. \textbf{Data protection} includes safeguarding the data and restoring important information in the event of say, a data breach. \textbf{Data security} refers to safeguarding the data against theft, corruption and unauthorized access. \textbf{Data privacy} refers to safeguarding the collection, use and disclosure of personal and sensitive data to comply with policy and regulation such as the Protection of Personal Information Act (POPIA) of South Africa.
 \item
@@ -1429,15 +1416,34 @@ f. The WHO wants to understand public opinion about a new strain of virus from s
 
 g. In order to inform their decision on the interest rate, the South African Reserve Bank (SARB) wants to forecast the average value of the rand per US dollar in the next 12 months.
 
-\chapter{Sources and types of data}\label{sec1-8}
+\chapter{Sources and types of data}\label{ch2}
 
 Add content here.
 
-\chapter{Data importing}\label{ch2}
+\chapter{Data Handling in Excel}\label{ch3}
 
-\section{Change decimal separator settings in Excel}\label{change-decimal-separator-settings-in-excel}
+In this chapter, you will be introduced to some of the fundamental skills needed to work with data in Excel. Excel is a powerful tool enabling us to organise, analyse and visualise data efficiently. With this chapter, you will not only enhance your ability to manage data but also lay the foundation for the more advanced data analysis.
+
+The concepts covered in this chapter is:
+
+\begin{itemize}
+\item
+  Data importing
+\item
+  Data cleaning
+\item
+  Data manipulation
+\end{itemize}
+
+\section{Data importing}\label{data-importing}
+
+In this subsection, the focus is on importing data into Excel from different sources such that we can start working with it. This is a crucial first step when doing data analysis.
+
+\subsection{Change decimal separator settings in Excel}\label{change-decimal-separator-settings-in-excel}
 
 On most devices, the default setting in Excel is to use a comma as a decimal separator. This causes some difficulties especially when working with .csv (comma separated value) files.
+
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1446,7 +1452,7 @@ On most devices, the default setting in Excel is to use a comma as a decimal sep
   Go to the \textbf{File} tab.
 \end{enumerate}
 
-\begin{center}\includegraphics[width=0.5\linewidth]{Figures/decimal_step1} \end{center}
+\begin{center}\includegraphics[width=0.6\linewidth]{Figures/decimal_step1} \end{center}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1456,7 +1462,7 @@ On most devices, the default setting in Excel is to use a comma as a decimal sep
   At the bottom of the menu at the left, select \textbf{More\ldots{}} and then \textbf{Options}.
 \end{enumerate}
 
-\begin{center}\includegraphics[width=0.5\linewidth]{Figures/Decimal_step2} \end{center}
+\begin{center}\includegraphics[width=0.6\linewidth]{Figures/Decimal_step2} \end{center}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1466,7 +1472,7 @@ On most devices, the default setting in Excel is to use a comma as a decimal sep
   The Excel Options window will open. Select \textbf{Advanced} on the menu at the left.
 \end{enumerate}
 
-\begin{center}\includegraphics[width=0.5\linewidth]{Figures/Decimal_step3} \end{center}
+\begin{center}\includegraphics[width=0.6\linewidth]{Figures/Decimal_step3} \end{center}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1476,7 +1482,7 @@ On most devices, the default setting in Excel is to use a comma as a decimal sep
   Under \textbf{Editing Options} there is a you can specify the \textbf{Decimal separator}. In the box, make sure to have a full stop (\texttt{.}) instead of a comma (\texttt{,}).
 \end{enumerate}
 
-\begin{center}\includegraphics[width=0.5\linewidth]{Figures/Decimal_step4} \end{center}
+\begin{center}\includegraphics[width=0.6\linewidth]{Figures/Decimal_step4} \end{center}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1486,9 +1492,9 @@ On most devices, the default setting in Excel is to use a comma as a decimal sep
   Click \textbf{OK} to save the changes.
 \end{enumerate}
 
-\section{Opening a .xlsx file in Excel}\label{opening-a-.xlsx-file-in-excel}
+\subsection{Opening a .xlsx file in Excel}\label{opening-a-.xlsx-file-in-excel}
 
-A file with the .xlsx extension is a normal Excel file. Such files can easily be opened in Excel without any problems. The following steps can be followed:
+A file with the \texttt{.xlsx} extension is a standard Excel file. Such files can be opened in Excel effortlessly. The following steps can be followed:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1497,7 +1503,9 @@ A file with the .xlsx extension is a normal Excel file. Such files can easily be
   Go to the \textbf{File} tab.
 \end{enumerate}
 
-\begin{center}\includegraphics[width=0.5\linewidth]{Figures/decimal_step1} \end{center}
+\begin{center}\includegraphics[width=0.6\linewidth]{Figures/decimal_step1} \end{center}
+
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1507,7 +1515,7 @@ A file with the .xlsx extension is a normal Excel file. Such files can easily be
   Select \textbf{Open}.
 \end{enumerate}
 
-\begin{center}\includegraphics[width=0.5\linewidth]{Figures/import_open_1} \end{center}
+\begin{center}\includegraphics[width=0.6\linewidth]{Figures/import_open_1} \end{center}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1517,7 +1525,7 @@ A file with the .xlsx extension is a normal Excel file. Such files can easily be
   Click on \textbf{Browse}.
 \end{enumerate}
 
-\begin{center}\includegraphics[width=0.5\linewidth]{Figures/import_open_2} \end{center}
+\begin{center}\includegraphics[width=0.6\linewidth]{Figures/import_open_2} \end{center}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1527,11 +1535,13 @@ A file with the .xlsx extension is a normal Excel file. Such files can easily be
   Navigate to the location of the file you want to import and select it.
 \end{enumerate}
 
-\section{Importing a .txt file in Excel}\label{importing-a-.txt-file-in-excel}
+\subsection{Importing a .txt file in Excel}\label{importing-a-.txt-file-in-excel}
 
-Some external programs can export data in a text (.txt) file. If you wish to do some data manipulation or work with the data in any other way, you will need to import the text file in Excel.
+Some external programs can export data in a text (\texttt{.txt}) file. If you wish to do some data manipulation or work with the data in any other way, you will need to import the text file in Excel.
 
 When data is stored in a text file, various symbols (known as delimiters) are used to indicate the separation between columns. These delimiters help structure the data so that tools like Excel or programming languages can interpret it accurately. Here's an explanation of common delimiters used in text files:
+
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1540,7 +1550,7 @@ When data is stored in a text file, various symbols (known as delimiters) are us
   Tabs
 \end{enumerate}
 
-\begin{center}\includegraphics[width=0.3\linewidth]{Figures/import_tabs} \end{center}
+\begin{center}\includegraphics[width=0.4\linewidth]{Figures/import_tabs} \end{center}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1550,7 +1560,7 @@ When data is stored in a text file, various symbols (known as delimiters) are us
   Commas
 \end{enumerate}
 
-\begin{center}\includegraphics[width=0.3\linewidth]{Figures/import_commas} \end{center}
+\begin{center}\includegraphics[width=0.4\linewidth]{Figures/import_commas} \end{center}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1560,7 +1570,7 @@ When data is stored in a text file, various symbols (known as delimiters) are us
   Semicolons
 \end{enumerate}
 
-\begin{center}\includegraphics[width=0.3\linewidth]{Figures/import_semicolon} \end{center}
+\begin{center}\includegraphics[width=0.4\linewidth]{Figures/import_semicolon} \end{center}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1570,9 +1580,9 @@ When data is stored in a text file, various symbols (known as delimiters) are us
   Pipes
 \end{enumerate}
 
-\begin{center}\includegraphics[width=0.3\linewidth]{Figures/import_pipes} \end{center}
+\begin{center}\includegraphics[width=0.4\linewidth]{Figures/import_pipes} \end{center}
 
-\subsection*{Example}\label{example}
+\subsubsection{Example}\label{example}
 
 You have obtained access to a data set available exclusively in text format, named \texttt{SACensus2022-Data-Text.txt}. To work with this data set, you need to import it into Excel. Follow these steps to complete the process:
 
@@ -1585,12 +1595,14 @@ You have obtained access to a data set available exclusively in text format, nam
 
 \begin{center}\includegraphics[width=0.7\linewidth]{Figures/import_1} \end{center}
 
+\newpage
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{1}
 \tightlist
 \item
-  A file selection window will appear. Navigate to the location of the file you want to import and select it. By default, the dropdown menu at the bottom right will show ``Text Files (.txt, .csv)'' as the file type. Ensure this option is selected.
+  A file selection window will appear. Navigate to the location of the file you want to import and select it. By default, the dropdown menu at the bottom right will show ``Text Files (\texttt{.txt}, \texttt{.csv})'' as the file type. Ensure this option is selected.
 \end{enumerate}
 
 \begin{center}\includegraphics[width=0.6\linewidth]{Figures/import_2} \end{center}
@@ -1605,6 +1617,8 @@ You have obtained access to a data set available exclusively in text format, nam
 
 \begin{center}\includegraphics[width=0.7\linewidth]{Figures/import_3} \end{center}
 
+\newpage
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{3}
@@ -1615,11 +1629,11 @@ You have obtained access to a data set available exclusively in text format, nam
 
 \begin{center}\includegraphics[width=0.7\linewidth]{Figures/import_4} \end{center}
 
-\textbf{NOTE:} The same process can be followed to open a .csv file in Excel. In the case where the settings for the decimal separator is correct, a .csv file can be opened using File \textgreater{} Open \textgreater{} Browse and selecting the desired file.
+\textbf{NOTE:} The same process can be followed to open a \texttt{.csv} file in Excel. In the case where the settings for the decimal separator is correct, a \texttt{.csv} file can be opened using \textit{File > Open > Browse} and selecting the desired file.
 
-\section{Importing data from a website}\label{importing-data-from-a-website}
+\subsection{Importing data from a website}\label{importing-data-from-a-website}
 
-It is also possible to import a data table into Excel from a website, saving you the effort to manually retype the information you need.
+It is also possible to import a data table into Excel directly from a website, saving you the effort to manually retype the information you need.
 
 Suppose you need to compile a list of all the districts in South Africa. You found such a list on Wikipedia and want to import it into Excel. Follow these steps:
 
@@ -1631,6 +1645,8 @@ Suppose you need to compile a list of all the districts in South Africa. You fou
 \end{enumerate}
 
 \begin{center}\includegraphics[width=0.7\linewidth]{Figures/web_1} \end{center}
+
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1652,15 +1668,17 @@ Suppose you need to compile a list of all the districts in South Africa. You fou
 
 \begin{center}\includegraphics[width=0.7\linewidth]{Figures/web_3} \end{center}
 
-\chapter{Data cleaning}\label{data-cleaning}
+\section{Data cleaning}\label{data-cleaning}
 
-Data cleaning is an essential process of identifying and correcting inconsistencies and inaccuracies within a dataset. This process improves the quality, accuracy and reliability for the data.
+Data cleaning is an essential process of identifying and correcting inconsistencies and inaccuracies within a dataset. This process improves the quality, accuracy and reliability for the data. In fact, a data analyst spends a lot of time on preparing the data for analysis. It is very rare that the raw data is in the correct format and without any errors.
 
-The ensure that the data set is cleaned and refined before starting an analysis is crucial to assure that the analysis is accurate and therefore that better-informed decisions can be deduced from the analysis. When statistical analysis is performed on data that isn't properly cleaned, the integrity of the results and findings are compromised and not trustworthy.
+Data cleaning is the process of transforming raw data into consistent data that can be analysed.
+
+To ensure that the data set is cleaned and refined before starting an analysis is crucial to assure that the analysis is accurate and therefore that better-informed decisions can be deduced from the analysis. When statistical analysis is performed on data that isn't properly cleaned, the integrity of the results and findings are compromised and not trustworthy.
 
 Therefore, the analysis is only as reliable as the data that is used for the analysis, making data cleaning an essential step.
 
-The specific data cleaning techniques that one will use always depends on the application and the analysis needed. Here is a list of some data cleaning techniques:
+The specific data cleaning techniques that one will use always depends on the application at hand and the analysis needed. Here is a list of some data cleaning techniques:
 
 \begin{itemize}
 \item
@@ -1677,13 +1695,13 @@ The specific data cleaning techniques that one will use always depends on the ap
   Ensuring that the data is in a consistent format.
 \end{itemize}
 
-\section*{Example: Data cleaning in Excel}\label{example-data-cleaning-in-excel}
+\subsection{Example: Data cleaning in Excel}\label{example-data-cleaning-in-excel}
 
 You are given a data set containing information on employees working at Orion Sales. This data set is named \texttt{orion\_sales\_staff.xlsx}. Once you have opened the data set in Excel, you come across some problems with the data set that requires data cleaning.
 
 \begin{center}\includegraphics[width=0.7\linewidth]{Figures/cleaning_overview} \end{center}
 
-\subsection*{Correct the formatting of a cell}\label{correct-the-formatting-of-a-cell}
+\subsubsection*{Correct the formatting of a cell}\label{correct-the-formatting-of-a-cell}
 
 In the example above, the values in the ``Employee Annual Salary'' column are seen as text. This is clearly visible with the left alignment of the values in the cell. Because annual salary is a numerical value, the formatting needs to be corrected so that Excel can handle the values as numbers.
 
@@ -1732,7 +1750,7 @@ This can be done by navigating to the ``Number'' group on the Home tab in Excel 
 
 \begin{center}\includegraphics[width=0.4\linewidth]{Figures/cleaning_formatting_4} \end{center}
 
-\subsection*{Inconsistent naming of categories}\label{inconsistent-naming-of-categories}
+\subsubsection*{Inconsistent naming of categories}\label{inconsistent-naming-of-categories}
 
 In column C of the example above, the categories are not named consistently. This column consists of the gender of each employee. By glancing at the screenshot of the first few lines of the data, it can be seen that the categories are labelled as ``M'' (for male) and ``F'' (for female). However, in line 7, the entry is ``Male''. There can be more occurrences like this further in the data. Having inconsistent naming of categories is not ideal as this will cause problems when you start to work with the data. For example, when constructing frequency tables or barplots.
 
@@ -1797,13 +1815,15 @@ This can be corrected with the following steps:
 
 \begin{center}\includegraphics[width=0.7\linewidth]{Figures/cleaning_categories_6} \end{center}
 
-\subsection*{Inconsistent capitalisations}\label{inconsistent-capitalisations}
+\subsubsection*{Inconsistent capitalisations}\label{inconsistent-capitalisations}
 
 In the column named ``Home Town'', there are a few observations where the name of the town is written in all capital letters, all small letters or the second word is written with a small letter instead of a capital letter.
 
 The best and quickest way to correct this is to create a new column and use built-in Excel functions to do the correction. Let us call this column ``Home Town cleaned''.
 
 Next, we will introduce three new functions that will alter how the names of the towns are written.
+
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1842,7 +1862,7 @@ Next, we will introduce three new functions that will alter how the names of the
 
 In the same column, some of the town names are misspelled. This can be corrected similarly to how you corrected the inconsistencies in the category names.
 
-\subsection*{Correcting the date format}\label{correcting-the-date-format}
+\subsubsection*{Correcting the date format}\label{correcting-the-date-format}
 
 The columns ``Employee Birth Date'', ``Employee Hire Date'' and ``Employee Termination Date'' are examples of columns containing dates.
 
@@ -1850,19 +1870,199 @@ The dates can be corrected by selecting all the columns containing dates, then s
 
 \begin{center}\includegraphics[width=0.4\linewidth]{Figures/dates} \end{center}
 
-\section*{Exercises}\label{exercises}
+\subsection{Missing data}\label{missing-data}
+
+Missing data occurs when there is no value for a variable of a certain observation. This is a common issue in data analysis and can arise for various reasons. Missing data can have a significant effect on data analysis and conclusions drawn from such analysis.
+
+Missing data often results from non-response. For example, in a survey, a respondent may leave a question unanswered. This usually happens in the case of sensitive information such as salary. Another reason for missing data is caused by errors made by the researcher during data collection or entry.
+
+\textbf{Types of missing data:}
+
+\begin{itemize}
+\item
+  \textbf{Missing completely at random (MCAR)}: With this type of missing data, the probability of an observation being missing is entirely random and independent of any other variable in the data set. For example, at the end of a customer service call, customers might be asked to complete a satisfaction survey. Some individuals may choose not to respond which causes missing data.
+\item
+  \textbf{Missing at random (MAR)}: With this type of missing data, the probability of an observation being missing depends on the values of other variables in the data set but not the missing variable itself. For example, after visiting a dermatology clinic, customers might be asked to fill in a survey on their gender and skincare routine. If females are more likely to respond, the missing data can be explained by the gender of the individual.
+\item
+  \textbf{Missing not at random (MNAR)}: With this type of missing data, the probability of a data point being missing is related to the missing value itself. For example, some individuals might prefer not to answer sensitive information on a survey such as their salary.
+\end{itemize}
+
+\textbf{Some methods for handling missing data:}
+
+\begin{itemize}
+\item
+  \textbf{Imputation}: In some cases, the missing data can be replaced with estimated values. Some common approaches include filling in missing values with the mean, median or mode of the variable.
+\item
+  \textbf{Interpolation}: This method of handling missing data is to fill in missing data based on the adjacent datapoints. This is a popular method to use in time series data.
+\item
+  \textbf{Deletion}: In some cases, it may be appropriate to remove the variable entirely from the analysis when the variable has a high proportion of missing values. Another method is to delete an entire observation if one or more of the variables contains missing data.
+\item
+  \textbf{Model-based approaches}: With this method predictive models are used to impute the missing values in the data set based on other variables in the data set.
+\end{itemize}
+
+When working with data that contains missing values, caution should always be taken. The type of missing data as well as the analysis at hand should guide the data analyst on how to handle the missing data.
+
+\subsubsection{Example}\label{example-1}
+
+You are given a data set called \texttt{Diabetes\ Missing\ Data.xlsx} which contains vital measurements of 30 patients. Some of the data is missing and you are required to explore this in Excel.
+
+\begin{center}\includegraphics[width=0.8\linewidth]{Figures/missing} \end{center}
+
+\subsubsection*{Filter a column for missing values}\label{filter-a-column-for-missing-values}
+
+Missing values can be represented in various ways, such as \texttt{NA}, \texttt{N/A} or as a blank cell.
+
+In this example, we will filter the \texttt{Diastolic\_BP} column to display only the observations with missing values for this variable. Follow these steps:
+
+\newpage
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select all the columns of the data set. In the \textbf{Editing} group on the \textbf{Home} tab, click on \textbf{Sort \& Filter} and then on ``Filter''. This will allow you to filter the data by a specific column.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.8\linewidth]{Figures/missing_1_1} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Click on the Filter icon next to the column name which will open up a menu. Untick all the tick boxes except the one labelled ``(blank)''. Then click OK.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.4\linewidth]{Figures/missing_1_2} \end{center}
+
+\newpage
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  This will then only display the observations with a missing value for this variable.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.8\linewidth]{Figures/missing_1_3} \end{center}
+
+\subsubsection*{Use conditional formatting to highlight cells with missing values}\label{use-conditional-formatting-to-highlight-cells-with-missing-values}
+
+In the case where you simply want to highlight the cells with missing values, conditional formatting can be used. For this example, we will highlight the missing values in the \texttt{Skin\_Fold} variable. Follow these steps:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select the column on which you want to apply the conditional formatting. Navigate to the \textbf{Home} tab, click on \textbf{Conditional Formatting} and choose \textbf{New Rule}.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.8\linewidth]{Figures/missing_2_1} \end{center}
+
+\newpage
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  In the New Formatting Rule dialog box, select \textbf{Format only cells that contain}. Then at the dropdown menu under \textbf{Format only cells with:}, select ``Blanks''. By clicking on the \textbf{Format} button, you can specify the formatting style for the highlighted cells.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.4\linewidth]{Figures/missing_2_2} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  As a result, all the cells with missing values will be highlighted.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.8\linewidth]{Figures/missing_2_3} \end{center}
+
+\subsubsection*{Find and replace missing values}\label{find-and-replace-missing-values}
+
+When you want to replace all the missing values of a certain variable with the same value, \textbf{Find \& Replace} can be used. In this example, replace all the missing values from the \texttt{Serum\_Insulin} variable with the word ``Missing''. Follow the following steps:
+
+\newpage
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select the desired column. Navigate to the \textbf{Home} tab, click on \textbf{Find \& Select} and choose \textbf{Replace}.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.8\linewidth]{Figures/missing_3_1} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  In the Find \& Replace dialog box, leave the \textbf{Find what} field blank to target all blank cells. Enter the word ``Missing'' in the \textbf{Replace with} field. Click on \textbf{Replace All} to apply this change to the entire column.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.5\linewidth]{Figures/missing_3_2} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  As a result, all the cells that were empty previously will now contain the word ``Missing''.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.8\linewidth]{Figures/missing_3_3} \end{center}
+
+\subsection{Duplicate values}\label{duplicate-values}
+
+When working with a real-world data set, you may encounter duplicated records. Such records do not provide additional information and can slow down the analysis process or lead to inaccuracies. Therefore, it is best to remove such observations.
+
+To remove duplicated rows in Excel, the following steps can be followed:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Select the entire data set in Excel. Navigate to the \textbf{Data} tab and in the \textbf{Data Tools} group, click on the \textbf{Remove Duplicates} icon.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.8\linewidth]{Figures/duplicated_1} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  In the Remove duplicates dialog box, you can select the columns where duplicates should be identified. In most cases, it will be appropriate to select all the columns to ensure rows are entirely unique. Click \textbf{OK} to remove all the duplicates.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.4\linewidth]{Figures/duplicated_2} \end{center}
+
+\subsection{Exercises}\label{exercises}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
   Explain why data cleaning is an essential step for the analysis.
 \item
+  What are the common types of issues that you can encounter in a real-word data set?
+\item
+  Why is it necessary to remove duplicate records?
+\item
   List some data cleaning techniques and provide an example of where such technique might be necessary.
 \item
   Name the functions in Excel that can be used to change the capitilisation of words in Excel.
+\item
+  Why is it important to standarise text entries (for example, converting ``Yes'' and ``yes'' to the same format) in a data set? Can you think of an example where inconsistencies in text entries can affect analysis?
+\item
+  What are some common reasons for missing data in a data set? Provide some examples of where missing data occurs.
 \end{enumerate}
 
-\chapter{Data manipulation}\label{data-manipulation}
+\section{Data manipulation}\label{data-manipulation}
 
 Data manipulation is the process of adjusting data so that it is easier to work with and more organised. Data manipulation is a crucial part of the analytical process because it allows statisticians to prepare data in a format that meets the requirements of specific analyses. The specific data manipulation needs depends on the application at hand as well as the statistical analysis that is required. Proper data manipulation enhances the interpretability of data, ensures accuracy in computations, and enables the effective application of statistical methods. Without it, raw data might obscure patterns, relationships, and insights that are vital for informed decision-making.
 
@@ -1885,17 +2085,15 @@ Data manipulation may include the following:
   Pivot tables in Excel to reshape the data set.
 \end{itemize}
 
-\section{Example: Super Animals}\label{example-super-animals}
+\subsection{Example: Super Animals}\label{example-super-animals}
 
 A few years ago, the Super Animal Cards were available at Pick n Pay stores. These collectible cards feature illustrations and fascinating facts about various animals. The aim was to spark curiosity and environmental awareness among children. Each card highlights a different animal's unique characteristics, habitat and conservation status.
 
-{[}ADD PICTURES{]}
-
-\begin{center}\includegraphics[width=0.2\linewidth]{Figures/super-animals} \includegraphics[width=0.2\linewidth]{Figures/super-animals2} \end{center}
+\begin{center}\includegraphics[width=0.4\linewidth]{Figures/super-animals} \includegraphics[width=0.4\linewidth]{Figures/super-animals2} \end{center}
 
 The information from these cards are collected in a data set called \texttt{super-animals.xlsx}.
 
-\subsection*{The VLOOKUP function}\label{the-vlookup-function}
+\subsubsection*{The VLOOKUP function}\label{the-vlookup-function}
 
 The VLOOKUP function in Excel is a powerful tool to make data more descriptive and meaningful by referencing values from another table. In this example, the conservation status of animals is initially indicated with numeric values (1, 2, 3, and 4) in the dataset. To make this information more interpretable, we use a lookup table containing the corresponding descriptions for each number:
 
@@ -1954,7 +2152,7 @@ In this example, the process of using the VLOOKUP function to map descriptive co
 
 \begin{center}\includegraphics[width=0.7\linewidth]{Figures/manipulation_1_formula} \end{center}
 
-\subsection*{Conditional formatting}\label{conditional-formatting}
+\subsubsection*{Conditional formatting}\label{conditional-formatting}
 
 Conditional formatting is a tool in Excel that allows users to automatically apply formatting to certain cells based on specified criteria. The formatting can be colours, icons, or many others. You can create rules based on predefined options or custom formulas.
 
@@ -1968,6 +2166,8 @@ In the example of the Super Animal Cards, conditional formatting can be used to 
 \end{enumerate}
 
 \begin{center}\includegraphics[width=0.7\linewidth]{Figures/manipulation_2_1} \end{center}
+
+\newpage
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1989,6 +2189,8 @@ In the example of the Super Animal Cards, conditional formatting can be used to 
 
 \begin{center}\includegraphics[width=0.4\linewidth]{Figures/manipulation_2_3} \end{center}
 
+\newpage
+
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{3}
@@ -1999,38 +2201,428 @@ In the example of the Super Animal Cards, conditional formatting can be used to 
 
 \begin{center}\includegraphics[width=0.4\linewidth]{Figures/manipulation_2_4} \end{center}
 
-\subsection*{Numerical calculations in Excel}\label{numerical-calculations-in-excel}
+\subsubsection*{Numerical calculations in Excel}\label{numerical-calculations-in-excel}
 
 Excel can also perform basic numerical calculations, such as addition, subtraction, multiplication, and division. These operations can be executed directly in cells using simple formulas:
 
 \begin{itemize}
 \item
-  Addition: \texttt{=A1\ +\ B1} adds the values in cells A1 and B1.
+  Addition: \texttt{=\ A1\ +\ B1} adds the values in cells A1 and B1.
 \item
-  Subtraction: \texttt{=A1\ -\ B1} subtracts the value in cells B1 from A1.
+  Subtraction: \texttt{=\ A1\ -\ B1} subtracts the value in cell B1 from the value in cell A1.
 \item
-  Multiplication: \texttt{=A1\ *\ B1} multiplies the values in cells A1 and B1.
+  Multiplication: \texttt{=\ A1\ *\ B1} multiplies the values in cells A1 and B1.
 \item
-  Division: \texttt{=A1\ /\ B1} divides the value in cell A1 by the value in cell B1.
+  Division: \texttt{=\ A1\ /\ B1} divides the value in cell A1 by the value in cell B1.
 \end{itemize}
 
-These formulas can also combine multiple operations using parentheses for clarity and order of precedence. For example, \texttt{=(A1\ +\ B1)\ *\ C1} first adds the values in cells A1 and B1, then multiplies the result by the value in cell C1.
+These formulas can also combine multiple operations using parentheses for clarity and order of precedence. For example, \texttt{=\ (A1\ +\ B1)\ *\ C1} first adds the values in cells A1 and B1, then multiplies the result by the value in cell C1.
 
 In the example of the Super Animal Cards, we can convert the speed from kilometers per hour to miles per hour by multiplying the values in column H with 0.621371.
 
 \begin{center}\includegraphics[width=0.7\linewidth]{Figures/manipulation_3_1} \end{center}
 
-\section{Example: Orion sales}\label{example-orion-sales}
+\subsubsection*{Constructing crosstabulations}\label{constructing-crosstabulations}
 
-\subsection*{Combining data sets}\label{combining-data-sets}
+The PivotTable tool in Excel is a powerful feature for constructing crosstabulations involving two or more variables. In this example, we will consider two cases:
 
-\subsection*{Splitting columns}\label{splitting-columns}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  When both variables are categorical.
+\item
+  When one variable is categorical and the other is numerical.
+\end{enumerate}
 
-\subsection*{Combining columns}\label{combining-columns}
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Case 1: Create a crosstabulation of the species and the category of the super animal card.}
+\end{itemize}
 
-\chapter{Sampling and Collecting data}\label{ch3}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Navigate to the \textbf{Insert} tab and select \textbf{PivotTable}.
+\end{enumerate}
 
-Add content here.
+\begin{center}\includegraphics[width=0.8\linewidth]{Figures/pivot_1} \end{center}
+
+\newpage
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  The Create PivotTable wizard will appear, where you can review the data range that is automatically detected and choose where the PivotTable will be created. For this example, select \textbf{New Worksheet}. Click \textbf{OK}.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.6\linewidth]{Figures/pivot_2} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  A new worksheet will open up with the PivotTable Fields on the right.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.8\linewidth]{Figures/pivot_3} \end{center}
+
+\newpage
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Using the PivotTable Fields menu, the Pivot Table can be set up. Drag the column headings to their desired positions. Drag ``Category'' to the Rows area. Drag ``Species'' to the Columns area. Drag ``Animal'' to the Values area to count the number of animals in each category.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.8\linewidth]{Figures/pivot_4} \end{center}
+
+\begin{itemize}
+\item
+  \textbf{Case 2: Create a crosstabulation of the Species and the Size of the animal.}
+
+  \begin{enumerate}
+  \def\labelenumi{\arabic{enumi}.}
+  \item
+    Create the Pivot Table as in steps 1 and 2 above.
+  \item
+    Drag the column headings to their desired positions. Drag ``Species'' to the Rows area. Drag ``Size'' to the Columns area. Drag ``Animal'' to the Values area.
+  \end{enumerate}
+\end{itemize}
+
+\begin{center}\includegraphics[width=0.8\linewidth]{Figures/pivot_5} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Since ``Size'' is a numerical variable, it must be grouped into ranges. This can be done by selecting the cell with the first value of the ``Size'' variable, right-click and select \textbf{Group} from the menu.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.6\linewidth]{Figures/pivot_6} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  In the Grouping window, specify the desired range settings.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.4\linewidth]{Figures/pivot_7} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  The PivotTable will now display a neater and more interpretable corsstabulation for species by grouped sizes.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.8\linewidth]{Figures/pivot_8} \end{center}
+
+\subsection{Example: Employees}\label{example-employees}
+
+You are employed as a data analyst for a company and have been provided with a data set containing details about employees and the projects they are working on.
+
+\begin{center}\includegraphics[width=0.8\linewidth]{Figures/combine_1} \end{center}
+
+In this example, we will illustrate how to:
+
+\begin{itemize}
+\item
+  Combine two columns in Excel into one.
+\item
+  Splitting one column into two columns.
+\end{itemize}
+
+\subsubsection*{Combining columns}\label{combining-columns}
+
+To combine the information of two columns into one, we will make use of the \texttt{CONCAT} function. This function is used in Excel to join, or concatenate, two or more text strings into a single string. In this example, we will join the name and the surname of the employees into a single column. The syntax for the \texttt{CONCAT} function is:
+
+\texttt{=CONCAT(text1,\ {[}text2{]},\ ...)}
+
+where \texttt{text1,\ text2,...} are text strings, cell references or ranges to be combined separated by commas. It is important to note that the \texttt{CONCAT} function does not automatically add any deliminators such as spaces or commas between the text strings. This must be explicitly added as part of the list of arguments.
+
+For this example, if we want to combine the text in the ``emp\_name'' and ``emp\_surname'' variables, the following steps can be followed:
+
+\newpage
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Insert an empty column where the combined variable will be placed. To do this, select the column where the new column should appear before, right-click and select \textbf{Insert} from the menu. This will create an empty column which you can name ``emp\_name\_surname''.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.6\linewidth]{Figures/combine_2} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  In the first cell of the new column, use the \texttt{CONCAT} function to combine the name of the employee (in column B) with their surname (in column C). Remember to add a space between the name and the surname!
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.8\linewidth]{Figures/combine_3} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  The result of the \texttt{CONCAT} function is as follows:
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.8\linewidth]{Figures/combine_4} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  Copy the formula down the rest of the columns to combine the names and the surnames for all the employees in the data set.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.8\linewidth]{Figures/combine_5} \end{center}
+
+\subsubsection*{Splitting columns}\label{splitting-columns}
+
+To split columns in Excel, the \textbf{Text to Columns} functionality can be used. This functionality is used to split data in a single column into multiple columns based on either a specific deliminator or a fixed width. This is particular useful when the combined data needs to be separated into distinct fields for easier analysis or formatting.
+
+For this example, the project name and the client name are displayed in a single column, separated by a semicolon (\texttt{;}). To split them into two columns, follow these steps:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Again, add an empty column next to the column which requires splitting. Then, select the column with the combined information. Navigate to the \textbf{Data} tab and select \textbf{Text to columns}.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.8\linewidth]{Figures/split_1} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  The Convert Text to Columns Wizard will open. In this case, the data is ``Delimited'' because the information is separated with a semicolon. This is often automatically detected. Click \textbf{Next}.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.6\linewidth]{Figures/split_2} \end{center}
+
+\newpage
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  In the next step, select the appropriate deliminator, in this case, ``semicolon''. You can preview the split data in the ``Data Preview'' section to confirm the results. Click \textbf{Next}.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.6\linewidth]{Figures/split_3} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{3}
+\tightlist
+\item
+  In the final step, choose the data format for each column. For this example, you can keep the default settings. Click \textbf{Finish}.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.6\linewidth]{Figures/split_4} \end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  To combined data will now be split into two separate columns: one for the project name and one for the client name.
+\end{enumerate}
+
+\begin{center}\includegraphics[width=0.8\linewidth]{Figures/split_5} \end{center}
+
+\subsection{Basic Excel functions}\label{basic-excel-functions}
+
+Excel has many built-in functions that can assist in doing more numerical calculations, creating new variables in a data set as well as summarising data.
+
+\subsubsection*{Summation}\label{summation}
+
+The \texttt{SUM} function can be used to calculate the total of a range of numbers. The syntax for the \texttt{SUM} function is:
+
+\texttt{=SUM(number1,\ number2,\ ...)} or \texttt{=SUM(range)}
+
+For example, \texttt{SUM(A1:A10)} will return the sum of all the numbers in cells A1 to A10.
+
+\subsubsection*{Averaging}\label{averaging}
+
+The arithmetic mean of a range of values can be calculated with the \texttt{AVERAGE} function. The syntax for the \texttt{AVERAGE} function is:
+
+\texttt{=AVERAGE(number1,\ number2,\ ...)} or \texttt{=AVERAGE(range)}
+
+For example, \texttt{AVERAGE(A1:A10)} will return the average of all the numbers in cells A1 to A10.
+
+\subsubsection*{Counting}\label{counting}
+
+Counting functions can be useful for analysis the structure of the data set. Here we will consider three counting functions popularly used in Excel:
+
+\begin{itemize}
+\tightlist
+\item
+  The \texttt{COUNT} function counts the number of cells containing a numerical value. The syntax for the \texttt{COUNT} function is:
+\end{itemize}
+
+\texttt{=COUNT(value1,\ value2,\ ...)} or \texttt{=COUNT(range)}
+
+For example, \texttt{COUNT(A1:A10)} will return the number of cells containing a numerical value in cells A1 to A10.
+
+\begin{itemize}
+\tightlist
+\item
+  The \texttt{COUNTA} function counts the number of non-empty cells. The cells can contain numerical values, text or values from any other data type. The syntax for the \texttt{COUNTA} function is:
+\end{itemize}
+
+\texttt{=COUNTA(value1,\ value2,\ ...)} or \texttt{=COUNTA(range)}
+
+For example, \texttt{COUNTA(A1:A10)} will return the number of non-empty cells in the range A1 to A10.
+
+\begin{itemize}
+\tightlist
+\item
+  The \texttt{COUNTBLANK} function counts the number of empty cells. The syntax for the \texttt{COUNTBLANK} function is:
+\end{itemize}
+
+\texttt{=COUNTBLANK(value1,\ value2,\ ...)} or \texttt{=COUNTBLANK(range)}
+
+For example, \texttt{COUNTBLANK(A1:A10)} will return the number of empty cells in the range A1 to A10.
+
+\subsubsection*{Minimum and maximum values}\label{minimum-and-maximum-values}
+
+The \texttt{MIN} and \texttt{MAX} functions can be used to identify the smallest and the largest value in a range. The syntax for the \texttt{MIN} and the \texttt{MAX} functions is:
+
+\begin{itemize}
+\item
+  \texttt{=MIN(number1,\ number2,\ ...)} or \texttt{=MIN(range)}
+\item
+  \texttt{=MAX(number1,\ number2,\ ...)} or \texttt{=MAX(range)}
+\end{itemize}
+
+For example, \texttt{MIN(A1:A10)} will return the smallest value in the range A1 to A10 and \texttt{MAX(A1:A10)} will return the largest value in the range A1 to A10.
+
+\subsubsection*{IF function}\label{if-function}
+
+The \texttt{IF} function performs a logical test and returns one value if the condition is true and another value if the condition is false. The syntax for the \texttt{IF} function is:
+
+\texttt{=IF(logical\_test,\ value\_if\_true,\ value\_if\_false)}
+
+\begin{itemize}
+\item
+  \texttt{logical\_test}: Any value or expression that can be evaluated to TRUE or FALSE.
+\item
+  \texttt{value\_if\_true}: The value that is returned if \texttt{logical\_test} is TRUE.
+\item
+  \texttt{value\_if\_false}: The value that is returned if \texttt{logical\_test} is FALSE.
+\end{itemize}
+
+For example, \texttt{=IF(A1\textgreater{}50,\ "Pass",\ "Fail")} will return ``Pass'' if the value in cell A1 is greater than 50; otherwise it will return ``Fail''.
+
+\subsubsection*{Countif function}\label{countif-function}
+
+The number of cells than meet a certain condition can be counted with the \texttt{COUNTIF} function. The syntax for the \texttt{COUNTIF} function is:
+
+\texttt{COUNTIF(range,\ criteria)}
+
+\begin{itemize}
+\item
+  \texttt{range}: The range of cells from which you want to count non-empty cells.
+\item
+  \texttt{criteria}: The condition in the form of a number, expression or text that defines which cells will be counted.
+\end{itemize}
+
+For example, \texttt{=COUNTIF(A1:A10,\ "\textgreater{}10")} will count all the cells from A1 to A10 which contains a numerical value greater than 10.
+
+\subsubsection*{Sumif function}\label{sumif-function}
+
+The \texttt{SUMIF} function is used to sum the values in a range that meets a specified criteria. The syntax for the \texttt{SUMIF} function is:
+
+\texttt{=SUMIF(range,\ criteria,\ {[}sum\_range{]})}
+
+\begin{itemize}
+\item
+  \texttt{range}: The range of cells you want to evaluate.
+\item
+  \texttt{criteria}: The condition or criteria in the form of a number, expression or text that defines which cells will be added.
+\item
+  \texttt{sum\_range} (optional): The actual cells to sum. If this argument is not specified, the cells in \texttt{range} will be used.
+\end{itemize}
+
+For example, suppose you have a data set with two columns, where column A contains the product category and column B contains the number of sales.
+
+\begin{itemize}
+\tightlist
+\item
+  To sum the sales for ``Electronics'', you can use the formula:
+\end{itemize}
+
+\texttt{=SUMIF(A1:A10,\ "Electronics",\ B1:B10)}
+
+where Excel will look for the word ``Electronics'' in the range A1 to A10 and the corresponding sales values in B1 to B10 will be summed.
+
+\begin{itemize}
+\tightlist
+\item
+  To sum all the sale values greater than 500, you can use the formula:
+\end{itemize}
+
+\texttt{=SUMIF(B1:B10,\ "\textgreater{}500")}
+
+where Excel will sum all the sales values greater than 500 in the range B1 to B10.
+
+\subsubsection*{Absolute cell referencing}\label{absolute-cell-referencing}
+
+In Excel, you can use absolute cell referencing to ensure that the formula keeps referencing to the same cell or range of cells regardless or where the formula is copied or moved. The syntax for absolute cell referencing is: \texttt{\$Column\$Row}. For example, \texttt{\$A\$1} refers to cell A1 and this reference will not change regardless of where the formula is copied in the Excel sheet.
+
+Absolute cell referencing is useful in scenarios where you need to repeatedly reference the same cell or range of cells. Common examples include:
+
+\begin{itemize}
+\item
+  \textbf{Using a constant value}: When applying a discount stored in a specific cell across multiple calculations.
+\item
+  \textbf{Referencing a total}: Referring to a grand total cell in calculations.
+\end{itemize}
+
+\subsection{Exercises}\label{exercises-1}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Describe a scenario where you might use the \textbf{Text to Columns} functionality in Excel.
+\item
+  Explain the difference between using a delimiter and using fixed width in the \textbf{Text to Columns} tool. Provide examples for each.
+\item
+  What is the difference between \texttt{COUNT}, \texttt{COUNTA}, and \texttt{COUNTBLANK} functions? Provide an example for each.
+\item
+  You are analysing sales data, and the column containing the product names has been combined with the client names, separated by a comma. Describe how you would use Excel to split this column into two separate columns.
+\item
+  Explain how the \texttt{CONCAT} function can be used to combine data from two columns. Provide an example of when this might be useful.
+\item
+  Explain the importance of absolute cell referencing in Excel. Provide an example of when it would be necessary.
+\item
+  Describe a situation where combining data from two separate columns would be helpful for analysis. Which function in Excel would you use, and why?
+\end{enumerate}
+
+\chapter{Sampling}\label{ch4}
+
+Content coming soon\ldots{}
 
   \bibliography{book.bib,packages.bib}
 

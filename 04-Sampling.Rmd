@@ -1,0 +1,8 @@
+---
+output:
+  html_document: default
+---
+
+# Sampling {#ch4}
+
+Content coming soon...

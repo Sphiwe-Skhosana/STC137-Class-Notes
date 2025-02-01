@@ -140,11 +140,9 @@ The article talks about the growth in future copper demand from data centers as 
 
     Of all the reported monkeypox cases in the US, 99% of them were men.
 
-    **It doesn’t mean that**
+    **It doesn’t mean that:**
 
-    All the monkeypox cases in the US are men. Thus, falsely, implying that men are more likely to get
-
-    monkeypox (99% chance!).
+    All the monkeypox cases in the US are men. Thus, falsely, implying that men are more likely to get monkeypox (99% chance!).
 
 ### Exercises to Section 1.1
 
@@ -272,9 +270,9 @@ These are the characteristics of interest about the elements. The data set in Ta
 
 These are the sets of measurements obtained from each element. From Table 1, the first element (Eastern Cape) has the following measurements:
 
-|     |         |        |     |     |     |     |     |
-|-----|---------|--------|-----|-----|-----|-----|-----|
-| 1   | 7230204 | 34.3   | 90  | 27  | WC  | 7.2 | 7.2 |
+|     |         |      |     |     |     |     |     |
+|-----|---------|------|-----|-----|-----|-----|-----|
+| 1   | 7230204 | 34.3 | 90  | 27  | WC  | 7.2 | 7.2 |
 
 The second element (Free State) has the following measurements:
 
@@ -387,11 +385,11 @@ Data management is the practice of collecting, organizing, preparing, protecting
 
 The data management process is made up of the following components:
 
--   **Data collection** is the process of gathering the necessary data from the various data sources about the variables of interest for a particular study. This process typically involves a process referred to as sampling (see Chapter \@ref(ch3)).
+-   **Data collection** is the process of gathering the necessary data from the various data sources about the variables of interest for a particular study. This process typically involves a process referred to as sampling (see Chapter \@ref(ch4)).
 
--   **Data organization** involves integrating different types of data, such as structured and unstructured data (see Section \@ref(sec1-8)). This process is also referred to as data warehousing.
+-   **Data organization** involves integrating different types of data, such as structured and unstructured data (see Chapter \@ref(ch2)). This process is also referred to as data warehousing.
 
--   **Data preparation** involves cleaning and transforming raw data into a form that is suitable for further processing and analysis. This process is important for identifying and removing errors and duplicates in the data and also filling in missing data. This increases the accuracy and quality of the data. Data preparation is also known as data wrangling (see Chapter \@ref(ch2)).
+-   **Data preparation** involves cleaning and transforming raw data into a form that is suitable for further processing and analysis. This process is important for identifying and removing errors and duplicates in the data and also filling in missing data. This increases the accuracy and quality of the data. Data preparation is also known as data wrangling (see Chapter \@ref(ch3)).
 
 -   **Data governance** involves, amongst others, the processes and practices used to ensure data protection, security and privacy. **Data protection** includes safeguarding the data and restoring important information in the event of say, a data breach. **Data security** refers to safeguarding the data against theft, corruption and unauthorized access. **Data privacy** refers to safeguarding the collection, use and disclosure of personal and sensitive data to comply with policy and regulation such as the Protection of Personal Information Act (POPIA) of South Africa.
 
@@ -859,7 +857,7 @@ Identify what is wrong with the above visualization.
 
 \newpage
 
-## Data analysis – Foundations and Concepts{#sec1-7}
+## Data analysis – Foundations and Concepts {#sec1-7}
 
 Data analysis is the process of systematically using statistical techniques to explore, clean, transform and model data with the purpose of discovering useful information which can then be used to support decision-making.
 

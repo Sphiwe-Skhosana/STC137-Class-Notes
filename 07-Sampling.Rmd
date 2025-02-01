@@ -1,4 +1,0 @@
-# Sampling and Collecting data{#ch3} 
-
-Add content here.
-

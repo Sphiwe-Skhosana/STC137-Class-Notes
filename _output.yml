@@ -3,12 +3,11 @@ bookdown::gitbook:
   split_by: section
   config:
     toc:
-      collapse: true
       before: |
         <li><a href="./">STC137 Class Notes</a></li>
       after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/sphiwe-skhosana/STC137-Class-Notes/edit/main/%s
+        <li><a href="https://clickup.up.ac.za/ultra/courses/_182242_1/outline" target="blank">ClickUP Page</a></li>
+    #edit: https://github.com/sphiwe-skhosana/STC137-Class-Notes/edit/main/%s
     download: [pdf]
 bookdown::pdf_book:
   includes:
