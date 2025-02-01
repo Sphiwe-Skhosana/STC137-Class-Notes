@@ -322,11 +322,11 @@ Suppose a study is conducted to find out whether vaping (or e-cigarette smoking)
 
 **Question 5**
 
-The figure below gives a bar chart showing the annual revenue of Shoprite over a ten-year period from 2014 to 2023 (The data were obtained from the annual financial statements of Shoprite[^9] and the graph was plotted using Excel).
+Figure \@ref(figshp) gives a bar chart showing the annual revenue of Shoprite over a ten-year period from 2014 to 2023 (The data were obtained from the annual financial statements of Shoprite[^9] and the graph was plotted using Excel).
 
 [^9]: <https://www.shopriteholdings.co.za/shareholders-investors/financial-results-archive.html?p=1>
 
-![](images/clipboard-3088691256.png){width="500"}
+![](images/clipboard-3088691256.png){#figshp width="500"}
 
 a\. What is the variable of interest?
 
@@ -336,13 +336,13 @@ c\. What can you say about the trend in Shoprite’s revenue overtime?
 
 **Question 6**
 
-The figure below shows the quarterly FNB/BER Consumer Confidence Index for the period 2014, 1^st^ quarter, to 2024, 2^nd^ quarter[^10]. The index measures confidence among South African consumers based on their outlook on the economy and their household financial position. A higher value indicates high confidence[^11].
+Figure \@ref(figFNB) shows the quarterly FNB/BER Consumer Confidence Index for the period 2014, 1^st^ quarter, to 2024, 2^nd^ quarter[^10]. The index measures confidence among South African consumers based on their outlook on the economy and their household financial position. A higher value indicates high confidence[^11].
 
 [^10]: <https://www.fnb.co.za/blog/investments/articles/EconomicsWeekly-20240913/?blog=investments&category=Economics&articleName=EconomicsWeekly-20240913>
 
 [^11]: <https://www.ber.ac.za/Documents/Index/FNBBER-Consumer-Confidence-Index>
 
-![](images/clipboard-2186963206.png){width="400"}
+![](images/clipboard-2186963206.png){#figFNB width="400"}
 
 a.  Are the data cross-sectional or time-series?
 
