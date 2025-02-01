@@ -346,11 +346,13 @@ Suppose a study is conducted to find out whether vaping (or e-cigarette smoking)
 
 **Question 5**
 
-Figure \@ref(figshp) gives a bar chart showing the annual revenue of Shoprite over a ten-year period from 2014 to 2023 (The data were obtained from the annual financial statements of Shoprite[^9] and the graph was plotted using Excel).
+Figure \@ref(fig:figshp) gives a bar chart showing the annual revenue of Shoprite over a ten-year period from 2014 to 2023 (The data were obtained from the annual financial statements of Shoprite[^9] and the graph was plotted using Excel).
 
 [^9]: <https://www.shopriteholdings.co.za/shareholders-investors/financial-results-archive.html?p=1>
 
-![](images/clipboard-3088691256.png){#figshp width="500"}
+\begin{figure}
+\includegraphics[width=10.78in]{images/clipboard-3088691256} \caption{Shoprite Revenue for the period 2014 to 2023}(\#fig:figshp)
+\end{figure}
 
 a\. What is the variable of interest?
 
@@ -360,19 +362,21 @@ c\. What can you say about the trend in Shoprite’s revenue overtime?
 
 **Question 6**
 
-Figure \@ref(figFNB) shows the quarterly FNB/BER Consumer Confidence Index for the period 2014, 1^st^ quarter, to 2024, 2^nd^ quarter[^10]. The index measures confidence among South African consumers based on their outlook on the economy and their household financial position. A higher value indicates high confidence[^11].
+Figure \@ref(fig:figFNB) shows the quarterly FNB/BER Consumer Confidence Index for the period 2014, 1^st^ quarter, to 2024, 2^nd^ quarter[^10]. The index measures confidence among South African consumers based on their outlook on the economy and their household financial position. A higher value indicates high confidence[^11].
 
 [^10]: <https://www.fnb.co.za/blog/investments/articles/EconomicsWeekly-20240913/?blog=investments&category=Economics&articleName=EconomicsWeekly-20240913>
 
 [^11]: <https://www.ber.ac.za/Documents/Index/FNBBER-Consumer-Confidence-Index>
 
-![](images/clipboard-2186963206.png){#figFNB width="400"}
+\begin{figure}
+\includegraphics[width=0.6\linewidth]{images/clipboard-2186963206} \caption{The Quarterly FNB/BER Consumer Confidence Index for the period 2014 (1st Quarter) - 2024 (2nd Quarter)}(\#fig:figFNB)
+\end{figure}
 
 a.  Are the data cross-sectional or time-series?
 
 b.  Comment on the confidence of the South African consumer over time.
 
-\
+
 **Question 7**
 
 The South African Bureau of Economic Research collects data from South African adults living in predominantly urban areas to measure consumer confidence in South Africa. Survey respondents are asked about

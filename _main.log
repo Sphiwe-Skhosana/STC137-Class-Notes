@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.1)  1 FEB 2025 14:41
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2025.2.1)  1 FEB 2025 14:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -504,8 +504,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 ) (c:/Users/u14308747/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
 File: bkm-dvipdfm.def 2023-12-10 v1.31 bookmark driver for dvipdfm (HO)
 \BKM@id=\count340
-))
-No file _main.aux.
+)) (./_main.aux)
 \openout1 = `_main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
@@ -753,9 +752,6 @@ LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 105.
 Package hyperref Info: Link coloring OFF on input line 105.
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 107.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
@@ -794,44 +790,48 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 [2
 
-]
-No file _main.toc.
-\tf@toc=\write3
-\openout3 = `_main.toc'.
-
+] (./_main.toc
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00092pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00064pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00046pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 3.
 
 
 [3]
 
-[4
+[4])
+\tf@toc=\write3
+\openout3 = `_main.toc'.
 
-]
+
 
 [5]
 
 [6
 
 ]
+
+[7]
+
+[8
+
+]
 Chapter 1.
 
 
-[7]
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 136.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 136.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 136.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 136.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 136.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 136.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 136.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 136.
+[9]
 
 Package hyperref Warning: Suppressing empty link on input line 136.
 
@@ -842,9 +842,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--163
 
 
 
-[8]
+[10]
 
-[9]
+[11]
 File: images/HIV-Prevalence_2022.png Graphic file (type bmp)
 <images/HIV-Prevalence_2022.png>
 
@@ -853,25 +853,16 @@ Overfull \hbox (31.41913pt too wide) in paragraph at lines 218--219
  []
 
 
-LaTeX Warning: Reference `fig1' on page 10 undefined on input line 223.
 
+[12]
 
-LaTeX Warning: Reference `fig2' on page 10 undefined on input line 229.
-
-
-
-[10]
-
-[11]
+[13]
 File: images/Data_Centers.png Graphic file (type bmp)
 <images/Data_Centers.png>
 
 Overfull \hbox (31.42711pt too wide) in paragraph at lines 233--234
  [][] 
  []
-
-
-LaTeX Warning: Reference `fig2' on page 12 undefined on input line 237.
 
 File: images/clipboard-712778398.png Graphic file (type bmp)
 <images/clipboard-712778398.png>
@@ -882,7 +873,7 @@ Overfull \hbox (56.43327pt too wide) in paragraph at lines 247--248
 
 
 
-[12]
+[14]
 File: images/clipboard-4056060037.png Graphic file (type bmp)
 <images/clipboard-4056060037.png>
 
@@ -919,39 +910,23 @@ Overfull \hbox (56.42401pt too wide) in paragraph at lines 263--264
 
 
 
-[13]
-
-[14]
-
-LaTeX Warning: Reference `fig1' on page 15 undefined on input line 331.
-
-
-LaTeX Warning: Reference `fig2' on page 15 undefined on input line 357.
-
-
-
 [15]
+
+[16]
+
+[17]
 File: images/Section 1 - 1.png Graphic file (type bmp)
 <images/Section 1 - 1.png>
 
 
-[16]
+[18]
 File: images/clipboard-533064056.png Graphic file (type bmp)
 <images/clipboard-533064056.png>
 
 
-[17]
+[19]
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 1.1 on input line 459.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 1.2 on input line 469.
-
-
-
-[18]
+[20]
 File: images/clipboard-2840066963.png Graphic file (type bmp)
 <images/clipboard-2840066963.png>
 
@@ -961,13 +936,9 @@ Overfull \hbox (31.4056pt too wide) in paragraph at lines 487--488
 
 
 
-[19]
+[21]
 
-[20]
-
-LaTeX Warning: Reference `figshp' on page 21 undefined on input line 517.
-
-
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 517--517
 [][][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][] [] [][] [] [][] [] [][][][][][][][][][][][] [][] [][][][][][][][][] [] [][][][][][][][][] [][] [][][][][][][] [][] [][][][][][][] []
  []
@@ -975,15 +946,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 517--517
 File: images/clipboard-3088691256.png Graphic file (type bmp)
 <images/clipboard-3088691256.png>
 
-Overfull \hbox (31.40724pt too wide) in paragraph at lines 519--520
+Overfull \hbox (28.9254pt too wide) in paragraph at lines 520--520
 [][] 
  []
 
 
-LaTeX Warning: Reference `figFNB' on page 21 undefined on input line 529.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 529--529
+Underfull \hbox (badness 10000) in paragraph at lines 531--531
 [][][][]$[][][][][] [] [] [] [][][] [] [][][] [] [][] [] [][] [] [][][][] [] [][][][][][][][][][][] [] [][][][][][][][] [] [][][][][][][][][][][][][][][] [][] [][][][][][][][] [] [][][][][] []
  []
 
@@ -991,25 +959,7 @@ File: images/clipboard-2186963206.png Graphic file (type bmp)
 <images/clipboard-2186963206.png>
 
 
-[21]
-
-[22]
-
-LaTeX Warning: Reference `ch4' on page 23 undefined on input line 591.
-
-
-LaTeX Warning: Reference `ch2' on page 23 undefined on input line 593.
-
-
-LaTeX Warning: Reference `ch3' on page 23 undefined on input line 595.
-
-
-
 [23]
-
-LaTeX Warning: Reference `sec1-1' on page 24 undefined on input line 625.
-
-
 
 [24]
 
@@ -1024,52 +974,41 @@ LaTeX Warning: Reference `sec1-1' on page 24 undefined on input line 625.
 [29]
 
 [30]
-File: Figures-Chapter1/Outlier.png Graphic file (type bmp)
-<Figures-Chapter1/Outlier.png>
-
 
 [31]
 
 [32]
 
-LaTeX Warning: Reference `sec1-6' on page 33 undefined on input line 926.
-
-
-
 [33]
+File: Figures-Chapter1/Outlier.png Graphic file (type bmp)
+<Figures-Chapter1/Outlier.png>
+
 
 [34]
-
-LaTeX Warning: Reference `sec1-5' on page 35 undefined on input line 967.
-
-File: Figures-Chapter1/Scatter.png Graphic file (type bmp)
-<Figures-Chapter1/Scatter.png>
-
 
 [35]
 
 [36]
 
-LaTeX Warning: Reference `sec1-7' on page 37 undefined on input line 1046.
-
-
-
 [37]
-File: Figures-Chapter1/Covid-1.png Graphic file (type bmp)
-<Figures-Chapter1/Covid-1.png>
-
-LaTeX Warning: Reference `fig:covid-2' on page 38 undefined on input line 1092.
-
-
-LaTeX Warning: Reference `fig:covid-1' on page 38 undefined on input line 1092.
-
-File: Figures-Chapter1/Covid-2.png Graphic file (type bmp)
-<Figures-Chapter1/Covid-2.png>
+File: Figures-Chapter1/Scatter.png Graphic file (type bmp)
+<Figures-Chapter1/Scatter.png>
 
 
 [38]
 
 [39]
+
+[40]
+File: Figures-Chapter1/Covid-1.png Graphic file (type bmp)
+<Figures-Chapter1/Covid-1.png>
+File: Figures-Chapter1/Covid-2.png Graphic file (type bmp)
+<Figures-Chapter1/Covid-2.png>
+
+
+[41]
+
+[42]
 File: images/clipboard-2887671888.png Graphic file (type bmp)
 <images/clipboard-2887671888.png>
 
@@ -1077,38 +1016,9 @@ Underfull \vbox (badness 1348) has occurred while \output is active []
 
 
 
-[40]
-
-[41]
-
-LaTeX Warning: Reference `ch3' on page 42 undefined on input line 1198.
-
-
-LaTeX Warning: Reference `ch2' on page 42 undefined on input line 1202.
-
-
-LaTeX Warning: Reference `sec1-3' on page 42 undefined on input line 1204.
-
-
-LaTeX Warning: Reference `sec1-5' on page 42 undefined on input line 1208.
-
-
-
-[42]
-
 [43]
 
 [44]
-
-LaTeX Warning: Reference `eq:eq1' on page 45 undefined on input line 1285.
-
-
-LaTeX Warning: Reference `eq:eq2' on page 45 undefined on input line 1291.
-
-
-LaTeX Warning: Reference `eq:eq2' on page 45 undefined on input line 1293.
-
-
 
 [45]
 
@@ -1120,21 +1030,25 @@ LaTeX Warning: Reference `eq:eq2' on page 45 undefined on input line 1293.
 
 [49]
 
-[50
-
-]
-Chapter 2.
-
+[50]
 
 [51]
 
-[52
+[52]
+Chapter 2.
+
+
+[53
+
+]
+
+[54
 
 ]
 Chapter 3.
 
 
-[53]
+[55]
 File: Figures/decimal_step1.png Graphic file (type bmp)
 <Figures/decimal_step1.png>
 File: Figures/Decimal_step2.png Graphic file (type bmp)
@@ -1143,21 +1057,21 @@ File: Figures/Decimal_step3.png Graphic file (type bmp)
 <Figures/Decimal_step3.png>
 
 
-[54]
+[56]
 File: Figures/Decimal_step4.png Graphic file (type bmp)
 <Figures/Decimal_step4.png>
 File: Figures/decimal_step1.png Graphic file (type bmp)
 <Figures/decimal_step1.png>
 
 
-[55]
+[57]
 File: Figures/import_open_1.png Graphic file (type bmp)
 <Figures/import_open_1.png>
 File: Figures/import_open_2.png Graphic file (type bmp)
 <Figures/import_open_2.png>
 
 
-[56]
+[58]
 File: Figures/import_tabs.png Graphic file (type bmp)
 <Figures/import_tabs.png>
 File: Figures/import_commas.png Graphic file (type bmp)
@@ -1170,21 +1084,21 @@ File: Figures/import_1.png Graphic file (type bmp)
 <Figures/import_1.png>
 
 
-[57]
+[59]
 File: Figures/import_2.png Graphic file (type bmp)
 <Figures/import_2.png>
 File: Figures/import_3.png Graphic file (type bmp)
 <Figures/import_3.png>
 
 
-[58]
+[60]
 File: Figures/import_4.png Graphic file (type bmp)
 <Figures/import_4.png>
 File: Figures/web_1.png Graphic file (type bmp)
 <Figures/web_1.png>
 
 
-[59]
+[61]
 File: Figures/web_2.png Graphic file (type bmp)
 <Figures/web_2.png>
 File: Figures/web_3.png Graphic file (type bmp)
@@ -1196,9 +1110,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[60]
+[62]
 
-[61]
+[63]
 File: Figures/cleaning_overview.png Graphic file (type bmp)
 <Figures/cleaning_overview.png>
 File: Figures/cleaning_formatting_1.png Graphic file (type bmp)
@@ -1207,7 +1121,7 @@ File: Figures/cleaning_formatting_2.png Graphic file (type bmp)
 <Figures/cleaning_formatting_2.png>
 
 
-[62]
+[64]
 File: Figures/cleaning_formatting_3.png Graphic file (type bmp)
 <Figures/cleaning_formatting_3.png>
 File: Figures/cleaning_formatting_4.png Graphic file (type bmp)
@@ -1217,19 +1131,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[63]
+[65]
 File: Figures/cleaning_categories_1.png Graphic file (type bmp)
 <Figures/cleaning_categories_1.png>
 
 
-[64]
+[66]
 File: Figures/cleaning_categories_2.png Graphic file (type bmp)
 <Figures/cleaning_categories_2.png>
 File: Figures/cleaning_categories_3.png Graphic file (type bmp)
 <Figures/cleaning_categories_3.png>
 
 
-[65]
+[67]
 File: Figures/cleaning_categories_4.png Graphic file (type bmp)
 <Figures/cleaning_categories_4.png>
 File: Figures/cleaning_categories_5.png Graphic file (type bmp)
@@ -1238,7 +1152,7 @@ File: Figures/cleaning_categories_6.png Graphic file (type bmp)
 <Figures/cleaning_categories_6.png>
 
 
-[66]
+[68]
 File: Figures/capitals_1.png Graphic file (type bmp)
 <Figures/capitals_1.png>
 File: Figures/capitals_2.png Graphic file (type bmp)
@@ -1253,13 +1167,191 @@ File: Figures/capitals_6.png Graphic file (type bmp)
 <Figures/capitals_6.png>
 
 
-[67]
+[69]
 File: Figures/dates.png Graphic file (type bmp)
 <Figures/dates.png>
 
 
-[68]
+[70]
 
-[69]
+[71]
 File: Figures/missing.png Graphic file (type bmp)
-<Fig
+<Figures/missing.png>
+
+
+[72]
+File: Figures/missing_1_1.png Graphic file (type bmp)
+<Figures/missing_1_1.png>
+File: Figures/missing_1_2.png Graphic file (type bmp)
+<Figures/missing_1_2.png>
+
+
+[73]
+File: Figures/missing_1_3.png Graphic file (type bmp)
+<Figures/missing_1_3.png>
+File: Figures/missing_2_1.png Graphic file (type bmp)
+<Figures/missing_2_1.png>
+
+
+[74]
+File: Figures/missing_2_2.png Graphic file (type bmp)
+<Figures/missing_2_2.png>
+File: Figures/missing_2_3.png Graphic file (type bmp)
+<Figures/missing_2_3.png>
+
+
+[75]
+File: Figures/missing_3_1.png Graphic file (type bmp)
+<Figures/missing_3_1.png>
+File: Figures/missing_3_2.png Graphic file (type bmp)
+<Figures/missing_3_2.png>
+File: Figures/missing_3_3.png Graphic file (type bmp)
+<Figures/missing_3_3.png>
+
+
+[76]
+File: Figures/duplicated_1.png Graphic file (type bmp)
+<Figures/duplicated_1.png>
+File: Figures/duplicated_2.png Graphic file (type bmp)
+<Figures/duplicated_2.png>
+
+
+[77]
+
+[78]
+File: Figures/super-animals.png Graphic file (type bmp)
+<Figures/super-animals.png>
+File: Figures/super-animals2.png Graphic file (type bmp)
+<Figures/super-animals2.png>
+
+Underfull \hbox (badness 2503) in paragraph at lines 2101--2102
+[]\TU/lmr/m/n/10 The information from these cards are collected in a data set called
+ []
+
+
+
+[79]
+Overfull \hbox (1.5pt too wide) in paragraph at lines 2128--2129
+[]\TU/lmtt/m/n/10 =VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup]) 
+ []
+
+File: Figures/manipulation_1_lookup.png Graphic file (type bmp)
+<Figures/manipulation_1_lookup.png>
+File: Figures/manipulation_1_formula.png Graphic file (type bmp)
+<Figures/manipulation_1_formula.png>
+
+
+[80]
+File: Figures/manipulation_2_1.png Graphic file (type bmp)
+<Figures/manipulation_2_1.png>
+
+
+[81]
+File: Figures/manipulation_2_2.png Graphic file (type bmp)
+<Figures/manipulation_2_2.png>
+File: Figures/manipulation_2_3.png Graphic file (type bmp)
+<Figures/manipulation_2_3.png>
+
+
+[82]
+File: Figures/manipulation_2_4.png Graphic file (type bmp)
+<Figures/manipulation_2_4.png>
+File: Figures/manipulation_3_1.png Graphic file (type bmp)
+<Figures/manipulation_3_1.png>
+
+
+[83]
+File: Figures/pivot_1.png Graphic file (type bmp)
+<Figures/pivot_1.png>
+
+
+[84]
+File: Figures/pivot_2.png Graphic file (type bmp)
+<Figures/pivot_2.png>
+File: Figures/pivot_3.png Graphic file (type bmp)
+<Figures/pivot_3.png>
+
+
+[85]
+File: Figures/pivot_4.png Graphic file (type bmp)
+<Figures/pivot_4.png>
+File: Figures/pivot_5.png Graphic file (type bmp)
+<Figures/pivot_5.png>
+File: Figures/pivot_6.png Graphic file (type bmp)
+<Figures/pivot_6.png>
+
+
+[86]
+File: Figures/pivot_7.png Graphic file (type bmp)
+<Figures/pivot_7.png>
+File: Figures/pivot_8.png Graphic file (type bmp)
+<Figures/pivot_8.png>
+File: Figures/combine_1.png Graphic file (type bmp)
+<Figures/combine_1.png>
+
+
+[87]
+
+[88]
+File: Figures/combine_2.png Graphic file (type bmp)
+<Figures/combine_2.png>
+File: Figures/combine_3.png Graphic file (type bmp)
+<Figures/combine_3.png>
+File: Figures/combine_4.png Graphic file (type bmp)
+<Figures/combine_4.png>
+File: Figures/combine_5.png Graphic file (type bmp)
+<Figures/combine_5.png>
+
+
+[89]
+File: Figures/split_1.png Graphic file (type bmp)
+<Figures/split_1.png>
+File: Figures/split_2.png Graphic file (type bmp)
+<Figures/split_2.png>
+
+
+[90]
+File: Figures/split_3.png Graphic file (type bmp)
+<Figures/split_3.png>
+File: Figures/split_4.png Graphic file (type bmp)
+<Figures/split_4.png>
+File: Figures/split_5.png Graphic file (type bmp)
+<Figures/split_5.png>
+
+
+[91]
+
+[92]
+
+[93]
+
+[94]
+
+[95]
+
+[96
+
+]
+Chapter 4.
+No file _main.bbl.
+
+
+[97] (./_main.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 20447 strings out of 475846
+ 390467 string characters out of 5772832
+ 889925 words of memory out of 5000000
+ 42997 multiletter control sequences out of 15000+600000
+ 565747 words of font info for 96 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 90i,9n,114p,1451b,579s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on _main.pdf (97 pages).
