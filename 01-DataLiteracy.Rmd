@@ -1,7 +1,7 @@
 ---
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 
 # An Overview of Data literacy
@@ -146,11 +146,19 @@ The article talks about the growth in future copper demand from data centers as 
 
 3.  A study is conducted to assess the effectiveness of a new weight loss drug across two age groups: young adults (20-30 years) and older adults (50-60 years). The results are as follows:
 
-```{r crosstab1, echo=FALSE, out.width="30%"}
+```{r crosstab1, echo=FALSE, out.width="30%",fig.align='center'}
 knitr::include_graphics("Figures-Chapter1/Simpson.png")
 ```
 
-Based on the combined results, we can conclude that the drug was effective across the board. However, if we consider Young adults separate from Older adults, we can see that the drug was only effective for younger adults but not for Older adults. Thus, if we only look at the combined data without considering the age groups, we make the wrong conclusion that the drug is equally effective for all ages, while in reality the effectiveness varies between age groups. This reversal of conclusion based on combined and separate data is called **Simpson's Paradox**.
+   Based on the combined results, we can conclude that the drug   
+was effective across the board. However, if we consider Young adults separate from Older adults, we can see that the drug was only effective for younger adults but not for Older adults. Thus, if we only look at the combined data without considering the age groups, we make the wrong conclusion that the drug is equally effective for all ages, while in reality the effectiveness varies between age groups. This reversal of conclusion based on combined and separate data is called **Simpson's Paradox**. For another example of Simpson's Paradox, watch the following video:
+
+```{r, eval=knitr::is_html_output(excludes = "epub"), results = 'asis', echo = F,fig.align='center'}
+cat(
+'<iframe width="560" height="315" src="https://www.youtube.com/embed/vqKdLF_VzZE?si=uG1PvTdj7DA1Oky5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+)
+```
+
 
 4.  A study showed that 90% of drought-tolerant plants have a certain gene X. Moreover, 20% of plants with gene X are drought tolerant.
 
@@ -162,6 +170,18 @@ Based on the combined results, we can conclude that the drug was effective acros
  
     Hlengiwe, a plant physiologist at the Univeristy of Pretoria, concludes that although gene X is common among drought-tolerant plants (shown by a large percentage 90%!), it is not a strong indicator of drought tolerance on its own. Other factors, such as environmental conditions or additional genes, may play a significant role.
  
+
+5. Suppose that a researcher observes that ice cream sales and drowning incidents are positively correlated over time. As ice cream sales increase, the number of drowning incidents also increases.
+
+ - Incorrect interpretation
+   
+    **Eating ice cream causes drowning**. This is an example of confusing correlation with causation.
+ 
+ - Correct interpretation
+ 
+    There is no causal relationship between ice cream sales and drowning incidents. Instead both variables are influenced by a third variable **hot weather**. Hot weather increases the likelihood of people swimming in pools, lakes, or the ocean, which in turn increases the risk of drowning. At the very same time, hot weather also increases the demand for ice cream, as people seek cold treats to cool down.
+
+   Thus, the correlation between ice cream sales and drowning  incidents is **spurious**. Spurious correlation arises when two variables are coincidentally related or influenced by the same third variable, known as a confounding variable, such that they appear to be causally related. 
 
 ### Exercises to Section 1.1
 

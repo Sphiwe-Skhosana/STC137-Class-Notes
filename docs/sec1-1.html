@@ -279,8 +279,11 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 <p>All the monkeypox cases in the US are men. Thus, falsely, implying that men are more likely to get monkeypox (99% chance!).</p></li>
 <li><p>A study is conducted to assess the effectiveness of a new weight loss drug across two age groups: young adults (20-30 years) and older adults (50-60 years). The results are as follows:</p></li>
 </ol>
-<p><img src="Figures-Chapter1/Simpson.png" width="30%" /></p>
-<p>Based on the combined results, we can conclude that the drug was effective across the board. However, if we consider Young adults separate from Older adults, we can see that the drug was only effective for younger adults but not for Older adults. Thus, if we only look at the combined data without considering the age groups, we make the wrong conclusion that the drug is equally effective for all ages, while in reality the effectiveness varies between age groups. This reversal of conclusion based on combined and separate data is called <strong>Simpson’s Paradox</strong>.</p>
+<p><img src="Figures-Chapter1/Simpson.png" width="30%" style="display: block; margin: auto;" /></p>
+<p>Based on the combined results, we can conclude that the drug<br />
+was effective across the board. However, if we consider Young adults separate from Older adults, we can see that the drug was only effective for younger adults but not for Older adults. Thus, if we only look at the combined data without considering the age groups, we make the wrong conclusion that the drug is equally effective for all ages, while in reality the effectiveness varies between age groups. This reversal of conclusion based on combined and separate data is called <strong>Simpson’s Paradox</strong>. For another example of Simpson’s Paradox, watch the following video:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vqKdLF_VzZE?si=uG1PvTdj7DA1Oky5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
 <ol start="4" style="list-style-type: decimal">
 <li>A study showed that 90% of drought-tolerant plants have a certain gene X. Moreover, 20% of plants with gene X are drought tolerant.</li>
 </ol>
@@ -289,6 +292,16 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 <p>Menzi, a plant physiologist at the University of Cape Town, concludes that, since 90% of the drought-tolerant plants have gene X, having gene X causes or is a strong indicator that a plant is drought-tolerant.</p></li>
 <li><p>Correct interpretation</p>
 <p>Hlengiwe, a plant physiologist at the Univeristy of Pretoria, concludes that although gene X is common among drought-tolerant plants (shown by a large percentage 90%!), it is not a strong indicator of drought tolerance on its own. Other factors, such as environmental conditions or additional genes, may play a significant role.</p></li>
+</ul>
+<ol start="5" style="list-style-type: decimal">
+<li>Suppose that a researcher observes that ice cream sales and drowning incidents are positively correlated over time. As ice cream sales increase, the number of drowning incidents also increases.</li>
+</ol>
+<ul>
+<li><p>Incorrect interpretation</p>
+<p><strong>Eating ice cream causes drowning</strong>. This is an example of confusing correlation with causation.</p></li>
+<li><p>Correct interpretation</p>
+<p>There is no causal relationship between ice cream sales and drowning incidents. Instead both variables are influenced by a third variable <strong>hot weather</strong>. Hot weather increases the likelihood of people swimming in pools, lakes, or the ocean, which in turn increases the risk of drowning. At the very same time, hot weather also increases the demand for ice cream, as people seek cold treats to cool down.</p>
+<p>Thus, the correlation between ice cream sales and drowning incidents is <strong>spurious</strong>. Spurious correlation arises when two variables are coincidentally related or influenced by the same third variable, known as a confounding variable, such that they appear to be causally related.</p></li>
 </ul>
 </div>
 </div>
