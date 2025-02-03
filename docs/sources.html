@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2.1 Data Sources | STC 137: Sources and Types of Data</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2.1 Data Sources | STC 137: Sources and Types of Data" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
+  <meta name="github-repo" content="sphiwe-skhosana/STC137-Class-Notes" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2.1 Data Sources | STC 137: Sources and Types of Data" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
+  
+
+<meta name="author" content="Spiwe Skhosana, René Stander, Renate Thiede" />
+
+
+<meta name="date" content="2024-10-02" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="ch2.html"/>
+<link rel="next" href="types.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="libs/wordcloud2-0.0.1/wordcloud.css" rel="stylesheet" />
+<script src="libs/wordcloud2-0.0.1/wordcloud2-all.js"></script>
+<script src="libs/wordcloud2-0.0.1/hover.js"></script>
+<script src="libs/wordcloud2-binding-0.2.1/wordcloud2.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">STC137 Class Notes</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="an-overview-of-data-literacy.html"><a href="an-overview-of-data-literacy.html"><i class="fa fa-check"></i><b>1</b> An Overview of Data literacy</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="sec1-1.html"><a href="sec1-1.html"><i class="fa fa-check"></i><b>1.1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="sec1-1.html"><a href="sec1-1.html#definition"><i class="fa fa-check"></i><b>1.1.1</b> Definition</a></li>
+<li class="chapter" data-level="1.1.2" data-path="sec1-1.html"><a href="sec1-1.html#the-importance-of-being-data-literate-in-modern-society"><i class="fa fa-check"></i><b>1.1.2</b> The importance of being data literate in modern society</a></li>
+<li class="chapter" data-level="1.1.3" data-path="sec1-1.html"><a href="sec1-1.html#data-literacy-skills"><i class="fa fa-check"></i><b>1.1.3</b> Data Literacy Skills</a></li>
+<li class="chapter" data-level="1.1.4" data-path="sec1-1.html"><a href="sec1-1.html#data-literacy-in-practice"><i class="fa fa-check"></i><b>1.1.4</b> Data Literacy in Practice</a></li>
+<li class="chapter" data-level="1.1.5" data-path="sec1-1.html"><a href="sec1-1.html#exercises-to-section-1.1"><i class="fa fa-check"></i><b>1.1.5</b> Exercises to Section 1.1</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>1.2</b> Data</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="data.html"><a href="data.html#what-is-data"><i class="fa fa-check"></i><b>1.2.1</b> What is data?</a></li>
+<li class="chapter" data-level="1.2.2" data-path="data.html"><a href="data.html#properties-of-a-data-set"><i class="fa fa-check"></i><b>1.2.2</b> Properties of a data set</a></li>
+<li class="chapter" data-level="1.2.3" data-path="data.html"><a href="data.html#observational-and-experimental-data"><i class="fa fa-check"></i><b>1.2.3</b> Observational and experimental data</a></li>
+<li class="chapter" data-level="1.2.4" data-path="data.html"><a href="data.html#cross-sectional-and-time-series-data"><i class="fa fa-check"></i><b>1.2.4</b> Cross-sectional and time-series data</a></li>
+<li class="chapter" data-level="1.2.5" data-path="data.html"><a href="data.html#population-and-sample"><i class="fa fa-check"></i><b>1.2.5</b> Population and sample</a></li>
+<li class="chapter" data-level="1.2.6" data-path="data.html"><a href="data.html#exercises-to-section-1.2"><i class="fa fa-check"></i><b>1.2.6</b> Exercises to Section 1.2</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="sec1-3.html"><a href="sec1-3.html"><i class="fa fa-check"></i><b>1.3</b> Data Management - Foundations and Concepts</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="sec1-3.html"><a href="sec1-3.html#data-management-process"><i class="fa fa-check"></i><b>1.3.1</b> Data management process</a></li>
+<li class="chapter" data-level="1.3.2" data-path="sec1-3.html"><a href="sec1-3.html#the-benefits-of-data-management-in-modern-society"><i class="fa fa-check"></i><b>1.3.2</b> The benefits of data management in modern society</a></li>
+<li class="chapter" data-level="1.3.3" data-path="sec1-3.html"><a href="sec1-3.html#the-challenges-of-data-management-in-modern-society"><i class="fa fa-check"></i><b>1.3.3</b> The challenges of data management in modern society</a></li>
+<li class="chapter" data-level="1.3.4" data-path="sec1-3.html"><a href="sec1-3.html#strategies-for-data-management"><i class="fa fa-check"></i><b>1.3.4</b> Strategies for data management</a></li>
+<li class="chapter" data-level="1.3.5" data-path="sec1-3.html"><a href="sec1-3.html#exercises-to-section-1.3"><i class="fa fa-check"></i><b>1.3.5</b> Exercises to Section 1.3</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="sec1-4.html"><a href="sec1-4.html"><i class="fa fa-check"></i><b>1.4</b> Data Ethics</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="sec1-4.html"><a href="sec1-4.html#the-importance-of-data-ethics"><i class="fa fa-check"></i><b>1.4.1</b> The importance of data ethics</a></li>
+<li class="chapter" data-level="1.4.2" data-path="sec1-4.html"><a href="sec1-4.html#data-ethics-principles"><i class="fa fa-check"></i><b>1.4.2</b> Data ethics principles</a></li>
+<li class="chapter" data-level="1.4.3" data-path="sec1-4.html"><a href="sec1-4.html#exercises-to-section-1.4"><i class="fa fa-check"></i><b>1.4.3</b> Exercises to Section 1.4</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="sec1-5.html"><a href="sec1-5.html"><i class="fa fa-check"></i><b>1.5</b> Data Exploration – Foundations and Concepts</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="sec1-5.html"><a href="sec1-5.html#approaches-to-exploratory-data-analysis"><i class="fa fa-check"></i><b>1.5.1</b> Approaches to exploratory data analysis</a></li>
+<li class="chapter" data-level="1.5.2" data-path="sec1-5.html"><a href="sec1-5.html#advantages-and-disadvantages-of-data-exploration"><i class="fa fa-check"></i><b>1.5.2</b> Advantages and disadvantages of data exploration</a></li>
+<li class="chapter" data-level="1.5.3" data-path="sec1-5.html"><a href="sec1-5.html#stages-in-the-exploratory-data-analysis-process"><i class="fa fa-check"></i><b>1.5.3</b> Stages in the exploratory data analysis process</a></li>
+<li class="chapter" data-level="1.5.4" data-path="sec1-5.html"><a href="sec1-5.html#exercises-to-section-1.5"><i class="fa fa-check"></i><b>1.5.4</b> Exercises to Section 1.5</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="sec1-6.html"><a href="sec1-6.html"><i class="fa fa-check"></i><b>1.6</b> Data visualization – Foundations and Concepts</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="sec1-6.html"><a href="sec1-6.html#common-uses-of-data-visualization-in-modern-society"><i class="fa fa-check"></i><b>1.6.1</b> Common uses of data visualization in modern society</a></li>
+<li class="chapter" data-level="1.6.2" data-path="sec1-6.html"><a href="sec1-6.html#types-of-data-visualizations"><i class="fa fa-check"></i><b>1.6.2</b> Types of data visualizations</a></li>
+<li class="chapter" data-level="1.6.3" data-path="sec1-6.html"><a href="sec1-6.html#components-of-a-data-visualization-tool"><i class="fa fa-check"></i><b>1.6.3</b> Components of a data visualization tool</a></li>
+<li class="chapter" data-level="1.6.4" data-path="sec1-6.html"><a href="sec1-6.html#advantages-and-disadvantages-of-data-visualization"><i class="fa fa-check"></i><b>1.6.4</b> Advantages and Disadvantages of data visualization</a></li>
+<li class="chapter" data-level="1.6.5" data-path="sec1-6.html"><a href="sec1-6.html#exercises-to-section-1.6"><i class="fa fa-check"></i><b>1.6.5</b> Exercises to Section 1.6</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="sec1-7.html"><a href="sec1-7.html"><i class="fa fa-check"></i><b>1.7</b> Data analysis – Foundations and Concepts</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="sec1-7.html"><a href="sec1-7.html#the-data-analysis-process"><i class="fa fa-check"></i><b>1.7.1</b> The Data Analysis process</a></li>
+<li class="chapter" data-level="1.7.2" data-path="sec1-7.html"><a href="sec1-7.html#approaches-to-data-analysis"><i class="fa fa-check"></i><b>1.7.2</b> Approaches to Data Analysis</a></li>
+<li class="chapter" data-level="1.7.3" data-path="sec1-7.html"><a href="sec1-7.html#uses-of-data-analysis-in-modern-society"><i class="fa fa-check"></i><b>1.7.3</b> Uses of data analysis in modern society</a></li>
+<li class="chapter" data-level="1.7.4" data-path="sec1-7.html"><a href="sec1-7.html#data-analysis-techniques"><i class="fa fa-check"></i><b>1.7.4</b> Data analysis techniques</a></li>
+<li class="chapter" data-level="1.7.5" data-path="sec1-7.html"><a href="sec1-7.html#computational-tools-and-software-for-data-analysis"><i class="fa fa-check"></i><b>1.7.5</b> Computational tools and software for data analysis</a></li>
+<li class="chapter" data-level="1.7.6" data-path="sec1-7.html"><a href="sec1-7.html#exercises-to-section-1.7"><i class="fa fa-check"></i><b>1.7.6</b> Exercises to Section 1.7</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="ch2.html"><a href="ch2.html"><i class="fa fa-check"></i><b>2</b> Sources and Types of Data</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="sources.html"><a href="sources.html"><i class="fa fa-check"></i><b>2.1</b> Data Sources</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="sources.html"><a href="sources.html#sources:intro"><i class="fa fa-check"></i><b>2.1.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.1.2" data-path="sources.html"><a href="sources.html#sources:primary"><i class="fa fa-check"></i><b>2.1.2</b> Primary Data Sources</a></li>
+<li class="chapter" data-level="2.1.3" data-path="sources.html"><a href="sources.html#sources:secondary"><i class="fa fa-check"></i><b>2.1.3</b> Secondary Data Sources</a></li>
+<li class="chapter" data-level="2.1.4" data-path="sources.html"><a href="sources.html#sources:tertiary"><i class="fa fa-check"></i><b>2.1.4</b> Tertiary Data Sources</a></li>
+<li class="chapter" data-level="2.1.5" data-path="sources.html"><a href="sources.html#sources:where"><i class="fa fa-check"></i><b>2.1.5</b> Where Can I Find Data?</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="types.html"><a href="types.html"><i class="fa fa-check"></i><b>2.2</b> Data Types</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="types.html"><a href="types.html#types:intro"><i class="fa fa-check"></i><b>2.2.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.2.2" data-path="types.html"><a href="types.html#scales-of-measurement"><i class="fa fa-check"></i><b>2.2.2</b> Scales of Measurement</a></li>
+<li class="chapter" data-level="2.2.3" data-path="types.html"><a href="types.html#data-types"><i class="fa fa-check"></i><b>2.2.3</b> Data Types</a></li>
+<li class="chapter" data-level="2.2.4" data-path="types.html"><a href="types.html#review-1"><i class="fa fa-check"></i><b>2.2.4</b> Review</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="ch3.html"><a href="ch3.html"><i class="fa fa-check"></i><b>3</b> Data Handling in Excel</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="data-importing.html"><a href="data-importing.html"><i class="fa fa-check"></i><b>3.1</b> Data importing</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="data-importing.html"><a href="data-importing.html#change-decimal-separator-settings-in-excel"><i class="fa fa-check"></i><b>3.1.1</b> Change decimal separator settings in Excel</a></li>
+<li class="chapter" data-level="3.1.2" data-path="data-importing.html"><a href="data-importing.html#opening-a-.xlsx-file-in-excel"><i class="fa fa-check"></i><b>3.1.2</b> Opening a .xlsx file in Excel</a></li>
+<li class="chapter" data-level="3.1.3" data-path="data-importing.html"><a href="data-importing.html#importing-a-.txt-file-in-excel"><i class="fa fa-check"></i><b>3.1.3</b> Importing a .txt file in Excel</a></li>
+<li class="chapter" data-level="3.1.4" data-path="data-importing.html"><a href="data-importing.html#importing-data-from-a-website"><i class="fa fa-check"></i><b>3.1.4</b> Importing data from a website</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="data-cleaning.html"><a href="data-cleaning.html"><i class="fa fa-check"></i><b>3.2</b> Data cleaning</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="data-cleaning.html"><a href="data-cleaning.html#example-data-cleaning-in-excel"><i class="fa fa-check"></i><b>3.2.1</b> Example: Data cleaning in Excel</a></li>
+<li class="chapter" data-level="3.2.2" data-path="data-cleaning.html"><a href="data-cleaning.html#missing-data"><i class="fa fa-check"></i><b>3.2.2</b> Missing data</a></li>
+<li class="chapter" data-level="3.2.3" data-path="data-cleaning.html"><a href="data-cleaning.html#duplicate-values"><i class="fa fa-check"></i><b>3.2.3</b> Duplicate values</a></li>
+<li class="chapter" data-level="3.2.4" data-path="data-cleaning.html"><a href="data-cleaning.html#exercises"><i class="fa fa-check"></i><b>3.2.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="data-manipulation.html"><a href="data-manipulation.html"><i class="fa fa-check"></i><b>3.3</b> Data manipulation</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="data-manipulation.html"><a href="data-manipulation.html#example-super-animals"><i class="fa fa-check"></i><b>3.3.1</b> Example: Super Animals</a></li>
+<li class="chapter" data-level="3.3.2" data-path="data-manipulation.html"><a href="data-manipulation.html#example-employees"><i class="fa fa-check"></i><b>3.3.2</b> Example: Employees</a></li>
+<li class="chapter" data-level="3.3.3" data-path="data-manipulation.html"><a href="data-manipulation.html#basic-excel-functions"><i class="fa fa-check"></i><b>3.3.3</b> Basic Excel functions</a></li>
+<li class="chapter" data-level="3.3.4" data-path="data-manipulation.html"><a href="data-manipulation.html#exercises-1"><i class="fa fa-check"></i><b>3.3.4</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ch4.html"><a href="ch4.html"><i class="fa fa-check"></i><b>4</b> Data Collection</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="planning-data-collection.html"><a href="planning-data-collection.html"><i class="fa fa-check"></i><b>4.1</b> Planning data collection</a></li>
+<li class="chapter" data-level="4.2" data-path="primary-data-collection.html"><a href="primary-data-collection.html"><i class="fa fa-check"></i><b>4.2</b> Primary data collection</a></li>
+<li class="chapter" data-level="4.3" data-path="secondary-data-collection.html"><a href="secondary-data-collection.html"><i class="fa fa-check"></i><b>4.3</b> Secondary data collection</a></li>
+<li class="chapter" data-level="4.4" data-path="evaluating-data.html"><a href="evaluating-data.html"><i class="fa fa-check"></i><b>4.4</b> Evaluating Data</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="evaluating-data.html"><a href="evaluating-data.html#relevance"><i class="fa fa-check"></i><b>4.4.1</b> Relevance</a></li>
+<li class="chapter" data-level="4.4.2" data-path="evaluating-data.html"><a href="evaluating-data.html#quality"><i class="fa fa-check"></i><b>4.4.2</b> Quality</a></li>
+<li class="chapter" data-level="4.4.3" data-path="evaluating-data.html"><a href="evaluating-data.html#representativeness-and-unbiasedness"><i class="fa fa-check"></i><b>4.4.3</b> Representativeness and unbiasedness</a></li>
+<li class="chapter" data-level="4.4.4" data-path="evaluating-data.html"><a href="evaluating-data.html#impact"><i class="fa fa-check"></i><b>4.4.4</b> Impact</a></li>
+<li class="chapter" data-level="4.4.5" data-path="evaluating-data.html"><a href="evaluating-data.html#examples"><i class="fa fa-check"></i><b>4.4.5</b> Examples</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html"><i class="fa fa-check"></i><b>4.5</b> Probabilistic Sampling</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html#simple-random-sampling"><i class="fa fa-check"></i><b>4.5.1</b> Simple Random Sampling</a></li>
+<li class="chapter" data-level="4.5.2" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html#systematic-sampling"><i class="fa fa-check"></i><b>4.5.2</b> Systematic Sampling</a></li>
+<li class="chapter" data-level="4.5.3" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html#stratified-sampling"><i class="fa fa-check"></i><b>4.5.3</b> Stratified Sampling</a></li>
+<li class="chapter" data-level="4.5.4" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html#cluster-sampling"><i class="fa fa-check"></i><b>4.5.4</b> Cluster Sampling</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="non-probabilistic-sampling.html"><a href="non-probabilistic-sampling.html"><i class="fa fa-check"></i><b>4.6</b> Non-Probabilistic Sampling</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="non-probabilistic-sampling.html"><a href="non-probabilistic-sampling.html#convenience-sampling"><i class="fa fa-check"></i><b>4.6.1</b> Convenience sampling</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://clickup.up.ac.za/ultra/courses/_182242_1/outline" target="blank">ClickUP Page</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">STC 137: Sources and Types of Data</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sources" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Data Sources<a href="sources.html#sources" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="sources:intro" class="section level3 hasAnchor" number="2.1.1">
+<h3><span class="header-section-number">2.1.1</span> Introduction<a href="sources.html#sources:intro" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>As statisticians, data analysts, data scientists or any other practitioners who work with data, our job is all about getting insights from data. But where does this data come from? Knowing where a dataset comes from and where and how it was collected is crucial for us to determine if it will allow us to derive the insights we need.</p>
+<p>Example:
+Ahmed is a consumer scientist working for Freshdale, a South African dairy company. His job is to determine whether Freshdale should invest more money into producing milk, cheese or yoghurt. For each of the datasets below, discuss if it is appropriate to answer this question.</p>
+<ol style="list-style-type: upper-alpha">
+<li>A spreadsheet listing the current production of milk and yoghurt from the farms that supply to Freshdale.</li>
+<li>A dataset on trends in lactose intolerance in South Africa.</li>
+<li>Results from a survey on dairy product consumption in South Africa conducted in 2024, which targeted the rural population in KwaZulu-Natal.</li>
+<li>Results from a survey on milk, cheese and yoghurt consumption in Angola conducted in 2024, targeting the entire population.</li>
+<li>Results from a survey on dairy product consumption among Fresdhale’s consumers conducted in 2021.</li>
+</ol>
+<p>Possible answers:</p>
+<ol style="list-style-type: upper-alpha">
+<li>The spreadsheet will be informative regarding the current production of dairy products. However, this will not tell Ahmed what people are actually consuming. It may thus not be helpful to determine the demands of the market.</li>
+<li>A dataset on lactose intolerance would not be useful, since lactose intolerant people are not (typically) included in the market for dairy products. (Lactose-free dairy products are becoming increasingly common, but determining the market need for these products is not the question Ahmed is trying to answer.)</li>
+<li>Although this information is quite recent, and based on South Africa, the survey targeted the rural population in KwaZulu-Natal only. The needs of this community may differ from the needs of the suburban and urban populations in KwaZulu-Natal, and the rural, urban and suburban populations in other provinces.</li>
+<li>Although this survey is recent, and targets the entire population including urban, rural and suburban, Ahmed would have to account for the fact that the dairy market in Angola may be quite different from the dairy market in South Africa.</li>
+<li>A survey targeted at Freshdale’s consumers would certainly provide the most relevant information out of all of the above options. However, it should be taken into account that the survey is a few years old, and may not reflect the needs of the market in 2025.</li>
+</ol>
+<p>In the above example, the data sources were all examples of <strong>secondary data sources</strong>. The next sections will introduce <strong>primary, secondary and tertiary</strong> data sources, provide examples of these data sources, and discuss scenarios in which they are appropriate. The last section in this chapter will present examples of where to find open data online.</p>
+</div>
+<div id="sources:primary" class="section level3 hasAnchor" number="2.1.2">
+<h3><span class="header-section-number">2.1.2</span> Primary Data Sources<a href="sources.html#sources:primary" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Primary data sources are collected first-hand for the purpose of a specific study. Examples of primary data sources include:</p>
+<ul>
+<li>Surveys: A survey that is created by a researcher to answer a specific question. In the example of Freshdale, Ahmed could create a primary data source by conducting his own survey on dairy consumption.</li>
+<li>Interviews: In-depth interviews with individuals to determine their opinions and experiences.</li>
+<li>Experiments: Laboratory experiments that are tailored to answer a specific question.</li>
+<li>Field Data: Observations of data in a natural environment, such as data on animal movement and behaviour.</li>
+<li>Direct Measurements: Direct measurements involving the use of a specific tool, like a thermometer to measure patient temperatures, a GPS device to capture the locations of mineral deposits, or a sensor that measures chlorophyll in leaves.</li>
+</ul>
+<p>Can you think of other examples of primary data sources?</p>
+<p><strong>Remember: A primary data source is always created by the researcher themselves to answer a specific question or questions.</strong></p>
+<p>Primary data source pros and cons:</p>
+<p>Pros:</p>
+<ul>
+<li>Data is specifically suited to the research question</li>
+<li>Data is current and up-to-date</li>
+<li>Data is accurate and reliable (assuming the researcher followed correct data collection protocols)</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Data collection can be expensive</li>
+<li>Data collection can take a long time</li>
+<li>If you as a researcher create a primary data source through data collection, you are responsible for its accuracy, reliability, and the ethics of data collection!</li>
+</ul>
+</div>
+<div id="sources:secondary" class="section level3 hasAnchor" number="2.1.3">
+<h3><span class="header-section-number">2.1.3</span> Secondary Data Sources<a href="sources.html#sources:secondary" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Secondary data sources are pre-collected by a different researcher for a purpose other than the current research question. In the Freshdale example, the surveys and datasets that Ahmed could choose from were collected by other researchers, in different years and different countries, to answer their own questions.</p>
+<p>Consider the survey on dairy product consumption in the rural population of KwaZulu-Natal. Let us say that Ahmed’s colleague Amina created that dataset. For Amina, it was a primary data source, since she collected the data herself in order to answer a specific question. Ahmed did not collect that dataset, and would be using the dataset to answer a different question. Thus, it would be a secondary data source for Ahmed.</p>
+<p>Examples of secondary data sources include:</p>
+<ul>
+<li>Open datasets provided on websites like Kaggle, the United Nations Office for the Coordination of Humanitarian Affairs (OCHA), and others.</li>
+<li>Government datasets and data bases (e.g. the census collected by StatsSA).</li>
+<li>Market research datasets providing insights into consumer trends, from companies like McKinsey.</li>
+<li>Data provided in academic papers.</li>
+<li>Social media data, such as tweets scraped from X.</li>
+<li>Historical data from archives and records.</li>
+</ul>
+<p>Can you think of other examples of secondary data sources?</p>
+<p><strong>Remember: A secondary data source was created by another researcher to answer a different research question.</strong></p>
+<p>Discuss: If Ahmed conducts a survey on dairy consumption in South Africa in 2025, is it a primary or secondary data source? If Ahmed then uses this data in 2026 to analyse only milk consumption, is it a primary or secondary data source?</p>
+<p>Secondary data source pros and cons:</p>
+<p>Pros:</p>
+<ul>
+<li>Obtaining data is easy</li>
+<li>Some datasets could be available for free (e.g. government and open data)</li>
+<li>It does not take long to obtain data</li>
+<li>Data is usually provided in a usable format</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Data is not specifically suited to the research question</li>
+<li>Data is from the past (you will need to evaluate its relevance in the present)</li>
+<li>The accuracy, reliability and ethical nature of the data cannot be controlled by you as the researcher. Although you can clean the data, you cannot go back and change how it was collected.</li>
+</ul>
+<p><strong>Note: Secondary data is not guaranteed to be clean, accurate, reliable or ethical. As a researcher using the data, it is still your responsibility to check these aspects before using the data in your own research.</strong></p>
+</div>
+<div id="sources:tertiary" class="section level3 hasAnchor" number="2.1.4">
+<h3><span class="header-section-number">2.1.4</span> Tertiary Data Sources<a href="sources.html#sources:tertiary" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Tertiary data sources summarise and describe the information contained in primary and secondary data sources. They can provide a very useful starting point to study, understand and research a particular topic. However, they cannot be used to answer research questions in the same way as primary and secondary data sources.</p>
+<p>Examples of tertiary data sources include:</p>
+<ul>
+<li>Textbooks that explain and summarise existing information on a particular topic. (These notes are an example of a tertiary data source!)</li>
+<li>Abstracts that summarise the contents of a research paper or thesis.</li>
+<li>Review articles that present and discuss the latest research on a particular topic.</li>
+<li>Encyclopedias that provide an overview of certain topics.</li>
+<li>Databases and search engines like Google Scholar or library databases that contain links to books and papers on specific topics.</li>
+</ul>
+<p>Can you think of other tertiary data sources?</p>
+<p><strong>Remember: A tertiary data source is a summary of primary or secondary data sources.</strong></p>
+<p>In the Freshdale example, Ahmed might want to read a review paper discussing the latest research on dairy consumption.</p>
+</div>
+<div id="sources:where" class="section level3 hasAnchor" number="2.1.5">
+<h3><span class="header-section-number">2.1.5</span> Where Can I Find Data?<a href="sources.html#sources:where" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The list below describes some sources of open international data.</p>
+<ul>
+<li>Kaggle: A popular platform for data science enthusiasts that hosts a wide range of datasets on topics like social media, climate change, and more. It also includes competitions and collaboration opportunities for machine learning projects. URL: <a href="https://www.kaggle.com/" class="uri">https://www.kaggle.com/</a></li>
+<li>Data.gov: A comprehensive portal managed by the U.S. government offering datasets across various fields like health, education, and transportation. It provides data in formats like CSV, JSON, and XLSX to promote transparency and innovation. URL: <a href="https://data.gov/" class="uri">https://data.gov/</a></li>
+<li>World Bank Open Data: Provides access to global development data, including indicators on poverty, health, education, and economics. Tools for visualisation and analysis are also available. URL: <a href="https://databank.worldbank.org/" class="uri">https://databank.worldbank.org/</a></li>
+<li>Google Trends: Allows exploration of search trends across time and regions, which can be useful for understanding consumer behavior or tracking specific phenomena. URL: <a href="https://trends.google.com/trends/" class="uri">https://trends.google.com/trends/</a></li>
+<li>OpenStreetMap: Offers free geographic data like maps, street layouts, and points of interest, suitable for research in urban planning and transportation. URL: <a href="https://www.openstreetmap.org/" class="uri">https://www.openstreetmap.org/</a>
+UN Data: A platform with diverse datasets on global issues like population, education, and health, curated by the United Nations. URL: <a href="https://data.un.org/" class="uri">https://data.un.org/</a></li>
+<li>Climate Data Online (NOAA): Focused on climate-related datasets, this platform includes historical weather data, marine data, and more for researchers and policymakers. URL: <a href="https://www.ncei.noaa.gov/cdo-web/" class="uri">https://www.ncei.noaa.gov/cdo-web/</a></li>
+<li>European Data Portal: For those interested in European datasets, this platform aggregates data on demographics, economics, and other regional statistics. URL: <a href="https://data.europa.eu/en" class="uri">https://data.europa.eu/en</a></li>
+</ul>
+<p>The list below describes some sources of open African data.</p>
+<ul>
+<li>World Bank Open Data - Africa Development Indicators: This database provides a detailed collection of macroeconomic, sectoral, and social indicators for 53 African countries, with data spanning multiple decades. Topics include poverty, education, and social development. It is a rich resource for monitoring development programs in the region. URL: <a href="https://databank.worldbank.org/source/africa-development-indicators" class="uri">https://databank.worldbank.org/source/africa-development-indicators</a></li>
+<li>African Data Portal by NBER: The National Bureau of Economic Research hosts a portal specifically for datasets on Sub-Saharan Africa, systematising public-use data. This includes diverse economic, demographic, and health data that are accessible for researchers. URL: <a href="https://www.nber.org/research/data/portal-public-use-datasets-sub-saharan-africa" class="uri">https://www.nber.org/research/data/portal-public-use-datasets-sub-saharan-africa</a></li>
+<li>Humanitarian Data Exchange (HDX): Managed by the UN Office for the Coordination of Humanitarian Affairs, HDX provides open data sets on humanitarian issues across Africa. Topics include conflict, health, food security, and migration. URL: <a href="https://data.humdata.org/" class="uri">https://data.humdata.org/</a></li>
+<li>Global Biodiversity Information Facility (GBIF): GBIF offers biodiversity data with extensive records on species found in Africa. This resource supports research in conservation, climate change, and ecosystem services. URL: <a href="https://www.gbif.org/" class="uri">https://www.gbif.org/</a></li>
+</ul>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="ch2.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="types.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

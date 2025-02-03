@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3.1 Data importing | STC 137 Class Notes</title>
+  <title>Chapter 2 Sources and Types of Data | STC 137: Sources and Types of Data</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
 The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3.1 Data importing | STC 137 Class Notes" />
+  <meta property="og:title" content="Chapter 2 Sources and Types of Data | STC 137: Sources and Types of Data" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,24 +19,25 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="github-repo" content="sphiwe-skhosana/STC137-Class-Notes" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3.1 Data importing | STC 137 Class Notes" />
+  <meta name="twitter:title" content="Chapter 2 Sources and Types of Data | STC 137: Sources and Types of Data" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
 The HTML output format for this example is bookdown::gitbook,</p>" />
   
 
-<meta name="author" content="Department of Statistics, University of Pretoria" />
+<meta name="author" content="Spiwe Skhosana, René Stander, Renate Thiede" />
 
 
+<meta name="date" content="2024-10-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="data-handling-in-excel.html"/>
-<link rel="next" href="data-cleaning.html"/>
+<link rel="prev" href="sec1-7.html"/>
+<link rel="next" href="sources.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -57,8 +58,12 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-<script src="libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="libs/wordcloud2-0.0.1/wordcloud.css" rel="stylesheet" />
+<script src="libs/wordcloud2-0.0.1/wordcloud2-all.js"></script>
+<script src="libs/wordcloud2-0.0.1/hover.js"></script>
+<script src="libs/wordcloud2-binding-0.2.1/wordcloud2.js"></script>
 
 
 
@@ -142,15 +147,32 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 <li class="chapter" data-level="1.7.6" data-path="sec1-7.html"><a href="sec1-7.html#exercises-to-section-1.7"><i class="fa fa-check"></i><b>1.7.6</b> Exercises to Section 1.7</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="sec1-8.html"><a href="sec1-8.html"><i class="fa fa-check"></i><b>2</b> Sources and types of data</a></li>
-<li class="chapter" data-level="3" data-path="data-handling-in-excel.html"><a href="data-handling-in-excel.html"><i class="fa fa-check"></i><b>3</b> Data Handling in Excel</a>
+<li class="chapter" data-level="2" data-path="ch2.html"><a href="ch2.html"><i class="fa fa-check"></i><b>2</b> Sources and Types of Data</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="ch2.html"><a href="ch2.html"><i class="fa fa-check"></i><b>3.1</b> Data importing</a>
+<li class="chapter" data-level="2.1" data-path="sources.html"><a href="sources.html"><i class="fa fa-check"></i><b>2.1</b> Data Sources</a>
 <ul>
-<li class="chapter" data-level="3.1.1" data-path="ch2.html"><a href="ch2.html#change-decimal-separator-settings-in-excel"><i class="fa fa-check"></i><b>3.1.1</b> Change decimal separator settings in Excel</a></li>
-<li class="chapter" data-level="3.1.2" data-path="ch2.html"><a href="ch2.html#opening-a-.xlsx-file-in-excel"><i class="fa fa-check"></i><b>3.1.2</b> Opening a .xlsx file in Excel</a></li>
-<li class="chapter" data-level="3.1.3" data-path="ch2.html"><a href="ch2.html#importing-a-.txt-file-in-excel"><i class="fa fa-check"></i><b>3.1.3</b> Importing a .txt file in Excel</a></li>
-<li class="chapter" data-level="3.1.4" data-path="ch2.html"><a href="ch2.html#importing-data-from-a-website"><i class="fa fa-check"></i><b>3.1.4</b> Importing data from a website</a></li>
+<li class="chapter" data-level="2.1.1" data-path="sources.html"><a href="sources.html#sources:intro"><i class="fa fa-check"></i><b>2.1.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.1.2" data-path="sources.html"><a href="sources.html#sources:primary"><i class="fa fa-check"></i><b>2.1.2</b> Primary Data Sources</a></li>
+<li class="chapter" data-level="2.1.3" data-path="sources.html"><a href="sources.html#sources:secondary"><i class="fa fa-check"></i><b>2.1.3</b> Secondary Data Sources</a></li>
+<li class="chapter" data-level="2.1.4" data-path="sources.html"><a href="sources.html#sources:tertiary"><i class="fa fa-check"></i><b>2.1.4</b> Tertiary Data Sources</a></li>
+<li class="chapter" data-level="2.1.5" data-path="sources.html"><a href="sources.html#sources:where"><i class="fa fa-check"></i><b>2.1.5</b> Where Can I Find Data?</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="types.html"><a href="types.html"><i class="fa fa-check"></i><b>2.2</b> Data Types</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="types.html"><a href="types.html#types:intro"><i class="fa fa-check"></i><b>2.2.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.2.2" data-path="types.html"><a href="types.html#scales-of-measurement"><i class="fa fa-check"></i><b>2.2.2</b> Scales of Measurement</a></li>
+<li class="chapter" data-level="2.2.3" data-path="types.html"><a href="types.html#data-types"><i class="fa fa-check"></i><b>2.2.3</b> Data Types</a></li>
+<li class="chapter" data-level="2.2.4" data-path="types.html"><a href="types.html#review-1"><i class="fa fa-check"></i><b>2.2.4</b> Review</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="ch3.html"><a href="ch3.html"><i class="fa fa-check"></i><b>3</b> Data Handling in Excel</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="data-importing.html"><a href="data-importing.html"><i class="fa fa-check"></i><b>3.1</b> Data importing</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="data-importing.html"><a href="data-importing.html#change-decimal-separator-settings-in-excel"><i class="fa fa-check"></i><b>3.1.1</b> Change decimal separator settings in Excel</a></li>
+<li class="chapter" data-level="3.1.2" data-path="data-importing.html"><a href="data-importing.html#opening-a-.xlsx-file-in-excel"><i class="fa fa-check"></i><b>3.1.2</b> Opening a .xlsx file in Excel</a></li>
+<li class="chapter" data-level="3.1.3" data-path="data-importing.html"><a href="data-importing.html#importing-a-.txt-file-in-excel"><i class="fa fa-check"></i><b>3.1.3</b> Importing a .txt file in Excel</a></li>
+<li class="chapter" data-level="3.1.4" data-path="data-importing.html"><a href="data-importing.html#importing-data-from-a-website"><i class="fa fa-check"></i><b>3.1.4</b> Importing data from a website</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="data-cleaning.html"><a href="data-cleaning.html"><i class="fa fa-check"></i><b>3.2</b> Data cleaning</a>
 <ul>
@@ -167,7 +189,31 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 <li class="chapter" data-level="3.3.4" data-path="data-manipulation.html"><a href="data-manipulation.html#exercises-1"><i class="fa fa-check"></i><b>3.3.4</b> Exercises</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="sampling.html"><a href="sampling.html"><i class="fa fa-check"></i><b>4</b> Sampling</a></li>
+<li class="chapter" data-level="4" data-path="ch4.html"><a href="ch4.html"><i class="fa fa-check"></i><b>4</b> Data Collection</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="planning-data-collection.html"><a href="planning-data-collection.html"><i class="fa fa-check"></i><b>4.1</b> Planning data collection</a></li>
+<li class="chapter" data-level="4.2" data-path="primary-data-collection.html"><a href="primary-data-collection.html"><i class="fa fa-check"></i><b>4.2</b> Primary data collection</a></li>
+<li class="chapter" data-level="4.3" data-path="secondary-data-collection.html"><a href="secondary-data-collection.html"><i class="fa fa-check"></i><b>4.3</b> Secondary data collection</a></li>
+<li class="chapter" data-level="4.4" data-path="evaluating-data.html"><a href="evaluating-data.html"><i class="fa fa-check"></i><b>4.4</b> Evaluating Data</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="evaluating-data.html"><a href="evaluating-data.html#relevance"><i class="fa fa-check"></i><b>4.4.1</b> Relevance</a></li>
+<li class="chapter" data-level="4.4.2" data-path="evaluating-data.html"><a href="evaluating-data.html#quality"><i class="fa fa-check"></i><b>4.4.2</b> Quality</a></li>
+<li class="chapter" data-level="4.4.3" data-path="evaluating-data.html"><a href="evaluating-data.html#representativeness-and-unbiasedness"><i class="fa fa-check"></i><b>4.4.3</b> Representativeness and unbiasedness</a></li>
+<li class="chapter" data-level="4.4.4" data-path="evaluating-data.html"><a href="evaluating-data.html#impact"><i class="fa fa-check"></i><b>4.4.4</b> Impact</a></li>
+<li class="chapter" data-level="4.4.5" data-path="evaluating-data.html"><a href="evaluating-data.html#examples"><i class="fa fa-check"></i><b>4.4.5</b> Examples</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html"><i class="fa fa-check"></i><b>4.5</b> Probabilistic Sampling</a>
+<ul>
+<li class="chapter" data-level="4.5.1" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html#simple-random-sampling"><i class="fa fa-check"></i><b>4.5.1</b> Simple Random Sampling</a></li>
+<li class="chapter" data-level="4.5.2" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html#systematic-sampling"><i class="fa fa-check"></i><b>4.5.2</b> Systematic Sampling</a></li>
+<li class="chapter" data-level="4.5.3" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html#stratified-sampling"><i class="fa fa-check"></i><b>4.5.3</b> Stratified Sampling</a></li>
+<li class="chapter" data-level="4.5.4" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html#cluster-sampling"><i class="fa fa-check"></i><b>4.5.4</b> Cluster Sampling</a></li>
+</ul></li>
+<li class="chapter" data-level="4.6" data-path="non-probabilistic-sampling.html"><a href="non-probabilistic-sampling.html"><i class="fa fa-check"></i><b>4.6</b> Non-Probabilistic Sampling</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="non-probabilistic-sampling.html"><a href="non-probabilistic-sampling.html#convenience-sampling"><i class="fa fa-check"></i><b>4.6.1</b> Convenience sampling</a></li>
+</ul></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://clickup.up.ac.za/ultra/courses/_182242_1/outline" target="blank">ClickUP Page</a></li>
 
@@ -180,7 +226,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">STC 137 Class Notes</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">STC 137: Sources and Types of Data</a>
           </h1>
         </div>
 
@@ -188,124 +234,16 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ch2" class="section level2 hasAnchor" number="3.1">
-<h2><span class="header-section-number">3.1</span> Data importing<a href="ch2.html#ch2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>In this subsection, the focus is on importing data into Excel from different sources such that we can start working with it. This is a crucial first step when doing data analysis.</p>
-<div id="change-decimal-separator-settings-in-excel" class="section level3 hasAnchor" number="3.1.1">
-<h3><span class="header-section-number">3.1.1</span> Change decimal separator settings in Excel<a href="ch2.html#change-decimal-separator-settings-in-excel" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>On most devices, the default setting in Excel is to use a comma as a decimal separator. This causes some difficulties especially when working with .csv (comma separated value) files.</p>
-<div style="page-break-after: always;"></div>
-<ol style="list-style-type: decimal">
-<li>Go to the <strong>File</strong> tab.</li>
-</ol>
-<p><img src="Figures/decimal_step1.png" width="60%" style="display: block; margin: auto;" /></p>
-<ol start="2" style="list-style-type: decimal">
-<li>At the bottom of the menu at the left, select <strong>More…</strong> and then <strong>Options</strong>.</li>
-</ol>
-<p><img src="Figures/Decimal_step2.png" width="60%" style="display: block; margin: auto;" /></p>
-<ol start="3" style="list-style-type: decimal">
-<li>The Excel Options window will open. Select <strong>Advanced</strong> on the menu at the left.</li>
-</ol>
-<p><img src="Figures/Decimal_step3.png" width="60%" style="display: block; margin: auto;" /></p>
-<ol start="4" style="list-style-type: decimal">
-<li>Under <strong>Editing Options</strong> there is a you can specify the <strong>Decimal separator</strong>. In the box, make sure to have a full stop (<code>.</code>) instead of a comma (<code>,</code>).</li>
-</ol>
-<p><img src="Figures/Decimal_step4.png" width="60%" style="display: block; margin: auto;" /></p>
-<ol start="5" style="list-style-type: decimal">
-<li>Click <strong>OK</strong> to save the changes.</li>
-</ol>
-</div>
-<div id="opening-a-.xlsx-file-in-excel" class="section level3 hasAnchor" number="3.1.2">
-<h3><span class="header-section-number">3.1.2</span> Opening a .xlsx file in Excel<a href="ch2.html#opening-a-.xlsx-file-in-excel" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>A file with the <code>.xlsx</code> extension is a standard Excel file. Such files can be opened in Excel effortlessly. The following steps can be followed:</p>
-<ol style="list-style-type: decimal">
-<li>Go to the <strong>File</strong> tab.</li>
-</ol>
-<p><img src="Figures/decimal_step1.png" width="60%" style="display: block; margin: auto;" /></p>
-<div style="page-break-after: always;"></div>
-<ol start="2" style="list-style-type: decimal">
-<li>Select <strong>Open</strong>.</li>
-</ol>
-<p><img src="Figures/import_open_1.png" width="60%" style="display: block; margin: auto;" /></p>
-<ol start="3" style="list-style-type: decimal">
-<li>Click on <strong>Browse</strong>.</li>
-</ol>
-<p><img src="Figures/import_open_2.png" width="60%" style="display: block; margin: auto;" /></p>
-<ol start="4" style="list-style-type: decimal">
-<li>Navigate to the location of the file you want to import and select it.</li>
-</ol>
-</div>
-<div id="importing-a-.txt-file-in-excel" class="section level3 hasAnchor" number="3.1.3">
-<h3><span class="header-section-number">3.1.3</span> Importing a .txt file in Excel<a href="ch2.html#importing-a-.txt-file-in-excel" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>Some external programs can export data in a text (<code>.txt</code>) file. If you wish to do some data manipulation or work with the data in any other way, you will need to import the text file in Excel.</p>
-<p>When data is stored in a text file, various symbols (known as delimiters) are used to indicate the separation between columns. These delimiters help structure the data so that tools like Excel or programming languages can interpret it accurately. Here’s an explanation of common delimiters used in text files:</p>
-<div style="page-break-after: always;"></div>
-<ol style="list-style-type: decimal">
-<li>Tabs</li>
-</ol>
-<p><img src="Figures/import_tabs.png" width="40%" style="display: block; margin: auto;" /></p>
-<ol start="2" style="list-style-type: decimal">
-<li>Commas</li>
-</ol>
-<p><img src="Figures/import_commas.png" width="40%" style="display: block; margin: auto;" /></p>
-<ol start="3" style="list-style-type: decimal">
-<li>Semicolons</li>
-</ol>
-<p><img src="Figures/import_semicolon.png" width="40%" style="display: block; margin: auto;" /></p>
-<ol start="4" style="list-style-type: decimal">
-<li>Pipes</li>
-</ol>
-<p><img src="Figures/import_pipes.png" width="40%" style="display: block; margin: auto;" /></p>
-<div id="example" class="section level4 hasAnchor" number="3.1.3.1">
-<h4><span class="header-section-number">3.1.3.1</span> Example<a href="ch2.html#example" class="anchor-section" aria-label="Anchor link to header"></a></h4>
-<p>You have obtained access to a data set available exclusively in text format, named <code>SACensus2022-Data-Text.txt</code>. To work with this data set, you need to import it into Excel. Follow these steps to complete the process:</p>
-<ol style="list-style-type: decimal">
-<li>Open Excel and navigate to the <strong>Data</strong> tab. In the <strong>Get/Transform Data</strong> group click the <strong>From Text/CSV</strong> button.</li>
-</ol>
-<p><img src="Figures/import_1.png" width="70%" style="display: block; margin: auto;" /></p>
-<div style="page-break-after: always;"></div>
-<ol start="2" style="list-style-type: decimal">
-<li>A file selection window will appear. Navigate to the location of the file you want to import and select it. By default, the dropdown menu at the bottom right will show “Text Files (<code>.txt</code>, <code>.csv</code>)” as the file type. Ensure this option is selected.</li>
-</ol>
-<p><img src="Figures/import_2.png" width="60%" style="display: block; margin: auto;" /></p>
-<ol start="3" style="list-style-type: decimal">
-<li>The Import Wizard will open in Excel. Check that the data columns are separated correctly. Excel typically detects the delimiter (e.g., commas, tabs) automatically, but you can change it using the dropdown menu at the top of the wizard if needed.</li>
-</ol>
-<p><img src="Figures/import_3.png" width="70%" style="display: block; margin: auto;" /></p>
-<div style="page-break-after: always;"></div>
-<ol start="4" style="list-style-type: decimal">
-<li>Click <strong>Load</strong> to import the data into a new worksheet. The data will now be displayed in Excel, ready for use.</li>
-</ol>
-<p><img src="Figures/import_4.png" width="70%" style="display: block; margin: auto;" /></p>
-<p><strong>NOTE:</strong> The same process can be followed to open a <code>.csv</code> file in Excel. In the case where the settings for the decimal separator is correct, a <code>.csv</code> file can be opened using and selecting the desired file.</p>
-</div>
-</div>
-<div id="importing-data-from-a-website" class="section level3 hasAnchor" number="3.1.4">
-<h3><span class="header-section-number">3.1.4</span> Importing data from a website<a href="ch2.html#importing-data-from-a-website" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p>It is also possible to import a data table into Excel directly from a website, saving you the effort to manually retype the information you need.</p>
-<p>Suppose you need to compile a list of all the districts in South Africa. You found such a list on Wikipedia and want to import it into Excel. Follow these steps:</p>
-<ol style="list-style-type: decimal">
-<li>Open Excel and navigate to the <strong>Data</strong> tab. In the <strong>Get/Transform Data</strong> group click the <strong>From Web</strong> button.</li>
-</ol>
-<p><img src="Figures/web_1.png" width="70%" style="display: block; margin: auto;" /></p>
-<div style="page-break-after: always;"></div>
-<ol start="2" style="list-style-type: decimal">
-<li>In the <strong>From Web</strong> wizard, paste the URL of the website containing the table you want to import, then click <strong>OK</strong>.</li>
-</ol>
-<p><img src="Figures/web_2.png" width="60%" style="display: block; margin: auto;" /></p>
-<ol start="3" style="list-style-type: decimal">
-<li>Next the <strong>Navigator</strong> window will open. On the left-hand side, you will see a list of tables available from the webpage. Click on a table name to preview the contents of the table on the right-hand side. Select the correct table you want to import. Click on <strong>Load</strong> to import the table into your Excel worksheet.</li>
-</ol>
-<p><img src="Figures/web_3.png" width="70%" style="display: block; margin: auto;" /></p>
-</div>
+<div id="ch2" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Sources and Types of Data<a href="ch2.html#ch2" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="data-handling-in-excel.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="data-cleaning.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="sec1-7.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sources.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
