@@ -1,8 +1,7 @@
 ---
-title: "STC 137: Data Collection and Sampling"
-author: "Spiwe Skhosana, René Stander, Renate Thiede"
-date: "2024-12-05"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 # Sampling and Collecting data {#ch4}
