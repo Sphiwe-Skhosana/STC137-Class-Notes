@@ -511,6 +511,15 @@ What is data management?
 
 **Question 2**
 
+Data quality refers to:
+
+    i.  The security and privacy of the data.
+    ii. The accuracy and consistency of the data.
+    iii. The speed at which the data is collected.
+    iv. The size of the data.
+
+**Question 3**
+
 The National Health Laboratory Services experienced a data breach which led to delays in processing laboratory tests across public health facilities in Gauteng.
 
 a.  Which one of the following actions should be taken to ensure that the data can be quickly recovered should this happen in the future?
@@ -527,19 +536,17 @@ a.  Which one of the following actions should be taken to ensure that the data c
 
 b.  Which one of the following actions should be taken to ensure that patient’s personal information is not compromised should this happen in the future?
 
-c.  Improve data privacy
+    i.  Improve data privacy
+    
+    ii. Improve data protection
+    
+    iii. Improve data security
+    
+    iv. Improve data storage
+    
+    v.  Optimize data integration
 
-<!-- -->
-
-ii. Improve data protection
-
-iii. Improve data security
-
-iv. Improve data storage
-
-v.  Optimize data integration
-
-**Question 3**
+**Question 4**
 
 For each of the following scenarios, what do you think is likely to become a challenge in data management? Motivate your answer.
 
