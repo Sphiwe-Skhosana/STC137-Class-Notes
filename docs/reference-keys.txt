@@ -99,3 +99,11 @@ example-employees
 basic-excel-functions
 exercises-1
 ch4
+fig:figshp
+fig:figFNB
+fig:unnamed-chunk-2
+fig:unnamed-chunk-3
+fig:covid-1
+fig:covid-2
+eq:eq1
+eq:eq2
