@@ -84,19 +84,23 @@ The essential skills needed in order to be data literate can be divided accordin
 
 1.  The figure below (obtained from the 2022 *South African National HIV Prevalence, Incidence, Behaviour and Communication Survey (SABSSM VI)*[^4]) shows a map of South Africa (SA) as a **heatmap**[^5]. For each province, the map displays the HIV prevalence, which is the percentage of the population in the province that are HIV positive.
 
-    ![A heatmap of South Africa showing the HIV prevalence rate in each province in 2022](images/HIV-Prevalence_2022.png){#fig1 width="500"}
+```{r fig1, echo=FALSE,fig.align='center', fig.cap="A heatmap of South Africa showing the HIV prevalence rate in each province in 2022",out.width="80%"}
+knitr::include_graphics("images/HIV-Prevalence_2022.png")
+```
 
 [^4]: <https://sahivsoc.org/Files/SABSSMVI-SUMMARY-SHEET-2023.pdf>
 
 [^5]: A heatmap is a two-dimensional visual representation of data using colors, where the colors all represent different values (<https://www.investopedia.com/terms/h/heatmap.asp>)
 
-From Figure \@ref(fig1), we can see that, in 2022, the Western Cape and Northern Cape had the lowest HIV prevalence (8.2 – 11.6%).
+From Figure \@ref(fig:fig1), we can see that, in 2022, the Western Cape and Northern Cape had the lowest HIV prevalence (8.2 – 11.6%).
 
-2.  The figure below (Figure \@ref(fig2) shows a map (from an article in the September 30, 2024 issue of the *Wall Street Journal*) of the United States of America (USA) as a heatmap. For each state of the USA, the map displays the share of the total power consumed by data centers in 2023. The lighter the section on the map, the less the share of the power consumed by data centers.
+2.  The figure below (Figure \@ref(fig:fig2) shows a map (from an article in the September 30, 2024 issue of the *Wall Street Journal*) of the United States of America (USA) as a heatmap. For each state of the USA, the map displays the share of the total power consumed by data centers in 2023. The lighter the section on the map, the less the share of the power consumed by data centers.
 
-    ![A heatmap of the United States showing the data centers' share of total power consumption by state in 2023](images/Data_Centers.png){#fig2 width="500"}
+```{r fig2, echo=FALSE, fig.align='center', fig.cap="A heatmap of the United States showing the data centers' share of total power consumption by state in 2023",out.width="80%"}
+knitr::include_graphics("images/Data_Centers.png")
+```
 
-    From Figure \@ref(fig2), we can see that in the state of Michigan (Mich.), for instance, data centers consume a small share (0 – 3%) of the total power consumed by the state. Whereas, in the state of Virginia (Va.) data centers consume a large share (26%) of the total power consumed in the state.
+From Figure \@ref(fig:fig2), we can see that in the state of Michigan (Mich.), for instance, data centers consume a small share (0 – 3%) of the total power consumed by the state. Whereas, in the state of Virginia (Va.) data centers consume a large share (26%) of the total power consumed in the state.
 
 #### Being able to contextualize a number given in the media:
 
@@ -215,7 +219,7 @@ d.  Data literacy can improve my communication skills.
 
 **Question 4**
 
-Answer the following questions based on Figure \@ref(fig1).
+Answer the following questions based on Figure \@ref(fig:fig1).
 
 a.  What is the HIV prevalence rate for the North West province?
 
@@ -233,7 +237,7 @@ d.  How many coastal provinces have the largest HIV prevalence (18.7 – 21.8%) 
 
 **Question 5**
 
-Answer the following questions based on Figure \@ref(fig2).
+Answer the following questions based on Figure \@ref(fig:fig2).
 
 a.  What share of the total power consumption in the state of Washington (Wash.) is used by data centers?
 
