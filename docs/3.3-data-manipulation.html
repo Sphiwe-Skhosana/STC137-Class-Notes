@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="3.3 Data manipulation | STC 137 Class Notes" />
+<meta property="og:type" content="book" />
+
+<meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
+<meta name="github-repo" content="sphiwe-skhosana/STC137-Class-Notes" />
+
+<meta name="author" content="Department of Statistics, University of Pretoria" />
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>">
+
+<title>3.3 Data manipulation | STC 137 Class Notes</title>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="libs/wordcloud2-0.0.1/wordcloud.css" rel="stylesheet" />
+<script src="libs/wordcloud2-0.0.1/wordcloud2-all.js"></script>
+<script src="libs/wordcloud2-0.0.1/hover.js"></script>
+<script src="libs/wordcloud2-binding-0.2.1/wordcloud2.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+/* show arrow before summary tag as in bootstrap
+TODO: remove if bootstrap in updated in html_document (rmarkdown#1485) */
+details > summary {
+  display: list-item;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li><a href="index.html#preface" id="toc-preface">Preface</a></li>
+<li class="has-sub"><a href="1-an-overview-of-data-literacy.html#an-overview-of-data-literacy" id="toc-an-overview-of-data-literacy"><span class="toc-section-number">1</span> An Overview of Data literacy</a>
+<ul>
+<li class="has-sub"><a href="1.1-sec1-1.html#sec1-1" id="toc-sec1-1"><span class="toc-section-number">1.1</span> Introduction</a>
+<ul>
+<li><a href="1.1-sec1-1.html#definition" id="toc-definition"><span class="toc-section-number">1.1.1</span> Definition</a></li>
+<li><a href="1.1-sec1-1.html#the-importance-of-being-data-literate-in-modern-society" id="toc-the-importance-of-being-data-literate-in-modern-society"><span class="toc-section-number">1.1.2</span> The importance of being data literate in modern society</a></li>
+<li><a href="1.1-sec1-1.html#data-literacy-skills" id="toc-data-literacy-skills"><span class="toc-section-number">1.1.3</span> Data Literacy Skills</a></li>
+<li><a href="1.1-sec1-1.html#data-literacy-in-practice" id="toc-data-literacy-in-practice"><span class="toc-section-number">1.1.4</span> Data Literacy in Practice</a></li>
+<li><a href="1.1-sec1-1.html#exercises-to-section-1.1" id="toc-exercises-to-section-1.1"><span class="toc-section-number">1.1.5</span> Exercises to Section 1.1</a></li>
+</ul></li>
+<li class="has-sub"><a href="1.2-data.html#data" id="toc-data"><span class="toc-section-number">1.2</span> Data</a>
+<ul>
+<li><a href="1.2-data.html#what-is-data" id="toc-what-is-data"><span class="toc-section-number">1.2.1</span> What is data?</a></li>
+<li><a href="1.2-data.html#properties-of-a-data-set" id="toc-properties-of-a-data-set"><span class="toc-section-number">1.2.2</span> Properties of a data set</a></li>
+<li><a href="1.2-data.html#observational-and-experimental-data" id="toc-observational-and-experimental-data"><span class="toc-section-number">1.2.3</span> Observational and experimental data</a></li>
+<li><a href="1.2-data.html#cross-sectional-and-time-series-data" id="toc-cross-sectional-and-time-series-data"><span class="toc-section-number">1.2.4</span> Cross-sectional and time-series data</a></li>
+<li><a href="1.2-data.html#population-and-sample" id="toc-population-and-sample"><span class="toc-section-number">1.2.5</span> Population and sample</a></li>
+<li><a href="1.2-data.html#exercises-to-section-1.2" id="toc-exercises-to-section-1.2"><span class="toc-section-number">1.2.6</span> Exercises to Section 1.2</a></li>
+</ul></li>
+<li class="has-sub"><a href="1.3-sec1-3.html#sec1-3" id="toc-sec1-3"><span class="toc-section-number">1.3</span> Data Management - Foundations and Concepts</a>
+<ul>
+<li><a href="1.3-sec1-3.html#data-management-process" id="toc-data-management-process"><span class="toc-section-number">1.3.1</span> Data management process</a></li>
+<li><a href="1.3-sec1-3.html#the-benefits-of-data-management-in-modern-society" id="toc-the-benefits-of-data-management-in-modern-society"><span class="toc-section-number">1.3.2</span> The benefits of data management in modern society</a></li>
+<li><a href="1.3-sec1-3.html#the-challenges-of-data-management-in-modern-society" id="toc-the-challenges-of-data-management-in-modern-society"><span class="toc-section-number">1.3.3</span> The challenges of data management in modern society</a></li>
+<li><a href="1.3-sec1-3.html#strategies-for-data-management" id="toc-strategies-for-data-management"><span class="toc-section-number">1.3.4</span> Strategies for data management</a></li>
+<li><a href="1.3-sec1-3.html#exercises-to-section-1.3" id="toc-exercises-to-section-1.3"><span class="toc-section-number">1.3.5</span> Exercises to Section 1.3</a></li>
+</ul></li>
+<li class="has-sub"><a href="1.4-sec1-4.html#sec1-4" id="toc-sec1-4"><span class="toc-section-number">1.4</span> Data Ethics</a>
+<ul>
+<li><a href="1.4-sec1-4.html#the-importance-of-data-ethics" id="toc-the-importance-of-data-ethics"><span class="toc-section-number">1.4.1</span> The importance of data ethics</a></li>
+<li><a href="1.4-sec1-4.html#data-ethics-principles" id="toc-data-ethics-principles"><span class="toc-section-number">1.4.2</span> Data ethics principles</a></li>
+<li><a href="1.4-sec1-4.html#exercises-to-section-1.4" id="toc-exercises-to-section-1.4"><span class="toc-section-number">1.4.3</span> Exercises to Section 1.4</a></li>
+</ul></li>
+<li class="has-sub"><a href="1.5-sec1-5.html#sec1-5" id="toc-sec1-5"><span class="toc-section-number">1.5</span> Data Exploration – Foundations and Concepts</a>
+<ul>
+<li><a href="1.5-sec1-5.html#approaches-to-exploratory-data-analysis" id="toc-approaches-to-exploratory-data-analysis"><span class="toc-section-number">1.5.1</span> Approaches to exploratory data analysis</a></li>
+<li><a href="1.5-sec1-5.html#advantages-and-disadvantages-of-data-exploration" id="toc-advantages-and-disadvantages-of-data-exploration"><span class="toc-section-number">1.5.2</span> Advantages and disadvantages of data exploration</a></li>
+<li><a href="1.5-sec1-5.html#stages-in-the-exploratory-data-analysis-process" id="toc-stages-in-the-exploratory-data-analysis-process"><span class="toc-section-number">1.5.3</span> Stages in the exploratory data analysis process</a></li>
+<li><a href="1.5-sec1-5.html#exercises-to-section-1.5" id="toc-exercises-to-section-1.5"><span class="toc-section-number">1.5.4</span> Exercises to Section 1.5</a></li>
+</ul></li>
+<li class="has-sub"><a href="1.6-sec1-6.html#sec1-6" id="toc-sec1-6"><span class="toc-section-number">1.6</span> Data visualization – Foundations and Concepts</a>
+<ul>
+<li><a href="1.6-sec1-6.html#common-uses-of-data-visualization-in-modern-society" id="toc-common-uses-of-data-visualization-in-modern-society"><span class="toc-section-number">1.6.1</span> Common uses of data visualization in modern society</a></li>
+<li><a href="1.6-sec1-6.html#types-of-data-visualizations" id="toc-types-of-data-visualizations"><span class="toc-section-number">1.6.2</span> Types of data visualizations</a></li>
+<li><a href="1.6-sec1-6.html#components-of-a-data-visualization-tool" id="toc-components-of-a-data-visualization-tool"><span class="toc-section-number">1.6.3</span> Components of a data visualization tool</a></li>
+<li><a href="1.6-sec1-6.html#advantages-and-disadvantages-of-data-visualization" id="toc-advantages-and-disadvantages-of-data-visualization"><span class="toc-section-number">1.6.4</span> Advantages and Disadvantages of data visualization</a></li>
+<li><a href="1.6-sec1-6.html#exercises-to-section-1.6" id="toc-exercises-to-section-1.6"><span class="toc-section-number">1.6.5</span> Exercises to Section 1.6</a></li>
+</ul></li>
+<li class="has-sub"><a href="1.7-sec1-7.html#sec1-7" id="toc-sec1-7"><span class="toc-section-number">1.7</span> Data analysis – Foundations and Concepts</a>
+<ul>
+<li><a href="1.7-sec1-7.html#the-data-analysis-process" id="toc-the-data-analysis-process"><span class="toc-section-number">1.7.1</span> The Data Analysis process</a></li>
+<li><a href="1.7-sec1-7.html#approaches-to-data-analysis" id="toc-approaches-to-data-analysis"><span class="toc-section-number">1.7.2</span> Approaches to Data Analysis</a></li>
+<li><a href="1.7-sec1-7.html#uses-of-data-analysis-in-modern-society" id="toc-uses-of-data-analysis-in-modern-society"><span class="toc-section-number">1.7.3</span> Uses of data analysis in modern society</a></li>
+<li><a href="1.7-sec1-7.html#data-analysis-techniques" id="toc-data-analysis-techniques"><span class="toc-section-number">1.7.4</span> Data analysis techniques</a></li>
+<li><a href="1.7-sec1-7.html#computational-tools-and-software-for-data-analysis" id="toc-computational-tools-and-software-for-data-analysis"><span class="toc-section-number">1.7.5</span> Computational tools and software for data analysis</a></li>
+<li><a href="1.7-sec1-7.html#exercises-to-section-1.7" id="toc-exercises-to-section-1.7"><span class="toc-section-number">1.7.6</span> Exercises to Section 1.7</a></li>
+</ul></li>
+</ul></li>
+<li class="has-sub"><a href="2-ch2.html#ch2" id="toc-ch2"><span class="toc-section-number">2</span> Sources and Types of Data</a>
+<ul>
+<li class="has-sub"><a href="2.1-sources.html#sources" id="toc-sources"><span class="toc-section-number">2.1</span> Data Sources</a>
+<ul>
+<li><a href="2.1-sources.html#sources:intro" id="toc-sources:intro"><span class="toc-section-number">2.1.1</span> Introduction</a></li>
+<li><a href="2.1-sources.html#sources:primary" id="toc-sources:primary"><span class="toc-section-number">2.1.2</span> Primary Data Sources</a></li>
+<li><a href="2.1-sources.html#sources:secondary" id="toc-sources:secondary"><span class="toc-section-number">2.1.3</span> Secondary Data Sources</a></li>
+<li><a href="2.1-sources.html#sources:tertiary" id="toc-sources:tertiary"><span class="toc-section-number">2.1.4</span> Tertiary Data Sources</a></li>
+<li><a href="2.1-sources.html#sources:where" id="toc-sources:where"><span class="toc-section-number">2.1.5</span> Where Can I Find Data?</a></li>
+</ul></li>
+<li class="has-sub"><a href="2.2-types.html#types" id="toc-types"><span class="toc-section-number">2.2</span> Data Types</a>
+<ul>
+<li><a href="2.2-types.html#types:intro" id="toc-types:intro"><span class="toc-section-number">2.2.1</span> Introduction</a></li>
+<li><a href="2.2-types.html#scales-of-measurement" id="toc-scales-of-measurement"><span class="toc-section-number">2.2.2</span> Scales of Measurement</a></li>
+<li><a href="2.2-types.html#data-types" id="toc-data-types"><span class="toc-section-number">2.2.3</span> Data Types</a></li>
+<li><a href="2.2-types.html#review-1" id="toc-review-1"><span class="toc-section-number">2.2.4</span> Review</a></li>
+</ul></li>
+</ul></li>
+<li class="has-sub"><a href="3-ch3.html#ch3" id="toc-ch3"><span class="toc-section-number">3</span> Data Handling in Excel</a>
+<ul>
+<li class="has-sub"><a href="3.1-data-importing.html#data-importing" id="toc-data-importing"><span class="toc-section-number">3.1</span> Data importing</a>
+<ul>
+<li><a href="3.1-data-importing.html#change-decimal-separator-settings-in-excel" id="toc-change-decimal-separator-settings-in-excel"><span class="toc-section-number">3.1.1</span> Change decimal separator settings in Excel</a></li>
+<li><a href="3.1-data-importing.html#opening-a-.xlsx-file-in-excel" id="toc-opening-a-.xlsx-file-in-excel"><span class="toc-section-number">3.1.2</span> Opening a .xlsx file in Excel</a></li>
+<li><a href="3.1-data-importing.html#importing-a-.txt-file-in-excel" id="toc-importing-a-.txt-file-in-excel"><span class="toc-section-number">3.1.3</span> Importing a .txt file in Excel</a></li>
+<li><a href="3.1-data-importing.html#importing-data-from-a-website" id="toc-importing-data-from-a-website"><span class="toc-section-number">3.1.4</span> Importing data from a website</a></li>
+</ul></li>
+<li class="has-sub"><a href="3.2-data-cleaning.html#data-cleaning" id="toc-data-cleaning"><span class="toc-section-number">3.2</span> Data cleaning</a>
+<ul>
+<li><a href="3.2-data-cleaning.html#example-data-cleaning-in-excel" id="toc-example-data-cleaning-in-excel"><span class="toc-section-number">3.2.1</span> Example: Data cleaning in Excel</a></li>
+<li><a href="3.2-data-cleaning.html#missing-data" id="toc-missing-data"><span class="toc-section-number">3.2.2</span> Missing data</a></li>
+<li><a href="3.2-data-cleaning.html#duplicate-values" id="toc-duplicate-values"><span class="toc-section-number">3.2.3</span> Duplicate values</a></li>
+<li><a href="3.2-data-cleaning.html#exercises" id="toc-exercises"><span class="toc-section-number">3.2.4</span> Exercises</a></li>
+</ul></li>
+<li class="has-sub"><a href="3.3-data-manipulation.html#data-manipulation" id="toc-data-manipulation"><span class="toc-section-number">3.3</span> Data manipulation</a>
+<ul>
+<li><a href="3.3-data-manipulation.html#example-super-animals" id="toc-example-super-animals"><span class="toc-section-number">3.3.1</span> Example: Super Animals</a></li>
+<li><a href="3.3-data-manipulation.html#example-employees" id="toc-example-employees"><span class="toc-section-number">3.3.2</span> Example: Employees</a></li>
+<li><a href="3.3-data-manipulation.html#basic-excel-functions" id="toc-basic-excel-functions"><span class="toc-section-number">3.3.3</span> Basic Excel functions</a></li>
+<li><a href="3.3-data-manipulation.html#exercises-1" id="toc-exercises-1"><span class="toc-section-number">3.3.4</span> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li><a href="4-ch4.html#ch4" id="toc-ch4"><span class="toc-section-number">4</span> Sampling and Collecting data</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="data-manipulation" class="section level2" number="3.3">
+<h2><span class="header-section-number">3.3</span> Data manipulation</h2>
+<p>Data manipulation is the process of adjusting data so that it is easier to work with and more organised. Data manipulation is a crucial part of the analytical process because it allows statisticians to prepare data in a format that meets the requirements of specific analyses. The specific data manipulation needs depends on the application at hand as well as the statistical analysis that is required. Proper data manipulation enhances the interpretability of data, ensures accuracy in computations, and enables the effective application of statistical methods. Without it, raw data might obscure patterns, relationships, and insights that are vital for informed decision-making.</p>
+<p>Data manipulation may include the following:</p>
+<ul>
+<li><p>Removing the data that is not necessary for your analysis.</p></li>
+<li><p>Identifying and removing rows that are duplicated.</p></li>
+<li><p>Encoding categorical data either to or from a numerical format.</p></li>
+<li><p>Conditional formatting in Excel.</p></li>
+<li><p>Combining data sets.</p></li>
+<li><p>Splitting and combining columns.</p></li>
+<li><p>Pivot tables in Excel to reshape the data set.</p></li>
+</ul>
+<div id="example-super-animals" class="section level3" number="3.3.1">
+<h3><span class="header-section-number">3.3.1</span> Example: Super Animals</h3>
+<p>A few years ago, the Super Animal Cards were available at Pick n Pay stores. These collectible cards feature illustrations and fascinating facts about various animals. The aim was to spark curiosity and environmental awareness among children. Each card highlights a different animal’s unique characteristics, habitat and conservation status.</p>
+<p><img src="Figures/super-animals.png" width="40%" style="display: block; margin: auto;" /><img src="Figures/super-animals2.png" width="40%" style="display: block; margin: auto;" /></p>
+<p>The information from these cards are collected in a data set called <code>super-animals.xlsx</code>.</p>
+<div id="the-vlookup-function" class="section level4 unnumbered unlisted">
+<h4>The VLOOKUP function</h4>
+<p>The VLOOKUP function in Excel is a powerful tool to make data more descriptive and meaningful by referencing values from another table. In this example, the conservation status of animals is initially indicated with numeric values (1, 2, 3, and 4) in the dataset. To make this information more interpretable, we use a lookup table containing the corresponding descriptions for each number:</p>
+<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:right;">
+Indicator
+</th>
+<th style="text-align:left;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+Critically Endangered (CR)
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+Vulnerable (VU)
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:left;">
+Near Threatened (NT)
+</td>
+</tr>
+<tr>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+Least Concern (LC)
+</td>
+</tr>
+</tbody>
+</table>
+<p>By replicating the lookup table in a separate sheet of the Excel file, the VLOOKUP function can map the numeric indicators to their corresponding descriptions. This method not only improves clarity but also allows for easier data analysis and reporting, making it a practical approach to handle coded information in datasets.</p>
+<p>The syntax for the VLOOKUP function is:</p>
+<p><code>=VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])</code></p>
+<ul>
+<li><p><code>lookup_value</code>: The value you want to search for in the first column of the table.</p></li>
+<li><p><code>table_array</code>: The range of cells containing the table, including the column with the lookup value and the column with the return value.</p></li>
+<li><p><code>col_index_num</code>: The column number (relative to the table) from which to retrieve the result.</p></li>
+<li><p><code>range_lookup (optional)</code>: Specifies whether the match should be exact (<code>FALSE</code>) or approximate (<code>TRUE</code>). By default, it’s approximate.</p></li>
+</ul>
+<p>In this example, the process of using the VLOOKUP function to map descriptive conservation statuses to numeric indicators involves the following steps:</p>
+<ol style="list-style-type: decimal">
+<li>Begin by entering the lookup table in a separate sheet within the Excel file. This table should contain the numeric indicators in one column and their corresponding descriptions in another.</li>
+</ol>
+<p><img src="Figures/manipulation_1_lookup.png" width="30%" style="display: block; margin: auto;" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>In a new column of your dataset, type the VLOOKUP formula to reference the lookup table. Ensure you use absolute cell references (with dollar signs, e.g., <code>$A$1:$B$5</code>) for the lookup table range. This prevents the table reference from shifting when you drag the formula down to apply it to other rows.</li>
+</ol>
+<p><img src="Figures/manipulation_1_formula.png" width="70%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="conditional-formatting" class="section level4 unnumbered unlisted">
+<h4>Conditional formatting</h4>
+<p>Conditional formatting is a tool in Excel that allows users to automatically apply formatting to certain cells based on specified criteria. The formatting can be colours, icons, or many others. You can create rules based on predefined options or custom formulas.</p>
+<p>In the example of the Super Animal Cards, conditional formatting can be used to highlight the top 10 animals with the highest weights. This is particularly useful for quickly identifying the heaviest animals in the data set. To achieve this in Excel:</p>
+<ol style="list-style-type: decimal">
+<li>Select the column containing the weight data.</li>
+</ol>
+<p><img src="Figures/manipulation_2_1.png" width="70%" style="display: block; margin: auto;" /></p>
+<div style="page-break-after: always;"></div>
+<ol start="2" style="list-style-type: decimal">
+<li>Navigate to the <strong>Home</strong> tab, click on <strong>Conditional Formatting</strong> and choose <strong>New Rule</strong>.</li>
+</ol>
+<p><img src="Figures/manipulation_2_2.png" width="30%" style="display: block; margin: auto;" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>In the New Formatting Rule dialog box, select <strong>Format only top or bottom ranked values</strong>. This allows you to target the top 10 entries in the dataset.</li>
+</ol>
+<p><img src="Figures/manipulation_2_3.png" width="40%" style="display: block; margin: auto;" /></p>
+<div style="page-break-after: always;"></div>
+<ol start="4" style="list-style-type: decimal">
+<li>Specify the formatting style, such as a bold font or a shaded cell color, to visually emphasise the top 10 entries.</li>
+</ol>
+<p><img src="Figures/manipulation_2_4.png" width="40%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="numerical-calculations-in-excel" class="section level4 unnumbered unlisted">
+<h4>Numerical calculations in Excel</h4>
+<p>Excel can also perform basic numerical calculations, such as addition, subtraction, multiplication, and division. These operations can be executed directly in cells using simple formulas:</p>
+<ul>
+<li><p>Addition: <code>= A1 + B1</code> adds the values in cells A1 and B1.</p></li>
+<li><p>Subtraction: <code>= A1 - B1</code> subtracts the value in cell B1 from the value in cell A1.</p></li>
+<li><p>Multiplication: <code>= A1 * B1</code> multiplies the values in cells A1 and B1.</p></li>
+<li><p>Division: <code>= A1 / B1</code> divides the value in cell A1 by the value in cell B1.</p></li>
+</ul>
+<p>These formulas can also combine multiple operations using parentheses for clarity and order of precedence. For example, <code>= (A1 + B1) * C1</code> first adds the values in cells A1 and B1, then multiplies the result by the value in cell C1.</p>
+<p>In the example of the Super Animal Cards, we can convert the speed from kilometers per hour to miles per hour by multiplying the values in column H with 0.621371.</p>
+<p><img src="Figures/manipulation_3_1.png" width="70%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="constructing-crosstabulations" class="section level4 unnumbered unlisted">
+<h4>Constructing crosstabulations</h4>
+<p>The PivotTable tool in Excel is a powerful feature for constructing crosstabulations involving two or more variables. In this example, we will consider two cases:</p>
+<ol style="list-style-type: decimal">
+<li><p>When both variables are categorical.</p></li>
+<li><p>When one variable is categorical and the other is numerical.</p></li>
+</ol>
+<ul>
+<li><strong>Case 1: Create a crosstabulation of the species and the category of the super animal card.</strong></li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>Navigate to the <strong>Insert</strong> tab and select <strong>PivotTable</strong>.
+<img src="Figures/pivot_1.png" width="80%" style="display: block; margin: auto;" /></li>
+</ol>
+<div style="page-break-after: always;"></div>
+<ol start="2" style="list-style-type: decimal">
+<li>The Create PivotTable wizard will appear, where you can review the data range that is automatically detected and choose where the PivotTable will be created. For this example, select <strong>New Worksheet</strong>. Click <strong>OK</strong>.</li>
+</ol>
+<p><img src="Figures/pivot_2.png" width="60%" style="display: block; margin: auto;" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>A new worksheet will open up with the PivotTable Fields on the right.</li>
+</ol>
+<p><img src="Figures/pivot_3.png" width="80%" style="display: block; margin: auto;" /></p>
+<div style="page-break-after: always;"></div>
+<ol start="4" style="list-style-type: decimal">
+<li>Using the PivotTable Fields menu, the Pivot Table can be set up. Drag the column headings to their desired positions. Drag “Category” to the Rows area. Drag “Species” to the Columns area. Drag “Animal” to the Values area to count the number of animals in each category.</li>
+</ol>
+<p><img src="Figures/pivot_4.png" width="80%" style="display: block; margin: auto;" /></p>
+<ul>
+<li><p><strong>Case 2: Create a crosstabulation of the Species and the Size of the animal.</strong></p>
+<ol style="list-style-type: decimal">
+<li><p>Create the Pivot Table as in steps 1 and 2 above.</p></li>
+<li><p>Drag the column headings to their desired positions. Drag “Species” to the Rows area. Drag “Size” to the Columns area. Drag “Animal” to the Values area.</p></li>
+</ol></li>
+</ul>
+<p><img src="Figures/pivot_5.png" width="80%" style="display: block; margin: auto;" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Since “Size” is a numerical variable, it must be grouped into ranges. This can be done by selecting the cell with the first value of the “Size” variable, right-click and select <strong>Group</strong> from the menu.</li>
+</ol>
+<p><img src="Figures/pivot_6.png" width="60%" style="display: block; margin: auto;" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li>In the Grouping window, specify the desired range settings.</li>
+</ol>
+<p><img src="Figures/pivot_7.png" width="40%" style="display: block; margin: auto;" /></p>
+<ol start="5" style="list-style-type: decimal">
+<li>The PivotTable will now display a neater and more interpretable corsstabulation for species by grouped sizes.</li>
+</ol>
+<p><img src="Figures/pivot_8.png" width="80%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="example-employees" class="section level3" number="3.3.2">
+<h3><span class="header-section-number">3.3.2</span> Example: Employees</h3>
+<p>You are employed as a data analyst for a company and have been provided with a data set containing details about employees and the projects they are working on.</p>
+<p><img src="Figures/combine_1.png" width="80%" style="display: block; margin: auto;" /></p>
+<p>In this example, we will illustrate how to:</p>
+<ul>
+<li><p>Combine two columns in Excel into one.</p></li>
+<li><p>Splitting one column into two columns.</p></li>
+</ul>
+<div id="combining-columns" class="section level4 unnumbered unlisted">
+<h4>Combining columns</h4>
+<p>To combine the information of two columns into one, we will make use of the <code>CONCAT</code> function. This function is used in Excel to join, or concatenate, two or more text strings into a single string. In this example, we will join the name and the surname of the employees into a single column. The syntax for the <code>CONCAT</code> function is:</p>
+<p><code>=CONCAT(text1, [text2], ...)</code></p>
+<p>where <code>text1, text2,...</code> are text strings, cell references or ranges to be combined separated by commas. It is important to note that the <code>CONCAT</code> function does not automatically add any deliminators such as spaces or commas between the text strings. This must be explicitly added as part of the list of arguments.</p>
+<p>For this example, if we want to combine the text in the “emp_name” and “emp_surname” variables, the following steps can be followed:</p>
+<div style="page-break-after: always;"></div>
+<ol style="list-style-type: decimal">
+<li>Insert an empty column where the combined variable will be placed. To do this, select the column where the new column should appear before, right-click and select <strong>Insert</strong> from the menu. This will create an empty column which you can name “emp_name_surname”.</li>
+</ol>
+<p><img src="Figures/combine_2.png" width="60%" style="display: block; margin: auto;" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>In the first cell of the new column, use the <code>CONCAT</code> function to combine the name of the employee (in column B) with their surname (in column C). Remember to add a space between the name and the surname!</li>
+</ol>
+<p><img src="Figures/combine_3.png" width="80%" style="display: block; margin: auto;" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>The result of the <code>CONCAT</code> function is as follows:</li>
+</ol>
+<p><img src="Figures/combine_4.png" width="80%" style="display: block; margin: auto;" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Copy the formula down the rest of the columns to combine the names and the surnames for all the employees in the data set.</li>
+</ol>
+<p><img src="Figures/combine_5.png" width="80%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="splitting-columns" class="section level4 unnumbered unlisted">
+<h4>Splitting columns</h4>
+<p>To split columns in Excel, the <strong>Text to Columns</strong> functionality can be used. This functionality is used to split data in a single column into multiple columns based on either a specific deliminator or a fixed width. This is particular useful when the combined data needs to be separated into distinct fields for easier analysis or formatting.</p>
+<p>For this example, the project name and the client name are displayed in a single column, separated by a semicolon (<code>;</code>). To split them into two columns, follow these steps:</p>
+<ol style="list-style-type: decimal">
+<li>Again, add an empty column next to the column which requires splitting. Then, select the column with the combined information. Navigate to the <strong>Data</strong> tab and select <strong>Text to columns</strong>.</li>
+</ol>
+<p><img src="Figures/split_1.png" width="80%" style="display: block; margin: auto;" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>The Convert Text to Columns Wizard will open. In this case, the data is “Delimited” because the information is separated with a semicolon. This is often automatically detected. Click <strong>Next</strong>.</li>
+</ol>
+<p><img src="Figures/split_2.png" width="60%" style="display: block; margin: auto;" /></p>
+<div style="page-break-after: always;"></div>
+<ol start="3" style="list-style-type: decimal">
+<li>In the next step, select the appropriate deliminator, in this case, “semicolon”. You can preview the split data in the “Data Preview” section to confirm the results. Click <strong>Next</strong>.</li>
+</ol>
+<p><img src="Figures/split_3.png" width="60%" style="display: block; margin: auto;" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li>In the final step, choose the data format for each column. For this example, you can keep the default settings. Click <strong>Finish</strong>.</li>
+</ol>
+<p><img src="Figures/split_4.png" width="60%" style="display: block; margin: auto;" /></p>
+<ol start="5" style="list-style-type: decimal">
+<li>To combined data will now be split into two separate columns: one for the project name and one for the client name.</li>
+</ol>
+<p><img src="Figures/split_5.png" width="80%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="basic-excel-functions" class="section level3" number="3.3.3">
+<h3><span class="header-section-number">3.3.3</span> Basic Excel functions</h3>
+<p>Excel has many built-in functions that can assist in doing more numerical calculations, creating new variables in a data set as well as summarising data.</p>
+<div id="summation" class="section level4 unnumbered unlisted">
+<h4>Summation</h4>
+<p>The <code>SUM</code> function can be used to calculate the total of a range of numbers. The syntax for the <code>SUM</code> function is:</p>
+<p><code>=SUM(number1, number2, ...)</code> or <code>=SUM(range)</code></p>
+<p>For example, <code>SUM(A1:A10)</code> will return the sum of all the numbers in cells A1 to A10.</p>
+</div>
+<div id="averaging" class="section level4 unnumbered unlisted">
+<h4>Averaging</h4>
+<p>The arithmetic mean of a range of values can be calculated with the <code>AVERAGE</code> function. The syntax for the <code>AVERAGE</code> function is:</p>
+<p><code>=AVERAGE(number1, number2, ...)</code> or <code>=AVERAGE(range)</code></p>
+<p>For example, <code>AVERAGE(A1:A10)</code> will return the average of all the numbers in cells A1 to A10.</p>
+</div>
+<div id="counting" class="section level4 unnumbered unlisted">
+<h4>Counting</h4>
+<p>Counting functions can be useful for analysis the structure of the data set. Here we will consider three counting functions popularly used in Excel:</p>
+<ul>
+<li>The <code>COUNT</code> function counts the number of cells containing a numerical value. The syntax for the <code>COUNT</code> function is:</li>
+</ul>
+<p><code>=COUNT(value1, value2, ...)</code> or <code>=COUNT(range)</code></p>
+<p>For example, <code>COUNT(A1:A10)</code> will return the number of cells containing a numerical value in cells A1 to A10.</p>
+<ul>
+<li>The <code>COUNTA</code> function counts the number of non-empty cells. The cells can contain numerical values, text or values from any other data type. The syntax for the <code>COUNTA</code> function is:</li>
+</ul>
+<p><code>=COUNTA(value1, value2, ...)</code> or <code>=COUNTA(range)</code></p>
+<p>For example, <code>COUNTA(A1:A10)</code> will return the number of non-empty cells in the range A1 to A10.</p>
+<ul>
+<li>The <code>COUNTBLANK</code> function counts the number of empty cells. The syntax for the <code>COUNTBLANK</code> function is:</li>
+</ul>
+<p><code>=COUNTBLANK(value1, value2, ...)</code> or <code>=COUNTBLANK(range)</code></p>
+<p>For example, <code>COUNTBLANK(A1:A10)</code> will return the number of empty cells in the range A1 to A10.</p>
+</div>
+<div id="minimum-and-maximum-values" class="section level4 unnumbered unlisted">
+<h4>Minimum and maximum values</h4>
+<p>The <code>MIN</code> and <code>MAX</code> functions can be used to identify the smallest and the largest value in a range. The syntax for the <code>MIN</code> and the <code>MAX</code> functions is:</p>
+<ul>
+<li><p><code>=MIN(number1, number2, ...)</code> or <code>=MIN(range)</code></p></li>
+<li><p><code>=MAX(number1, number2, ...)</code> or <code>=MAX(range)</code></p></li>
+</ul>
+<p>For example, <code>MIN(A1:A10)</code> will return the smallest value in the range A1 to A10 and <code>MAX(A1:A10)</code> will return the largest value in the range A1 to A10.</p>
+</div>
+<div id="if-function" class="section level4 unnumbered unlisted">
+<h4>IF function</h4>
+<p>The <code>IF</code> function performs a logical test and returns one value if the condition is true and another value if the condition is false. The syntax for the <code>IF</code> function is:</p>
+<p><code>=IF(logical_test, value_if_true, value_if_false)</code></p>
+<ul>
+<li><p><code>logical_test</code>: Any value or expression that can be evaluated to TRUE or FALSE.</p></li>
+<li><p><code>value_if_true</code>: The value that is returned if <code>logical_test</code> is TRUE.</p></li>
+<li><p><code>value_if_false</code>: The value that is returned if <code>logical_test</code> is FALSE.</p></li>
+</ul>
+<p>For example, <code>=IF(A1&gt;50, "Pass", "Fail")</code> will return “Pass” if the value in cell A1 is greater than 50; otherwise it will return “Fail”.</p>
+</div>
+<div id="countif-function" class="section level4 unnumbered unlisted">
+<h4>Countif function</h4>
+<p>The number of cells than meet a certain condition can be counted with the <code>COUNTIF</code> function. The syntax for the <code>COUNTIF</code> function is:</p>
+<p><code>COUNTIF(range, criteria)</code></p>
+<ul>
+<li><p><code>range</code>: The range of cells from which you want to count non-empty cells.</p></li>
+<li><p><code>criteria</code>: The condition in the form of a number, expression or text that defines which cells will be counted.</p></li>
+</ul>
+<p>For example, <code>=COUNTIF(A1:A10, "&gt;10")</code> will count all the cells from A1 to A10 which contains a numerical value greater than 10.</p>
+</div>
+<div id="sumif-function" class="section level4 unnumbered unlisted">
+<h4>Sumif function</h4>
+<p>The <code>SUMIF</code> function is used to sum the values in a range that meets a specified criteria. The syntax for the <code>SUMIF</code> function is:</p>
+<p><code>=SUMIF(range, criteria, [sum_range])</code></p>
+<ul>
+<li><p><code>range</code>: The range of cells you want to evaluate.</p></li>
+<li><p><code>criteria</code>: The condition or criteria in the form of a number, expression or text that defines which cells will be added.</p></li>
+<li><p><code>sum_range</code> (optional): The actual cells to sum. If this argument is not specified, the cells in <code>range</code> will be used.</p></li>
+</ul>
+<p>For example, suppose you have a data set with two columns, where column A contains the product category and column B contains the number of sales.</p>
+<ul>
+<li>To sum the sales for “Electronics”, you can use the formula:</li>
+</ul>
+<p><code>=SUMIF(A1:A10, "Electronics", B1:B10)</code></p>
+<p>where Excel will look for the word “Electronics” in the range A1 to A10 and the corresponding sales values in B1 to B10 will be summed.</p>
+<ul>
+<li>To sum all the sale values greater than 500, you can use the formula:</li>
+</ul>
+<p><code>=SUMIF(B1:B10, "&gt;500")</code></p>
+<p>where Excel will sum all the sales values greater than 500 in the range B1 to B10.</p>
+</div>
+<div id="absolute-cell-referencing" class="section level4 unnumbered unlisted">
+<h4>Absolute cell referencing</h4>
+<p>In Excel, you can use absolute cell referencing to ensure that the formula keeps referencing to the same cell or range of cells regardless or where the formula is copied or moved. The syntax for absolute cell referencing is: <code>$Column$Row</code>. For example, <code>$A$1</code> refers to cell A1 and this reference will not change regardless of where the formula is copied in the Excel sheet.</p>
+<p>Absolute cell referencing is useful in scenarios where you need to repeatedly reference the same cell or range of cells. Common examples include:</p>
+<ul>
+<li><p><strong>Using a constant value</strong>: When applying a discount stored in a specific cell across multiple calculations.</p></li>
+<li><p><strong>Referencing a total</strong>: Referring to a grand total cell in calculations.</p></li>
+</ul>
+</div>
+</div>
+<div id="exercises-1" class="section level3" number="3.3.4">
+<h3><span class="header-section-number">3.3.4</span> Exercises</h3>
+<ol style="list-style-type: decimal">
+<li><p>Describe a scenario where you might use the <strong>Text to Columns</strong> functionality in Excel.</p></li>
+<li><p>Explain the difference between using a delimiter and using fixed width in the <strong>Text to Columns</strong> tool. Provide examples for each.</p></li>
+<li><p>What is the difference between <code>COUNT</code>, <code>COUNTA</code>, and <code>COUNTBLANK</code> functions? Provide an example for each.</p></li>
+<li><p>You are analysing sales data, and the column containing the product names has been combined with the client names, separated by a comma. Describe how you would use Excel to split this column into two separate columns.</p></li>
+<li><p>Explain how the <code>CONCAT</code> function can be used to combine data from two columns. Provide an example of when this might be useful.</p></li>
+<li><p>Explain the importance of absolute cell referencing in Excel. Provide an example of when it would be necessary.</p></li>
+<li><p>Describe a situation where combining data from two separate columns would be helpful for analysis. Which function in Excel would you use, and why?</p></li>
+</ol>
+
+</div>
+</div>
+<!-- </div> -->
+<p style="text-align: center;">
+<a href="3.2-data-cleaning.html"><button class="btn btn-default">Previous</button></a>
+<a href="4-ch4.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>

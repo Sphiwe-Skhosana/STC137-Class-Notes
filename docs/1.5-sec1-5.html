@@ -5,7 +5,7 @@
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="STC 137 Class Notes" />
+<meta property="og:title" content="1.5 Data Exploration – Foundations and Concepts | STC 137 Class Notes" />
 <meta property="og:type" content="book" />
 
 <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -27,7 +27,7 @@ MathJax.Hub.Config({
 set in the _output.yml file.
 The HTML output format for this example is bookdown::gitbook,</p>">
 
-<title>STC 137 Class Notes</title>
+<title>1.5 Data Exploration – Foundations and Concepts | STC 137 Class Notes</title>
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -199,18 +199,79 @@ details > summary {
 </div>
 <div class="row">
 <div class="col-sm-12">
-<div id="header">
-<h1 class="title">STC 137 Class Notes</h1>
-<h4 class="author"><em>Department of Statistics, University of Pretoria</em></h4>
-<h4 class="date"><em>Last Updated: 2025-02-12</em></h4>
+<div id="sec1-5" class="section level2" number="1.5">
+<h2><span class="header-section-number">1.5</span> Data Exploration – Foundations and Concepts</h2>
+<p>Data exploration is an important first step in the data analysis process. It involves uncovering the characteristics, patterns and hidden insights in the observed data set in an effort to gain a deeper understanding of the data. This step is usually referred to as exploratory data analysis (EDA). During EDA, statistical techniques are used to look for similarities, patterns, anomalies and also identify relationships between the different variables in the raw data. This step is also important for investigating the quality of the data by identifying missing values, duplicate data entries and\or inconsistencies in the data. Data exploration can be seen as part of, or as following, the data preparation step in the data management process.</p>
+<div id="approaches-to-exploratory-data-analysis" class="section level3" number="1.5.1">
+<h3><span class="header-section-number">1.5.1</span> Approaches to exploratory data analysis</h3>
+<ul>
+<li><p><strong>Descriptive statistics</strong> are the main numerical features of the data such as the central tendency of the data (using the mean or median) and the spread of the data (using the variance or standard deviation). For instance, suppose you are a quantitative analyst working for a bank and you have a spreadsheet of the loan amounts given out during the current financial period. A descriptive analysis, such as calculating the mean and standard deviation of the loan amount, can give you the average loan amount and the dispersion in the loan amounts, respectively. As another example, suppose we want to understand the relationship between wind speed and air temperature, we can calculate the covariance to identify whether there is a relationship between these variables, and if so, is it positive or negative. Moreover, we can calculate the correlation coefficient to quantify the strength of the relationship.</p></li>
+<li><p><strong>Tabular and graphical statistics</strong> are summaries and interpretations of the data using graphs and tables. This is useful for identifying trends and relationships between numerical variables (using scatter plots) and categorical variables (using cross-tabulations), distributional patterns (using histograms, frequency distributions and the ogive) and outliers (using a box-and-whisker plot). For instance, the figure below shows a box and whisker plot of a sample of data. It can be seen from the figure that the data point marked “Outlier” might be unusual in relation to the rest of the data.</p></li>
+</ul>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-2"></span>
+<img src="Figures-Chapter1/Outlier.png" alt="A box-and-whisker plot showing an outlier" width="80%" />
+<p class="caption">
+Figure 1.3: A box-and-whisker plot showing an outlier
+</p>
 </div>
-<div id="preface" class="section level1 unnumbered">
-<h1>Preface</h1>
-<p>In modern society, whether you are reading a magazine, watching TV or scrolling through social media, you encounter statistics. You can’t avoid it! Data collection, analysis and communication have become part of day-to-day activities. If you want to be an educated consumer and citizen, you need to understand how statistics are used and also misused in our daily lives. In other words, you need to be <em>data literate</em>. The purpose of this book is to give students, in any field of study, a conceptual and practical introduction to the field of statistics. The main focus is on the use of basic statistical techniques for, among others, <em>collecting data</em>, <em>understanding the data</em> by exploring it, <em>analyzing the data</em>, <em>interpreting the data</em> and <em>communicating the data</em> to facilitate data-driven decision-making. The book is application oriented. The discussion of each technique is followed by application examples. This book is written with the needs of the practitioner in mind. The mathematical prerequisite is matric (Grade 12) level mathematics.</p>
-
+<ul>
+<li><strong>Inferential statistics</strong> uses sampled data to draw conclusions about the population. This includes testing various hypotheses statements you may have about the population where the data was obtained such as whether certain variables follow a specific distribution or whether the observed relationship between two or more variables, from a graph, is significant. For instance, suppose that you are a quantitative analyst for a bank and you want to test the hypothesis that the average loan amount for male clients is large than that of female clients. This type of test can be easily performed using the Data Analysis tool in Microsoft Excel.</li>
+</ul>
+</div>
+<div id="advantages-and-disadvantages-of-data-exploration" class="section level3" number="1.5.2">
+<h3><span class="header-section-number">1.5.2</span> Advantages and disadvantages of data exploration</h3>
+<p>Data exploration has several benefits, including:</p>
+<ul>
+<li><p>Offering a comprehensive understanding of the data set before conducting the actual analysis.</p></li>
+<li><p>Enhancing the quality of the data.</p></li>
+<li><p>Highlighting important features and potential issues</p></li>
+<li><p>Providing insight into appropriate analysis techniques </p></li>
+<li><p>Guiding future research questions and directions</p></li>
+</ul>
+<p>Limitations of data exploration may include:</p>
+<ul>
+<li><p>Difficulty visualizing the high-dimensional data</p></li>
+<li><p>May become complex for complicated data structures</p></li>
+<li><p>It can be time consuming and subjective.</p></li>
+<li><p>Misrepresenting data by choosing the wrong summary indicators</p></li>
+</ul>
+</div>
+<div id="stages-in-the-exploratory-data-analysis-process" class="section level3" number="1.5.3">
+<h3><span class="header-section-number">1.5.3</span> Stages in the exploratory data analysis process</h3>
+<p>The data exploration process involves a series of stages or steps which are aimed at obtaining a comprehensive understanding of the data and the implications thereafter. This includes</p>
+<ol style="list-style-type: decimal">
+<li><p>Understand the problem understudy</p>
+<p>A crucial first step in the EDA process is to clearly state the problem that led to the collection of the data. This will help in various ways, such as formulating relevant questions, choosing the appropriate analytical tools and identifying inconsistencies or anomalies in the data.</p></li>
+<li><p>Examine the structure of the data</p>
+<p>Once you have a clear understanding of the problem, the next step is to familiarise yourself with the data by examining its structure which includes the size of the data, the number of variables and their data types. Check for inconsistencies and anomalies in the data and also missing values or data entries.</p></li>
+<li><p>Handle the inconsistencies, anomalies and missing values</p>
+<p>The next crucial step is to have a strategy to handle any inconsistencies, anomalies and\or missing data entries identified in the second step.</p></li>
+<li><p>Examine the statistical aspects of the data</p>
+<p>After addressing the issues identified in the second step, the next step involves the examination of the distribution, central tendency and variability of all the numerical variables. Moreover, various assumptions about the data can be tested. Among other things, this exercise will assist in identifying variables that deviate from expected patterns and may need further processing.</p></li>
+<li><p>Transform the data for analysis</p>
+<p>The next step is to prepare the data to be ready for data analysis. Based on your insights from the previous step, you may have to apply certain transformations to the data to make them conform to expectations. This involves, among others, standardizing or normalizing numerical variables, taking the log or square root to correct for skewness in numerical variables and dummy coding categorical variables.</p></li>
+<li><p>Visualize the data</p>
+<p>After transforming the data, you can now visualize it using tables and graphs such as frequency distributions and histograms. Data visualization is covered in some detail in Section <a href="1.6-sec1-6.html#sec1-6">1.6</a>.</p></li>
+<li><p>Communicate the findings and use them for further data analysis.</p></li>
+</ol>
+</div>
+<div id="exercises-to-section-1.5" class="section level3" number="1.5.4">
+<h3><span class="header-section-number">1.5.4</span> Exercises to Section 1.5</h3>
+<p><strong>Question 1</strong></p>
+<p>What is data exploration?</p>
+<p><strong>Question 2</strong></p>
+<p>For each of the following scenarios, identify the approach used for data exploration:</p>
+<p>a. A research team analysed the health data of City of Tshwane residents. They found that 12% of the residents have at least one non-communicable disease.</p>
+<p>b. An environmental scientist analysed data on monthly carbon dioxide (CO<sub>2</sub>) emissions and the monthly number of people hospitalized for respiratory issues in Pretoria. A scatter plot showed that there is a positive relationship between these two variables.</p>
+<p>c. A fitness instructor analysed data on the exercise patterns of people in the district of the Cape Winelands in the Western Cape. She plotted the data on a histogram and found a bimodal distribution of exercise habits, suggesting that there are two distinct behavioural groups.</p>
+<p>d. A marine biologist analysed data collected over 10 years by sensors from the bottom of the Indian ocean. She found that the average temperature was 24 degrees Celsius.</p>
+<p>e.A hospital administrator at Hatfield General hospital claims that less than 10% of the daily hospital admissions are for serious injuries. In an analysis of hospital data, he was able to confirm his claim.</p>
+<div style="page-break-after: always;"></div>
+</div>
 </div>
 <p style="text-align: center;">
-<a href="1-an-overview-of-data-literacy.html"><button class="btn btn-default">Next</button></a>
+<a href="1.4-sec1-4.html"><button class="btn btn-default">Previous</button></a>
+<a href="1.6-sec1-6.html"><button class="btn btn-default">Next</button></a>
 </p>
 </div>
 </div>

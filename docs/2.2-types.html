@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="2.2 Data Types | STC 137 Class Notes" />
+<meta property="og:type" content="book" />
+
+<meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
+<meta name="github-repo" content="sphiwe-skhosana/STC137-Class-Notes" />
+
+<meta name="author" content="Department of Statistics, University of Pretoria" />
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>">
+
+<title>2.2 Data Types | STC 137 Class Notes</title>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="libs/wordcloud2-0.0.1/wordcloud.css" rel="stylesheet" />
+<script src="libs/wordcloud2-0.0.1/wordcloud2-all.js"></script>
+<script src="libs/wordcloud2-0.0.1/hover.js"></script>
+<script src="libs/wordcloud2-binding-0.2.1/wordcloud2.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+/* show arrow before summary tag as in bootstrap
+TODO: remove if bootstrap in updated in html_document (rmarkdown#1485) */
+details > summary {
+  display: list-item;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li><a href="index.html#preface" id="toc-preface">Preface</a></li>
+<li class="has-sub"><a href="1-an-overview-of-data-literacy.html#an-overview-of-data-literacy" id="toc-an-overview-of-data-literacy"><span class="toc-section-number">1</span> An Overview of Data literacy</a>
+<ul>
+<li class="has-sub"><a href="1.1-sec1-1.html#sec1-1" id="toc-sec1-1"><span class="toc-section-number">1.1</span> Introduction</a>
+<ul>
+<li><a href="1.1-sec1-1.html#definition" id="toc-definition"><span class="toc-section-number">1.1.1</span> Definition</a></li>
+<li><a href="1.1-sec1-1.html#the-importance-of-being-data-literate-in-modern-society" id="toc-the-importance-of-being-data-literate-in-modern-society"><span class="toc-section-number">1.1.2</span> The importance of being data literate in modern society</a></li>
+<li><a href="1.1-sec1-1.html#data-literacy-skills" id="toc-data-literacy-skills"><span class="toc-section-number">1.1.3</span> Data Literacy Skills</a></li>
+<li><a href="1.1-sec1-1.html#data-literacy-in-practice" id="toc-data-literacy-in-practice"><span class="toc-section-number">1.1.4</span> Data Literacy in Practice</a></li>
+<li><a href="1.1-sec1-1.html#exercises-to-section-1.1" id="toc-exercises-to-section-1.1"><span class="toc-section-number">1.1.5</span> Exercises to Section 1.1</a></li>
+</ul></li>
+<li class="has-sub"><a href="1.2-data.html#data" id="toc-data"><span class="toc-section-number">1.2</span> Data</a>
+<ul>
+<li><a href="1.2-data.html#what-is-data" id="toc-what-is-data"><span class="toc-section-number">1.2.1</span> What is data?</a></li>
+<li><a href="1.2-data.html#properties-of-a-data-set" id="toc-properties-of-a-data-set"><span class="toc-section-number">1.2.2</span> Properties of a data set</a></li>
+<li><a href="1.2-data.html#observational-and-experimental-data" id="toc-observational-and-experimental-data"><span class="toc-section-number">1.2.3</span> Observational and experimental data</a></li>
+<li><a href="1.2-data.html#cross-sectional-and-time-series-data" id="toc-cross-sectional-and-time-series-data"><span class="toc-section-number">1.2.4</span> Cross-sectional and time-series data</a></li>
+<li><a href="1.2-data.html#population-and-sample" id="toc-population-and-sample"><span class="toc-section-number">1.2.5</span> Population and sample</a></li>
+<li><a href="1.2-data.html#exercises-to-section-1.2" id="toc-exercises-to-section-1.2"><span class="toc-section-number">1.2.6</span> Exercises to Section 1.2</a></li>
+</ul></li>
+<li class="has-sub"><a href="1.3-sec1-3.html#sec1-3" id="toc-sec1-3"><span class="toc-section-number">1.3</span> Data Management - Foundations and Concepts</a>
+<ul>
+<li><a href="1.3-sec1-3.html#data-management-process" id="toc-data-management-process"><span class="toc-section-number">1.3.1</span> Data management process</a></li>
+<li><a href="1.3-sec1-3.html#the-benefits-of-data-management-in-modern-society" id="toc-the-benefits-of-data-management-in-modern-society"><span class="toc-section-number">1.3.2</span> The benefits of data management in modern society</a></li>
+<li><a href="1.3-sec1-3.html#the-challenges-of-data-management-in-modern-society" id="toc-the-challenges-of-data-management-in-modern-society"><span class="toc-section-number">1.3.3</span> The challenges of data management in modern society</a></li>
+<li><a href="1.3-sec1-3.html#strategies-for-data-management" id="toc-strategies-for-data-management"><span class="toc-section-number">1.3.4</span> Strategies for data management</a></li>
+<li><a href="1.3-sec1-3.html#exercises-to-section-1.3" id="toc-exercises-to-section-1.3"><span class="toc-section-number">1.3.5</span> Exercises to Section 1.3</a></li>
+</ul></li>
+<li class="has-sub"><a href="1.4-sec1-4.html#sec1-4" id="toc-sec1-4"><span class="toc-section-number">1.4</span> Data Ethics</a>
+<ul>
+<li><a href="1.4-sec1-4.html#the-importance-of-data-ethics" id="toc-the-importance-of-data-ethics"><span class="toc-section-number">1.4.1</span> The importance of data ethics</a></li>
+<li><a href="1.4-sec1-4.html#data-ethics-principles" id="toc-data-ethics-principles"><span class="toc-section-number">1.4.2</span> Data ethics principles</a></li>
+<li><a href="1.4-sec1-4.html#exercises-to-section-1.4" id="toc-exercises-to-section-1.4"><span class="toc-section-number">1.4.3</span> Exercises to Section 1.4</a></li>
+</ul></li>
+<li class="has-sub"><a href="1.5-sec1-5.html#sec1-5" id="toc-sec1-5"><span class="toc-section-number">1.5</span> Data Exploration – Foundations and Concepts</a>
+<ul>
+<li><a href="1.5-sec1-5.html#approaches-to-exploratory-data-analysis" id="toc-approaches-to-exploratory-data-analysis"><span class="toc-section-number">1.5.1</span> Approaches to exploratory data analysis</a></li>
+<li><a href="1.5-sec1-5.html#advantages-and-disadvantages-of-data-exploration" id="toc-advantages-and-disadvantages-of-data-exploration"><span class="toc-section-number">1.5.2</span> Advantages and disadvantages of data exploration</a></li>
+<li><a href="1.5-sec1-5.html#stages-in-the-exploratory-data-analysis-process" id="toc-stages-in-the-exploratory-data-analysis-process"><span class="toc-section-number">1.5.3</span> Stages in the exploratory data analysis process</a></li>
+<li><a href="1.5-sec1-5.html#exercises-to-section-1.5" id="toc-exercises-to-section-1.5"><span class="toc-section-number">1.5.4</span> Exercises to Section 1.5</a></li>
+</ul></li>
+<li class="has-sub"><a href="1.6-sec1-6.html#sec1-6" id="toc-sec1-6"><span class="toc-section-number">1.6</span> Data visualization – Foundations and Concepts</a>
+<ul>
+<li><a href="1.6-sec1-6.html#common-uses-of-data-visualization-in-modern-society" id="toc-common-uses-of-data-visualization-in-modern-society"><span class="toc-section-number">1.6.1</span> Common uses of data visualization in modern society</a></li>
+<li><a href="1.6-sec1-6.html#types-of-data-visualizations" id="toc-types-of-data-visualizations"><span class="toc-section-number">1.6.2</span> Types of data visualizations</a></li>
+<li><a href="1.6-sec1-6.html#components-of-a-data-visualization-tool" id="toc-components-of-a-data-visualization-tool"><span class="toc-section-number">1.6.3</span> Components of a data visualization tool</a></li>
+<li><a href="1.6-sec1-6.html#advantages-and-disadvantages-of-data-visualization" id="toc-advantages-and-disadvantages-of-data-visualization"><span class="toc-section-number">1.6.4</span> Advantages and Disadvantages of data visualization</a></li>
+<li><a href="1.6-sec1-6.html#exercises-to-section-1.6" id="toc-exercises-to-section-1.6"><span class="toc-section-number">1.6.5</span> Exercises to Section 1.6</a></li>
+</ul></li>
+<li class="has-sub"><a href="1.7-sec1-7.html#sec1-7" id="toc-sec1-7"><span class="toc-section-number">1.7</span> Data analysis – Foundations and Concepts</a>
+<ul>
+<li><a href="1.7-sec1-7.html#the-data-analysis-process" id="toc-the-data-analysis-process"><span class="toc-section-number">1.7.1</span> The Data Analysis process</a></li>
+<li><a href="1.7-sec1-7.html#approaches-to-data-analysis" id="toc-approaches-to-data-analysis"><span class="toc-section-number">1.7.2</span> Approaches to Data Analysis</a></li>
+<li><a href="1.7-sec1-7.html#uses-of-data-analysis-in-modern-society" id="toc-uses-of-data-analysis-in-modern-society"><span class="toc-section-number">1.7.3</span> Uses of data analysis in modern society</a></li>
+<li><a href="1.7-sec1-7.html#data-analysis-techniques" id="toc-data-analysis-techniques"><span class="toc-section-number">1.7.4</span> Data analysis techniques</a></li>
+<li><a href="1.7-sec1-7.html#computational-tools-and-software-for-data-analysis" id="toc-computational-tools-and-software-for-data-analysis"><span class="toc-section-number">1.7.5</span> Computational tools and software for data analysis</a></li>
+<li><a href="1.7-sec1-7.html#exercises-to-section-1.7" id="toc-exercises-to-section-1.7"><span class="toc-section-number">1.7.6</span> Exercises to Section 1.7</a></li>
+</ul></li>
+</ul></li>
+<li class="has-sub"><a href="2-ch2.html#ch2" id="toc-ch2"><span class="toc-section-number">2</span> Sources and Types of Data</a>
+<ul>
+<li class="has-sub"><a href="2.1-sources.html#sources" id="toc-sources"><span class="toc-section-number">2.1</span> Data Sources</a>
+<ul>
+<li><a href="2.1-sources.html#sources:intro" id="toc-sources:intro"><span class="toc-section-number">2.1.1</span> Introduction</a></li>
+<li><a href="2.1-sources.html#sources:primary" id="toc-sources:primary"><span class="toc-section-number">2.1.2</span> Primary Data Sources</a></li>
+<li><a href="2.1-sources.html#sources:secondary" id="toc-sources:secondary"><span class="toc-section-number">2.1.3</span> Secondary Data Sources</a></li>
+<li><a href="2.1-sources.html#sources:tertiary" id="toc-sources:tertiary"><span class="toc-section-number">2.1.4</span> Tertiary Data Sources</a></li>
+<li><a href="2.1-sources.html#sources:where" id="toc-sources:where"><span class="toc-section-number">2.1.5</span> Where Can I Find Data?</a></li>
+</ul></li>
+<li class="has-sub"><a href="2.2-types.html#types" id="toc-types"><span class="toc-section-number">2.2</span> Data Types</a>
+<ul>
+<li><a href="2.2-types.html#types:intro" id="toc-types:intro"><span class="toc-section-number">2.2.1</span> Introduction</a></li>
+<li><a href="2.2-types.html#scales-of-measurement" id="toc-scales-of-measurement"><span class="toc-section-number">2.2.2</span> Scales of Measurement</a></li>
+<li><a href="2.2-types.html#data-types" id="toc-data-types"><span class="toc-section-number">2.2.3</span> Data Types</a></li>
+<li><a href="2.2-types.html#review-1" id="toc-review-1"><span class="toc-section-number">2.2.4</span> Review</a></li>
+</ul></li>
+</ul></li>
+<li class="has-sub"><a href="3-ch3.html#ch3" id="toc-ch3"><span class="toc-section-number">3</span> Data Handling in Excel</a>
+<ul>
+<li class="has-sub"><a href="3.1-data-importing.html#data-importing" id="toc-data-importing"><span class="toc-section-number">3.1</span> Data importing</a>
+<ul>
+<li><a href="3.1-data-importing.html#change-decimal-separator-settings-in-excel" id="toc-change-decimal-separator-settings-in-excel"><span class="toc-section-number">3.1.1</span> Change decimal separator settings in Excel</a></li>
+<li><a href="3.1-data-importing.html#opening-a-.xlsx-file-in-excel" id="toc-opening-a-.xlsx-file-in-excel"><span class="toc-section-number">3.1.2</span> Opening a .xlsx file in Excel</a></li>
+<li><a href="3.1-data-importing.html#importing-a-.txt-file-in-excel" id="toc-importing-a-.txt-file-in-excel"><span class="toc-section-number">3.1.3</span> Importing a .txt file in Excel</a></li>
+<li><a href="3.1-data-importing.html#importing-data-from-a-website" id="toc-importing-data-from-a-website"><span class="toc-section-number">3.1.4</span> Importing data from a website</a></li>
+</ul></li>
+<li class="has-sub"><a href="3.2-data-cleaning.html#data-cleaning" id="toc-data-cleaning"><span class="toc-section-number">3.2</span> Data cleaning</a>
+<ul>
+<li><a href="3.2-data-cleaning.html#example-data-cleaning-in-excel" id="toc-example-data-cleaning-in-excel"><span class="toc-section-number">3.2.1</span> Example: Data cleaning in Excel</a></li>
+<li><a href="3.2-data-cleaning.html#missing-data" id="toc-missing-data"><span class="toc-section-number">3.2.2</span> Missing data</a></li>
+<li><a href="3.2-data-cleaning.html#duplicate-values" id="toc-duplicate-values"><span class="toc-section-number">3.2.3</span> Duplicate values</a></li>
+<li><a href="3.2-data-cleaning.html#exercises" id="toc-exercises"><span class="toc-section-number">3.2.4</span> Exercises</a></li>
+</ul></li>
+<li class="has-sub"><a href="3.3-data-manipulation.html#data-manipulation" id="toc-data-manipulation"><span class="toc-section-number">3.3</span> Data manipulation</a>
+<ul>
+<li><a href="3.3-data-manipulation.html#example-super-animals" id="toc-example-super-animals"><span class="toc-section-number">3.3.1</span> Example: Super Animals</a></li>
+<li><a href="3.3-data-manipulation.html#example-employees" id="toc-example-employees"><span class="toc-section-number">3.3.2</span> Example: Employees</a></li>
+<li><a href="3.3-data-manipulation.html#basic-excel-functions" id="toc-basic-excel-functions"><span class="toc-section-number">3.3.3</span> Basic Excel functions</a></li>
+<li><a href="3.3-data-manipulation.html#exercises-1" id="toc-exercises-1"><span class="toc-section-number">3.3.4</span> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li><a href="4-ch4.html#ch4" id="toc-ch4"><span class="toc-section-number">4</span> Sampling and Collecting data</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="types" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Data Types</h2>
+<div id="types:intro" class="section level3" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> Introduction</h3>
+<p>As a statistician, data analyst, data scientist or a professional in any similar career, it is important to understand the different types of data. Intuitively, this makes sense: we understand that someone’s height is fundamentally different information from their blood pressure, favourite vegetable, or their name. We also understand that these different kinds of data cannot be directly compared.</p>
+<p>As an example, consider two friends, Shamila and Kagiso. Shamila is 160cm tall, has a systolic blood pressure of 110, and likes broccoli. Kagiso is 180cm tall, has a systolic blood pressure of 119, and likes carrots. We can say that Kagiso is taller than Shamila, but we cannot say that Kagiso is taller than his blood pressure. We can say that Kagiso’s blood pressure is higher than Shamila’s, but we cannot say that Kagiso’s blood pressure is higher than broccoli (what would that even mean?). These differences may seem obvious in this example, but keep them in mind as we explore the different data types and scales of measurement.</p>
+</div>
+<div id="scales-of-measurement" class="section level3" number="2.2.2">
+<h3><span class="header-section-number">2.2.2</span> Scales of Measurement</h3>
+<p>Scales of measurement refers to the categories in which we divide data according to their properties, and which inform the appropriate kinds of analyses we can perform on the data. There are four scales of measurement, namely nominal, ordinal, interval and ratio.</p>
+<p>Consider the example dataset below. This dataset displays some administrative, demographic, economic and agricultural data of the provinces of South Africa.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-4"></span>
+<img src="Renate%20Chapters/DataExampleSA.png" alt="Figure 1: Provinces dataset" width="100%" />
+<p class="caption">
+Figure 2.1: Figure 1: Provinces dataset
+</p>
+</div>
+<div id="nominal" class="section level4" number="2.2.2.1">
+<h4><span class="header-section-number">2.2.2.1</span> Nominal</h4>
+<p>Nominal data refers to data to which there is no order or ranking. In the Provinces dataset, there are three nominal variables. <em>Province</em> is a nominal variable, since there is no specific order to the provinces. <em>Province where most of the population migrate</em> is similarly a nominal variable.</p>
+<p>Q: What is the third nominal variable in the Provinces dataset?</p>
+<p>Nominal data is best represented by <strong>bar charts</strong> and <strong>pie charts</strong>.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-5"></span>
+<img src="Renate%20Chapters/PieChartNominal.png" alt="Figure 2: Pie chart of the 'Province where most of the population migrate' nominal variable." width="50%" />
+<p class="caption">
+Figure 2.2: Figure 2: Pie chart of the ‘Province where most of the population migrate’ nominal variable.
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-6"></span>
+<img src="Renate%20Chapters/BarChartNominal.png" alt="Figure 3: Bar chart of the 'Province where most of the population migrate' nominal variable." width="50%" />
+<p class="caption">
+Figure 2.3: Figure 3: Bar chart of the ‘Province where most of the population migrate’ nominal variable.
+</p>
+</div>
+<p>Q: Would it be useful to make a pie chart or a bar chart of the <em>Province</em> variable? Why or why not?</p>
+</div>
+<div id="ordinal" class="section level4" number="2.2.2.2">
+<h4><span class="header-section-number">2.2.2.2</span> Ordinal</h4>
+<p>Ordinal data refers to data that has an order, but where the difference in order cannot be measured. In the Provinces dataset, <em>HDI</em> (Human Development Index) is an ordinal variable. There is a clear order to the values of <em>HDI</em>, namely Medium or High. However, the difference in order cannot be measured quantitatively. We cannot, for instance, say that the Free State’s HDI is “twice as medium” as that of the Eastern Cape, or that North West’s HDI is “a third as high” as that of Western Cape.</p>
+<p>Q: Can you think of other examples of ordinal variables?</p>
+<p>Ordinal data is best represented by <strong>bar charts</strong>.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-7"></span>
+<img src="Renate%20Chapters/HistogramOrdinal.png" alt="Figure 4: Bar chart of the 'HDI' ordinal variable." width="50%" />
+<p class="caption">
+Figure 2.4: Figure 4: Bar chart of the ‘HDI’ ordinal variable.
+</p>
+</div>
+</div>
+<div id="interval" class="section level4" number="2.2.2.3">
+<h4><span class="header-section-number">2.2.2.3</span> Interval</h4>
+<p>Interval data refers to data that has an order, and where the difference in order can be measured, i.e. it can be quantified by a numerical value. However, the ratio between interval data values does not have a meaning, and there is no true zero. In the Provinces dataset, <em>Summer temp</em> is an interval-valued variable. This is because temperature does not have a true zero value. A temperature of 0 degrees Celsius is cold; it does not mean that there is <em>no</em> temperature.</p>
+<p>Interval data can be represented by, among other things, <strong>bar charts</strong>, <strong>histograms</strong>, and <strong>box plots</strong>.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-8"></span>
+<img src="Renate%20Chapters/BoxPlotInterval.png" alt="Figure 5: Box plot of the 'Summer temp' interval variable." width="50%" />
+<p class="caption">
+Figure 2.5: Figure 5: Box plot of the ‘Summer temp’ interval variable.
+</p>
+</div>
+<p>Q: Can you think of other examples of interval variables?</p>
+</div>
+<div id="ratio" class="section level4" number="2.2.2.4">
+<h4><span class="header-section-number">2.2.2.4</span> Ratio</h4>
+<p>Ratio data refers to data that has an order, where the difference in order can be measured quantitatively, and where the ratio between values has a meaning. The data also has a true zero. In the Provinces dataset, <em>Land area</em>, <em>Population density</em>, and <em>% of agricultural households</em> are examples of ratio variables.</p>
+<p>Like interval data, ratio data can be represented by, among other things, <strong>bar charts</strong>, <strong>histograms</strong>, and <strong>box plots</strong>.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-9"></span>
+<img src="Renate%20Chapters/HistogramRatio.png" alt="Figure 6: Histogram of the '% of households with no internet' ratio variable." width="50%" />
+<p class="caption">
+Figure 2.6: Figure 6: Histogram of the ‘% of households with no internet’ ratio variable.
+</p>
+</div>
+<p>Q: Are the other ratio variables in the Provinces dataset? If there are, which ones are they?</p>
+</div>
+<div id="review" class="section level4" number="2.2.2.5">
+<h4><span class="header-section-number">2.2.2.5</span> Review:</h4>
+<p>Give the scale of measurement of the following variables and explain your answer.</p>
+<ul>
+<li>Province</li>
+<li>Coastal (1) or Inland (2)</li>
+<li>Population size</li>
+<li>HDI</li>
+<li>% of agricultural households</li>
+<li>Land area (sq km)</li>
+<li>Population density (per sq km)</li>
+<li>% of households with no internet access</li>
+<li>Sex ratio</li>
+<li>Median age</li>
+<li>Summer temp</li>
+<li>Province where most of the population migrate</li>
+</ul>
+<p>If you are struggling to identify the scale of measurement of a variable, ask yourself the following questions:</p>
+<ol style="list-style-type: decimal">
+<li>Can you arrange the values of the variable in a particular order?</li>
+<li>Does the difference in order have a numerical value?</li>
+<li>Does the ratio of the values have a meaning?</li>
+<li>Do the values of the variable have a true zero?</li>
+</ol>
+</div>
+</div>
+<div id="data-types" class="section level3" number="2.2.3">
+<h3><span class="header-section-number">2.2.3</span> Data Types</h3>
+<p>Data comes in many different forms, such as numbers, text, images, GPS coordinates, and many more. In this course, the two main data types we will consider are <strong>quantitative</strong> and <strong>qualitative</strong> data. Quantitative data has numerical values, and can be analysed using mathematical and statistical methods. Qualitative data has descriptive or categorical values.</p>
+<div id="quantitative-data" class="section level4" number="2.2.3.1">
+<h4><span class="header-section-number">2.2.3.1</span> Quantitative Data</h4>
+<p>Quantitative data can be measured or counted and expressed numerically. It is always expressed as numerical values. It is used to quantify concepts such as “how much,” “how many,” or “how often.” it can be analysed using mathematical operations such as addition, subtraction, and more advanced statistical analysis.</p>
+<p>In the Provinces dataset, <em>Population size</em>, <em>% of agricultural households</em>, <em>Land area (sq km)</em>, <em>Population density (per sq km)</em>, <em>% of households with no internet access</em>, <em>Sex ratio</em>, <em>Median age</em> and <em>Summer temp</em> are quantitative variables.</p>
+<p>Q: Why is the variable <em>Coastal (1) or Inland (2)</em> not considered a quantitative variable, even though it is represented by a number?</p>
+<p>Quantitative data is categorised into two main types: discrete and continuous.</p>
+<div id="discrete-data" class="section level5" number="2.2.3.1.1">
+<h5><span class="header-section-number">2.2.3.1.1</span> Discrete Data</h5>
+<p>Discrete data is data that can be <strong>counted</strong>, and thus has integer values. Discrete data does not have fractions or decimals. In the Provinces dataset, <em>Population size</em> is a discrete variable. This is because it represents the number of people in a province. The number of people can be counted, and will always have integer values. One cannot have ‘0.75 of a person’!</p>
+<p>Typically, discrete data can be expressed as ‘the number of’ something.</p>
+<p>Q: What other examples of discrete data can you think of?</p>
+</div>
+<div id="continuous-data" class="section level5" number="2.2.3.1.2">
+<h5><span class="header-section-number">2.2.3.1.2</span> Continuous Data</h5>
+<p>Continous data is data that can be <strong>measured</strong>, and thus has real values. It can have fractions and decimals. In the Provinces dataset, <em>% of households with no internet access</em> is a continuous variable. This is because it represents a percentage, which can have decimals.</p>
+<p>Q: What other examples of continuous data can you see in the Provinces dataset?</p>
+</div>
+</div>
+<div id="qualitative-data" class="section level4" number="2.2.3.2">
+<h4><span class="header-section-number">2.2.3.2</span> Qualitative Data</h4>
+<p>Qualitative data is used to categorise or describe phenomena. The scales of measurement associated with qualitative data are nominal and ordinal data. Answers to open-ended questions can also be examples of qualitative data.</p>
+<p>In the Provinces dataset, <em>Province</em>, <em>Coastal (1) or Inland (2)</em>, <em>HDI</em> and <em>Province where most of the population migrate</em> are qualitative variables.</p>
+<p>Other examples of qualitative data that you might encounter include:</p>
+<ul>
+<li>Product ratings: “Excellent,” “Good,” “Fair,” “Poor”</li>
+<li>Colours: Red, blue, yellow</li>
+<li>Genres: Mystery, romance, action</li>
+<li>Brands: Apple, Samsung, Sony</li>
+<li>Responses to open-ended survey questions: “How do you feel about the semester?”</li>
+</ul>
+<p>Q: What other qualitative variables can you think of?</p>
+<p>Qualitative data can best be visualised by bar charts, pie charts, and word clouds. The image below shows a word cloud of keywords associated with tourism in South Africa.</p>
+<div class="wordcloud2 html-widget html-fill-item" id="htmlwidget-91eacc584aef9855b5c5" style="width:672px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-91eacc584aef9855b5c5">{"x":{"word":["Atlantic Ocean","beaches","Big Five","Blyde River Canyon","Cape Town","Cape Winelands","Chapman's Peak","Drakensberg","Durban","Elephant","Game Reserve","Garden Route","Indian Ocean","Johannesburg","Kruger National Park","Lion","Panorama Route","Rhino","safari","South Africa","Stellenbosch","Sun City","Table Mountain","wildlife"],"freq":[8,6,6,5,8,6,8,6,8,11,4,4,5,6,6,6,5,3,10,5,8,7,8,5],"fontFamily":"Segoe UI","fontWeight":"bold","color":"random-dark","minSize":0,"weightFactor":16.36363636363636,"backgroundColor":"white","gridSize":0,"minRotation":-0.7853981633974483,"maxRotation":0.7853981633974483,"shuffle":true,"rotateRatio":0.4,"shape":"circle","ellipticity":0.65,"figBase64":null,"hover":null},"evals":[],"jsHooks":{"render":[{"code":"function(el,x){\n                        console.log(123);\n                        if(!iii){\n                          window.location.reload();\n                          iii = False;\n\n                        }\n  }","data":null}]}}</script>
+</div>
+<div id="quantitative-vs-qualitative-data-summary" class="section level4" number="2.2.3.3">
+<h4><span class="header-section-number">2.2.3.3</span> Quantitative vs qualitative data summary</h4>
+<p>The below table summarises the key aspects of quantitative and qualitative data, and the key differences between them.</p>
+<table>
+<caption><span id="tab:unnamed-chunk-11">Table 2.1: </span>Differences between qualitative and quantitative data</caption>
+<colgroup>
+<col width="25%" />
+<col width="35%" />
+<col width="39%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left">Data type</td>
+<td align="left">Qualitative data</td>
+<td align="left">Quantitative data</td>
+</tr>
+<tr class="even">
+<td align="left">Nature</td>
+<td align="left">Descriptive, categorical</td>
+<td align="left">Numerical, measurable, countable</td>
+</tr>
+<tr class="odd">
+<td align="left">Values</td>
+<td align="left">Words, labels, categories</td>
+<td align="left">Numbers, counts, measurements</td>
+</tr>
+<tr class="even">
+<td align="left">Examples</td>
+<td align="left">Province names, brands, opinions</td>
+<td align="left">Population size, percentages, income</td>
+</tr>
+<tr class="odd">
+<td align="left">Visualisation</td>
+<td align="left">Bar chart, pie chart, word cloud</td>
+<td align="left">Histogram, scatter plot, line chart</td>
+</tr>
+<tr class="even">
+<td align="left">Mathematical operations</td>
+<td align="left">Not applicable</td>
+<td align="left">Applicable (e.g. sum, average)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="other-data-types" class="section level4" number="2.2.3.4">
+<h4><span class="header-section-number">2.2.3.4</span> Other Data Types</h4>
+<p>The data available in the world today is growing exponentially in volume and diversity. Social media, fitness apps, website cookies, videos, GPS devices, satellites and many more sources of data are producing thousands of gigabytes of data every day. Although this chapter focused on quantitative and qualitative data types, with nominal, ordinal, interval and ratio scales of measurement, many more data types exist in our rapidly changing world. It is thus important for you to take notice of some common additional data types, which this section will highlight.</p>
+<div id="date-and-time-data" class="section level5" number="2.2.3.4.1">
+<h5><span class="header-section-number">2.2.3.4.1</span> Date and time data</h5>
+<p>Date and time data can be measured as ordinal, interval or ratio data, depending on its nature.</p>
+<ul>
+<li>Ordinal: Dates including days of the week can be measured as ordinal data, since there is an order to these dates, but no meaningful numerical distance between e.g. Monday and Tuesday.</li>
+<li>Interval: Time on a clock (24 hours or 12 hours) can be measured as interval data, since it has no meaningful zero value.</li>
+<li>Ratio: The length of time between events can be measured as a ratio (continuous) variable, since it has a meaningful zero value.</li>
+</ul>
+</div>
+<div id="time-series-data" class="section level5" number="2.2.3.4.2">
+<h5><span class="header-section-number">2.2.3.4.2</span> Time series data</h5>
+<p>Time series data represent measurements taken over time, usually at regular intervals. It is used to study and understand patterns happening across time, and predict what may happen in the future. Examples of time series data include:</p>
+<ul>
+<li>Daily stock prices</li>
+<li>Daily traffic volume on a certain road</li>
+<li>Patient vitals (e.g. blood pressure) measured weekly</li>
+<li>Monthly sales</li>
+</ul>
+<p>Time series can often be represented by line plots. Figure 7 shows the line plots of average monthly maximum temperatures for each of the provinces.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-12"></span>
+<img src="Renate%20Chapters/Temps.png" alt="Figure 7: Time series of monthly maximum temperature per province" width="50%" />
+<p class="caption">
+Figure 2.7: Figure 7: Time series of monthly maximum temperature per province
+</p>
+</div>
+</div>
+<div id="image-data" class="section level5" number="2.2.3.4.3">
+<h5><span class="header-section-number">2.2.3.4.3</span> Image data</h5>
+<p>Image data is popular in the field of computer vision and AI. Images are typically represented as a set of three matrices, or grids, representing the red, blue and green values of each pixel in the image.</p>
+<p>Figures 8 and 9 show an example of an image, and its decomposition into its red, green and blue components.</p>
+<div class="figure"><span style="display:block;" id="fig:unnamed-chunk-13"></span>
+<img src="Renate%20Chapters/andrew-s-ouo1hbizWwo-unsplash.jpg" alt="Figure 8: Example of image data (Photo by Andrew S on Unsplash)" width="50%" />
+<p class="caption">
+Figure 2.8: Figure 8: Example of image data (Photo by Andrew S on Unsplash)
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-14"></span>
+<img src="_main_files/figure-html/unnamed-chunk-14-1.png" alt="Figure 9: An image split into its red, green and blue components" width="2880" />
+<p class="caption">
+Figure 2.9: Figure 9: An image split into its red, green and blue components
+</p>
+</div>
+<p>Images can also consist of more grids. Satellite images, for example, typically have additional grids with infrared values, water and vegetation indices, etc. These can be used to measure the presence of vegetation, water, and buildings, assess the health of vegetation, monitor climate change, and much more.</p>
+</div>
+<div id="spatial-data" class="section level5" number="2.2.3.4.4">
+<h5><span class="header-section-number">2.2.3.4.4</span> Spatial data</h5>
+<p>Spatial data is concerned with the locations of phenomena. Spatial data can include satellite images, GPS locations, GPS routes, and more. Figure 10 shows an example of a satellite image of central Pretoria, as well as GPS locations of some points of interest, and lines representing the roads. These are all examples of spatial data.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-15"></span>
+<img src="Renate%20Chapters/Sat.jpg" alt="Figure 10: Top left: A satellite image; Top right: points of interest; Bottom left: roads; Bottom right: All previous datasets overlaid" width="49%" height="20%" /><img src="Renate%20Chapters/POIs.jpg" alt="Figure 10: Top left: A satellite image; Top right: points of interest; Bottom left: roads; Bottom right: All previous datasets overlaid" width="49%" height="20%" /><img src="Renate%20Chapters/Roads.jpg" alt="Figure 10: Top left: A satellite image; Top right: points of interest; Bottom left: roads; Bottom right: All previous datasets overlaid" width="49%" height="20%" /><img src="Renate%20Chapters/Overlaid.jpg" alt="Figure 10: Top left: A satellite image; Top right: points of interest; Bottom left: roads; Bottom right: All previous datasets overlaid" width="49%" height="20%" />
+<p class="caption">
+Figure 2.10: Figure 10: Top left: A satellite image; Top right: points of interest; Bottom left: roads; Bottom right: All previous datasets overlaid
+</p>
+</div>
+<p>Spatial data is used in urban planning, ecology, epidemiology (the study of disease spread), and more.</p>
+</div>
+<div id="audio-data" class="section level5" number="2.2.3.4.5">
+<h5><span class="header-section-number">2.2.3.4.5</span> Audio data</h5>
+<p>Audio data can be found in sound files. This can include, among other things, music, audio tracks for movies, and voice recordings (like voice notes). Audio data is represented by a time series signal where the amplitude of the sound wave is sampled at regular intervals. Figure 11 shows an example of an audio file.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-16"></span>
+<img src="Renate%20Chapters/Audio.png" alt="Figure 11: An audio file represented as a time series of amplitudes. Higher amplitudes represent a louder volume." width="50%" />
+<p class="caption">
+Figure 2.11: Figure 11: An audio file represented as a time series of amplitudes. Higher amplitudes represent a louder volume.
+</p>
+</div>
+</div>
+<div id="video-data" class="section level5" number="2.2.3.4.6">
+<h5><span class="header-section-number">2.2.3.4.6</span> Video data</h5>
+<p>Video data are series of images put together. Videos without sound are examples of video data. Videos with sound, such as movies downloaded from the internet, or videos taken with your phone, are a combination of video data (the visuals) and audio data (the sound).</p>
+</div>
+</div>
+<div id="data-types-and-computers" class="section level4" number="2.2.3.5">
+<h4><span class="header-section-number">2.2.3.5</span> Data Types and Computers</h4>
+<p>The last part of this chapter considers how data of different types are stored on computers. We will look at the possible values that the data can be stored as, and common file extensions for each data type.</p>
+<div id="qualitative-data-1" class="section level5" number="2.2.3.5.1">
+<h5><span class="header-section-number">2.2.3.5.1</span> Qualitative data</h5>
+<p>Qualitative data is stored differently depending on whether it is nominal, ordinal, or text data (e.g. a response to an open-ended survey question).</p>
+<ol style="list-style-type: decimal">
+<li>Nominal data: This is stored as labels, either text (for example, province codes like “GP”, “WC”, “LP”) or as integers representing categories (for example, 1 to represent Coastland and 2 to represent Inland in the <em>Coastal (1) or Inland (2)</em> variable in the Provinces dataset).</li>
+<li>Ordinal data: Stored in the same way as nominal data, but with an implied order.</li>
+<li>Text data: Stored as <strong>string</strong> variables, which is a standard data type on computers.</li>
+</ol>
+<p>Qualitative data can be stored in text files (file extention: .txt) or in spreadsheets (file extention: .csv, .xlsx).</p>
+</div>
+<div id="quantitative-data-1" class="section level5" number="2.2.3.5.2">
+<h5><span class="header-section-number">2.2.3.5.2</span> Quantitative data</h5>
+<ol style="list-style-type: decimal">
+<li>Discrete data: Stored as integers.</li>
+<li>Continuous data: Stored as real numbers, also called floating-point numbers. Ratio data and interval data can be stored this way.</li>
+</ol>
+<p>Quantitative data is usually stored in spreadsheets (file extention: .csv, .xlsx).</p>
+</div>
+<div id="other-data-types-1" class="section level5" number="2.2.3.5.3">
+<h5><span class="header-section-number">2.2.3.5.3</span> Other data types</h5>
+<table>
+<caption><span id="tab:unnamed-chunk-17">Table 2.2: </span>Other data types and their common file extensions</caption>
+<tbody>
+<tr class="odd">
+<td align="left">Data type</td>
+<td align="left">Common file extensions</td>
+</tr>
+<tr class="even">
+<td align="left">Time series</td>
+<td align="left">.csv, .xlsx</td>
+</tr>
+<tr class="odd">
+<td align="left">Image data</td>
+<td align="left">.png, .jpg, .bmp, .tiff</td>
+</tr>
+<tr class="even">
+<td align="left">Spatial data</td>
+<td align="left">.shp, .json, .geojson</td>
+</tr>
+<tr class="odd">
+<td align="left">Audio data</td>
+<td align="left">.wav, .mp3</td>
+</tr>
+<tr class="even">
+<td align="left">Video data</td>
+<td align="left">.mkv, .avi, .mp4</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="common-data-type-mistakes" class="section level5" number="2.2.3.5.4">
+<h5><span class="header-section-number">2.2.3.5.4</span> Common data type mistakes</h5>
+<p>The previous sections explained how data of various types and scales of measurement should be stored. However, data can be stored in different ways, it can happen that data is stored incorrectly, or in a way that is unsuitable for use.</p>
+<p>Exercise: Type a date in Excel, e.g. “10-10”. When you press Enter, it should automatically correct to a date (10 October). See what happens when you change the cell’s format to Text or Number. Now redo the exercise by first setting the format of the cell to text, and then typing in “10-10”. What happens now?</p>
+<p>Key takeaway: The same data can be stored on a computer in a variety of ways. It is up to you, as the analyst, to understand how the data should be stored for your analysis.</p>
+</div>
+</div>
+</div>
+<div id="review-1" class="section level3" number="2.2.4">
+<h3><span class="header-section-number">2.2.4</span> Review</h3>
+<p>Give the data type (qualitative, quantitative discrete, quantitative continuous, or other) of the following variables and explain your answer.</p>
+<ul>
+<li>Province</li>
+<li>Coastal (1) or Inland (2)</li>
+<li>Population size</li>
+<li>HDI</li>
+<li>% of agricultural households</li>
+<li>Land area (sq km)</li>
+<li>Population density (per sq km)</li>
+<li>% of households with no internet access</li>
+<li>Sex ratio</li>
+<li>Median age</li>
+<li>Summer temp</li>
+<li>Province where most of the population migrate</li>
+</ul>
+<p>If you are struggling to identify the data type of a variable, ask yourself the following questions:</p>
+<ol style="list-style-type: decimal">
+<li>Does the variable have numerical values?</li>
+<li>If so, can you perform meaningful mathematical operations on the values, or are they just category labels?</li>
+<li>If so, do the values have to be whole numbers (e.g., number of people), or does it make sense for them to have decimals (e.g. percentages)?</li>
+</ol>
+<p>Bonus question: Consider the variables <em>Longitude</em> and <em>Latitude</em> in the Provinces dataset. What kind of data do you think these variables are? What if you consider them together?</p>
+
+</div>
+</div>
+<!-- </div> -->
+<p style="text-align: center;">
+<a href="2.1-sources.html"><button class="btn btn-default">Previous</button></a>
+<a href="3-ch3.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>

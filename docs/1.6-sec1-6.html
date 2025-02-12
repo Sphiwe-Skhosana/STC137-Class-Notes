@@ -5,7 +5,7 @@
 <meta charset="utf-8" />
 <meta name="generator" content="pandoc" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="STC 137 Class Notes" />
+<meta property="og:title" content="1.6 Data visualization – Foundations and Concepts | STC 137 Class Notes" />
 <meta property="og:type" content="book" />
 
 <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -27,7 +27,7 @@ MathJax.Hub.Config({
 set in the _output.yml file.
 The HTML output format for this example is bookdown::gitbook,</p>">
 
-<title>STC 137 Class Notes</title>
+<title>1.6 Data visualization – Foundations and Concepts | STC 137 Class Notes</title>
 
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -199,18 +199,141 @@ details > summary {
 </div>
 <div class="row">
 <div class="col-sm-12">
-<div id="header">
-<h1 class="title">STC 137 Class Notes</h1>
-<h4 class="author"><em>Department of Statistics, University of Pretoria</em></h4>
-<h4 class="date"><em>Last Updated: 2025-02-12</em></h4>
+<div id="sec1-6" class="section level2" number="1.6">
+<h2><span class="header-section-number">1.6</span> Data visualization – Foundations and Concepts</h2>
+<p>According to the <a href="https://hbr.org/2016/06/visualizations-that-really-work">Harvard Business Review</a>, data visualization is a must-have data literacy skill for junior and even senior management. This is because it provides the only way for them to make sense of the work they do. As the world becomes more complex, most problems are increasingly hard to understand, much less fix, if they cannot be visualized. In modern society, organizations and individuals can use data visualization to generate and illustrate ideas or discover patterns, trends and outliers in the data.</p>
+<p>Data visualization is the graphical representation of data using charts, graphs, maps, animations and infographics. The goal of visualizing data is to clearly and effectively communicate the key characteristics of a data set in a way that is easy to understand.</p>
+<div id="common-uses-of-data-visualization-in-modern-society" class="section level3" number="1.6.1">
+<h3><span class="header-section-number">1.6.1</span> Common uses of data visualization in modern society</h3>
+<ul>
+<li><p><strong>Comparison and benchmarking</strong> – visualizing data can allow us to compare observations, variables or time periods. For instance, a meteorologist might want to compare the amount of rainfall before and after the first industrial revolution.</p></li>
+<li><p><strong>Monitoring and tracking</strong> – Data dashboards (such as Tableau® and Microsoft’s Power BI) can be used to monitor key performance indicators (KPIs) in a company or organization in a manner that is easy to read, understand and interpret. For instance, in order for the manager of a local Shoprite store to ensure enough merchandise on hand, the manager can refer to a real-time data dashboard showing the hourly sales volumes, inventory on hand, hourly number of transactions processed.</p></li>
+<li><p><strong>Data exploration</strong> – as already mentioned in Section <a href="1.5-sec1-5.html#sec1-5">1.5</a>, data visualization is a core step in EDA.</p></li>
+<li><p><strong>Hypothesis testing</strong> – results from visualizing data can be used as an informal approach to formulate and test hypotheses. For instance, the plot in the figure below can lead us to hypothesize that there is a positive linear relationship between the volumes of electric vehicle sales (in R millions) and the number of television advertisements.</p></li>
+</ul>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-3"></span>
+<img src="Figures-Chapter1/Scatter.png" alt="Scatter plot of electric vehicle sales (in R millions) and the number of advertisements" width="80%" />
+<p class="caption">
+Figure 1.4: Scatter plot of electric vehicle sales (in R millions) and the number of advertisements
+</p>
 </div>
-<div id="preface" class="section level1 unnumbered">
-<h1>Preface</h1>
-<p>In modern society, whether you are reading a magazine, watching TV or scrolling through social media, you encounter statistics. You can’t avoid it! Data collection, analysis and communication have become part of day-to-day activities. If you want to be an educated consumer and citizen, you need to understand how statistics are used and also misused in our daily lives. In other words, you need to be <em>data literate</em>. The purpose of this book is to give students, in any field of study, a conceptual and practical introduction to the field of statistics. The main focus is on the use of basic statistical techniques for, among others, <em>collecting data</em>, <em>understanding the data</em> by exploring it, <em>analyzing the data</em>, <em>interpreting the data</em> and <em>communicating the data</em> to facilitate data-driven decision-making. The book is application oriented. The discussion of each technique is followed by application examples. This book is written with the needs of the practitioner in mind. The mathematical prerequisite is matric (Grade 12) level mathematics.</p>
-
+<ul>
+<li><strong>Educational and knowledge sharing</strong> – visualizations can simplify complex topics and make information more easily accessible to the general public in order to support education and training.</li>
+</ul>
+</div>
+<div id="types-of-data-visualizations" class="section level3" number="1.6.2">
+<h3><span class="header-section-number">1.6.2</span> Types of data visualizations</h3>
+<p>The choice of a data visualization tool depends on the purpose of the study and the type of data available.</p>
+<ol style="list-style-type: decimal">
+<li><p>For the purpose of visualizing the distribution of the data, we can make use of a</p>
+<ol style="list-style-type: lower-alpha">
+<li><p><strong>Frequency distribution</strong> – show the number of observations in each of several non-overlapping categories or classes for both numerical and categorical data.</p></li>
+<li><p><strong>Bar chart</strong> – to show the frequency distribution for a categorical variable.</p></li>
+<li><p><strong>Pie chart</strong> – to show the relative frequency distribution for a categorical variable.</p></li>
+<li><p><strong>Dot plot</strong> – to show the distribution of a numerical variable over the entire range of the data.</p></li>
+<li><p><strong>Histogram</strong> – to show the frequency distribution of a numerical variable over a set of class intervals.</p></li>
+<li><p><strong>Stem-and-Leaf</strong> – to show the rank order and shape of the distribution of numerical data.</p></li>
+<li><p><strong>Box-and-Whisker plot</strong> – to show the distribution of numerical data using five numbers calculated from the data.</p></li>
+</ol></li>
+</ol>
+<!-- -->
+<ol start="2" style="list-style-type: decimal">
+<li><p>For the purpose of identifying whether or not the data has a trend overtime, we make use of a</p>
+<ol style="list-style-type: lower-alpha">
+<li><strong>Line chart</strong> which can be used to visualize time series data.</li>
+</ol></li>
+<li><p>For the purpose of making comparisons between two or more variables in a data set, we can make us of a</p>
+<ol style="list-style-type: lower-alpha">
+<li><p><strong>Multiple boxplots</strong> – to compare the distributions of two or more numerical variables.</p></li>
+<li><p><strong>Side-by-side or stacked bar charts</strong> – to compare two categorical variables.</p></li>
+<li><p><strong>Pivot-tables (crosstabulation)</strong> – to compare the frequency distribution of two categorical distributions.</p></li>
+</ol></li>
+<li><p>For the purpose of describing the relationship between numerical variables we can make use of</p>
+<ol style="list-style-type: lower-alpha">
+<li><strong>Scatter plots</strong> to (1) represent the relationship between two numerical variables, (2) identify the type of pattern represented in the scatter plot (linear constant upward or downward trend, curved pattern or no apparent pattern at all); (3), if there is a pattern, determine how strong is the pattern (do all the points follow the pattern exactly or not? In Section <a href="1.7-sec1-7.html#sec1-7">1.7</a>, we will define a numerical measure that can quantify the strength of a linear pattern) and (4) identify if there are any unusual observations (points that are far from the cluster of the majority of the points).</li>
+</ol></li>
+<li><p>For the purpose of displaying geographical data, we can make use of</p>
+<ol style="list-style-type: lower-alpha">
+<li><p><strong>Heat map</strong> – to show the intensity or density of a variable across a geographical area using a color gradient. These maps are effective for visualizing, for instance, crime hotspots.</p></li>
+<li><p><strong>Flow map</strong> – to show the direction and magnitude of the movement, migration or flow of people, goods or information between different locations.</p></li>
+<li><p><strong>Choropleth map</strong> – to represent quantitative or qualitative data associated with geographic regions such as countries. In contrast to a heat map, in a choropleth map, the geographic regions are not based on the variable of interest but are chosen based on known spatial information. These maps are effective for visualizing data on, for instance, population density or income levels.</p></li>
+<li><p><strong>Cartograms</strong> – to show the relative influence or importance of different geographical regions based on some quantitative variable such as population size. These visual tools work by distorting the size of the geographical regions by making them proportional to the numerical value of the variable of interest. For instance, geographic regions with larger population sizes will be larger on the map.</p></li>
+<li><p><strong>Point maps</strong> – to show the location of a specific outcome, such as the site of a wildfire, on the map.</p></li>
+<li><p><strong>Bubble maps</strong> – to show the relative magnitude of a specific outcome, such as the impact of a wildfire at a specific location, on the map. The larger the bubble, the higher the impact.  </p></li>
+</ol></li>
+</ol>
+</div>
+<div id="components-of-a-data-visualization-tool" class="section level3" number="1.6.3">
+<h3><span class="header-section-number">1.6.3</span> Components of a data visualization tool</h3>
+<p>In order for a visual summary to effectively communicate the message behind the data, it must possess the following core features:</p>
+<ul>
+<li><p>An appropriate descriptive title that explains the data being shown.</p></li>
+<li><p>Clear labels with the units of measurements and appropriate scales for both the x-axis (horizontal) and y-axis (vertical).</p></li>
+<li><p>A legend identifying the different data series, where appropriate.</p></li>
+</ul>
+<p>The figure below shows a graph of the 14-day Covid-19 infection rate in the South Africa provinces of Gauteng and Kwa-Zulu Natal for the period 1 December 2020 to 28 February 2021.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:covid-1"></span>
+<img src="Figures-Chapter1/Covid-1.png" alt="The 14-day Covid-19 infection rate in the South African provinces of Gauteng and Kwa-Zulu Natal for the period 1 December 2020 to 28 February 2021" width="70%" />
+<p class="caption">
+Figure 1.5: The 14-day Covid-19 infection rate in the South African provinces of Gauteng and Kwa-Zulu Natal for the period 1 December 2020 to 28 February 2021
+</p>
+</div>
+<p>Figure <a href="1.6-sec1-6.html#fig:covid-2">1.6</a> is a copy of Figure <a href="1.6-sec1-6.html#fig:covid-1">1.5</a> highlighting the core features of a graph.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:covid-2"></span>
+<img src="Figures-Chapter1/Covid-2.png" alt="Same as Figure \@ref(fig:covid-1)" width="70%" />
+<p class="caption">
+Figure 1.6: Same as Figure <a href="1.6-sec1-6.html#fig:covid-1">1.5</a>
+</p>
+</div>
+</div>
+<div id="advantages-and-disadvantages-of-data-visualization" class="section level3" number="1.6.4">
+<h3><span class="header-section-number">1.6.4</span> Advantages and Disadvantages of data visualization</h3>
+<p>Data visualization can be an advantageous skill to have because</p>
+<ul>
+<li><p>it appeals to any audience which means you can communicate the data to anyone;</p></li>
+<li><p>it allows you to communicate efficiently and effectively about data;</p></li>
+<li><p>quickly detect patterns or anomalies in the data;</p></li>
+<li><p>it facilitates timely decision-making;</p></li>
+</ul>
+<p>While there are many obvious advantages to data visualization, there are also some less obvious disadvantages to data visualization such as:</p>
+<ul>
+<li><p>using the wrong visualization tool;</p></li>
+<li><p>concluding from a scatter plot that the observed correlation implies causation;</p></li>
+<li><p>making biased conclusions.</p></li>
+<li><p>Due to their ease of apprehension, they can often be used to spread misinformation.</p></li>
+</ul>
+</div>
+<div id="exercises-to-section-1.6" class="section level3" number="1.6.5">
+<h3><span class="header-section-number">1.6.5</span> Exercises to Section 1.6</h3>
+<p><strong>Question 1</strong></p>
+<p>What is data visualization?</p>
+<p><strong>Question 2</strong></p>
+<p>For each of the following scenarios, specify the appropriate visualization technique (s):</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>The City of Tshwane is concerned about income inequality, the mayor wants to investigate the distribution of income.</p></li>
+<li><p>In an effort to efficiently allocate police personnel, the City of Johannesburg wants to know which areas have the most criminal incidents.</p></li>
+<li><p>The forestry, fisheries and the environment ministry of South Africa wants to compare the greenhouse gas emissions across industries in the primary, secondary and tertiary sector.</p></li>
+<li><p>The Western Cape province has noted an increase in the number of people from other parts of South Africa, the administration wants to know what is the province of origin for most of the migrants?</p></li>
+<li><p>A botanist wants to understand the effect of temperature on the rate of growth of a plant.</p></li>
+</ol>
+<p><strong>Question 3</strong></p>
+<p>For each of the following scenarios, specify whether or not the chosen visualization technique is appropriate, if not, state the reason and specify an appropriate technique:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>A financial analyst uses a pie chart to identify the trend in the rand-dollar exchange rate for the period 2000-2020.</p></li>
+<li><p>A psychologist uses a box-and-whisker diagram to identify outliers in terms of IQ.</p></li>
+<li><p>A zoologist uses a line chart to compare the territory sizes between male tigers and female tigers.</p></li>
+<li><p>A sociologist uses a bar chart to study the relationship between an individual’s years of education and their voting frequency.</p></li>
+</ol>
+<p><strong>Question 4</strong></p>
+<p>The following is a pie chart of the soft-drink preferences of 50 individuals in South Africa:</p>
+<p><img src="images/clipboard-2887671888.png" width="400" /></p>
+<p>Identify what is wrong with the above visualization.</p>
+<div style="page-break-after: always;"></div>
+</div>
 </div>
 <p style="text-align: center;">
-<a href="1-an-overview-of-data-literacy.html"><button class="btn btn-default">Next</button></a>
+<a href="1.5-sec1-5.html"><button class="btn btn-default">Previous</button></a>
+<a href="1.7-sec1-7.html"><button class="btn btn-default">Next</button></a>
 </p>
 </div>
 </div>

@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="3.2 Data cleaning | STC 137 Class Notes" />
+<meta property="og:type" content="book" />
+
+<meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
+<meta name="github-repo" content="sphiwe-skhosana/STC137-Class-Notes" />
+
+<meta name="author" content="Department of Statistics, University of Pretoria" />
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>">
+
+<title>3.2 Data cleaning | STC 137 Class Notes</title>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<link href="libs/wordcloud2-0.0.1/wordcloud.css" rel="stylesheet" />
+<script src="libs/wordcloud2-0.0.1/wordcloud2-all.js"></script>
+<script src="libs/wordcloud2-0.0.1/hover.js"></script>
+<script src="libs/wordcloud2-binding-0.2.1/wordcloud2.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+/* show arrow before summary tag as in bootstrap
+TODO: remove if bootstrap in updated in html_document (rmarkdown#1485) */
+details > summary {
+  display: list-item;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li><a href="index.html#preface" id="toc-preface">Preface</a></li>
+<li class="has-sub"><a href="1-an-overview-of-data-literacy.html#an-overview-of-data-literacy" id="toc-an-overview-of-data-literacy"><span class="toc-section-number">1</span> An Overview of Data literacy</a>
+<ul>
+<li class="has-sub"><a href="1.1-sec1-1.html#sec1-1" id="toc-sec1-1"><span class="toc-section-number">1.1</span> Introduction</a>
+<ul>
+<li><a href="1.1-sec1-1.html#definition" id="toc-definition"><span class="toc-section-number">1.1.1</span> Definition</a></li>
+<li><a href="1.1-sec1-1.html#the-importance-of-being-data-literate-in-modern-society" id="toc-the-importance-of-being-data-literate-in-modern-society"><span class="toc-section-number">1.1.2</span> The importance of being data literate in modern society</a></li>
+<li><a href="1.1-sec1-1.html#data-literacy-skills" id="toc-data-literacy-skills"><span class="toc-section-number">1.1.3</span> Data Literacy Skills</a></li>
+<li><a href="1.1-sec1-1.html#data-literacy-in-practice" id="toc-data-literacy-in-practice"><span class="toc-section-number">1.1.4</span> Data Literacy in Practice</a></li>
+<li><a href="1.1-sec1-1.html#exercises-to-section-1.1" id="toc-exercises-to-section-1.1"><span class="toc-section-number">1.1.5</span> Exercises to Section 1.1</a></li>
+</ul></li>
+<li class="has-sub"><a href="1.2-data.html#data" id="toc-data"><span class="toc-section-number">1.2</span> Data</a>
+<ul>
+<li><a href="1.2-data.html#what-is-data" id="toc-what-is-data"><span class="toc-section-number">1.2.1</span> What is data?</a></li>
+<li><a href="1.2-data.html#properties-of-a-data-set" id="toc-properties-of-a-data-set"><span class="toc-section-number">1.2.2</span> Properties of a data set</a></li>
+<li><a href="1.2-data.html#observational-and-experimental-data" id="toc-observational-and-experimental-data"><span class="toc-section-number">1.2.3</span> Observational and experimental data</a></li>
+<li><a href="1.2-data.html#cross-sectional-and-time-series-data" id="toc-cross-sectional-and-time-series-data"><span class="toc-section-number">1.2.4</span> Cross-sectional and time-series data</a></li>
+<li><a href="1.2-data.html#population-and-sample" id="toc-population-and-sample"><span class="toc-section-number">1.2.5</span> Population and sample</a></li>
+<li><a href="1.2-data.html#exercises-to-section-1.2" id="toc-exercises-to-section-1.2"><span class="toc-section-number">1.2.6</span> Exercises to Section 1.2</a></li>
+</ul></li>
+<li class="has-sub"><a href="1.3-sec1-3.html#sec1-3" id="toc-sec1-3"><span class="toc-section-number">1.3</span> Data Management - Foundations and Concepts</a>
+<ul>
+<li><a href="1.3-sec1-3.html#data-management-process" id="toc-data-management-process"><span class="toc-section-number">1.3.1</span> Data management process</a></li>
+<li><a href="1.3-sec1-3.html#the-benefits-of-data-management-in-modern-society" id="toc-the-benefits-of-data-management-in-modern-society"><span class="toc-section-number">1.3.2</span> The benefits of data management in modern society</a></li>
+<li><a href="1.3-sec1-3.html#the-challenges-of-data-management-in-modern-society" id="toc-the-challenges-of-data-management-in-modern-society"><span class="toc-section-number">1.3.3</span> The challenges of data management in modern society</a></li>
+<li><a href="1.3-sec1-3.html#strategies-for-data-management" id="toc-strategies-for-data-management"><span class="toc-section-number">1.3.4</span> Strategies for data management</a></li>
+<li><a href="1.3-sec1-3.html#exercises-to-section-1.3" id="toc-exercises-to-section-1.3"><span class="toc-section-number">1.3.5</span> Exercises to Section 1.3</a></li>
+</ul></li>
+<li class="has-sub"><a href="1.4-sec1-4.html#sec1-4" id="toc-sec1-4"><span class="toc-section-number">1.4</span> Data Ethics</a>
+<ul>
+<li><a href="1.4-sec1-4.html#the-importance-of-data-ethics" id="toc-the-importance-of-data-ethics"><span class="toc-section-number">1.4.1</span> The importance of data ethics</a></li>
+<li><a href="1.4-sec1-4.html#data-ethics-principles" id="toc-data-ethics-principles"><span class="toc-section-number">1.4.2</span> Data ethics principles</a></li>
+<li><a href="1.4-sec1-4.html#exercises-to-section-1.4" id="toc-exercises-to-section-1.4"><span class="toc-section-number">1.4.3</span> Exercises to Section 1.4</a></li>
+</ul></li>
+<li class="has-sub"><a href="1.5-sec1-5.html#sec1-5" id="toc-sec1-5"><span class="toc-section-number">1.5</span> Data Exploration – Foundations and Concepts</a>
+<ul>
+<li><a href="1.5-sec1-5.html#approaches-to-exploratory-data-analysis" id="toc-approaches-to-exploratory-data-analysis"><span class="toc-section-number">1.5.1</span> Approaches to exploratory data analysis</a></li>
+<li><a href="1.5-sec1-5.html#advantages-and-disadvantages-of-data-exploration" id="toc-advantages-and-disadvantages-of-data-exploration"><span class="toc-section-number">1.5.2</span> Advantages and disadvantages of data exploration</a></li>
+<li><a href="1.5-sec1-5.html#stages-in-the-exploratory-data-analysis-process" id="toc-stages-in-the-exploratory-data-analysis-process"><span class="toc-section-number">1.5.3</span> Stages in the exploratory data analysis process</a></li>
+<li><a href="1.5-sec1-5.html#exercises-to-section-1.5" id="toc-exercises-to-section-1.5"><span class="toc-section-number">1.5.4</span> Exercises to Section 1.5</a></li>
+</ul></li>
+<li class="has-sub"><a href="1.6-sec1-6.html#sec1-6" id="toc-sec1-6"><span class="toc-section-number">1.6</span> Data visualization – Foundations and Concepts</a>
+<ul>
+<li><a href="1.6-sec1-6.html#common-uses-of-data-visualization-in-modern-society" id="toc-common-uses-of-data-visualization-in-modern-society"><span class="toc-section-number">1.6.1</span> Common uses of data visualization in modern society</a></li>
+<li><a href="1.6-sec1-6.html#types-of-data-visualizations" id="toc-types-of-data-visualizations"><span class="toc-section-number">1.6.2</span> Types of data visualizations</a></li>
+<li><a href="1.6-sec1-6.html#components-of-a-data-visualization-tool" id="toc-components-of-a-data-visualization-tool"><span class="toc-section-number">1.6.3</span> Components of a data visualization tool</a></li>
+<li><a href="1.6-sec1-6.html#advantages-and-disadvantages-of-data-visualization" id="toc-advantages-and-disadvantages-of-data-visualization"><span class="toc-section-number">1.6.4</span> Advantages and Disadvantages of data visualization</a></li>
+<li><a href="1.6-sec1-6.html#exercises-to-section-1.6" id="toc-exercises-to-section-1.6"><span class="toc-section-number">1.6.5</span> Exercises to Section 1.6</a></li>
+</ul></li>
+<li class="has-sub"><a href="1.7-sec1-7.html#sec1-7" id="toc-sec1-7"><span class="toc-section-number">1.7</span> Data analysis – Foundations and Concepts</a>
+<ul>
+<li><a href="1.7-sec1-7.html#the-data-analysis-process" id="toc-the-data-analysis-process"><span class="toc-section-number">1.7.1</span> The Data Analysis process</a></li>
+<li><a href="1.7-sec1-7.html#approaches-to-data-analysis" id="toc-approaches-to-data-analysis"><span class="toc-section-number">1.7.2</span> Approaches to Data Analysis</a></li>
+<li><a href="1.7-sec1-7.html#uses-of-data-analysis-in-modern-society" id="toc-uses-of-data-analysis-in-modern-society"><span class="toc-section-number">1.7.3</span> Uses of data analysis in modern society</a></li>
+<li><a href="1.7-sec1-7.html#data-analysis-techniques" id="toc-data-analysis-techniques"><span class="toc-section-number">1.7.4</span> Data analysis techniques</a></li>
+<li><a href="1.7-sec1-7.html#computational-tools-and-software-for-data-analysis" id="toc-computational-tools-and-software-for-data-analysis"><span class="toc-section-number">1.7.5</span> Computational tools and software for data analysis</a></li>
+<li><a href="1.7-sec1-7.html#exercises-to-section-1.7" id="toc-exercises-to-section-1.7"><span class="toc-section-number">1.7.6</span> Exercises to Section 1.7</a></li>
+</ul></li>
+</ul></li>
+<li class="has-sub"><a href="2-ch2.html#ch2" id="toc-ch2"><span class="toc-section-number">2</span> Sources and Types of Data</a>
+<ul>
+<li class="has-sub"><a href="2.1-sources.html#sources" id="toc-sources"><span class="toc-section-number">2.1</span> Data Sources</a>
+<ul>
+<li><a href="2.1-sources.html#sources:intro" id="toc-sources:intro"><span class="toc-section-number">2.1.1</span> Introduction</a></li>
+<li><a href="2.1-sources.html#sources:primary" id="toc-sources:primary"><span class="toc-section-number">2.1.2</span> Primary Data Sources</a></li>
+<li><a href="2.1-sources.html#sources:secondary" id="toc-sources:secondary"><span class="toc-section-number">2.1.3</span> Secondary Data Sources</a></li>
+<li><a href="2.1-sources.html#sources:tertiary" id="toc-sources:tertiary"><span class="toc-section-number">2.1.4</span> Tertiary Data Sources</a></li>
+<li><a href="2.1-sources.html#sources:where" id="toc-sources:where"><span class="toc-section-number">2.1.5</span> Where Can I Find Data?</a></li>
+</ul></li>
+<li class="has-sub"><a href="2.2-types.html#types" id="toc-types"><span class="toc-section-number">2.2</span> Data Types</a>
+<ul>
+<li><a href="2.2-types.html#types:intro" id="toc-types:intro"><span class="toc-section-number">2.2.1</span> Introduction</a></li>
+<li><a href="2.2-types.html#scales-of-measurement" id="toc-scales-of-measurement"><span class="toc-section-number">2.2.2</span> Scales of Measurement</a></li>
+<li><a href="2.2-types.html#data-types" id="toc-data-types"><span class="toc-section-number">2.2.3</span> Data Types</a></li>
+<li><a href="2.2-types.html#review-1" id="toc-review-1"><span class="toc-section-number">2.2.4</span> Review</a></li>
+</ul></li>
+</ul></li>
+<li class="has-sub"><a href="3-ch3.html#ch3" id="toc-ch3"><span class="toc-section-number">3</span> Data Handling in Excel</a>
+<ul>
+<li class="has-sub"><a href="3.1-data-importing.html#data-importing" id="toc-data-importing"><span class="toc-section-number">3.1</span> Data importing</a>
+<ul>
+<li><a href="3.1-data-importing.html#change-decimal-separator-settings-in-excel" id="toc-change-decimal-separator-settings-in-excel"><span class="toc-section-number">3.1.1</span> Change decimal separator settings in Excel</a></li>
+<li><a href="3.1-data-importing.html#opening-a-.xlsx-file-in-excel" id="toc-opening-a-.xlsx-file-in-excel"><span class="toc-section-number">3.1.2</span> Opening a .xlsx file in Excel</a></li>
+<li><a href="3.1-data-importing.html#importing-a-.txt-file-in-excel" id="toc-importing-a-.txt-file-in-excel"><span class="toc-section-number">3.1.3</span> Importing a .txt file in Excel</a></li>
+<li><a href="3.1-data-importing.html#importing-data-from-a-website" id="toc-importing-data-from-a-website"><span class="toc-section-number">3.1.4</span> Importing data from a website</a></li>
+</ul></li>
+<li class="has-sub"><a href="3.2-data-cleaning.html#data-cleaning" id="toc-data-cleaning"><span class="toc-section-number">3.2</span> Data cleaning</a>
+<ul>
+<li><a href="3.2-data-cleaning.html#example-data-cleaning-in-excel" id="toc-example-data-cleaning-in-excel"><span class="toc-section-number">3.2.1</span> Example: Data cleaning in Excel</a></li>
+<li><a href="3.2-data-cleaning.html#missing-data" id="toc-missing-data"><span class="toc-section-number">3.2.2</span> Missing data</a></li>
+<li><a href="3.2-data-cleaning.html#duplicate-values" id="toc-duplicate-values"><span class="toc-section-number">3.2.3</span> Duplicate values</a></li>
+<li><a href="3.2-data-cleaning.html#exercises" id="toc-exercises"><span class="toc-section-number">3.2.4</span> Exercises</a></li>
+</ul></li>
+<li class="has-sub"><a href="3.3-data-manipulation.html#data-manipulation" id="toc-data-manipulation"><span class="toc-section-number">3.3</span> Data manipulation</a>
+<ul>
+<li><a href="3.3-data-manipulation.html#example-super-animals" id="toc-example-super-animals"><span class="toc-section-number">3.3.1</span> Example: Super Animals</a></li>
+<li><a href="3.3-data-manipulation.html#example-employees" id="toc-example-employees"><span class="toc-section-number">3.3.2</span> Example: Employees</a></li>
+<li><a href="3.3-data-manipulation.html#basic-excel-functions" id="toc-basic-excel-functions"><span class="toc-section-number">3.3.3</span> Basic Excel functions</a></li>
+<li><a href="3.3-data-manipulation.html#exercises-1" id="toc-exercises-1"><span class="toc-section-number">3.3.4</span> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li><a href="4-ch4.html#ch4" id="toc-ch4"><span class="toc-section-number">4</span> Sampling and Collecting data</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="data-cleaning" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Data cleaning</h2>
+<p>Data cleaning is an essential process of identifying and correcting inconsistencies and inaccuracies within a dataset. This process improves the quality, accuracy and reliability for the data. In fact, a data analyst spends a lot of time on preparing the data for analysis. It is very rare that the raw data is in the correct format and without any errors.</p>
+<p>Data cleaning is the process of transforming raw data into consistent data that can be analysed.</p>
+<p>To ensure that the data set is cleaned and refined before starting an analysis is crucial to assure that the analysis is accurate and therefore that better-informed decisions can be deduced from the analysis. When statistical analysis is performed on data that isn’t properly cleaned, the integrity of the results and findings are compromised and not trustworthy.</p>
+<p>Therefore, the analysis is only as reliable as the data that is used for the analysis, making data cleaning an essential step.</p>
+<p>The specific data cleaning techniques that one will use always depends on the application at hand and the analysis needed. Here is a list of some data cleaning techniques:</p>
+<ul>
+<li><p>Removing the data that is not necessary for your analysis.</p></li>
+<li><p>Identifying and removing observations that are duplicated.</p></li>
+<li><p>Correcting typing errors, errors in capitalisations or inconsistent naming conventions.</p></li>
+<li><p>Removing or imputing missing data.</p></li>
+<li><p>Encoding categorical data either to or from a numerical format.</p></li>
+<li><p>Ensuring that the data is in a consistent format.</p></li>
+</ul>
+<div id="example-data-cleaning-in-excel" class="section level3" number="3.2.1">
+<h3><span class="header-section-number">3.2.1</span> Example: Data cleaning in Excel</h3>
+<p>You are given a data set containing information on employees working at Orion Sales. This data set is named <code>orion_sales_staff.xlsx</code>. Once you have opened the data set in Excel, you come across some problems with the data set that requires data cleaning.</p>
+<p><img src="Figures/cleaning_overview.png" width="70%" style="display: block; margin: auto;" /></p>
+<div id="correct-the-formatting-of-a-cell" class="section level4 unnumbered unlisted">
+<h4>Correct the formatting of a cell</h4>
+<p>In the example above, the values in the “Employee Annual Salary” column are seen as text. This is clearly visible with the left alignment of the values in the cell. Because annual salary is a numerical value, the formatting needs to be corrected so that Excel can handle the values as numbers.</p>
+<p>This can be corrected with the following steps:</p>
+<ol style="list-style-type: decimal">
+<li>If you click in the cell, there will be a yellow block with an exclamation mark on the left.</li>
+</ol>
+<p><img src="Figures/cleaning_formatting_1.png" width="40%" style="display: block; margin: auto;" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>By clicking on the warning sign, a dropdown list will open where you can choose the option “Convert to Number”.</li>
+</ol>
+<p><img src="Figures/cleaning_formatting_2.png" width="40%" style="display: block; margin: auto;" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Now the cell’s formatting will be corrected. This can be seen by the value being right aligned within the cell.</li>
+</ol>
+<p><img src="Figures/cleaning_formatting_3.png" width="40%" style="display: block; margin: auto;" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li>To do this for an entire column, The same procedure can be followed by highlighting all the cells that need to be changed.</li>
+</ol>
+<p>This process will automatically change the format of the cells from text to “currency”. If you work with this data set in Excel, this formatting will be sufficient as Excel knows how to work with this. If the data set is imported into another statistical program (which you will be familiarised later on), the format of this column needs to be “Number” instead of “Currency”.</p>
+<p>This can be done by navigating to the “Number” group on the Home tab in Excel and opening the dropdown list. From this dropdown list, the appropriate formatting can be selected which is “Number” in this case.</p>
+<p><img src="Figures/cleaning_formatting_4.png" width="40%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="inconsistent-naming-of-categories" class="section level4 unnumbered unlisted">
+<h4>Inconsistent naming of categories</h4>
+<p>In column C of the example above, the categories are not named consistently. This column consists of the gender of each employee. By glancing at the screenshot of the first few lines of the data, it can be seen that the categories are labelled as “M” (for male) and “F” (for female). However, in line 7, the entry is “Male”. There can be more occurrences like this further in the data. Having inconsistent naming of categories is not ideal as this will cause problems when you start to work with the data. For example, when constructing frequency tables or barplots.</p>
+<p>This can be corrected with the following steps:</p>
+<ol style="list-style-type: decimal">
+<li>Select all the columns of the data set. In the “Editing” group on the “Home” tab, click on “Sort &amp; Filter” and then on “Filter. This will allow you to filter the data by a specific column.</li>
+</ol>
+<p><img src="Figures/cleaning_categories_1.png" width="70%" style="display: block; margin: auto;" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>The filter icon will now be next to each column name. When clicking on the item next to the column name you would like to filter on, a menu will open up. On this menu, you have the ability to sort the data by this column or filter certain categories. In the screenshot below, all the categories are ticked meaning that all the observations of the data set will be displayed. In the example below, it can be seen that there are categories named “M”, “F”, “Male” and “Female”. We would like to change all the observations with category “Female” to “F” and all the observations with category “Male” to “M”.</li>
+</ol>
+<p><img src="Figures/cleaning_categories_2.png" width="40%" style="display: block; margin: auto;" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>When removing the tick marks of all the categories except one, only the observations from the specific category will be displayed. In our case, let us first filter all the observations where the gender is indicated as “Female”.</li>
+</ol>
+<p><img src="Figures/cleaning_categories_3.png" width="70%" style="display: block; margin: auto;" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Having all the observations filtered out, you can manually change the categories to “F”.</li>
+</ol>
+<p><img src="Figures/cleaning_categories_4.png" width="70%" style="display: block; margin: auto;" /></p>
+<ol start="5" style="list-style-type: decimal">
+<li>The came can be done for the males. Again, click on the filter icon next to the column name. Remove the tick marks of all the categories except the one with “Male”.</li>
+</ol>
+<p><img src="Figures/cleaning_categories_5.png" width="70%" style="display: block; margin: auto;" /></p>
+<ol start="6" style="list-style-type: decimal">
+<li>Then, manually change the categories to “M”.</li>
+</ol>
+<p><img src="Figures/cleaning_categories_6.png" width="70%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="inconsistent-capitalisations" class="section level4 unnumbered unlisted">
+<h4>Inconsistent capitalisations</h4>
+<p>In the column named “Home Town”, there are a few observations where the name of the town is written in all capital letters, all small letters or the second word is written with a small letter instead of a capital letter.</p>
+<p>The best and quickest way to correct this is to create a new column and use built-in Excel functions to do the correction. Let us call this column “Home Town cleaned”.</p>
+<p>Next, we will introduce three new functions that will alter how the names of the towns are written.</p>
+<div style="page-break-after: always;"></div>
+<ol style="list-style-type: decimal">
+<li>The first function is <code>=UPPER()</code>. This function will return the word in the selected cell written in all capital letters.</li>
+</ol>
+<p><img src="Figures/capitals_1.png" width="40%" style="display: block; margin: auto;" /></p>
+<p><img src="Figures/capitals_2.png" width="40%" style="display: block; margin: auto;" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>The second function is <code>=LOWER()</code>. This function will return the word in the selected cell written in all lower case letters.</li>
+</ol>
+<p><img src="Figures/capitals_3.png" width="40%" style="display: block; margin: auto;" /></p>
+<p><img src="Figures/capitals_4.png" width="40%" style="display: block; margin: auto;" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>The third function is <code>=PROPER()</code>. This function will return the word in the selected cell where the first letter of each word is written in a capital letter followed by lower case letters.</li>
+</ol>
+<p><img src="Figures/capitals_5.png" width="40%" style="display: block; margin: auto;" /></p>
+<p><img src="Figures/capitals_6.png" width="40%" style="display: block; margin: auto;" /></p>
+<p>In the same column, some of the town names are misspelled. This can be corrected similarly to how you corrected the inconsistencies in the category names.</p>
+</div>
+<div id="correcting-the-date-format" class="section level4 unnumbered unlisted">
+<h4>Correcting the date format</h4>
+<p>The columns “Employee Birth Date”, “Employee Hire Date” and “Employee Termination Date” are examples of columns containing dates.</p>
+<p>The dates can be corrected by selecting all the columns containing dates, then selecting the “short date” format on the drop-down list in the “Number” group on the “Home tab.</p>
+<p><img src="Figures/dates.png" width="40%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="missing-data" class="section level3" number="3.2.2">
+<h3><span class="header-section-number">3.2.2</span> Missing data</h3>
+<p>Missing data occurs when there is no value for a variable of a certain observation. This is a common issue in data analysis and can arise for various reasons. Missing data can have a significant effect on data analysis and conclusions drawn from such analysis.</p>
+<p>Missing data often results from non-response. For example, in a survey, a respondent may leave a question unanswered. This usually happens in the case of sensitive information such as salary. Another reason for missing data is caused by errors made by the researcher during data collection or entry.</p>
+<p><strong>Types of missing data:</strong></p>
+<ul>
+<li><p><strong>Missing completely at random (MCAR)</strong>: With this type of missing data, the probability of an observation being missing is entirely random and independent of any other variable in the data set. For example, at the end of a customer service call, customers might be asked to complete a satisfaction survey. Some individuals may choose not to respond which causes missing data.</p></li>
+<li><p><strong>Missing at random (MAR)</strong>: With this type of missing data, the probability of an observation being missing depends on the values of other variables in the data set but not the missing variable itself. For example, after visiting a dermatology clinic, customers might be asked to fill in a survey on their gender and skincare routine. If females are more likely to respond, the missing data can be explained by the gender of the individual.</p></li>
+<li><p><strong>Missing not at random (MNAR)</strong>: With this type of missing data, the probability of a data point being missing is related to the missing value itself. For example, some individuals might prefer not to answer sensitive information on a survey such as their salary.</p></li>
+</ul>
+<p><strong>Some methods for handling missing data:</strong></p>
+<ul>
+<li><p><strong>Imputation</strong>: In some cases, the missing data can be replaced with estimated values. Some common approaches include filling in missing values with the mean, median or mode of the variable.</p></li>
+<li><p><strong>Interpolation</strong>: This method of handling missing data is to fill in missing data based on the adjacent datapoints. This is a popular method to use in time series data.</p></li>
+<li><p><strong>Deletion</strong>: In some cases, it may be appropriate to remove the variable entirely from the analysis when the variable has a high proportion of missing values. Another method is to delete an entire observation if one or more of the variables contains missing data.</p></li>
+<li><p><strong>Model-based approaches</strong>: With this method predictive models are used to impute the missing values in the data set based on other variables in the data set.</p></li>
+</ul>
+<p>When working with data that contains missing values, caution should always be taken. The type of missing data as well as the analysis at hand should guide the data analyst on how to handle the missing data.</p>
+<div id="example-1" class="section level4" number="3.2.2.1">
+<h4><span class="header-section-number">3.2.2.1</span> Example</h4>
+<p>You are given a data set called <code>Diabetes Missing Data.xlsx</code> which contains vital measurements of 30 patients. Some of the data is missing and you are required to explore this in Excel.</p>
+<p><img src="Figures/missing.png" width="80%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="filter-a-column-for-missing-values" class="section level4 unnumbered unlisted">
+<h4>Filter a column for missing values</h4>
+<p>Missing values can be represented in various ways, such as <code>NA</code>, <code>N/A</code> or as a blank cell.</p>
+<p>In this example, we will filter the <code>Diastolic_BP</code> column to display only the observations with missing values for this variable. Follow these steps:</p>
+<div style="page-break-after: always;"></div>
+<ol style="list-style-type: decimal">
+<li>Select all the columns of the data set. In the <strong>Editing</strong> group on the <strong>Home</strong> tab, click on <strong>Sort &amp; Filter</strong> and then on “Filter”. This will allow you to filter the data by a specific column.</li>
+</ol>
+<p><img src="Figures/missing_1_1.png" width="80%" style="display: block; margin: auto;" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Click on the Filter icon next to the column name which will open up a menu. Untick all the tick boxes except the one labelled “(blank)”. Then click OK.</li>
+</ol>
+<p><img src="Figures/missing_1_2.png" width="40%" style="display: block; margin: auto;" /></p>
+<div style="page-break-after: always;"></div>
+<ol start="3" style="list-style-type: decimal">
+<li>This will then only display the observations with a missing value for this variable.</li>
+</ol>
+<p><img src="Figures/missing_1_3.png" width="80%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="use-conditional-formatting-to-highlight-cells-with-missing-values" class="section level4 unnumbered unlisted">
+<h4>Use conditional formatting to highlight cells with missing values</h4>
+<p>In the case where you simply want to highlight the cells with missing values, conditional formatting can be used. For this example, we will highlight the missing values in the <code>Skin_Fold</code> variable. Follow these steps:</p>
+<ol style="list-style-type: decimal">
+<li>Select the column on which you want to apply the conditional formatting. Navigate to the <strong>Home</strong> tab, click on <strong>Conditional Formatting</strong> and choose <strong>New Rule</strong>.</li>
+</ol>
+<p><img src="Figures/missing_2_1.png" width="80%" style="display: block; margin: auto;" /></p>
+<div style="page-break-after: always;"></div>
+<ol start="2" style="list-style-type: decimal">
+<li>In the New Formatting Rule dialog box, select <strong>Format only cells that contain</strong>. Then at the dropdown menu under <strong>Format only cells with:</strong>, select “Blanks”. By clicking on the <strong>Format</strong> button, you can specify the formatting style for the highlighted cells.</li>
+</ol>
+<p><img src="Figures/missing_2_2.png" width="40%" style="display: block; margin: auto;" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>As a result, all the cells with missing values will be highlighted.</li>
+</ol>
+<p><img src="Figures/missing_2_3.png" width="80%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="find-and-replace-missing-values" class="section level4 unnumbered unlisted">
+<h4>Find and replace missing values</h4>
+<p>When you want to replace all the missing values of a certain variable with the same value, <strong>Find &amp; Replace</strong> can be used. In this example, replace all the missing values from the <code>Serum_Insulin</code> variable with the word “Missing”. Follow the following steps:</p>
+<div style="page-break-after: always;"></div>
+<ol style="list-style-type: decimal">
+<li>Select the desired column. Navigate to the <strong>Home</strong> tab, click on <strong>Find &amp; Select</strong> and choose <strong>Replace</strong>.</li>
+</ol>
+<p><img src="Figures/missing_3_1.png" width="80%" style="display: block; margin: auto;" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>In the Find &amp; Replace dialog box, leave the <strong>Find what</strong> field blank to target all blank cells. Enter the word “Missing” in the <strong>Replace with</strong> field. Click on <strong>Replace All</strong> to apply this change to the entire column.</li>
+</ol>
+<p><img src="Figures/missing_3_2.png" width="50%" style="display: block; margin: auto;" /></p>
+<ol start="3" style="list-style-type: decimal">
+<li>As a result, all the cells that were empty previously will now contain the word “Missing”.</li>
+</ol>
+<p><img src="Figures/missing_3_3.png" width="80%" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="duplicate-values" class="section level3" number="3.2.3">
+<h3><span class="header-section-number">3.2.3</span> Duplicate values</h3>
+<p>When working with a real-world data set, you may encounter duplicated records. Such records do not provide additional information and can slow down the analysis process or lead to inaccuracies. Therefore, it is best to remove such observations.</p>
+<p>To remove duplicated rows in Excel, the following steps can be followed:</p>
+<ol style="list-style-type: decimal">
+<li>Select the entire data set in Excel. Navigate to the <strong>Data</strong> tab and in the <strong>Data Tools</strong> group, click on the <strong>Remove Duplicates</strong> icon.</li>
+</ol>
+<p><img src="Figures/duplicated_1.png" width="80%" style="display: block; margin: auto;" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li>In the Remove duplicates dialog box, you can select the columns where duplicates should be identified. In most cases, it will be appropriate to select all the columns to ensure rows are entirely unique. Click <strong>OK</strong> to remove all the duplicates.</li>
+</ol>
+<p><img src="Figures/duplicated_2.png" width="40%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="exercises" class="section level3" number="3.2.4">
+<h3><span class="header-section-number">3.2.4</span> Exercises</h3>
+<ol style="list-style-type: decimal">
+<li><p>Explain why data cleaning is an essential step for the analysis.</p></li>
+<li><p>What are the common types of issues that you can encounter in a real-word data set?</p></li>
+<li><p>Why is it necessary to remove duplicate records?</p></li>
+<li><p>List some data cleaning techniques and provide an example of where such technique might be necessary.</p></li>
+<li><p>Name the functions in Excel that can be used to change the capitilisation of words in Excel.</p></li>
+<li><p>Why is it important to standarise text entries (for example, converting “Yes” and “yes” to the same format) in a data set? Can you think of an example where inconsistencies in text entries can affect analysis?</p></li>
+<li><p>What are some common reasons for missing data in a data set? Provide some examples of where missing data occurs.</p></li>
+</ol>
+</div>
+</div>
+<p style="text-align: center;">
+<a href="3.1-data-importing.html"><button class="btn btn-default">Previous</button></a>
+<a href="3.3-data-manipulation.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>
