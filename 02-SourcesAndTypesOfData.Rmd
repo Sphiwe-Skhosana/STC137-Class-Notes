@@ -4,9 +4,10 @@ output:
   pdf_document: default
 ---
 
-# Sources and Types of Data {#ch2}
+# Sources and Types of Data { #ch2}
+Content coming soon...
 
-## Data Sources {#sources}
+## Data Sources {.hidden .unlisted #sources}
 
 ### Introduction {#sources:intro}
 
@@ -137,7 +138,7 @@ The list below describes some sources of open African data.
 - Global Biodiversity Information Facility (GBIF): GBIF offers biodiversity data with extensive records on species found in Africa. This resource supports research in conservation, climate change, and ecosystem services. URL: https://www.gbif.org/ 
 
 
-## Data Types {#types}
+## Data Types {.hidden .unlisted #types}
 
 ### Introduction {#types:intro}
 

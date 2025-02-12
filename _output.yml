@@ -9,12 +9,12 @@ bookdown::gitbook:
         <li><a href="https://clickup.up.ac.za/ultra/courses/_182242_1/outline" target="blank">ClickUP Page</a></li>
     #edit: https://github.com/sphiwe-skhosana/STC137-Class-Notes/edit/main/%s
     #download: [pdf]
-#bookdown::pdf_book:
+#bookdown::html_book:
   #includes:
     #in_header: preamble.tex
   #latex_engine: xelatex
   #citation_package: natbib
- # keep_tex: yes
- # pandoc_arg: [--top-level-division=chapter, --wrap=none]
- # toc_depth: 3
+  #keep_tex: yes
+  #pandoc_arg: [--top-level-division=chapter, --wrap=none]
+  #toc_depth: 3
 #bookdown::epub_book: default
