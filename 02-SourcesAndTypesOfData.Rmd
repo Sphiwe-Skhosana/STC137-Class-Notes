@@ -4,14 +4,13 @@ output:
   pdf_document: default
 ---
 
-# Sources and Types of Data { #ch2}
-Content coming soon...
+# Sources and Types of Data {#ch2}
 
-## Data Sources {.hidden .unlisted #sources}
+As practitioners or users of data, our job is all about getting insights from data. But in order to do that efficiently and effectively, we need to first understand the different types and forms that the data can take. This knowledge is necessary as it enables us to choose the appropriate statistical methods for collecting the data and then analyzing the data. In this Chapter, you will learn about the various sources where you can obtain the data and the various types and forms that the data can take.
 
-### Introduction {#sources:intro}
+## Data Sources {#sources}
 
-As statisticians, data analysts, data scientists or any other practitioners who work with data, our job is all about getting insights from data. But  where does this data come from? Knowing where a dataset comes from and where and how it was collected is crucial for us to determine if it will allow us to derive the insights we need.
+Knowing where a dataset comes from and where and how it was collected is crucial for us to determine if it will allow us to derive the insights we need.
 
 Example:
 Ahmed is a consumer scientist working for Freshdale, a South African dairy company. His job is to determine whether Freshdale should invest more money into producing milk, cheese or yoghurt. For each of the datasets below, discuss if it is appropriate to answer this question.
@@ -138,11 +137,9 @@ The list below describes some sources of open African data.
 - Global Biodiversity Information Facility (GBIF): GBIF offers biodiversity data with extensive records on species found in Africa. This resource supports research in conservation, climate change, and ecosystem services. URL: https://www.gbif.org/ 
 
 
-## Data Types {.hidden .unlisted #types}
+## Data Types {#types}
 
-### Introduction {#types:intro}
-
-As a statistician, data analyst, data scientist or a professional in any similar career, it is important to understand the different types of data. Intuitively, this makes sense: we understand that someone's height is fundamentally different information from their blood pressure, favourite vegetable, or their name. We also understand that these different kinds of data cannot be directly compared. 
+As a practitioner of data or someone who works with data, it is important to understand the different types of data. Intuitively, this makes sense: we understand that someone's height is fundamentally different information from their blood pressure, favourite vegetable, or their name. We also understand that these different kinds of data cannot be directly compared. 
 
 As an example, consider two friends, Shamila and Kagiso. Shamila is 160cm tall, has a systolic blood pressure of 110, and likes broccoli. Kagiso is 180cm tall, has a systolic blood pressure of 119, and likes carrots. We can say that Kagiso is taller than Shamila, but we cannot say that Kagiso is taller than his blood pressure. We can say that Kagiso's blood pressure is higher than Shamila's, but we cannot say that Kagiso's blood pressure is higher than broccoli (what would that even mean?). These differences may seem obvious in this example, but keep them in mind as we explore the different data types and scales of measurement.
 
@@ -150,24 +147,25 @@ As an example, consider two friends, Shamila and Kagiso. Shamila is 160cm tall, 
 
 Scales of measurement refers to the categories in which we divide data according to their properties, and which inform the appropriate kinds of analyses we can perform on the data. There are four scales of measurement, namely nominal, ordinal, interval and ratio.
 
-Consider the example dataset below. This dataset displays some administrative, demographic, economic and agricultural data of the provinces of South Africa.
+Consider the following dataset which is an extension of the dataset in Table 1 introduced in Section \@ref(data):
 
-```{r, echo=FALSE, fig.cap="Figure 1: Provinces dataset", out.width = '100%'}
+```{r, echo=FALSE, fig.cap="Provinces dataset", out.width = '100%'}
 knitr::include_graphics("Renate Chapters/DataExampleSA.png")
 ```
 
 #### Nominal
+
 Nominal data refers to data to which there is no order or ranking. In the Provinces dataset, there are three nominal variables. *Province* is a nominal variable, since there is no specific order to the provinces. *Province where most of the population migrate* is similarly a nominal variable.
 
 Q: What is the third nominal variable in the Provinces dataset?
 
 Nominal data is best represented by **bar charts** and **pie charts**.
 
-```{r, echo=FALSE, fig.cap="Figure 2: Pie chart of the 'Province where most of the population migrate' nominal variable.", out.width = '50%'}
+```{r fig2, echo=FALSE, fig.cap="Pie chart of the 'Province where most of the population migrate' nominal variable.", out.width = '50%'}
 knitr::include_graphics("Renate Chapters/PieChartNominal.png")
 ```
 
-```{r, echo=FALSE, fig.cap="Figure 3: Bar chart of the 'Province where most of the population migrate' nominal variable.", out.width = '50%'}
+```{r fig3, echo=FALSE, fig.cap="Bar chart of the 'Province where most of the population migrate' nominal variable.", out.width = '50%'}
 knitr::include_graphics("Renate Chapters/BarChartNominal.png")
 ```
 
@@ -180,7 +178,7 @@ Q: Can you think of other examples of ordinal variables?
 
 Ordinal data is best represented by **bar charts**.
 
-```{r, echo=FALSE, fig.cap="Figure 4: Bar chart of the 'HDI' ordinal variable.", out.width = '50%'}
+```{r fig4, echo=FALSE, fig.cap="Bar chart of the 'HDI' ordinal variable.", out.width = '50%'}
 knitr::include_graphics("Renate Chapters/HistogramOrdinal.png")
 ```
 
@@ -189,7 +187,7 @@ Interval data refers to data that has an order, and where the difference in orde
 
 Interval data can be represented by, among other things, **bar charts**, **histograms**, and **box plots**.
 
-```{r, echo=FALSE, fig.cap="Figure 5: Box plot of the 'Summer temp' interval variable.", out.width = '50%'}
+```{r fig5, echo=FALSE, fig.cap="Box plot of the 'Summer temp' interval variable.", out.width = '50%'}
 knitr::include_graphics("Renate Chapters/BoxPlotInterval.png")
 ```
 
@@ -200,7 +198,7 @@ Ratio data refers to data that has an order, where the difference in order can b
 
 Like interval data, ratio data can be represented by, among other things, **bar charts**, **histograms**, and **box plots**.
 
-```{r, echo=FALSE, fig.cap="Figure 6: Histogram of the '% of households with no internet' ratio variable.", out.width = '50%'}
+```{r fig6, echo=FALSE, fig.cap="Histogram of the '% of households with no internet' ratio variable.", out.width = '50%'}
 knitr::include_graphics("Renate Chapters/HistogramRatio.png")
 ```
 
@@ -337,14 +335,14 @@ knitr::include_graphics("Renate Chapters/Temps.png")
 ##### Image data
 Image data is popular in the field of computer vision and AI. Images are typically represented as a set of three matrices, or grids, representing the red, blue and green values of each pixel in the image.
 
-Figures 8 and 9 show an example of an image, and its decomposition into its red, green and blue components.
+Figures @\ref(fig8) and @\ref(fig9) show an example of an image, and its decomposition into its red, green and blue components.
 
-```{r, echo=FALSE, fig.cap="Figure 8: Example of image data (Photo by Andrew S on Unsplash)", out.width = '50%'}
+```{r fig8, echo=FALSE, fig.cap="Example of image data (Photo by Andrew S on Unsplash)", out.width = '50%'}
 knitr::include_graphics("Renate Chapters/andrew-s-ouo1hbizWwo-unsplash.jpg")
 
 ```
 
-```{r, fig.height=8, fig.width= 30, echo=FALSE, fig.cap="Figure 9: An image split into its red, green and blue components",fig.align='center'}
+```{r fig9, fig.height=8, fig.width= 30, echo=FALSE, fig.cap="An image split into its red, green and blue components",fig.align='center'}
 
 suppressWarnings({suppressMessages({# Install required packages if not already installed
 if (!require("imager")) install.packages("imager", dependencies = TRUE)
@@ -420,7 +418,7 @@ Images can also consist of more grids. Satellite images, for example, typically 
 ##### Spatial data
 Spatial data is concerned with the locations of phenomena. Spatial data can include satellite images, GPS locations, GPS routes, and more. Figure 10 shows an example of a satellite image of central Pretoria, as well as GPS locations of some points of interest, and lines representing the roads. These are all examples of spatial data.
 
-```{r, out.width= "49%", out.height="20%", echo=FALSE, fig.show='hold',fig.align='center', fig.cap="Figure 10: Top left: A satellite image; Top right: points of interest; Bottom left: roads; Bottom right: All previous datasets overlaid"}
+```{r fig10, out.width= "49%", out.height="20%", echo=FALSE, fig.show='hold',fig.align='center', fig.cap="Top left: A satellite image; Top right: points of interest; Bottom left: roads; Bottom right: All previous datasets overlaid"}
 library(graphics)
 
 #par(mfrow=(c(2,2)))
@@ -431,20 +429,26 @@ knitr::include_graphics(c("Renate Chapters/Sat.jpg","Renate Chapters/POIs.jpg","
 Spatial data is used in urban planning, ecology, epidemiology (the study of disease spread), and more.
 
 ##### Audio data
-Audio data can be found in sound files. This can include, among other things, music, audio tracks for movies, and voice recordings (like voice notes). Audio data is represented by a time series signal where the amplitude of the sound wave is sampled at regular intervals. Figure 11 shows an example of an audio file.
+Audio data can be found in sound files. This can include, among other things, music, audio tracks for movies, and voice recordings (like voice notes). Audio data is represented by a time series signal where the amplitude of the sound wave is sampled at regular intervals. Figure @\ref(fig11) shows an example of an audio file.
 
-```{r, echo=FALSE, fig.cap="Figure 11: An audio file represented as a time series of amplitudes. Higher amplitudes represent a louder volume.", out.width = '50%',fig.align='center'}
+```{r fig11, echo=FALSE, fig.cap="An audio file represented as a time series of amplitudes. Higher amplitudes represent a louder volume.", out.width = '50%',fig.align='center'}
 knitr::include_graphics("Renate Chapters/Audio.png")
 ```
 
 ##### Video data
 Video data are series of images put together. Videos without sound are examples of video data. Videos with sound, such as movies downloaded from the internet, or videos taken with your phone, are a combination of video data (the visuals) and audio data (the sound).
 
+### Structured and Unstructured data
+
+Data can also be categorized into two types: *Structured* and *Unstructured* data. Structured data is organized and has a fixed format that makes it easy to work with. It typically follows a predefined scheme such as a table with rows and columns as with the data shown in Figure @\ref(fig1). Some other examples of structured data include spreadsheets (e.g. Excel) and Comma Separated Values (CSV) files. Unstructured data do not have a predefined format making them more challenging to work with. They includes data such as text (e.g. emails), images, videos, audio and other forms of data which cannot be stored using tables.
+
+
 #### Data Types and Computers
 
 The last part of this chapter considers how data of different types are stored on computers. We will look at the possible values that the data can be stored as, and common file extensions for each data type.
 
 ##### Qualitative data
+
 Qualitative data is stored differently depending on whether it is nominal, ordinal, or text data (e.g. a response to an open-ended survey question).
 
 1. Nominal data: This is stored as labels, either text (for example, province codes like "GP", "WC", "LP") or as integers representing categories (for example, 1 to represent Coastland and 2 to represent Inland in the *Coastal (1) or Inland (2)* variable in the Provinces dataset).
