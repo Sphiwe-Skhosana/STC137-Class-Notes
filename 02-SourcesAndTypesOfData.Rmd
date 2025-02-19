@@ -6,7 +6,7 @@ output:
 
 # Sources and Types of Data {#ch2}
 
-As practitioners or users of data, our job is all about getting insights from data. But in order to do that efficiently and effectively, we need to first understand the different types and forms that the data can take. This knowledge is necessary as it enables us to choose the appropriate statistical methods for collecting the data and then analyzing the data. In this Chapter, you will learn about the various sources where you can obtain the data and the various types and forms that the data can take.
+As practitioners or users of data, our job is all about getting insights from data. But in order to do that efficiently and effectively, we need to first understand the different types and forms that the data can take. This knowledge is necessary as it enables us to choose the appropriate statistical methods for collecting the data and then analyzing the data. In this Chapter, you will learn about the various sources where you can obtain the data and the various types and forms that can be assumed by the data.
 
 ## Data Sources {#sources}
 
