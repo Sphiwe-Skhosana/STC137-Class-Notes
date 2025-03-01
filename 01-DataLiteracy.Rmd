@@ -924,7 +924,7 @@ Data analysis can be viewed as a sequence of steps combining some of the data li
 
 2.  **Data collection**
 
-    Once the study is defined, the next step is to collect the relevant data. This can be done using various methods to be discussed in Chapter \@ref(ch3). The choice of method used to collect data depends on the nature of the problem and the questions being asked.
+    Once the study is defined, the next step is to collect the relevant data. This can be done using various methods to be discussed in Chapter \@ref(ch4). The choice of method used to collect data depends on the nature of the problem and the questions being asked.
 
 3.  **Data cleaning**
 
@@ -981,7 +981,7 @@ Data analysis is a very important data literacy skill that finds application acr
 
 ### Data analysis techniques
 
-There are many techniques used in data analysis and each one serves a unique purpose and application. In section [Data exploration], we discussed data exploration. This is the most basic technique for data analysis. In this section, we will briefly discuss some of the most commonly used and emerging techniques.
+There are many techniques used in data analysis and each one serves a unique purpose and application. In section \@ref(sec1-5), we discussed data exploration. This is the most basic technique for data analysis. In this section, we will briefly discuss some of the most commonly used and emerging techniques.
 
 1.  **Correlation analysis**
 

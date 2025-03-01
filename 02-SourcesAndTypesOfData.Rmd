@@ -443,11 +443,11 @@ Video data are series of images put together. Videos without sound are examples 
 Data can also be categorized into two types: *Structured* and *Unstructured* data. Structured data is organized and has a fixed format that makes it easy to work with. It typically follows a predefined scheme such as a table with rows and columns as with the data shown in Figure @\ref(fig1). Some other examples of structured data include spreadsheets (e.g. Excel) and Comma Separated Values (CSV) files. Unstructured data do not have a predefined format making them more challenging to work with. They includes data such as text (e.g. emails), images, videos, audio and other forms of data which cannot be stored using tables.
 
 
-#### Data Types and Computers
+### Data Types and Computers
 
 The last part of this chapter considers how data of different types are stored on computers. We will look at the possible values that the data can be stored as, and common file extensions for each data type.
 
-##### Qualitative data
+#### Qualitative data
 
 Qualitative data is stored differently depending on whether it is nominal, ordinal, or text data (e.g. a response to an open-ended survey question).
 
@@ -457,13 +457,13 @@ Qualitative data is stored differently depending on whether it is nominal, ordin
 
 Qualitative data can be stored in text files (file extention: .txt) or in spreadsheets (file extention: .csv, .xlsx).
 
-##### Quantitative data
+#### Quantitative data
 1. Discrete data: Stored as integers.
 2. Continuous data: Stored as real numbers, also called floating-point numbers. Ratio data and interval data can be stored this way.
 
 Quantitative data is usually stored in spreadsheets (file extention: .csv, .xlsx).
 
-##### Other data types
+#### Other data types
 
 ```{r echo=FALSE, results='asis'}
 
@@ -476,7 +476,7 @@ kable(mat, caption='Other data types and their common file extensions')
 ```
 
 
-##### Common data type mistakes
+#### Common data type mistakes
 
 The previous sections explained how data of various types and scales of measurement should be stored. However, data can be stored in different ways, it can happen that data is stored incorrectly, or in a way that is unsuitable for use.
 
