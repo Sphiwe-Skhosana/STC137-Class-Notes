@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4.2 Sampling | STC 137 Class Notes</title>
+  <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4.2 Sampling | STC 137 Class Notes" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
+  <meta name="github-repo" content="sphiwe-skhosana/STC137-Class-Notes" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4.2 Sampling | STC 137 Class Notes" />
+  
+  <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
+set in the _output.yml file.
+The HTML output format for this example is bookdown::gitbook,</p>" />
+  
+
+<meta name="author" content="Department of Statistics, University of Pretoria" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="data-collection.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="libs/viz-1.8.2/viz.js"></script>
+<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
+<script src="libs/grViz-binding-1.0.11/grViz.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">STC137 Class Notes</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="an-overview-of-data-literacy.html"><a href="an-overview-of-data-literacy.html"><i class="fa fa-check"></i><b>1</b> An Overview of Data literacy</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="sec1-1.html"><a href="sec1-1.html"><i class="fa fa-check"></i><b>1.1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="sec1-1.html"><a href="sec1-1.html#definition"><i class="fa fa-check"></i><b>1.1.1</b> Definition</a></li>
+<li class="chapter" data-level="1.1.2" data-path="sec1-1.html"><a href="sec1-1.html#the-importance-of-being-data-literate-in-modern-society"><i class="fa fa-check"></i><b>1.1.2</b> The importance of being data literate in modern society</a></li>
+<li class="chapter" data-level="1.1.3" data-path="sec1-1.html"><a href="sec1-1.html#data-literacy-skills"><i class="fa fa-check"></i><b>1.1.3</b> Data Literacy Skills</a></li>
+<li class="chapter" data-level="1.1.4" data-path="sec1-1.html"><a href="sec1-1.html#data-literacy-in-practice"><i class="fa fa-check"></i><b>1.1.4</b> Data Literacy in Practice</a></li>
+<li class="chapter" data-level="1.1.5" data-path="sec1-1.html"><a href="sec1-1.html#exercises-to-section-1.1"><i class="fa fa-check"></i><b>1.1.5</b> Exercises to Section 1.1</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="data.html"><a href="data.html"><i class="fa fa-check"></i><b>1.2</b> Data</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="data.html"><a href="data.html#what-is-data"><i class="fa fa-check"></i><b>1.2.1</b> What is data?</a></li>
+<li class="chapter" data-level="1.2.2" data-path="data.html"><a href="data.html#properties-of-a-data-set"><i class="fa fa-check"></i><b>1.2.2</b> Properties of a data set</a></li>
+<li class="chapter" data-level="1.2.3" data-path="data.html"><a href="data.html#observational-and-experimental-data"><i class="fa fa-check"></i><b>1.2.3</b> Observational and experimental data</a></li>
+<li class="chapter" data-level="1.2.4" data-path="data.html"><a href="data.html#cross-sectional-and-time-series-data"><i class="fa fa-check"></i><b>1.2.4</b> Cross-sectional and time-series data</a></li>
+<li class="chapter" data-level="1.2.5" data-path="data.html"><a href="data.html#population-and-sample"><i class="fa fa-check"></i><b>1.2.5</b> Population and sample</a></li>
+<li class="chapter" data-level="1.2.6" data-path="data.html"><a href="data.html#exercises-to-section-1.2"><i class="fa fa-check"></i><b>1.2.6</b> Exercises to Section 1.2</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="sec1-3.html"><a href="sec1-3.html"><i class="fa fa-check"></i><b>1.3</b> Data Management - Foundations and Concepts</a>
+<ul>
+<li class="chapter" data-level="1.3.1" data-path="sec1-3.html"><a href="sec1-3.html#data-management-process"><i class="fa fa-check"></i><b>1.3.1</b> Data management process</a></li>
+<li class="chapter" data-level="1.3.2" data-path="sec1-3.html"><a href="sec1-3.html#the-benefits-of-data-management-in-modern-society"><i class="fa fa-check"></i><b>1.3.2</b> The benefits of data management in modern society</a></li>
+<li class="chapter" data-level="1.3.3" data-path="sec1-3.html"><a href="sec1-3.html#the-challenges-of-data-management-in-modern-society"><i class="fa fa-check"></i><b>1.3.3</b> The challenges of data management in modern society</a></li>
+<li class="chapter" data-level="1.3.4" data-path="sec1-3.html"><a href="sec1-3.html#strategies-for-data-management"><i class="fa fa-check"></i><b>1.3.4</b> Strategies for data management</a></li>
+<li class="chapter" data-level="1.3.5" data-path="sec1-3.html"><a href="sec1-3.html#exercises-to-section-1.3"><i class="fa fa-check"></i><b>1.3.5</b> Exercises to Section 1.3</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="sec1-4.html"><a href="sec1-4.html"><i class="fa fa-check"></i><b>1.4</b> Data Ethics</a>
+<ul>
+<li class="chapter" data-level="1.4.1" data-path="sec1-4.html"><a href="sec1-4.html#the-importance-of-data-ethics"><i class="fa fa-check"></i><b>1.4.1</b> The importance of data ethics</a></li>
+<li class="chapter" data-level="1.4.2" data-path="sec1-4.html"><a href="sec1-4.html#data-ethics-principles"><i class="fa fa-check"></i><b>1.4.2</b> Data ethics principles</a></li>
+<li class="chapter" data-level="1.4.3" data-path="sec1-4.html"><a href="sec1-4.html#exercises-to-section-1.4"><i class="fa fa-check"></i><b>1.4.3</b> Exercises to Section 1.4</a></li>
+</ul></li>
+<li class="chapter" data-level="1.5" data-path="sec1-5.html"><a href="sec1-5.html"><i class="fa fa-check"></i><b>1.5</b> Data Exploration – Foundations and Concepts</a>
+<ul>
+<li class="chapter" data-level="1.5.1" data-path="sec1-5.html"><a href="sec1-5.html#approaches-to-exploratory-data-analysis"><i class="fa fa-check"></i><b>1.5.1</b> Approaches to exploratory data analysis</a></li>
+<li class="chapter" data-level="1.5.2" data-path="sec1-5.html"><a href="sec1-5.html#advantages-and-disadvantages-of-data-exploration"><i class="fa fa-check"></i><b>1.5.2</b> Advantages and disadvantages of data exploration</a></li>
+<li class="chapter" data-level="1.5.3" data-path="sec1-5.html"><a href="sec1-5.html#stages-in-the-exploratory-data-analysis-process"><i class="fa fa-check"></i><b>1.5.3</b> Stages in the exploratory data analysis process</a></li>
+<li class="chapter" data-level="1.5.4" data-path="sec1-5.html"><a href="sec1-5.html#exercises-to-section-1.5"><i class="fa fa-check"></i><b>1.5.4</b> Exercises to Section 1.5</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="sec1-6.html"><a href="sec1-6.html"><i class="fa fa-check"></i><b>1.6</b> Data visualization – Foundations and Concepts</a>
+<ul>
+<li class="chapter" data-level="1.6.1" data-path="sec1-6.html"><a href="sec1-6.html#common-uses-of-data-visualization-in-modern-society"><i class="fa fa-check"></i><b>1.6.1</b> Common uses of data visualization in modern society</a></li>
+<li class="chapter" data-level="1.6.2" data-path="sec1-6.html"><a href="sec1-6.html#types-of-data-visualizations"><i class="fa fa-check"></i><b>1.6.2</b> Types of data visualizations</a></li>
+<li class="chapter" data-level="1.6.3" data-path="sec1-6.html"><a href="sec1-6.html#components-of-a-data-visualization-tool"><i class="fa fa-check"></i><b>1.6.3</b> Components of a data visualization tool</a></li>
+<li class="chapter" data-level="1.6.4" data-path="sec1-6.html"><a href="sec1-6.html#advantages-and-disadvantages-of-data-visualization"><i class="fa fa-check"></i><b>1.6.4</b> Advantages and Disadvantages of data visualization</a></li>
+<li class="chapter" data-level="1.6.5" data-path="sec1-6.html"><a href="sec1-6.html#exercises-to-section-1.6"><i class="fa fa-check"></i><b>1.6.5</b> Exercises to Section 1.6</a></li>
+</ul></li>
+<li class="chapter" data-level="1.7" data-path="sec1-7.html"><a href="sec1-7.html"><i class="fa fa-check"></i><b>1.7</b> Data analysis – Foundations and Concepts</a>
+<ul>
+<li class="chapter" data-level="1.7.1" data-path="sec1-7.html"><a href="sec1-7.html#the-data-analysis-process"><i class="fa fa-check"></i><b>1.7.1</b> The Data Analysis process</a></li>
+<li class="chapter" data-level="1.7.2" data-path="sec1-7.html"><a href="sec1-7.html#approaches-to-data-analysis"><i class="fa fa-check"></i><b>1.7.2</b> Approaches to Data Analysis</a></li>
+<li class="chapter" data-level="1.7.3" data-path="sec1-7.html"><a href="sec1-7.html#uses-of-data-analysis-in-modern-society"><i class="fa fa-check"></i><b>1.7.3</b> Uses of data analysis in modern society</a></li>
+<li class="chapter" data-level="1.7.4" data-path="sec1-7.html"><a href="sec1-7.html#data-analysis-techniques"><i class="fa fa-check"></i><b>1.7.4</b> Data analysis techniques</a></li>
+<li class="chapter" data-level="1.7.5" data-path="sec1-7.html"><a href="sec1-7.html#computational-tools-and-software-for-data-analysis"><i class="fa fa-check"></i><b>1.7.5</b> Computational tools and software for data analysis</a></li>
+<li class="chapter" data-level="1.7.6" data-path="sec1-7.html"><a href="sec1-7.html#exercises-to-section-1.7"><i class="fa fa-check"></i><b>1.7.6</b> Exercises to Section 1.7</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="ch2.html"><a href="ch2.html"><i class="fa fa-check"></i><b>2</b> Sources and Types of Data</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="sources.html"><a href="sources.html"><i class="fa fa-check"></i><b>2.1</b> Data Sources</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="sources.html"><a href="sources.html#sources:primary"><i class="fa fa-check"></i><b>2.1.1</b> Primary Data Sources</a></li>
+<li class="chapter" data-level="2.1.2" data-path="sources.html"><a href="sources.html#sources:secondary"><i class="fa fa-check"></i><b>2.1.2</b> Secondary Data Sources</a></li>
+<li class="chapter" data-level="2.1.3" data-path="sources.html"><a href="sources.html#sources:tertiary"><i class="fa fa-check"></i><b>2.1.3</b> Tertiary Data Sources</a></li>
+<li class="chapter" data-level="2.1.4" data-path="sources.html"><a href="sources.html#sources:where"><i class="fa fa-check"></i><b>2.1.4</b> Where Can I Find Data?</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="types.html"><a href="types.html"><i class="fa fa-check"></i><b>2.2</b> Data Types</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="types.html"><a href="types.html#scales-of-measurement"><i class="fa fa-check"></i><b>2.2.1</b> Scales of Measurement</a></li>
+<li class="chapter" data-level="2.2.2" data-path="types.html"><a href="types.html#data-types"><i class="fa fa-check"></i><b>2.2.2</b> Data Types</a></li>
+<li class="chapter" data-level="2.2.3" data-path="types.html"><a href="types.html#structured-and-unstructured-data"><i class="fa fa-check"></i><b>2.2.3</b> Structured and Unstructured data</a></li>
+<li class="chapter" data-level="2.2.4" data-path="types.html"><a href="types.html#data-types-and-computers"><i class="fa fa-check"></i><b>2.2.4</b> Data Types and Computers</a></li>
+<li class="chapter" data-level="2.2.5" data-path="types.html"><a href="types.html#review-1"><i class="fa fa-check"></i><b>2.2.5</b> Review</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="ch3.html"><a href="ch3.html"><i class="fa fa-check"></i><b>3</b> Data Handling in Excel</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="data-importing.html"><a href="data-importing.html"><i class="fa fa-check"></i><b>3.1</b> Data importing</a>
+<ul>
+<li class="chapter" data-level="3.1.1" data-path="data-importing.html"><a href="data-importing.html#change-decimal-separator-settings-in-excel"><i class="fa fa-check"></i><b>3.1.1</b> Change decimal separator settings in Excel</a></li>
+<li class="chapter" data-level="3.1.2" data-path="data-importing.html"><a href="data-importing.html#opening-a-.xlsx-file-in-excel"><i class="fa fa-check"></i><b>3.1.2</b> Opening a .xlsx file in Excel</a></li>
+<li class="chapter" data-level="3.1.3" data-path="data-importing.html"><a href="data-importing.html#importing-a-.txt-file-in-excel"><i class="fa fa-check"></i><b>3.1.3</b> Importing a .txt file in Excel</a></li>
+<li class="chapter" data-level="3.1.4" data-path="data-importing.html"><a href="data-importing.html#importing-data-from-a-website"><i class="fa fa-check"></i><b>3.1.4</b> Importing data from a website</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="data-cleaning.html"><a href="data-cleaning.html"><i class="fa fa-check"></i><b>3.2</b> Data cleaning</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="data-cleaning.html"><a href="data-cleaning.html#example-data-cleaning-in-excel"><i class="fa fa-check"></i><b>3.2.1</b> Example: Data cleaning in Excel</a></li>
+<li class="chapter" data-level="3.2.2" data-path="data-cleaning.html"><a href="data-cleaning.html#missing-data"><i class="fa fa-check"></i><b>3.2.2</b> Missing data</a></li>
+<li class="chapter" data-level="3.2.3" data-path="data-cleaning.html"><a href="data-cleaning.html#duplicate-values"><i class="fa fa-check"></i><b>3.2.3</b> Duplicate values</a></li>
+<li class="chapter" data-level="3.2.4" data-path="data-cleaning.html"><a href="data-cleaning.html#exercises"><i class="fa fa-check"></i><b>3.2.4</b> Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="data-manipulation.html"><a href="data-manipulation.html"><i class="fa fa-check"></i><b>3.3</b> Data manipulation</a>
+<ul>
+<li class="chapter" data-level="3.3.1" data-path="data-manipulation.html"><a href="data-manipulation.html#example-super-animals"><i class="fa fa-check"></i><b>3.3.1</b> Example: Super Animals</a></li>
+<li class="chapter" data-level="3.3.2" data-path="data-manipulation.html"><a href="data-manipulation.html#example-employees"><i class="fa fa-check"></i><b>3.3.2</b> Example: Employees</a></li>
+<li class="chapter" data-level="3.3.3" data-path="data-manipulation.html"><a href="data-manipulation.html#basic-excel-functions"><i class="fa fa-check"></i><b>3.3.3</b> Basic Excel functions</a></li>
+<li class="chapter" data-level="3.3.4" data-path="data-manipulation.html"><a href="data-manipulation.html#exercises-1"><i class="fa fa-check"></i><b>3.3.4</b> Exercises</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ch4.html"><a href="ch4.html"><i class="fa fa-check"></i><b>4</b> Sampling and Collecting data</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="data-collection.html"><a href="data-collection.html"><i class="fa fa-check"></i><b>4.1</b> Data Collection</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="data-collection.html"><a href="data-collection.html#planning-data-collection"><i class="fa fa-check"></i><b>4.1.1</b> Planning data collection</a></li>
+<li class="chapter" data-level="4.1.2" data-path="data-collection.html"><a href="data-collection.html#primary-data-collection"><i class="fa fa-check"></i><b>4.1.2</b> Primary data collection</a></li>
+<li class="chapter" data-level="4.1.3" data-path="data-collection.html"><a href="data-collection.html#secondary-data-collection"><i class="fa fa-check"></i><b>4.1.3</b> Secondary data collection</a></li>
+<li class="chapter" data-level="4.1.4" data-path="data-collection.html"><a href="data-collection.html#evaluating-data"><i class="fa fa-check"></i><b>4.1.4</b> Evaluating Data</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="sampling.html"><a href="sampling.html"><i class="fa fa-check"></i><b>4.2</b> Sampling</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="sampling.html"><a href="sampling.html#sampling-frames"><i class="fa fa-check"></i><b>4.2.1</b> Sampling Frames</a></li>
+<li class="chapter" data-level="4.2.2" data-path="sampling.html"><a href="sampling.html#probabilistic-sampling"><i class="fa fa-check"></i><b>4.2.2</b> Probabilistic Sampling</a></li>
+<li class="chapter" data-level="4.2.3" data-path="sampling.html"><a href="sampling.html#non-probabilistic-sampling"><i class="fa fa-check"></i><b>4.2.3</b> Non-Probabilistic Sampling</a></li>
+<li class="chapter" data-level="4.2.4" data-path="sampling.html"><a href="sampling.html#sampling-bias"><i class="fa fa-check"></i><b>4.2.4</b> Sampling Bias</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://clickup.up.ac.za/ultra/courses/_182242_1/outline" target="blank">ClickUP Page</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">STC 137 Class Notes</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sampling" class="section level2 hasAnchor" number="4.2">
+<h2><span class="header-section-number">4.2</span> Sampling<a href="sampling.html#sampling" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>When we collect data, it is almost never possible to collect data on the entire population.
+For instance, if we want to study the habits of people who shop at Checkers, it will not be feasible to send out a survey to everyone in South Africa who has ever shopped at Checkers.
+When we collect data on a subset of the population, this is called a <strong>sample</strong>.
+In cases where we are able to collect data on the whole population, this is called a <strong>census</strong>.
+The table below highlights the differences between censuses and samples.</p>
+<pre><code>## Warning: package &#39;knitr&#39; was built under R version 4.3.3</code></pre>
+<table>
+<caption><span id="tab:unnamed-chunk-4">Table 4.1: </span>Census vs. sample</caption>
+<colgroup>
+<col width="8%" />
+<col width="46%" />
+<col width="44%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">Census</td>
+<td align="left">Sample</td>
+</tr>
+<tr class="even">
+<td align="left">Definition</td>
+<td align="left">A complete enumeration of every individual in a population.</td>
+<td align="left">A subset of individuals selected from a population.</td>
+</tr>
+<tr class="odd">
+<td align="left">Coverage</td>
+<td align="left">Includes the entire population.</td>
+<td align="left">Includes only a portion of the population.</td>
+</tr>
+<tr class="even">
+<td align="left">Time</td>
+<td align="left">Can be very time-consuming due to large-scale data collection.</td>
+<td align="left">Requires less time since data is collected on fewer individuals.</td>
+</tr>
+<tr class="odd">
+<td align="left">Cost</td>
+<td align="left">Usually quite expensive.</td>
+<td align="left">Less expensive.</td>
+</tr>
+<tr class="even">
+<td align="left">Accuracy</td>
+<td align="left">Accurate if data is collected properly, but errors can still occur.</td>
+<td align="left">May have some sampling error*.</td>
+</tr>
+<tr class="odd">
+<td align="left">Feasibility</td>
+<td align="left">Difficult for large populations.</td>
+<td align="left">More practical, especially if the population is large.</td>
+</tr>
+</tbody>
+</table>
+<p>*Sampling error will be explained in a later section.</p>
+<p>Although it is generally true that more data is better, there are many reasons to take a sample rather than a census.
+This includes time and financial constraints, as well as feasibility.
+For example, when taking a geological survey, it is really not feasible to measure the soil at every location in an area!
+As long as the sample is <em>unbiased</em> and <em>representative</em>, samples can be very informative and helpful.</p>
+<div id="sampling-frames" class="section level3 hasAnchor" number="4.2.1">
+<h3><span class="header-section-number">4.2.1</span> Sampling Frames<a href="sampling.html#sampling-frames" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Before we start drawing samples, we must first define the concept of a <strong>sampling frame</strong>.
+This is a complete list of all individuals or units in the population of interest from which a sample is drawn.
+A sampling frame is the foundation for selecting a sample that is representative of the population under study.
+You can think of a sampling frame as the “pool” from which elements of the sample is drawn.</p>
+<p><strong>Example 7:</strong> Suppose a market researcher wants to study the shopping habits of students in Pretoria.
+The <em>population</em> he is interested in are all students at tertiary institutions in Pretoria.
+The <em>sampling frame</em> would be a complete list of all students currently registered at tertiary institutions in Pretoria.</p>
+<p><strong>Exercise:</strong> In each of the scenarios given below, describe the <strong>population</strong> and the <strong>sampling frame</strong>.</p>
+<ol style="list-style-type: decimal">
+<li>An animal scientist wants to determine the average weight of male lions in the Kruger Park.</li>
+<li>A human resources professional wants to know the median salary earned by accountants in her company.</li>
+<li>A high school principal wants to identify the best learners in Grade 10 mathematics at his school in 2025.</li>
+<li>A forester wants to wants to estimate the volume of merchantable timber of the pine trees on his plantation.</li>
+</ol>
+<p>A good sampling frame must exhibit the following characteristics:</p>
+<ol style="list-style-type: decimal">
+<li>Completeness: The sampling frame should include <em>every</em> member of the population of interest.</li>
+<li>Accuracy: The information in the sampling frame should be <em>up-to-date and correct</em>.</li>
+<li>No duplicates: Each member of the population should appear exactly once in the sampling frame.</li>
+<li>Relevance: The sampling frame should align with the research question and population of interest.</li>
+</ol>
+<p><strong>Exercise:</strong> In each of the scenarios given below, evaluate the given sampling frame in terms of its completeness, accuracy, duplicates and relevance.</p>
+<ol style="list-style-type: decimal">
+<li>A researcher wants to survey registered voters in a city about their voting preferences. They use a voter registration list from two years ago. However, many people have moved away, passed away, or changed their voter registration since then.</li>
+<li>A market researcher wants to study phone usage among adults in a city. They use a landline phone directory as their sampling frame. However, many people, especially young adults, rely exclusively on cellphones and are not listed in the directory.</li>
+<li>A company wants to survey its customers about satisfaction with their products. They use a customer database, but some customers appear multiple times due to different email addresses or accounts (e.g., one customer might have made purchases under both “<a href="mailto:john.doe@email.com" class="email">john.doe@email.com</a>” and “<a href="mailto:jdoe@work.com" class="email">jdoe@work.com</a>”).</li>
+<li>A researcher wants to study pet ownership habits in a city. They use a list of employees from an inner-city corporation as their sampling frame. However, this list only includes people who work at that company, who may not be representative of the broader population (e.g., they may live in flats or complexes that discourage owning pets).</li>
+</ol>
+<p>Once a good sampling frame has been constructed, we can proceed with taking a sample.
+The next two sections will consider different sampling methods.</p>
+<p><strong>Important Notation:</strong> Note that we will be using <span class="math inline">\(N\)</span> to denote the <em>population size</em>, and <span class="math inline">\(n\)</span> to denote the <em>sample size</em>.</p>
+</div>
+<div id="probabilistic-sampling" class="section level3 hasAnchor" number="4.2.2">
+<h3><span class="header-section-number">4.2.2</span> Probabilistic Sampling<a href="sampling.html#probabilistic-sampling" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>In <strong>probabilistic sampling</strong>, every individual in the population has a <em>known and non-zero chance</em> of being selected.</p>
+<p><strong>Example 8 (continuation of Example 1):</strong> When Raheem collected data from students regarding their campus food preferences, he was collecting a sample, since he was not surveying every single student.
+There were many ways for him to go about collecting this sample.
+Here are some of the ways he considered:</p>
+<ol style="list-style-type: decimal">
+<li><strong>He could have asked his niece Aaliyah, who is studying philosophy, to hand out surveys to her classmates.</strong> In this case, only philosophy students who are in Aaliyah’s class would have a non-zero chance of being selected. Engineering students, for example, would have a zero chance of being selected. Thus, this would be a non-probabilistic sample.</li>
+<li><strong>He could have asked one of his friends, John, who is a lecturer in accounting, to hand out surveys to his students.</strong> In this case, only accounting students in John’s class would have a non-zero chance of being selected. Philosophy students, for example, would have a zero chance of being selected. Thus, this would be a non-probabilistic sample.</li>
+<li><strong>He could have asked other owners of campus restaurants and food outlets to hand out surveys to their customers.</strong> In this case, students who buy food from food outlets on campus would be selected. If Raheem got the owners of all of the outlets on campus to hand out surveys, then all students who buy food on campus would have a non-zero chance of being selected. This would be a probabilistic sample, but NOT of the population Raheem is interested in. Recall that he wanted the opinions of students who do not buy food on campus. Those students would have zero chance of being selected.</li>
+<li><strong>He could have liaised with university management to ensure surveys were sent out to all students via email.</strong> In this case, all students would have had a chance to answer the survey. This would be a probabilistic sample.</li>
+<li><strong>He could have asked students to hand out surveys randomly to other students on campus.</strong> In this case, all students would, at least in theory, have had a chance to answer the survey. This would be a probabilistic sample.</li>
+</ol>
+<p><strong>Example 9:</strong> Thabang is a security manager at an airport.
+In order to reduce airport crime, he wants his staff to search travellers’ luggage.
+Since all travellers must pass through the security queues, and must also wait in the waiting area at their gate, he could search the luggage of everyone in the security queue, or everyone in the waiting area.
+However, this is not feasible, as it would take too much time and make people late for their flights.
+Thus, Thabang knows that he must take a <strong>sample</strong> of the travellers in the airport.
+He considers the following options:</p>
+<ol style="list-style-type: decimal">
+<li>Select all travellers whose surnames begin with an A, an F or an N.</li>
+<li>Generate a sequence of non-repeating random numbers, e.g. 9, 24, 18, etc., and select travellers who are 9th, 24th, 18th, etc. in the security queue.</li>
+<li>Select travellers who are suspiciously in a hurry.</li>
+<li>Select travellers who have red suitcases.</li>
+<li>Select every 10th traveller in the security queue.</li>
+<li>Randomly select travellers from the waiting area at each airport gate.</li>
+<li>Randomly select waiting areas, and search the luggage of all travellers in that waiting area.</li>
+</ol>
+<p><strong>Exercise:</strong> Discuss each of Thabang’s proposed ways to sample travellers’ luggage, and comment on whether or not this option would constitute a probabilistic sample.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-5"></span>
+<img src="Renate%20Chapters/Airport.jpg" alt="Image attribution: Designed by macrovector / Freepik" width="50%" />
+<p class="caption">
+Figure 4.3: Image attribution: Designed by macrovector / Freepik
+</p>
+</div>
+<div id="simple-random-sampling" class="section level4 hasAnchor" number="4.2.2.1">
+<h4><span class="header-section-number">4.2.2.1</span> Simple Random Sampling<a href="sampling.html#simple-random-sampling" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>A <strong>simple random sample (SRS)</strong> is obtained if each element of the population that has not yet been included in the sample, has an <em>equal</em> chance of being selected in the next draw.</p>
+<p>In Example 8, Option 2 is an example of a simple random sample.
+Here, every person in the security queue who has not yet been selected, has an equal chance of being selected.</p>
+<p>Suppose there are 100 people in the queue, i.e. the population size is <span class="math inline">\(N=100\)</span>.
+Before Thabang generates a random number, each person’s chance of being selected is <span class="math display">\[\frac{1}{N}=\frac{1}{100}.\]</span> Now suppose Thabang wants a sample of size <span class="math inline">\(n=10\)</span>.
+He generates the first random number, 9.
+The 9th traveller’s luggage is searched, and they are excluded from being searched again.
+Now, the chance of every other person in the queue being selected is <span class="math inline">\(\frac{1}{99}.\)</span> Thabang now generates another random number (excluding the number 9), and obtains the number 24.
+The 24th traveller’s luggage is searched, and they are again excluded from future searches.
+The chance of every other person in the queue being selected (i.e. everyone except the 9th and 24th travellers) is now <span class="math inline">\(\frac{1}{98}.\)</span></p>
+<p>This process is repeated until Thabang has sampled as many travellers as he decided on (e.g., 10 travellers).</p>
+<p>The procedure to collect a <strong>simple random sample</strong> is as follows:</p>
+<ol style="list-style-type: decimal">
+<li>Number all <span class="math inline">\(N\)</span> elements in the population.</li>
+<li>Decide on a sample size <span class="math inline">\(n\)</span>.</li>
+<li>Select <span class="math inline">\(n\)</span> random numbers out of the numbers belonging to the population elements.</li>
+<li>Select the population elements corresponding to these random numbers.</li>
+</ol>
+<p>The procedure to select <strong>random numbers</strong> is as follows:</p>
+<ol style="list-style-type: decimal">
+<li>Select a random starting point from a table of random numbers.</li>
+<li>Divide consecutive single digits into groups, where the size of the groups is the same number of digits as the population size (<span class="math inline">\(N\)</span>). Write down each of the numbers which is less than or equal to <span class="math inline">\(N\)</span>.</li>
+<li>Include the population elements with numbers that agree with these numbers.</li>
+</ol>
+</div>
+<div id="systematic-sampling" class="section level4 hasAnchor" number="4.2.2.2">
+<h4><span class="header-section-number">4.2.2.2</span> Systematic Sampling<a href="sampling.html#systematic-sampling" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>In a <strong>systematic sample</strong>, every <span class="math inline">\(k\)</span>th element of the population is selected, after a random initial element is selected, where <span class="math inline">\(k=\frac{N}{n}\)</span>.
+Here, every element of the population has a <span class="math inline">\(\frac{n}{N}=\frac{1}{k}\)</span> chance of being selected.</p>
+<p>In the airport security example, Option 5 represents a systematic sample.
+Suppose there are now <span class="math inline">\(N=200\)</span> travellers in the security queue, and that Thabang wants a sample of size <span class="math inline">\(n=20\)</span>.
+In order to take a systematic sample, he will first calculate <span class="math inline">\(k=\frac{N}{n}=\frac{200}{20}=10.\)</span> He will then select a random number between 1 and <span class="math inline">\(k=10\)</span>, and select the corresponding traveller in the queue.
+Say the random number is 3.
+In this case, he will select the 3rd traveller.
+Thereafter, he will add <span class="math inline">\(k=10\)</span> to this random number and select the corresponding traveller, i.e. the 13th traveller.
+He will repeat the process by selecting the 23rd, 33rd, etc. traveller until the 93rd traveller.
+He will then have his sample of size <span class="math inline">\(n=20\)</span>.</p>
+<p>The procedure to collect a <strong>systematic sample</strong> is as follows:</p>
+<ol style="list-style-type: decimal">
+<li>Number all <span class="math inline">\(N\)</span> elements in the population.</li>
+<li>Decide on a sample size <span class="math inline">\(n\)</span>.</li>
+<li>Calculate the ratio <span class="math inline">\(k=\frac{N}{n}\)</span>, also called the <em>sampling interval</em>.</li>
+<li>Randomly select a number between 1 and <span class="math inline">\(k\)</span> to determine the first individual in the sample.</li>
+<li>From this starting point, select every <span class="math inline">\(k\)</span>th individual from the list.</li>
+</ol>
+</div>
+<div id="stratified-sampling" class="section level4 hasAnchor" number="4.2.2.3">
+<h4><span class="header-section-number">4.2.2.3</span> Stratified Sampling<a href="sampling.html#stratified-sampling" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>In <strong>stratified sampling</strong>, the population is divided into subgroups (strata), and a random sample is taken from each subgroup (stratum).
+In the airport security example, Option 6 constitutes stratified sampling.
+Suppose there are <span class="math inline">\(3\)</span> waiting areas in the airport.
+These waiting areas represent the strata.
+Suppose Area 1 has <span class="math inline">\(N_1=150\)</span> travellers, Area 2 has <span class="math inline">\(N_2=100\)</span> travellers, and Area 3 has <span class="math inline">\(N_3=50\)</span> travellers currently waiting.
+Thus, the total population size is <span class="math inline">\(N=N_1+N_2+N_3=300\)</span>.
+If Thabang wants to take a sample of <span class="math inline">\(n=30\)</span> travellers, he has two different ways to select the sample size per waiting area.</p>
+<p>His first option is called <em>proportional stratified sampling</em>, and involves choosing a sample of travellers from each waiting area such that the sample size for each area is proportional to its size in the population.
+For each waiting area, the sample size can be calculated as <span class="math inline">\(n_h=\frac{N_h}{N}\times n, h=1,2,3\)</span>.
+Using this formula, he would select <span class="math inline">\(n_1=\frac{150}{300}\times 30=60\)</span> travellers from Area 1, <span class="math inline">\(n_1=\frac{100}{300}\times 10=60\)</span> travellers from Area 2, and <span class="math inline">\(n_1=\frac{50}{300}\times 30=5\)</span> travellers from Area 3.
+Note that <span class="math inline">\(n_1+n_2+n_3=30=n\)</span>.</p>
+<p>His second option is <em>equal stratified sampling</em>, where the same number of individuals is chosen from each stratum, regardless of its size.
+In this case, <span class="math inline">\(n_1=n_2=n_3=\frac{n}{3}=\frac{30}{10}=3.\)</span> This kind of sampling is used when it is more important to select the same number of elements from each stratum than to ensure each stratum is represented.
+In this example, it could lead to Area 1 being under-represented and Area 3 being over-represented in the sample.</p>
+<p>The procedure to collect a <strong>stratified sample</strong> is as follows:</p>
+<ol style="list-style-type: decimal">
+<li>Number all <span class="math inline">\(N\)</span> elements in the population.</li>
+<li>Divide the population into <em>mutually exclusive strata</em>. Each individual should belong to <em>one and only one</em> stratum.</li>
+<li>Decide on a sample size <span class="math inline">\(n\)</span>.</li>
+<li>Decide whether to use proportional or equal stratified sampling, and consequently calculate the appropriate sample size per stratum.</li>
+<li>Select a random sample from each stratum using simple random sampling.</li>
+</ol>
+<p>Stratified sampling is useful when each stratum is <em>homogeneous</em>, i.e. elements within strata are similar, but there are big differences between strata.</p>
+<p><strong>Definition of Homogeneous Data:</strong> Homogeneous data consists of elements that are similar or even identical, exhibiting little variation.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Demographics: All of the Grade 11 girls on the netball team at a school. These learners will have the same gender, the same sport, similar ages, weights and heights.</li>
+<li>Environmental data: Measurements of the soil pH of one wetland. The soil pH will not vary so much within one wetland.</li>
+<li>Medical data: All of the women in the maternity ward of a hospital in a high-income area, between the ages of 20 and 30. These women will be similar to each other in terms of income, how many weeks they are due, and will be identical in gender.</li>
+<li>Sales data: The sales records of stationary from the stationary shops in Pretoria. The sales records across all stationary shops will be fairly similar in terms of the products sold (pencils, paper, pens, notebooks, etc.) and the periods during which most sales are made (school supplies at the start of a new term, gifts and wrapping paper during the festive season).</li>
+</ul>
+</div>
+<div id="cluster-sampling" class="section level4 hasAnchor" number="4.2.2.4">
+<h4><span class="header-section-number">4.2.2.4</span> Cluster Sampling<a href="sampling.html#cluster-sampling" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>In <strong>cluster sampling</strong>, the population is divided into groups (clusters), similarly to stratified sampling.
+In stratified sampling, however, individuals are selected from each group, whereas in cluster sampling, the <em>groups</em> are selected randomly.
+In the airport security example, Option 7 is an example of a cluster sample.
+The waiting areas represent the clusters.
+To perform cluster sampling, Thabang would randomly select one or two of the waiting areas.
+Then, he could either perform <em>one-stage cluster sampling</em>, in which case he would select <em>all</em> of the individuals in each cluster.
+Or, he could perform <em>two-stage cluster sampling</em>, whereby he would sample random individuals from each cluster using simple random sampling.
+In <em>one-stage cluster sampling</em>, it may not be possible to select a precise sample size, since the size of the selected cluster(s) will determine the size of the sample.
+In <em>two-stage cluster sampling</em>, the sample size can be enforced more easily.
+For example, if he wanted a sample of size <span class="math inline">\(n=20\)</span>, and selected Areas 1 and 2, he could randomly select <span class="math inline">\(10\)</span> individuals from Area 1 and <span class="math inline">\(10\)</span> individuals from Area 2.</p>
+<ol style="list-style-type: decimal">
+<li>Number all <span class="math inline">\(N\)</span> elements in the population.</li>
+<li>Divide the population into <em>mutually exclusive clusters</em>. Each individual should belong to <em>one and only one</em> cluster.</li>
+<li>Decide on the number of clusters to sample.</li>
+<li>Decide whether to use one-stage or two-stage cluster sampling. If two-stage cluster sampling is selected, decide on a sample size <span class="math inline">\(n\)</span>.</li>
+<li>Select a random sample from each stratum using simple random sampling.</li>
+</ol>
+<p>Cluster sampling is useful when each cluster is <em>heterogeneous</em>, i.e. elements within clusters are different from each other, but there are no big differences between clusters.</p>
+<p><strong>Definition of Heterogeneous Data:</strong> Heterogeneous data consists of elements that are substantially different from each other, exhibiting a considerable amount of variation.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Demographics: All of the learners in a school, from Grade 1 to Grade 12. These learners will differ substantially from each other in terms of gender, age, height, weight and the sports they prefer.</li>
+<li>Environmental data: Soil pH measured across an entire city that has clay-like, sandy and rocky soil. The soil pH will differ substantially based on where in the city each measurement was taken.</li>
+<li>Medical data: All of the patients in the west wing of a hospital that includes maternity wards, oncology, and an emergency room. These patients will differ from each other in terms of their health conditions, age and gender.</li>
+<li>Sales data: Sales records of grocery shops across countries in the northern and southern hemispheres. These sales records will differ vastly in terms of the kinds of food and supplies sold, as well as when which kind of food will be sold. For example, hearty, rich food will sell better in December in the northern hemisphere, and in July in the southern hemisphere; some countries will not sell pork or alcohol products at all, whereas those same products will be very popular in other countries; some countries will sell specific foods during certain festivals, etc.</li>
+</ul>
+</div>
+<div id="probabilistic-sampling-summary" class="section level4 hasAnchor" number="4.2.2.5">
+<h4><span class="header-section-number">4.2.2.5</span> Probabilistic Sampling Summary<a href="sampling.html#probabilistic-sampling-summary" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>No probabilistic sampling method is necessarily always better than another.
+It is important to select the appropriate sampling method based on the problem you are trying to solve, and the nature of the data.
+The table below summarises the characteristics of each probabilistic sampling method, and lists some of their advantages and disadvantages.</p>
+<table>
+<caption><span id="tab:unnamed-chunk-6">Table 4.2: </span>Probabilistic sampling summary</caption>
+<colgroup>
+<col width="4%" />
+<col width="24%" />
+<col width="13%" />
+<col width="27%" />
+<col width="30%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left">Sampling Method</td>
+<td align="left">Description</td>
+<td align="left">Example</td>
+<td align="left">Advantages</td>
+<td align="left">Disadvantages</td>
+</tr>
+<tr class="even">
+<td align="left">Simple Random Sampling (SRS)</td>
+<td align="left">Every individual in the population has an equal chance to be selected.</td>
+<td align="left">Randomly selecting travellers in the security queue.</td>
+<td align="left">Selection bias is minimised; Easy to understand and implement</td>
+<td align="left">Difficult for large populations; Risk of underrepresenting some groups</td>
+</tr>
+<tr class="odd">
+<td align="left">Systematic Sampling</td>
+<td align="left">After a random start, every kth individual is selected.</td>
+<td align="left">Choosing every 10th traveller in the security queue.</td>
+<td align="left">Easier and quicker than SRS; Ensures even coverage of the population</td>
+<td align="left">May not be fully random if there is an underlying pattern in the data (e.g., if people are queueing such that every 10th person has a large suitcase, only people with large suitcases will be selected)</td>
+</tr>
+<tr class="even">
+<td align="left">Stratified Sampling</td>
+<td align="left">The population is divided into strata, and a random sample is taken from each stratum.</td>
+<td align="left">Sampling a proportional number of travellers from each waiting area.</td>
+<td align="left">Ensures all groups are represented; Can be more reliable than SRS when strata are very different from each other</td>
+<td align="left">Needs a more in-depth understanding of the population to define suitable strata</td>
+</tr>
+<tr class="odd">
+<td align="left">Cluster Sampling</td>
+<td align="left">The population is divided into clusters, and entire clusters are randomly selected. In two-stage cluster sampling, samples are taken from the selected clusters.</td>
+<td align="left">Choosing waiting areas at random and then selecting all travellers in each selected area.</td>
+<td align="left">Practical and cost-effective compared to SRS and Systematic Sampling; Good to use when clusters are naturally occurring groups, e.g. different waiting areas, or schools, or companies</td>
+<td align="left">Clusters may not be representative; Naturally occurring clusters will not necessarily be internally heterogeneous but similar to other clusters</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="non-probabilistic-sampling" class="section level3 hasAnchor" number="4.2.3">
+<h3><span class="header-section-number">4.2.3</span> Non-Probabilistic Sampling<a href="sampling.html#non-probabilistic-sampling" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p><strong>Non-probabilistic sampling</strong> occurs when individuals are selected based on convenience or judgment.
+This means that not every individual has a known or non-zero chance of being chosen.
+This can introduce bias and a lack of representativeness.
+However, it can be useful in cases where we do not need a random or representative sample, or where it is infeasible to take a probabilistic sample due to limitations of accessibility, and where ease of access to individuals is important.</p>
+<p>Here, we will consider three types of non-probabilistic sampling, namely <strong>Convenience Sampling</strong>, <strong>Judgment Sampling</strong> and <strong>Quota Sampling</strong>.</p>
+<p>In <strong>convenience sampling</strong>, individuals are selected based on how easy they are to reach.</p>
+<p><strong>Example 10:</strong> Suppose an animal scientist is attempting to study lions in a nature park.
+Attempting to take a probabilistic sample would require knowledge of how many lions are in the park, which might not be known, since lions could die or be born without the scientist’s knowledge.
+She might instead study those lions who come to drink at a water hole that is accessible by Jeep.
+This would exclude lions who drink at rivers, or at water holes that are not accessible to her vehicle.
+However, it may not be possible for her to study lions she cannot access.
+In this case, convenience sampling would be appropriate, although there is no way of knowing the chance that each lion has to be selected, and some lions have zero chance of being selected.</p>
+<p>In <strong>judgment sampling</strong>, individuals are selected based on experts’ decisions of which individuals would be most useful for the study.</p>
+<p><strong>Example 11:</strong> Suppose a conference organiser is tasked with assembling a panel to discuss banking in South Africa.
+Rather than taking a probabilistic sample of the CEOs and other top officers of South African banks, he might choose to invite only those whom he personally believes will make the most meaningful contribution to the discussion.
+Although this is a non-probabilistic way of sampling, it can be more targeted and effective in certain scenarios.</p>
+<p>In <strong>quota sampling</strong>,individuals are selected to fulfill predetermined quotas for specific subgroups.
+It ensures that certain characteristics (e.g., age, gender, occupation) are proportionally represented.
+However, selection within those groups is not random.</p>
+<p><strong>Example 12:</strong> A survey of school learners might ensure that 20 learners from each grade answer the survey by asking a prefect to go into a classroom of each grade, and handing out the survey to the first 20 learners in each class that want to fill it in.
+This is a quick and convenient way to ensure that each grade is adequately represented.
+However, since it is non-probabilistic, the study might still exhibit various kinds of sampling bias.
+We will talk about sampling bias in the next section.</p>
+</div>
+<div id="sampling-bias" class="section level3 hasAnchor" number="4.2.4">
+<h3><span class="header-section-number">4.2.4</span> Sampling Bias<a href="sampling.html#sampling-bias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Regardless of the sampling method we plan to use, it is always important to be aware of the dangers of <strong>sampling bias</strong>.
+Sampling bias occurs when some members of a population are <strong>systematically more likely</strong> to be selected in a sample than others, leading to a sample that is not representative of the entire population.
+This can distort the results of a study or analysis, making them unreliable or misleading.</p>
+<p><strong>Example 13:</strong> Caitlyn is the owner of a pet shop called <em>Paws &amp; Whiskers</em>.
+She wants to gauge whether her customers are satisfied with the range of products stocked in her shop.
+If she only sends out surveys to customers who purchase dog food, this would <em>systematically</em> exclude all pet owners who have other pets, such as cats, reptiles, rabbits, mice, birds or fish.</p>
+<p>There are six types of sampling bias that we will consider.</p>
+<div id="selection-bias" class="section level4 hasAnchor" number="4.2.4.1">
+<h4><span class="header-section-number">4.2.4.1</span> 1. Selection Bias<a href="sampling.html#selection-bias" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>This type of bias occurs when certain population groups are systematically excluded or underrepresented in the sample.
+The pet shop example above illustrates selection bias.</p>
+<p>Q: What other kinds of selection bias could occur?
+Who would be excluded if Caitlyn only sent out surveys to customers who made online purchases, or customers with a loyalty card?</p>
+</div>
+<div id="voluntary-response-bias" class="section level4 hasAnchor" number="4.2.4.2">
+<h4><span class="header-section-number">4.2.4.2</span> 2. Voluntary Response Bias<a href="sampling.html#voluntary-response-bias" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Voluntary response bias takes place when the individuals who participate in a study are self-selected.
+Typically, this will lead to the inclusion of only those individuals who have strong opinions and want to be heard, and will exclude individuals with more moderate opinions.</p>
+<p>If Caitlyn posts her survey on social media, for instance, without encouraging all of her customers to participate, most of the responses will be from customers who are very unhappy, and perhaps a few customers who are extremely happy with her products.</p>
+<p>Think about it: how often do you rate deliveries, apps, or other consumer experiences?
+Most of us will skip the rating step unless we are either very dissatisfied, or extremely happy with the experience.</p>
+</div>
+<div id="survivorship-bias" class="section level4 hasAnchor" number="4.2.4.3">
+<h4><span class="header-section-number">4.2.4.3</span> 3. Survivorship Bias<a href="sampling.html#survivorship-bias" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>This kind of bias takes place when only “survivors” or of a population are considered, and those who have dropped out or failed are ignored.</p>
+<p>Suppose Caitlyn is studying other pet shops to find out what she could do to improve her business.
+If she only studies successful pet shops, she might conclude that stocking dog food is all she needs to do in order to remain successful.
+However, this would ignore all of the pet shops who have had to downscale or close - all of whom have stocked dog food!
+Clearly, she would be in danger of drawing incorrect conclusions.</p>
+<p>Another well-known example of survivorship bias occurred during World War II. American researchers were attempting to understand where bomber aircraft were most vulnerable, and reinforce those vulnerable areas to reduce the number of bombers that were being shot down.
+To do this, they initially studied damaged bombers to see where they had been hit.
+An example of such a bomber is shown in Figure 3, with the red dots representing bullet holes.
+However, they soon realised that this was an example of <strong>survivorship bias</strong>.
+The bullet holes in the bombers they were studying represented areas where bombers could be shot and still fly well enough to return to base.
+Bombers that had been hit in other places (like the fuselage) had been shot down over enemy territory, and did not return to base.
+Based on this, the scientists suggested that the areas should be reinforced that were <em>not</em> damaged on bombers that had returned.
+The scientists’ ability to understand survivorship bias was thus able to save many pilots’ lives.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-7"></span>
+<img src="Renate%20Chapters/Survivor.png" alt="Figure 3: Illustration of survivorship bias in World War II planes. Image from Wikipedia: https://en.wikipedia.org/wiki/Survivorship_bias#/media/File:Survivorship-bias.svg/2" width="50%" />
+<p class="caption">
+Figure 4.4: Figure 3: Illustration of survivorship bias in World War II planes. Image from Wikipedia: <a href="https://en.wikipedia.org/wiki/Survivorship_bias#/media/File:Survivorship-bias.svg/2" class="uri">https://en.wikipedia.org/wiki/Survivorship_bias#/media/File:Survivorship-bias.svg/2</a>
+</p>
+</div>
+</div>
+<div id="time-interval-bias" class="section level4 hasAnchor" number="4.2.4.4">
+<h4><span class="header-section-number">4.2.4.4</span> 4. Time Interval Bias<a href="sampling.html#time-interval-bias" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>This bias occurs when the data collected are influenced by the time period during which the sample is collected.</p>
+<p>In the pet shop example, time interval bias would occur if Caitlyn collected data on dog jacket sales during summer.
+She might conclude that dog jackets are not a popular item, when in fact they are very popular in cold weather.</p>
+</div>
+<div id="convenience-sampling-bias" class="section level4 hasAnchor" number="4.2.4.5">
+<h4><span class="header-section-number">4.2.4.5</span> 5. Convenience Sampling Bias<a href="sampling.html#convenience-sampling-bias" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>As the name suggests, this bias goes hand-in-hand with convenience sampling.
+When samples are taken only from a group that is easily accessible, this may not represent the general population.</p>
+<p>In the pet shop example, Caitlyn might pose questions on her products to customers who are browsing the shop and are not in a hurry.
+This would be convenient, as she would be talking to relaxed customers who were in a good mood.
+However, this would exclude all of the customers who were in a hurry, or those who were in a bad mood because they could not find the product they were looking for!
+In this way, she would not obtain a representative sample of her customers.</p>
+</div>
+<div id="non-response-bias" class="section level4 hasAnchor" number="4.2.4.6">
+<h4><span class="header-section-number">4.2.4.6</span> 6. Non-Response Bias<a href="sampling.html#non-response-bias" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>This kind of bias occurs when there is a substantial difference between individuals who respond to a survey, and those who do not.
+The effect of non-response bias can be similar to voluntary response bias.
+The difference is that in voluntary response bias, individuals are not selected in a random way.
+Thus, individuals are typically excluded if they do not have a strong opinion on the survey.
+In non-response bias, a proportion of the <strong>selected</strong> individuals decline to respond.</p>
+<p>In the pet shop example, non-response bias could occur if Caitlyn selected a random sample of customers, and then phoned them during work hours.
+Customers with busy jobs would be more likely to decline her call, whereas those with lower intensity jobs, or those who were not employed, would be more likely to answer her questions.</p>
+</div>
+<div id="sampling-bias-summary" class="section level4 hasAnchor" number="4.2.4.7">
+<h4><span class="header-section-number">4.2.4.7</span> Sampling Bias Summary<a href="sampling.html#sampling-bias-summary" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>In summary, sampling bias can lead to a whole host of errors causing a sample to be unrepresentative of the population.
+If a researcher assumes that an unrepresentative sample is in fact representative, they could make very incorrect conclusions.
+These conclusions could be ineffective, or even harmful (the World War II plane example shows just how harmful this can be!).</p>
+<p>It is therefore very important to understand and minimise sampling bias as much as possible.
+Properly designing a probabilistic sample can reduce most types of sampling bias.
+Additionally, non-response bias can be reduced by following up on those individuals who did not initially respond to the survey.</p>
+<p>There are cases where non-probabilistic samples are acceptable for the purpose of the study at hand.
+However, the researcher must be aware of the fact that their sample does not necessarily reflect the population, and be careful when attempting to apply sample-based conclusions to the population.
+In the lion example, for instance, it might be acceptable for the researcher to study only those lions who drink at a waterhole that is accessible by Jeep.
+But, she would have to acknowledge this as a limitation in her study, and be careful of applying her conclusion to all lions.
+The lions who drink at the waterhole, for example, are able to drink enough water and do not suffer from dehydration.
+However, it would not be correct of her to assume that all of the lions in the park are properly hydrated, since there might be other lions at other locations in the park who do not have sufficient access to drinking water.</p>
+</div>
+<div id="sampling-bias-versus-sampling-error" class="section level4 hasAnchor" number="4.2.4.8">
+<h4><span class="header-section-number">4.2.4.8</span> Sampling Bias versus Sampling Error<a href="sampling.html#sampling-bias-versus-sampling-error" class="anchor-section" aria-label="Anchor link to header"></a></h4>
+<p>Finally, it is important to distinguish between <strong>sampling bias</strong> and <strong>sampling error</strong>.
+As explained previously, <strong>sampling bias</strong> occurs when individuals are excluded from the sample in some systematic way.
+This can be mitigated by improving the sampling design.</p>
+<p><strong>Sampling error</strong>, on the other hand, is a type of error that happens purely by chance.
+This error occurs because samples will almost never be perfectly representative of the population.</p>
+<p>In the airport security example, Thabang could have a very well-designed sample, but could still miss a traveller who has a dangerous item in their luggage.</p>
+<p>In the pet shop example, Caitlyn might conclude that 82% of her customers are satisfied with her products, based on a representative, probabilistic sample.
+However, the real number based on the population might be 80% or 85%.</p>
+<p>The size of the sampling error can be estimated by using statistical techniques.
+For example, Caitlyn might be able to calculate that there is a 5% fluctuation in her results.
+In that case, even if the sample indicates that 82% of her customers are satisfied with her products, she will know that the true number could be as low as 77% or as high as 87%.</p>
+<p>Nearly all samples will exhibit some degree of sampling error.
+This can be mitigated by increasing the sample size.</p>
+<table>
+<caption><span id="tab:unnamed-chunk-8">Table 4.3: </span>Sampling bias versus sampling error</caption>
+<colgroup>
+<col width="12%" />
+<col width="45%" />
+<col width="42%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left">Type of Error</td>
+<td align="left">Sampling Error</td>
+<td align="left">Sampling Bias</td>
+</tr>
+<tr class="even">
+<td align="left">Cause</td>
+<td align="left">Random chance</td>
+<td align="left">Systematic problem in the sampling method</td>
+</tr>
+<tr class="odd">
+<td align="left">Effect</td>
+<td align="left">Estimates will vary slightly</td>
+<td align="left">Systematic error in the results</td>
+</tr>
+<tr class="even">
+<td align="left">How to Mitigate</td>
+<td align="left">Increase the sample size</td>
+<td align="left">Redesign the study</td>
+</tr>
+<tr class="odd">
+<td align="left">Randomness of Error</td>
+<td align="left">Random (cannot be avoided)</td>
+<td align="left">Systematic (can be avoided)</td>
+</tr>
+<tr class="even">
+<td align="left">Severity</td>
+<td align="left">Not necessarily severe; will always occur</td>
+<td align="left">Very severe - can have harmful consequences unless the study is redone</td>
+</tr>
+<tr class="odd">
+<td align="left">Example</td>
+<td align="left">A survey finds that 82% of customers are happy when the true number is 84%</td>
+<td align="left">The World War II bomber example</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<!-- </div> -->
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="data-collection.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

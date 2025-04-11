@@ -1,8 +1,6 @@
 ---
-title: "STC 137: Data Collection and Sampling"
-author: "Spiwe Skhosana, René Stander, Renate Thiede"
-date: "2024-12-05"
-output: html_document
+output:
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -80,27 +78,27 @@ knitr::include_graphics(c("Checklist.jpg"))
 
 **Example 1:** Raheem wants to open a new resaurant on Hatfield campus. Before doing this, he wants to know what the students think of the restaurants and fast food places already available on campus, in terms of the cost, freshness variety and taste of food. Following the data collection planning questions above, he gives the following answers:
 
-1. What is the question I am trying to answer? **What are the perceptions of students on Hatfield campus about the cost, freshness, variety and taste of food already available on campus?**
-2. What/who is the population I am studying? **Students on Hatfield campus.**
-3. What kind of information do I need from the population to answer this question? **Answers from students about their perceptions of the available food options.**
-4. How can I obtain a dataset that will be representative of the information I need from this population? **I can conduct a survey of students on Hatfield campus.**
-5. How can I obtain such a dataset in an ethical way? **By obtaining the relevant permissions to conduct such a survey from the University, and to obtain clear consent from every student I ask, after I have explained the purpose of the survey. I will also keep the students' answers anonymous.**
+1. **What is the question I am trying to answer?** What are the perceptions of students on Hatfield campus about the cost, freshness, variety and taste of food already available on campus?
+2. **What/who is the population I am studying?** Students on Hatfield campus.
+3. **What kind of information do I need from the population to answer this question?** Answers from students about their perceptions of the available food options.
+4. **How can I obtain a dataset that will be representative of the information I need from this population?** I can conduct a survey of students on Hatfield campus.
+5. **How can I obtain such a dataset in an ethical way?** By obtaining the relevant permissions to conduct such a survey from the University, and to obtain clear consent from every student I ask, after I have explained the purpose of the survey. I will also keep the students' answers anonymous.
 
 **Example 2:** Tebogo is an analyst for a private security firm operating on the Hatfield City Improvement District (CID). Her security firm has recently employed a new strategy to combat theft. She wants to know whether thefts have decreased since they employed the strategy. She answers the questions as follows:
 
-1. What is the question I am trying to answer? **Have thefts in the Hatfield CID decreased since our security firm employed its new theft-prevention strategy?**
-2. What/who is the population I am studying? **Everyone working in, living in, or travelling through the Hatfield CID.**
-3. What kind of information do I need from the population to answer this question? **Theft statistics from all relevant police stations whose precincts overlap with the CID.**
-4. How can I obtain a dataset that will be representative of the information I need from this population? **I can request crime statistics from the relevant police stations.**
-5. How can I obtain such a dataset in an ethical way? **By obtaining the relevant permissions from the SAPD, the relevant persons at the police stations themselves, and signing any necessary agreements about my use of the data.**
+1. **What is the question I am trying to answer?** Have thefts in the Hatfield CID decreased since our security firm employed its new theft-prevention strategy?
+2. **What/who is the population I am studying?** Everyone working in, living in, or travelling through the Hatfield CID.
+3. **What kind of information do I need from the population to answer this question? **Theft statistics from all relevant police stations whose precincts overlap with the CID.
+4. **How can I obtain a dataset that will be representative of the information I need from this population?** I can request crime statistics from the relevant police stations.
+5. **How can I obtain such a dataset in an ethical way?** By obtaining the relevant permissions from the SAPD, the relevant persons at the police stations themselves, and signing any necessary agreements about my use of the data.
 
 **Example 3:** William is an ecologist who wants to determine if a new pesticide-free anti-fungal treatment he has developed will keep maize safe from fungal infections. Below are his answers to the data collection planning questions:
 
-1. What is the question I am trying to answer? **Whether my new anti-fungal treatment works to protect maize from fungal infections.**
-2. What/who is the population I am studying? **Maize plants.**
-3. What kind of information do I need from the population to answer this question? **Data on the health of maize plants that were given the treatment, and maize plants that were not given the treatment, when exposed to fungi.**
-4. How can I obtain a dataset that will be representative of the information I need from this population? **By planting two fields of maize, giving one the anti-fungal treatment and leaving the other without treatment, and then exposing them both to the fungus.**
-5. How can I obtain such a dataset in an ethical way? **By making sure the fungus cannot spread to any other plants or crops.**
+1. **What is the question I am trying to answer?** Whether my new anti-fungal treatment works to protect maize from fungal infections.
+2. **What/who is the population I am studying?** Maize plants.
+3. **What kind of information do I need from the population to answer this question?** Data on the health of maize plants that were given the treatment, and maize plants that were not given the treatment, when exposed to fungi.
+4. **How can I obtain a dataset that will be representative of the information I need from this population?** By planting two fields of maize, giving one the anti-fungal treatment and leaving the other without treatment, and then exposing them both to the fungus.
+5. **How can I obtain such a dataset in an ethical way?** By making sure the fungus cannot spread to any other plants or crops.
 
 **Class Exercise Question 1:** You are asked to determine the favourite movie of first-year mathematical sciences students in your class. Answer the data collection planning questions at the beginning of this section to determine what your intended dataset is, and how you will collect it. Then, collect the data by asking some of the other students in the class what their favourite movie is.
 
@@ -210,44 +208,326 @@ However, even relevant, good quality, representative data could be potentially h
 
 **Example 4 (continuation of Example 1):** Raheem has finished collecting surveys from students about their perceptions of the food available on campus. He inspects his dataset using the key aspects above, and comes to the following conclusions:
 
-1. Relevance: **Since this was primary data, it was collected by the investigator to answer his specific research question. The data is up-to-date. It is thus relevant.**
-2. Quality: **The surveys that were given to students were standardised. All students received a copy of the same survey, with clear instructions on how to answer each question. Thus, the dataset is consistent. Furthermore, nearly all of the respondents answered all the questions. Thus, the dataset is complete.**
-3. Representativeness and unbiasedness: **Students from all across Hatfield campus were asked to fill in the survey. This included students from different years of study, different degrees and different faculties, as well as diverse demographic and socio-economic backgrounds. Thus, the data represents the diverse student body on Hatfield campus. Furthermore, surveys were handed out to students at a variety of spots on campus, including far away from any food vendors, and regardless of whether or not students were eating purchased food, home-made food, or not eating at all. Thus, there was little if any bias.**
-4. Impact: The data should not have a potentially harmful impact. **The data was anonymised, so that students' answers on the survey could not be linked to their identities in any way. Any mention of specific restaurants or food outlets was also removed, so that no student's opinion could be linked to any existing vendor on Hatfield campus. Thus, there is very little chance of any potentially harmful impact on either students or food vendors.**
+1. **Relevance:** Since this was primary data, it was collected by the investigator to answer his specific research question. The data is up-to-date. It is thus relevant.
+2. **Quality:** The surveys that were given to students were standardised. All students received a copy of the same survey, with clear instructions on how to answer each question. Thus, the dataset is consistent. Furthermore, nearly all of the respondents answered all the questions. Thus, the dataset is complete.
+3. **Representativeness and unbiasedness:** Students from all across Hatfield campus were asked to fill in the survey. This included students from different years of study, different degrees and different faculties, as well as diverse demographic and socio-economic backgrounds. Thus, the data represents the diverse student body on Hatfield campus. Furthermore, surveys were handed out to students at a variety of spots on campus, including far away from any food vendors, and regardless of whether or not students were eating purchased food, home-made food, or not eating at all. Thus, there was little if any bias.
+4. **Impact: The data should not have a potentially harmful impact.** The data was anonymised, so that students' answers on the survey could not be linked to their identities in any way. Any mention of specific restaurants or food outlets was also removed, so that no student's opinion could be linked to any existing vendor on Hatfield campus. Thus, there is very little chance of any potentially harmful impact on either students or food vendors.
 
 **Example 5 (continuation of Example 2):** 
 
-1. Relevance: **Since this was secondary data, it is important to consider its relevance. Since Tebogo obtained the data from all police precincts overlapping with the CID, and obtained it for the specific timeframes she wants to study, the data is relevant.**
-2. Quality: **There was some missing data, but the data is complete enough to be used. Data was entered mostly consistently. The data quality is adequate.**
-3. Representativeness and unbiasedness: **Crime data is, by nature, somewhat unrepresentative, since only reported crimes are part of the dataset. Thus, certain crimes are less likely to be represented adequately. This could include minor crimes, like the theft of inexpensive items, or serious crimes where the victim is afraid to come forward, such as domestic violence. Therefore, Tebogo must account for the possible unrepresentativeness in the data, and make use of additional techniques or data, such as underreporting estimates, in her analysis.**
-4. Impact: **Since the police removed all data that could identify individuals, the crime datasets cannot be used to harm any individual. Still, care must be taken that the data is not accessed by anyone except Tebogo and the other authorised people in her company.**
+1. **Relevance:** Since this was secondary data, it is important to consider its relevance. Since Tebogo obtained the data from all police precincts overlapping with the CID, and obtained it for the specific timeframes she wants to study, the data is relevant.
+2. **Quality:** There was some missing data, but the data is complete enough to be used. Data was entered mostly consistently. The data quality is adequate.
+3. **Representativeness and unbiasedness:** Crime data is, by nature, somewhat unrepresentative, since only reported crimes are part of the dataset. Thus, certain crimes are less likely to be represented adequately. This could include minor crimes, like the theft of inexpensive items, or serious crimes where the victim is afraid to come forward, such as domestic violence. Therefore, Tebogo must account for the possible unrepresentativeness in the data, and make use of additional techniques or data, such as underreporting estimates, in her analysis.
+4. **Impact:** Since the police removed all data that could identify individuals, the crime datasets cannot be used to harm any individual. Still, care must be taken that the data is not accessed by anyone except Tebogo and the other authorised people in her company.
 
 **Example 6 (continuation of Example 3):** 
 
-1. Relevance: **This is primary data collected by the researcher for his specific purpose, thus it is relevant.**
-2. Quality: **William meticulously collected the data and ensured that it was complete and consistent.**
-3. Representativeness and unbiasedness: **The data was collected in a carefully climate-controlled and contaminant-free environment. This removed the effect of any potential confounding factors on the results.**
-4. Impact: **Data showing the effectiveness of a treatment can be sensitive before the treatment is subjected to further testing and approval by government authorities. Uninformed individuals might try to use a similar treatment on their crops, and if the treatment has not been conclusively tested and approved, this may lead to bad outcome such as crops dying, or becoming unfit for consumption.**
+1. **Relevance:** This is primary data collected by the researcher for his specific purpose, thus it is relevant.
+2. **Quality:** William meticulously collected the data and ensured that it was complete and consistent.
+3. **Representativeness and unbiasedness:** The data was collected in a carefully climate-controlled and contaminant-free environment. This removed the effect of any potential confounding factors on the results.
+4. **Impact:** Data showing the effectiveness of a treatment can be sensitive before the treatment is subjected to further testing and approval by government authorities. Uninformed individuals might try to use a similar treatment on their crops, and if the treatment has not been conclusively tested and approved, this may lead to bad outcome such as crops dying, or becoming unfit for consumption.
 
 **Class Exercise Question 3:** Evaluate the dataset you collected in Class Exercise 1.
 
 
-
 # Sampling
 
-Concepts of sampling, estimating, bias, representativeness, sample size.
-Census versus Sample
+When we collect data, it is almost never possible to collect data on the entire population. For instance, if we want to study the habits of people who shop at Checkers, it will not be feasible to send out a survey to everyone in South Africa who has ever shopped at Checkers. When we collect data on a subset of the population, this is called a **sample**. In cases where we are able to collect data on the whole population, this is called a **census**. The table below highlights the differences between censuses and samples.
 
-This subsection introduces the differences between censuses and samples, and explains the need to take samples. 
+```{r echo=FALSE, results='asis'}
+
+dat <- c("","Definition","Coverage","Time","Cost","Accuracy","Feasibility","Census","A complete enumeration of every individual in a population.","Includes the entire population.","Can be very time-consuming due to large-scale data collection.","Usually quite expensive.","Accurate if data is collected properly, but errors can still occur.","Difficult for large populations.","Sample","A subset of individuals selected from a population.","Includes only a portion of the population.","Requires less time since data is collected on fewer individuals.","Less expensive.","May have some sampling error*.","More practical, especially if the population is large.")
+  
+mat <- matrix(data=dat,ncol=3)
+
+library(knitr)
+kable(mat, caption='Census vs. sample')
+
+```
+
+*Sampling error will be explained in a later section.
+
+Although it is generally true that more data is better, there are many reasons to take a sample rather than a census. This includes time and financial constraints, as well as feasibility. For example, when taking a geological survey, it is really not feasible to measure the soil at every location in an area! As long as the sample is *unbiased* and *representative*, samples can be very informative and helpful.
+
+## Sampling Frames
+
+Before we start drawing samples, we must first define the concept of a **sampling frame**. This is a complete list of all individuals or units in the population of interest from which a sample is drawn. A sampling frame is the foundation for selecting a sample that is representative of the population under study. You can think of a sampling frame as the "pool" from which elements of the sample is drawn.
+
+**Example 7:** Suppose a market researcher wants to study the shopping habits of students in Pretoria. The *population* he is interested in are all students at tertiary institutions in Pretoria. The *sampling frame* would be a complete list of all students currently registered at tertiary institutions in Pretoria.
+
+**Exercise:** In each of the scenarios given below, describe the **population** and the **sampling frame**.
+
+1. An animal scientist wants to determine the average weight of male lions in the Kruger Park.
+2. A human resources professional wants to know the median salary earned by accountants in her company.
+3. A high school principal wants to identify the best learners in Grade 10 mathematics at his school in 2025.
+4. A forester wants to wants to estimate the volume of merchantable timber of the pine trees on his plantation.
+
+A good sampling frame must exhibit the following characteristics:
+
+1. Completeness: The sampling frame should include *every* member of the population of interest.
+2. Accuracy: The information in the sampling frame should be *up-to-date and correct*.
+3. No duplicates: Each member of the population should appear exactly once in the sampling frame.
+4. Relevance: The sampling frame should align with the research question and population of interest.
+
+**Exercise:** In each of the scenarios given below, evaluate the given sampling frame in terms of its completeness, accuracy, duplicates and relevance.
+
+1. A researcher wants to survey registered voters in a city about their voting preferences. They use a voter registration list from two years ago. However, many people have moved away, passed away, or changed their voter registration since then.
+2. A market researcher wants to study phone usage among adults in a city. They use a landline phone directory as their sampling frame. However, many people, especially young adults, rely exclusively on cellphones and are not listed in the directory.
+3. A company wants to survey its customers about satisfaction with their products. They use a customer database, but some customers appear multiple times due to different email addresses or accounts (e.g., one customer might have made purchases under both "john.doe@email.com" and "jdoe@work.com").
+4. A researcher wants to study pet ownership habits in a city. They use a list of employees from an inner-city corporation as their sampling frame. However, this list only includes people who work at that company, who may not be representative of the broader population (e.g., they may live in flats or complexes that discourage owning pets).
+
+Once a good sampling frame has been constructed, we can proceed with taking a sample. The next two sections will consider different sampling methods.
+
+**Important Notation:** Note that we will be using $N$ to denote the *population size*, and $n$ to denote the *sample size*.
 
 ## Probabilistic Sampling
 
+In **probabilistic sampling**, every individual in the population has a *known and non-zero chance* of being selected.
+
+**Example 8 (continuation of Example 1):** When Raheem collected data from students regarding their campus food preferences, he was collecting a sample, since he was not surveying every single student. There were many ways for him to go about collecting this sample. Here are some of the ways he considered:
+
+1. **He could have asked his niece Aaliyah, who is studying philosophy, to hand out surveys to her classmates.** In this case, only philosophy students who are in Aaliyah's class would have a non-zero chance of being selected. Engineering students, for example, would have a zero chance of being selected. Thus, this would be a non-probabilistic sample.
+2. **He could have asked one of his friends, John, who is a lecturer in accounting, to hand out surveys to his students.** In this case, only accounting students in John's class would have a non-zero chance of being selected. Philosophy students, for example, would have a zero chance of being selected. Thus, this would be a non-probabilistic sample.
+3. **He could have asked other owners of campus restaurants and food outlets to hand out surveys to their customers.** In this case, students who buy food from food outlets on campus would be selected. If Raheem got the owners of all of the outlets on campus to hand out surveys, then all students who buy food on campus would have a non-zero chance of being selected. This would be a probabilistic sample, but NOT of the population Raheem is interested in. Recall that he wanted the opinions of students who do not buy food on campus. Those students would have zero chance of being selected.
+4. **He could have liaised with university management to ensure surveys were sent out to all students via email.** In this case, all students would have had a chance to answer the survey. This would be a probabilistic sample.
+5. **He could have asked students to hand out surveys randomly to other students on campus.** In this case, all students would, at least in theory, have had a chance to answer the survey. This would be a probabilistic sample.
+
+**Example 9:** Thabang is a security manager at an airport. In order to reduce airport crime, he wants his staff to search travellers' luggage. Since all travellers must pass through the security queues, and must also wait in the waiting area at their gate, he could search the luggage of everyone in the security queue, or everyone in the waiting area. However, this is not feasible, as it would take too much time and make people late for their flights. Thus, Thabang knows that he must take a **sample** of the travellers in the airport. He considers the following options:
+
+1. Select all travellers whose surnames begin with an A, an F or an N.
+2. Generate a sequence of non-repeating random numbers, e.g. 9, 24, 18, etc., and select travellers who are 9th, 24th, 18th, etc. in the security queue.
+3. Select travellers who are suspiciously in a hurry.
+4. Select travellers who have red suitcases.
+5. Select every 10th traveller in the security queue.
+6. Randomly select travellers from the waiting area at each airport gate.
+7. Randomly select waiting areas, and search the luggage of all travellers in that waiting area.
+
+**Exercise:** Discuss each of Thabang's proposed ways to sample travellers' luggage, and comment on whether or not this option would constitute a probabilistic sample.
+
+```{r, out.width= "50%", echo=FALSE,fig.align='center',fig.cap="Image attribution: Designed by macrovector / Freepik"}
+library(graphics)
+
+#par(mfrow=(c(2,2)))
+knitr::include_graphics(c("Airport.jpg"))
+
+```
+
 ### Simple Random Sampling
+
+A **simple random sample (SRS)** is obtained if each element of the population that has not yet been included in the sample, has an *equal* chance of being selected in the next draw.
+
+In Example 8, Option 2 is an example of a simple random sample. Here, every person in the security queue who has not yet been selected, has an equal chance of being selected. 
+
+Suppose there are 100 people in the queue, i.e. the population size is $N=100$. Before Thabang generates a random number, each person's chance of being selected is $$\frac{1}{N}=\frac{1}{100}.$$
+Now suppose Thabang wants a sample of size $n=10$. He generates the first random number, 9. The 9th traveller's luggage is searched, and they are excluded from being searched again. Now, the chance of every other person in the queue being selected is $\frac{1}{99}.$
+Thabang now generates another random number (excluding the number 9), and obtains the number 24. The 24th traveller's luggage is searched, and they are again excluded from future searches. The chance of every other person in the queue being selected (i.e. everyone except the 9th and 24th travellers) is now $\frac{1}{98}.$
+
+This process is repeated until Thabang has sampled as many travellers as he decided on (e.g., 10 travellers).
+
+The procedure to collect a **simple random sample** is as follows:
+
+1. Number all $N$ elements in the population.
+2. Decide on a sample size $n$.
+3. Select $n$ random numbers out of the numbers belonging to the population elements.
+4. Select the population elements corresponding to these random numbers.
+
+The procedure to select **random numbers** is as follows:
+
+1. Select a random starting point from a table of random numbers.
+2. Divide consecutive single digits into groups, where the size of the groups is the same number of digits as the population size ($N$). Write down each of the numbers which is less than or equal to $N$.
+3. Include the population elements with numbers that agree with these numbers.
+
 ### Systematic Sampling
+
+In a **systematic sample**, every $k$th element of the population is selected, after a random initial element is selected, where $k=\frac{N}{n}$. Here, every element of the population has a $\frac{n}{N}=\frac{1}{k}$ chance of being selected.
+
+In the airport security example, Option 5 represents a systematic sample. Suppose there are now $N=200$ travellers in the security queue, and that Thabang wants a sample of size $n=20$. In order to take a systematic sample, he will first calculate $k=\frac{N}{n}=\frac{200}{20}=10.$ He will then select a random number between 1 and $k=10$, and select the corresponding traveller in the queue. Say the random number is 3. In this case, he will select the 3rd traveller. Thereafter, he will add $k=10$ to this random number and select the corresponding traveller, i.e. the 13th traveller. He will repeat the process by selecting the 23rd, 33rd, etc. traveller until the 93rd traveller. He will then have his sample of size $n=20$.
+
+The procedure to collect a **systematic sample** is as follows:
+
+1. Number all $N$ elements in the population.
+2. Decide on a sample size $n$.
+3. Calculate the ratio $k=\frac{N}{n}$, also called the *sampling interval*.
+4. Randomly select a number between 1 and $k$ to determine the first individual in the sample.
+5. From this starting point, select every $k$th individual from the list.
+
 ### Stratified Sampling
+
+In **stratified sampling**, the population is divided into subgroups (strata), and a random sample is taken from each subgroup (stratum). In the airport security example, Option 6 constitutes stratified sampling. Suppose there are $3$ waiting areas in the airport. These waiting areas represent the strata. Suppose Area 1 has $N_1=150$ travellers, Area 2 has $N_2=100$ travellers, and Area 3 has $N_3=50$ travellers currently waiting. Thus, the total population size is $N=N_1+N_2+N_3=300$. If Thabang wants to take a sample of $n=30$ travellers, he has two different ways to select the sample size per waiting area. 
+
+His first option is called *proportional stratified sampling*, and involves choosing a sample of travellers from each waiting area such that the sample size for each area is proportional to its size in the population. For each waiting area, the sample size can be calculated as $n_h=\frac{N_h}{N}\times n, h=1,2,3$. Using this formula, he would select $n_1=\frac{150}{300}\times 30=60$ travellers from Area 1, $n_1=\frac{100}{300}\times 10=60$ travellers from Area 2, and $n_1=\frac{50}{300}\times 30=5$ travellers from Area 3. Note that $n_1+n_2+n_3=30=n$.
+
+His second option is *equal stratified sampling*, where the same number of individuals is chosen from each stratum, regardless of its size. In this case, $n_1=n_2=n_3=\frac{n}{3}=\frac{30}{10}=3.$ This kind of sampling is used when it is more important to select the same number of elements from each stratum than to ensure each stratum is represented. In this example, it could lead to Area 1 being under-represented and Area 3 being over-represented in the sample.
+
+The procedure to collect a **stratified sample** is as follows:
+
+1. Number all $N$ elements in the population.
+2. Divide the population into *mutually exclusive strata*. Each individual should belong to *one and only one* stratum.
+3. Decide on a sample size $n$.
+4. Decide whether to use proportional or equal stratified sampling, and consequently calculate the appropriate sample size per stratum.
+5. Select a random sample from each stratum using simple random sampling.
+
+Stratified sampling is useful when each stratum is *homogeneous*, i.e. elements within strata are similar, but there are big differences between strata.
+
+**Definition of Homogeneous Data:** Homogeneous data consists of elements that are similar or even identical, exhibiting little variation.
+
+**Examples:**
+
+- Demographics: All of the Grade 11 girls on the netball team at a school. These learners will have the same gender, the same sport,  similar ages, weights and heights.
+- Environmental data: Measurements of the soil pH of one wetland. The soil pH will not vary so much within one wetland.
+- Medical data: All of the women in the maternity ward of a hospital in a high-income area, between the ages of 20 and 30. These women will be similar to each other in terms of income, how many weeks they are due, and will be identical in gender.
+- Sales data: The sales records of stationary from the stationary shops in Pretoria. The sales records across all stationary shops will be fairly similar in terms of the products sold (pencils, paper, pens, notebooks, etc.) and the periods during which most sales are made (school supplies at the start of a new term, gifts and wrapping paper during the festive season).
+
 ### Cluster Sampling
+
+In **cluster sampling**, the population is divided into groups (clusters), similarly to stratified sampling. In stratified sampling, however, individuals are selected from each group, whereas in cluster sampling, the *groups* are selected randomly. In the airport security example, Option 7 is an example of a cluster sample. The waiting areas represent the clusters. To perform cluster sampling, Thabang would randomly select one or two of the waiting areas. Then, he could either perform *one-stage cluster sampling*, in which case he would select *all* of the individuals in each cluster. Or, he could perform *two-stage cluster sampling*, whereby he would sample random individuals from each cluster using simple random sampling. In *one-stage cluster sampling*, it may not be possible to select a precise sample size, since the size of the selected cluster(s) will determine the size of the sample. In *two-stage cluster sampling*, the sample size can be enforced more easily. For example, if he wanted a sample of size $n=20$, and selected Areas 1 and 2, he could randomly select $10$ individuals from Area 1 and $10$ individuals from Area 2.
+
+
+1. Number all $N$ elements in the population.
+2. Divide the population into *mutually exclusive clusters*. Each individual should belong to *one and only one* cluster. 
+3. Decide on the number of clusters to sample.
+4. Decide whether to use one-stage or two-stage cluster sampling. If two-stage cluster sampling is selected, decide on a sample size $n$.
+5. Select a random sample from each stratum using simple random sampling.
+
+Cluster sampling is useful when each cluster is *heterogeneous*, i.e. elements within clusters are different from each other, but there are no big differences between clusters.
+
+**Definition of Heterogeneous Data:** Heterogeneous data consists of elements that are substantially different from each other, exhibiting a considerable amount of variation.
+
+**Examples:**
+
+- Demographics: All of the learners in a school, from Grade 1 to Grade 12. These learners will differ substantially from each other in terms of gender, age, height, weight and the sports they prefer.
+- Environmental data: Soil pH measured across an entire city that has clay-like, sandy and rocky soil. The soil pH will differ substantially based on where in the city each measurement was taken.
+- Medical data: All of the patients in the west wing of a hospital that includes maternity wards, oncology, and an emergency room. These patients will differ from each other in terms of their health conditions, age and gender.
+- Sales data: Sales records of grocery shops across countries in the northern and southern hemispheres. These sales records will differ vastly in terms of the kinds of food and supplies sold, as well as when which kind of food will be sold. For example, hearty, rich food will sell better in December in the northern hemisphere, and in July in the southern hemisphere; some countries will not sell pork or alcohol products at all, whereas those same products will be very popular in other countries; some countries will sell specific foods during certain festivals, etc.
+
+### Probabilistic Sampling Summary
+
+No probabilistic sampling method is necessarily always better than another. It is important to select the appropriate sampling method based on the problem you are trying to solve, and the nature of the data. The table below summarises the characteristics of each probabilistic sampling method, and lists some of their advantages and disadvantages.
+
+```{r echo=FALSE, results='asis'}
+
+dat <- c("Sampling Method", "Simple Random Sampling (SRS)", "Systematic Sampling", "Stratified Sampling", "Cluster Sampling",
+           "Description", "Every individual in the population has an equal chance to be selected.", "After a random start, every kth individual is selected.", "The population is divided into strata, and a random sample is taken from each stratum.", "The population is divided into clusters, and entire clusters are randomly selected. In two-stage cluster sampling, samples are taken from the selected clusters.", "Example", "Randomly selecting travellers in the security queue.", "Choosing every 10th traveller in the security queue.", "Sampling a proportional number of travellers from each waiting area.", "Choosing waiting areas at random and then selecting all travellers in each selected area.", 
+         "Advantages", "Selection bias is minimised; Easy to understand and implement", "Easier and quicker than SRS; Ensures even coverage of the population", "Ensures all groups are represented; Can be more reliable than SRS when strata are very different from each other", "Practical and cost-effective compared to SRS and Systematic Sampling; Good to use when clusters are naturally occurring groups, e.g. different waiting areas, or schools, or companies", 
+         "Disadvantages", "Difficult for large populations; Risk of underrepresenting some groups", "May not be fully random if there is an underlying pattern in the data (e.g., if people are queueing such that every 10th person has a large suitcase, only people with large suitcases will be selected)", "Needs a more in-depth understanding of the population to define suitable strata", "Clusters may not be representative; Naturally occurring clusters will not necessarily be internally heterogeneous but similar to other clusters")
+  
+mat <- matrix(data=dat,ncol=5)
+
+library(knitr)
+kable(mat, caption='Probabilistic sampling summary')
+
+```
 
 
 ## Non-Probabilistic Sampling
 
-### Convenience sampling
+**Non-probabilistic sampling** occurs when individuals are selected based on convenience or judgment. This means that not every individual has a known or non-zero chance of being chosen. This can introduce bias and a lack of representativeness. However, it can be useful in cases where we do not need a random or representative sample, or where it is infeasible to take a probabilistic sample due to limitations of accessibility, and where ease of access to individuals is important.
+
+Here, we will consider three types of non-probabilistic sampling, namely **Convenience Sampling**, **Judgment Sampling** and **Quota Sampling**. 
+
+In **convenience sampling**, individuals are selected based on how easy they are to reach. 
+
+**Example 10:** Suppose an animal scientist is attempting to study lions in a nature park. Attempting to take a probabilistic sample would require knowledge of how many lions are in the park, which might not be known, since lions could die or be born without the scientist's knowledge. She might instead study those lions who come to drink at a water hole that is accessible by Jeep. This would exclude lions who drink at rivers, or at water holes that are not accessible to her vehicle. However, it may not be possible for her to study lions she cannot access. In this case, convenience sampling would be appropriate, although there is no way of knowing the chance that each lion has to be selected, and some lions have zero chance of being selected.
+
+In **judgment sampling**, individuals are selected based on experts' decisions of which individuals would be most useful for the study.
+
+**Example 11:** Suppose a conference organiser is tasked with assembling a panel to discuss banking in South Africa. Rather than taking a probabilistic sample of the CEOs and other top officers of South African banks, he might choose to invite only those whom he personally believes will make the most meaningful contribution to the discussion. Although this is a non-probabilistic way of sampling, it can be more targeted and effective in certain scenarios.
+
+In **quota sampling**,individuals are selected to fulfill predetermined quotas for specific subgroups. It ensures that certain characteristics (e.g., age, gender, occupation) are proportionally represented. However, selection within those groups is not random.
+
+**Example 12:** A survey of school learners might ensure that 20 learners from each grade answer the survey by asking a prefect to go into a classroom of each grade, and handing out the survey to the first 20 learners in each class that want to fill it in. This is a quick and convenient way to ensure that each grade is adequately represented. However, since it is non-probabilistic, the study might still exhibit various kinds of sampling bias. We will talk about sampling bias in the next section.
+
+
+## Sampling Bias
+
+Regardless of the sampling method we plan to use, it is always important to be aware of the dangers of **sampling bias**. Sampling bias occurs when some members of a population are **systematically more likely** to be selected in a sample than others, leading to a sample that is not representative of the entire population. This can distort the results of a study or analysis, making them unreliable or misleading.
+
+**Example 13:** Caitlyn is the owner of a pet shop called *Paws & Whiskers*. She wants to gauge whether her customers are satisfied with the range of products stocked in her shop. If she only sends out surveys to customers who purchase dog food, this would *systematically* exclude all pet owners who have other pets, such as cats, reptiles, rabbits, mice, birds or fish.
+
+There are six types of sampling bias that we will consider.
+
+### 1. Selection Bias
+This type of bias occurs when certain population groups are systematically excluded or underrepresented in the sample. The pet shop example above illustrates selection bias.
+
+Q: What other kinds of selection bias could occur? Who would be excluded if Caitlyn only sent out surveys to customers who made online purchases, or customers with a loyalty card?
+
+### 2. Voluntary Response Bias
+Voluntary response bias takes place when the individuals who participate in a study are self-selected. Typically, this will lead to the inclusion of only those individuals who have strong opinions and want to be heard, and will exclude individuals with more moderate opinions.
+
+If Caitlyn posts her survey on social media, for instance, without encouraging all of her customers to participate, most of the responses will be from customers who are very unhappy, and perhaps a few customers who are extremely happy with her products.
+
+Think about it: how often do you rate deliveries, apps, or other consumer experiences? Most of us will skip the rating step unless we are either very dissatisfied, or extremely happy with the experience.
+
+### 3. Survivorship Bias
+This kind of bias takes place when only "survivors" or of a population are considered, and those who have dropped out or failed are ignored.
+
+Suppose Caitlyn is studying other pet shops to find out what she could do to improve her business. If she only studies successful pet shops, she might conclude that stocking dog food is all she needs to do in order to remain successful. However, this would ignore all of the pet shops who have had to downscale or close - all of whom have stocked dog food! Clearly, she would be in danger of drawing incorrect conclusions.
+
+Another well-known example of survivorship bias occurred during World War II. American researchers were attempting to understand where bomber aircraft were most vulnerable, and reinforce those vulnerable areas to reduce the number of bombers that were being shot down. To do this, they initially studied damaged bombers to see where they had been hit. An example of such a bomber is shown in Figure 3, with the red dots representing bullet holes. However, they soon realised that this was an example of **survivorship bias**. The bullet holes in the bombers they were studying represented areas where bombers could be shot and still fly well enough to return to base. Bombers that had been hit in other places (like the fuselage) had been shot down over enemy territory, and did not return to base. Based on this, the scientists suggested that the areas should be reinforced that were *not* damaged on bombers that had returned. The scientists' ability to understand survivorship bias was thus able to save many pilots' lives.
+
+```{r, out.width= "50%", echo=FALSE,fig.align='center',fig.cap="Figure 3: Illustration of survivorship bias in World War II planes. Image from Wikipedia: https://en.wikipedia.org/wiki/Survivorship_bias#/media/File:Survivorship-bias.svg/2"}
+library(graphics)
+
+#par(mfrow=(c(2,2)))
+knitr::include_graphics(c("Survivor.png"))
+
+```
+
+
+### 4. Time Interval Bias
+This bias occurs when the data collected are influenced by the time period during which the sample is collected.
+
+In the pet shop example, time interval bias would occur if Caitlyn collected data on dog jacket sales during summer. She might conclude that dog jackets are not a popular item, when in fact they are very popular in cold weather.
+
+### 5. Convenience Sampling Bias
+As the name suggests, this bias goes hand-in-hand with convenience sampling. When samples are taken only from a group that is easily accessible, this may not represent the general population.
+
+In the pet shop example, Caitlyn might pose questions on her products to customers who are browsing the shop and are not in a hurry. This would be convenient, as she would be talking to relaxed customers who were in a good mood. However, this would exclude all of the customers who were in a hurry, or those who were in a bad mood because they could not find the product they were looking for! In this way, she would not obtain a representative sample of her customers.
+
+### 6. Non-Response Bias
+
+This kind of bias occurs when there is a substantial difference between individuals who respond to a survey, and those who do not. The effect of non-response bias can be similar to voluntary response bias. The difference is that in voluntary response bias, individuals are not selected in a random way. Thus, individuals are typically excluded if they do not have a strong opinion on the survey. In non-response bias, a proportion of the **selected** individuals decline to respond.
+
+In the pet shop example, non-response bias could occur if Caitlyn selected a random sample of customers, and then phoned them during work hours. Customers with busy jobs would be more likely to decline her call, whereas those with lower intensity jobs, or those who were not employed, would be more likely to answer her questions.
+
+### Sampling Bias Summary
+
+In summary, sampling bias can lead to a whole host of errors causing a sample to be unrepresentative of the population. If a researcher assumes that an unrepresentative sample is in fact representative, they could make very incorrect conclusions. These conclusions could be ineffective, or even harmful (the World War II plane example shows just how harmful this can be!).
+
+It is therefore very important to understand and minimise sampling bias as much as possible. Properly designing a probabilistic sample can reduce most types of sampling bias. Additionally, non-response bias can be reduced by following up on those individuals who did not initially respond to the survey.
+
+There are cases where non-probabilistic samples are acceptable for the purpose of the study at hand. However, the researcher must be aware of the fact that their sample does not necessarily reflect the population, and be careful when attempting to apply sample-based conclusions to the population. In the lion example, for instance, it might be acceptable for the researcher to study only those lions who drink at a waterhole that is accessible by Jeep. But, she would have to acknowledge this as a limitation in her study, and be careful of applying her conclusion to all lions. The lions who drink at the waterhole, for example, are able to drink enough water and do not suffer from dehydration. However, it would not be correct of her to assume that all of the lions in the park are properly hydrated, since there might be other lions at other locations in the park who do not have sufficient access to drinking water.
+
+### Sampling Bias versus Sampling Error
+
+Finally, it is important to distinguish between **sampling bias** and **sampling error**. As explained previously, **sampling bias** occurs when individuals are excluded from the sample in some systematic way. This can be mitigated by improving the sampling design. 
+
+**Sampling error**, on the other hand, is a type of error that happens purely by chance. This error occurs because samples will almost never be perfectly representative of the population. 
+
+In the airport security example, Thabang could have a very well-designed sample, but could still miss a traveller who has a dangerous item in their luggage.
+
+In the pet shop example, Caitlyn might conclude that 82% of her customers are satisfied with her products, based on a representative, probabilistic sample. However, the real number based on the population might be 80% or 85%.
+
+The size of the sampling error can be estimated by using statistical techniques. For example, Caitlyn might be able to calculate that there is a 5% fluctuation in her results. In that case, even if the sample indicates that 82% of her customers are satisfied with her products, she will know that the true number could be as low as 77% or as high as 87%.
+
+Nearly all samples will exhibit some degree of sampling error. This can be mitigated by increasing the sample size.
+
+```{r echo=FALSE, results='asis'}
+
+dat <- c("Type of Error", "Cause", "Effect", "How to Mitigate", "Randomness of Error", "Severity", "Example", 
+         "Sampling Error", "Random chance", "Estimates will vary slightly", "Increase the sample size", "Random (cannot be avoided)", "Not necessarily severe; will always occur", "A survey finds that 82% of customers are happy when the true number is 84%", 
+         "Sampling Bias", "Systematic problem in the sampling method", "Systematic error in the results", "Redesign the study", "Systematic (can be avoided)", "Very severe - can have harmful consequences unless the study is redone", "The World War II bomber example")
+  
+mat <- matrix(data=dat,ncol=3)
+
+library(knitr)
+kable(mat, caption='Sampling bias versus sampling error')
+
+```
+
+
+
+
+
+
+

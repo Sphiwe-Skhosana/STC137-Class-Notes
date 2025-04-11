@@ -149,7 +149,7 @@ Scales of measurement refers to the categories in which we divide data according
 
 Consider the following dataset which is an extension of the dataset in Table 1 introduced in Section \@ref(data):
 
-```{r, echo=FALSE, fig.cap="Provinces dataset", out.width = '100%'}
+```{r fig1, echo=FALSE, fig.cap="Provinces dataset", out.width = '100%'}
 knitr::include_graphics("Renate Chapters/DataExampleSA.png")
 ```
 
@@ -429,7 +429,7 @@ knitr::include_graphics(c("Renate Chapters/Sat.jpg","Renate Chapters/POIs.jpg","
 Spatial data is used in urban planning, ecology, epidemiology (the study of disease spread), and more.
 
 ##### Audio data
-Audio data can be found in sound files. This can include, among other things, music, audio tracks for movies, and voice recordings (like voice notes). Audio data is represented by a time series signal where the amplitude of the sound wave is sampled at regular intervals. Figure @\ref(fig11) shows an example of an audio file.
+Audio data can be found in sound files. This can include, among other things, music, audio tracks for movies, and voice recordings (like voice notes). Audio data is represented by a time series signal where the amplitude of the sound wave is sampled at regular intervals. Figure @\ref(fig:fig11) shows an example of an audio file.
 
 ```{r fig11, echo=FALSE, fig.cap="An audio file represented as a time series of amplitudes. Higher amplitudes represent a louder volume.", out.width = '50%',fig.align='center'}
 knitr::include_graphics("Renate Chapters/Audio.png")
@@ -440,7 +440,7 @@ Video data are series of images put together. Videos without sound are examples 
 
 ### Structured and Unstructured data
 
-Data can also be categorized into two types: *Structured* and *Unstructured* data. Structured data is organized and has a fixed format that makes it easy to work with. It typically follows a predefined scheme such as a table with rows and columns as with the data shown in Figure @\ref(fig1). Some other examples of structured data include spreadsheets (e.g. Excel) and Comma Separated Values (CSV) files. Unstructured data do not have a predefined format making them more challenging to work with. They includes data such as text (e.g. emails), images, videos, audio and other forms of data which cannot be stored using tables.
+Data can also be categorized into two types: *Structured* and *Unstructured* data. Structured data is organized and has a fixed format that makes it easy to work with. It typically follows a predefined scheme such as a table with rows and columns as with the data shown in Figure \@ref(fig:fig1). Some other examples of structured data include spreadsheets (e.g. Excel) and Comma Separated Values (CSV) files. Unstructured data do not have a predefined format making them more challenging to work with. They includes data such as text (e.g. emails), images, videos, audio and other forms of data which cannot be stored using tables.
 
 
 ### Data Types and Computers
