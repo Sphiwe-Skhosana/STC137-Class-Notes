@@ -345,7 +345,7 @@ kable(mat, caption='Census vs. sample')
 
 ```
 
-\*Sampling error will be explained in a later section.
+Sampling error will be explained in a later section.
 
 Although it is generally true that more data is better, there are many reasons to take a sample rather than a census.
 This includes time and financial constraints, as well as feasibility.
@@ -613,7 +613,7 @@ If she only sends out surveys to customers who purchase dog food, this would *sy
 
 There are six types of sampling bias that we will consider.
 
-#### 1. Selection Bias
+#### Selection Bias
 
 This type of bias occurs when certain population groups are systematically excluded or underrepresented in the sample.
 The pet shop example above illustrates selection bias.
@@ -621,7 +621,7 @@ The pet shop example above illustrates selection bias.
 Q: What other kinds of selection bias could occur?
 Who would be excluded if Caitlyn only sent out surveys to customers who made online purchases, or customers with a loyalty card?
 
-#### 2. Voluntary Response Bias
+#### Voluntary Response Bias
 
 Voluntary response bias takes place when the individuals who participate in a study are self-selected.
 Typically, this will lead to the inclusion of only those individuals who have strong opinions and want to be heard, and will exclude individuals with more moderate opinions.
@@ -631,7 +631,7 @@ If Caitlyn posts her survey on social media, for instance, without encouraging a
 Think about it: how often do you rate deliveries, apps, or other consumer experiences?
 Most of us will skip the rating step unless we are either very dissatisfied, or extremely happy with the experience.
 
-#### 3. Survivorship Bias
+#### Survivorship Bias
 
 This kind of bias takes place when only "survivors" or of a population are considered, and those who have dropped out or failed are ignored.
 
@@ -657,14 +657,14 @@ knitr::include_graphics(c("Renate Chapters/Survivor.png"))
 
 ```
 
-#### 4. Time Interval Bias
+#### Time Interval Bias
 
 This bias occurs when the data collected are influenced by the time period during which the sample is collected.
 
 In the pet shop example, time interval bias would occur if Caitlyn collected data on dog jacket sales during summer.
 She might conclude that dog jackets are not a popular item, when in fact they are very popular in cold weather.
 
-#### 5. Convenience Sampling Bias
+#### Convenience Sampling Bias
 
 As the name suggests, this bias goes hand-in-hand with convenience sampling.
 When samples are taken only from a group that is easily accessible, this may not represent the general population.
@@ -674,7 +674,7 @@ This would be convenient, as she would be talking to relaxed customers who were 
 However, this would exclude all of the customers who were in a hurry, or those who were in a bad mood because they could not find the product they were looking for!
 In this way, she would not obtain a representative sample of her customers.
 
-#### 6. Non-Response Bias
+#### Non-Response Bias
 
 This kind of bias occurs when there is a substantial difference between individuals who respond to a survey, and those who do not.
 The effect of non-response bias can be similar to voluntary response bias.
