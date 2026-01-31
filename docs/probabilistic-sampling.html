@@ -4,13 +4,13 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>6.2 Probabilistic Sampling | STC 137 Class Notes</title>
+  <title>4.3 Probabilistic Sampling | STC 137 Class Notes</title>
   <meta name="description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
 The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="6.2 Probabilistic Sampling | STC 137 Class Notes" />
+  <meta property="og:title" content="4.3 Probabilistic Sampling | STC 137 Class Notes" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="<p>This is a minimal example of using the bookdown package to write a book.
@@ -19,7 +19,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="github-repo" content="sphiwe-skhosana/STC137-Class-Notes" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="6.2 Probabilistic Sampling | STC 137 Class Notes" />
+  <meta name="twitter:title" content="4.3 Probabilistic Sampling | STC 137 Class Notes" />
   
   <meta name="twitter:description" content="<p>This is a minimal example of using the bookdown package to write a book.
 set in the _output.yml file.
@@ -35,7 +35,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="sampling-frames.html"/>
+<link rel="prev" href="sampling-frame.html"/>
 <link rel="next" href="non-probabilistic-sampling.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -57,11 +57,6 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-<link href="libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
-<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-<script src="libs/viz-1.8.2/viz.js"></script>
-<link href="libs/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
-<script src="libs/grViz-binding-1.0.11/grViz.js"></script>
 
 
 
@@ -87,7 +82,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
-<li class="chapter" data-level="1" data-path="an-overview-of-data-literacy.html"><a href="an-overview-of-data-literacy.html"><i class="fa fa-check"></i><b>1</b> An Overview of Data literacy</a>
+<li class="chapter" data-level="1" data-path="ch1.html"><a href="ch1.html"><i class="fa fa-check"></i><b>1</b> An Overview of Data literacy</a>
 <ul>
 <li class="chapter" data-level="1.1" data-path="sec1-1.html"><a href="sec1-1.html"><i class="fa fa-check"></i><b>1.1</b> Introduction</a>
 <ul>
@@ -135,7 +130,7 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 <li class="chapter" data-level="1.6.4" data-path="sec1-6.html"><a href="sec1-6.html#advantages-and-disadvantages-of-data-visualization"><i class="fa fa-check"></i><b>1.6.4</b> Advantages and Disadvantages of data visualization</a></li>
 <li class="chapter" data-level="1.6.5" data-path="sec1-6.html"><a href="sec1-6.html#exercises-to-section-1.6"><i class="fa fa-check"></i><b>1.6.5</b> Exercises to Section 1.6</a></li>
 </ul></li>
-<li class="chapter" data-level="1.7" data-path="sec1-7.html"><a href="sec1-7.html"><i class="fa fa-check"></i><b>1.7</b> Data analysis – Foundations and Concepts</a>
+<li class="chapter" data-level="1.7" data-path="sec1-7.html"><a href="sec1-7.html"><i class="fa fa-check"></i><b>1.7</b> Data Analysis – Foundations and Concepts</a>
 <ul>
 <li class="chapter" data-level="1.7.1" data-path="sec1-7.html"><a href="sec1-7.html#the-data-analysis-process"><i class="fa fa-check"></i><b>1.7.1</b> The Data Analysis process</a></li>
 <li class="chapter" data-level="1.7.2" data-path="sec1-7.html"><a href="sec1-7.html#approaches-to-data-analysis"><i class="fa fa-check"></i><b>1.7.2</b> Approaches to Data Analysis</a></li>
@@ -187,43 +182,29 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
 <li class="chapter" data-level="3.3.4" data-path="data-manipulation.html"><a href="data-manipulation.html#exercises-1"><i class="fa fa-check"></i><b>3.3.4</b> Exercises</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="ch4.html"><a href="ch4.html"><i class="fa fa-check"></i><b>4</b> Sampling and Collecting data</a></li>
-<li class="chapter" data-level="5" data-path="data-collection.html"><a href="data-collection.html"><i class="fa fa-check"></i><b>5</b> Data Collection</a>
+<li class="chapter" data-level="4" data-path="ch4.html"><a href="ch4.html"><i class="fa fa-check"></i><b>4</b> Sampling and Collecting data</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="planning-data-collection.html"><a href="planning-data-collection.html"><i class="fa fa-check"></i><b>5.1</b> Planning data collection</a></li>
-<li class="chapter" data-level="5.2" data-path="primary-data-collection.html"><a href="primary-data-collection.html"><i class="fa fa-check"></i><b>5.2</b> Primary data collection</a></li>
-<li class="chapter" data-level="5.3" data-path="secondary-data-collection.html"><a href="secondary-data-collection.html"><i class="fa fa-check"></i><b>5.3</b> Secondary data collection</a></li>
-<li class="chapter" data-level="5.4" data-path="evaluating-data.html"><a href="evaluating-data.html"><i class="fa fa-check"></i><b>5.4</b> Evaluating Data</a>
+<li class="chapter" data-level="4.1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>4.1</b> Introduction</a></li>
+<li class="chapter" data-level="4.2" data-path="sampling-frame.html"><a href="sampling-frame.html"><i class="fa fa-check"></i><b>4.2</b> Sampling Frame</a></li>
+<li class="chapter" data-level="4.3" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html"><i class="fa fa-check"></i><b>4.3</b> Probabilistic Sampling</a>
 <ul>
-<li class="chapter" data-level="5.4.1" data-path="evaluating-data.html"><a href="evaluating-data.html#relevance"><i class="fa fa-check"></i><b>5.4.1</b> Relevance</a></li>
-<li class="chapter" data-level="5.4.2" data-path="evaluating-data.html"><a href="evaluating-data.html#quality"><i class="fa fa-check"></i><b>5.4.2</b> Quality</a></li>
-<li class="chapter" data-level="5.4.3" data-path="evaluating-data.html"><a href="evaluating-data.html#representativeness-and-unbiasedness"><i class="fa fa-check"></i><b>5.4.3</b> Representativeness and unbiasedness</a></li>
-<li class="chapter" data-level="5.4.4" data-path="evaluating-data.html"><a href="evaluating-data.html#impact"><i class="fa fa-check"></i><b>5.4.4</b> Impact</a></li>
-<li class="chapter" data-level="5.4.5" data-path="evaluating-data.html"><a href="evaluating-data.html#examples"><i class="fa fa-check"></i><b>5.4.5</b> Examples</a></li>
+<li class="chapter" data-level="4.3.1" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html#simple-random-sampling"><i class="fa fa-check"></i><b>4.3.1</b> Simple Random Sampling</a></li>
+<li class="chapter" data-level="4.3.2" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html#systematic-sampling"><i class="fa fa-check"></i><b>4.3.2</b> Systematic Sampling</a></li>
+<li class="chapter" data-level="4.3.3" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html#stratified-sampling"><i class="fa fa-check"></i><b>4.3.3</b> Stratified Sampling</a></li>
+<li class="chapter" data-level="4.3.4" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html#cluster-sampling"><i class="fa fa-check"></i><b>4.3.4</b> Cluster Sampling</a></li>
+<li class="chapter" data-level="4.3.5" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html#probabilistic-sampling-summary"><i class="fa fa-check"></i><b>4.3.5</b> Probabilistic Sampling Summary</a></li>
 </ul></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="sampling.html"><a href="sampling.html"><i class="fa fa-check"></i><b>6</b> Sampling</a>
+<li class="chapter" data-level="4.4" data-path="non-probabilistic-sampling.html"><a href="non-probabilistic-sampling.html"><i class="fa fa-check"></i><b>4.4</b> Non-Probabilistic Sampling</a></li>
+<li class="chapter" data-level="4.5" data-path="sampling-bias.html"><a href="sampling-bias.html"><i class="fa fa-check"></i><b>4.5</b> Sampling Bias</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="sampling-frames.html"><a href="sampling-frames.html"><i class="fa fa-check"></i><b>6.1</b> Sampling Frames</a></li>
-<li class="chapter" data-level="6.2" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html"><i class="fa fa-check"></i><b>6.2</b> Probabilistic Sampling</a>
-<ul>
-<li class="chapter" data-level="6.2.1" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html#simple-random-sampling"><i class="fa fa-check"></i><b>6.2.1</b> Simple Random Sampling</a></li>
-<li class="chapter" data-level="6.2.2" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html#systematic-sampling"><i class="fa fa-check"></i><b>6.2.2</b> Systematic Sampling</a></li>
-<li class="chapter" data-level="6.2.3" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html#stratified-sampling"><i class="fa fa-check"></i><b>6.2.3</b> Stratified Sampling</a></li>
-<li class="chapter" data-level="6.2.4" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html#cluster-sampling"><i class="fa fa-check"></i><b>6.2.4</b> Cluster Sampling</a></li>
-<li class="chapter" data-level="6.2.5" data-path="probabilistic-sampling.html"><a href="probabilistic-sampling.html#probabilistic-sampling-summary"><i class="fa fa-check"></i><b>6.2.5</b> Probabilistic Sampling Summary</a></li>
-</ul></li>
-<li class="chapter" data-level="6.3" data-path="non-probabilistic-sampling.html"><a href="non-probabilistic-sampling.html"><i class="fa fa-check"></i><b>6.3</b> Non-Probabilistic Sampling</a></li>
-<li class="chapter" data-level="6.4" data-path="sampling-bias.html"><a href="sampling-bias.html"><i class="fa fa-check"></i><b>6.4</b> Sampling Bias</a>
-<ul>
-<li class="chapter" data-level="6.4.1" data-path="sampling-bias.html"><a href="sampling-bias.html#selection-bias"><i class="fa fa-check"></i><b>6.4.1</b> 1. Selection Bias</a></li>
-<li class="chapter" data-level="6.4.2" data-path="sampling-bias.html"><a href="sampling-bias.html#voluntary-response-bias"><i class="fa fa-check"></i><b>6.4.2</b> 2. Voluntary Response Bias</a></li>
-<li class="chapter" data-level="6.4.3" data-path="sampling-bias.html"><a href="sampling-bias.html#survivorship-bias"><i class="fa fa-check"></i><b>6.4.3</b> 3. Survivorship Bias</a></li>
-<li class="chapter" data-level="6.4.4" data-path="sampling-bias.html"><a href="sampling-bias.html#time-interval-bias"><i class="fa fa-check"></i><b>6.4.4</b> 4. Time Interval Bias</a></li>
-<li class="chapter" data-level="6.4.5" data-path="sampling-bias.html"><a href="sampling-bias.html#convenience-sampling-bias"><i class="fa fa-check"></i><b>6.4.5</b> 5. Convenience Sampling Bias</a></li>
-<li class="chapter" data-level="6.4.6" data-path="sampling-bias.html"><a href="sampling-bias.html#non-response-bias"><i class="fa fa-check"></i><b>6.4.6</b> 6. Non-Response Bias</a></li>
-<li class="chapter" data-level="6.4.7" data-path="sampling-bias.html"><a href="sampling-bias.html#sampling-bias-summary"><i class="fa fa-check"></i><b>6.4.7</b> Sampling Bias Summary</a></li>
-<li class="chapter" data-level="6.4.8" data-path="sampling-bias.html"><a href="sampling-bias.html#sampling-bias-versus-sampling-error"><i class="fa fa-check"></i><b>6.4.8</b> Sampling Bias versus Sampling Error</a></li>
+<li class="chapter" data-level="4.5.1" data-path="sampling-bias.html"><a href="sampling-bias.html#selection-bias"><i class="fa fa-check"></i><b>4.5.1</b> Selection Bias</a></li>
+<li class="chapter" data-level="4.5.2" data-path="sampling-bias.html"><a href="sampling-bias.html#voluntary-response-bias"><i class="fa fa-check"></i><b>4.5.2</b> Voluntary Response Bias</a></li>
+<li class="chapter" data-level="4.5.3" data-path="sampling-bias.html"><a href="sampling-bias.html#survivorship-bias"><i class="fa fa-check"></i><b>4.5.3</b> Survivorship Bias</a></li>
+<li class="chapter" data-level="4.5.4" data-path="sampling-bias.html"><a href="sampling-bias.html#time-interval-bias"><i class="fa fa-check"></i><b>4.5.4</b> Time Interval Bias</a></li>
+<li class="chapter" data-level="4.5.5" data-path="sampling-bias.html"><a href="sampling-bias.html#convenience-sampling-bias"><i class="fa fa-check"></i><b>4.5.5</b> Convenience Sampling Bias</a></li>
+<li class="chapter" data-level="4.5.6" data-path="sampling-bias.html"><a href="sampling-bias.html#non-response-bias"><i class="fa fa-check"></i><b>4.5.6</b> Non-Response Bias</a></li>
+<li class="chapter" data-level="4.5.7" data-path="sampling-bias.html"><a href="sampling-bias.html#sampling-bias-summary"><i class="fa fa-check"></i><b>4.5.7</b> Sampling Bias Summary</a></li>
+<li class="chapter" data-level="4.5.8" data-path="sampling-bias.html"><a href="sampling-bias.html#sampling-bias-versus-sampling-error"><i class="fa fa-check"></i><b>4.5.8</b> Sampling Bias versus Sampling Error</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -246,8 +227,8 @@ The HTML output format for this example is bookdown::gitbook,</p>" />
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="probabilistic-sampling" class="section level2 hasAnchor" number="6.2">
-<h2><span class="header-section-number">6.2</span> Probabilistic Sampling<a href="probabilistic-sampling.html#probabilistic-sampling" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="probabilistic-sampling" class="section level2 hasAnchor" number="4.3">
+<h2><span class="header-section-number">4.3</span> Probabilistic Sampling<a href="probabilistic-sampling.html#probabilistic-sampling" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>In <strong>probabilistic sampling</strong>, every individual in the population has a <em>known and non-zero chance</em> of being selected.</p>
 <p><strong>Example 8 (continuation of Example 1):</strong> When Raheem collected data from students regarding their campus food preferences, he was collecting a sample, since he was not surveying every single student.
 There were many ways for him to go about collecting this sample.
@@ -275,14 +256,14 @@ He considers the following options:</p>
 <li>Randomly select waiting areas, and search the luggage of all travellers in that waiting area.</li>
 </ol>
 <p><strong>Exercise:</strong> Discuss each of Thabang’s proposed ways to sample travellers’ luggage, and comment on whether or not this option would constitute a probabilistic sample.</p>
-<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-5"></span>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:unnamed-chunk-2"></span>
 <img src="Renate%20Chapters/Airport.jpg" alt="Image attribution: Designed by macrovector / Freepik" width="50%" />
 <p class="caption">
-Figure 6.1: Image attribution: Designed by macrovector / Freepik
+Figure 4.1: Image attribution: Designed by macrovector / Freepik
 </p>
 </div>
-<div id="simple-random-sampling" class="section level3 hasAnchor" number="6.2.1">
-<h3><span class="header-section-number">6.2.1</span> Simple Random Sampling<a href="probabilistic-sampling.html#simple-random-sampling" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="simple-random-sampling" class="section level3 hasAnchor" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> Simple Random Sampling<a href="probabilistic-sampling.html#simple-random-sampling" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>A <strong>simple random sample (SRS)</strong> is obtained if each element of the population that has not yet been included in the sample, has an <em>equal</em> chance of being selected in the next draw.</p>
 <p>In Example 8, Option 2 is an example of a simple random sample.
 Here, every person in the security queue who has not yet been selected, has an equal chance of being selected.</p>
@@ -308,8 +289,8 @@ The chance of every other person in the queue being selected (i.e. everyone exc
 <li>Include the population elements with numbers that agree with these numbers.</li>
 </ol>
 </div>
-<div id="systematic-sampling" class="section level3 hasAnchor" number="6.2.2">
-<h3><span class="header-section-number">6.2.2</span> Systematic Sampling<a href="probabilistic-sampling.html#systematic-sampling" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="systematic-sampling" class="section level3 hasAnchor" number="4.3.2">
+<h3><span class="header-section-number">4.3.2</span> Systematic Sampling<a href="probabilistic-sampling.html#systematic-sampling" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>In a <strong>systematic sample</strong>, every <span class="math inline">\(k\)</span>th element of the population is selected, after a random initial element is selected, where <span class="math inline">\(k=\frac{N}{n}\)</span>.
 Here, every element of the population has a <span class="math inline">\(\frac{n}{N}=\frac{1}{k}\)</span> chance of being selected.</p>
 <p>In the airport security example, Option 5 represents a systematic sample.
@@ -329,8 +310,8 @@ He will then have his sample of size <span class="math inline">\(n=20\)</span>.<
 <li>From this starting point, select every <span class="math inline">\(k\)</span>th individual from the list.</li>
 </ol>
 </div>
-<div id="stratified-sampling" class="section level3 hasAnchor" number="6.2.3">
-<h3><span class="header-section-number">6.2.3</span> Stratified Sampling<a href="probabilistic-sampling.html#stratified-sampling" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="stratified-sampling" class="section level3 hasAnchor" number="4.3.3">
+<h3><span class="header-section-number">4.3.3</span> Stratified Sampling<a href="probabilistic-sampling.html#stratified-sampling" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>In <strong>stratified sampling</strong>, the population is divided into subgroups (strata), and a random sample is taken from each subgroup (stratum).
 In the airport security example, Option 6 constitutes stratified sampling.
 Suppose there are <span class="math inline">\(3\)</span> waiting areas in the airport.
@@ -340,10 +321,10 @@ Thus, the total population size is <span class="math inline">\(N=N_1+N_2+N_3=300
 If Thabang wants to take a sample of <span class="math inline">\(n=30\)</span> travellers, he has two different ways to select the sample size per waiting area.</p>
 <p>His first option is called <em>proportional stratified sampling</em>, and involves choosing a sample of travellers from each waiting area such that the sample size for each area is proportional to its size in the population.
 For each waiting area, the sample size can be calculated as <span class="math inline">\(n_h=\frac{N_h}{N}\times n, h=1,2,3\)</span>.
-Using this formula, he would select <span class="math inline">\(n_1=\frac{150}{300}\times 30=60\)</span> travellers from Area 1, <span class="math inline">\(n_1=\frac{100}{300}\times 10=60\)</span> travellers from Area 2, and <span class="math inline">\(n_1=\frac{50}{300}\times 30=5\)</span> travellers from Area 3.
+Using this formula, he would select <span class="math inline">\(n_1=\frac{150}{300}\times 30=15\)</span> travellers from Area 1, <span class="math inline">\(n_2=\frac{100}{300}\times 30=10\)</span> travellers from Area 2, and <span class="math inline">\(n_3=\frac{50}{300}\times 30=5\)</span> travellers from Area 3.
 Note that <span class="math inline">\(n_1+n_2+n_3=30=n\)</span>.</p>
 <p>His second option is <em>equal stratified sampling</em>, where the same number of individuals is chosen from each stratum, regardless of its size.
-In this case, <span class="math inline">\(n_1=n_2=n_3=\frac{n}{3}=\frac{30}{10}=3.\)</span> This kind of sampling is used when it is more important to select the same number of elements from each stratum than to ensure each stratum is represented.
+In this case, <span class="math inline">\(n_1=n_2=n_3=\frac{n}{3}=\frac{30}{3}=10.\)</span> This kind of sampling is used when it is more important to select the same number of elements from each stratum than to ensure each stratum is represented.
 In this example, it could lead to Area 1 being under-represented and Area 3 being over-represented in the sample.</p>
 <p>The procedure to collect a <strong>stratified sample</strong> is as follows:</p>
 <ol style="list-style-type: decimal">
@@ -363,8 +344,8 @@ In this example, it could lead to Area 1 being under-represented and Area 3 bein
 <li>Sales data: The sales records of stationary from the stationary shops in Pretoria. The sales records across all stationary shops will be fairly similar in terms of the products sold (pencils, paper, pens, notebooks, etc.) and the periods during which most sales are made (school supplies at the start of a new term, gifts and wrapping paper during the festive season).</li>
 </ul>
 </div>
-<div id="cluster-sampling" class="section level3 hasAnchor" number="6.2.4">
-<h3><span class="header-section-number">6.2.4</span> Cluster Sampling<a href="probabilistic-sampling.html#cluster-sampling" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="cluster-sampling" class="section level3 hasAnchor" number="4.3.4">
+<h3><span class="header-section-number">4.3.4</span> Cluster Sampling<a href="probabilistic-sampling.html#cluster-sampling" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>In <strong>cluster sampling</strong>, the population is divided into groups (clusters), similarly to stratified sampling.
 In stratified sampling, however, individuals are selected from each group, whereas in cluster sampling, the <em>groups</em> are selected randomly.
 In the airport security example, Option 7 is an example of a cluster sample.
@@ -392,13 +373,13 @@ For example, if he wanted a sample of size <span class="math inline">\(n=20\)</s
 <li>Sales data: Sales records of grocery shops across countries in the northern and southern hemispheres. These sales records will differ vastly in terms of the kinds of food and supplies sold, as well as when which kind of food will be sold. For example, hearty, rich food will sell better in December in the northern hemisphere, and in July in the southern hemisphere; some countries will not sell pork or alcohol products at all, whereas those same products will be very popular in other countries; some countries will sell specific foods during certain festivals, etc.</li>
 </ul>
 </div>
-<div id="probabilistic-sampling-summary" class="section level3 hasAnchor" number="6.2.5">
-<h3><span class="header-section-number">6.2.5</span> Probabilistic Sampling Summary<a href="probabilistic-sampling.html#probabilistic-sampling-summary" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="probabilistic-sampling-summary" class="section level3 hasAnchor" number="4.3.5">
+<h3><span class="header-section-number">4.3.5</span> Probabilistic Sampling Summary<a href="probabilistic-sampling.html#probabilistic-sampling-summary" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>No probabilistic sampling method is necessarily always better than another.
 It is important to select the appropriate sampling method based on the problem you are trying to solve, and the nature of the data.
 The table below summarises the characteristics of each probabilistic sampling method, and lists some of their advantages and disadvantages.</p>
 <table>
-<caption><span id="tab:unnamed-chunk-6">Table 6.2: </span>Probabilistic sampling summary</caption>
+<caption><span id="tab:unnamed-chunk-3">Table 4.2: </span>Probabilistic sampling summary</caption>
 <colgroup>
 <col width="4%" />
 <col width="24%" />
@@ -407,35 +388,35 @@ The table below summarises the characteristics of each probabilistic sampling me
 <col width="30%" />
 </colgroup>
 <tbody>
-<tr class="odd">
+<tr>
 <td align="left">Sampling Method</td>
 <td align="left">Description</td>
 <td align="left">Example</td>
 <td align="left">Advantages</td>
 <td align="left">Disadvantages</td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left">Simple Random Sampling (SRS)</td>
 <td align="left">Every individual in the population has an equal chance to be selected.</td>
 <td align="left">Randomly selecting travellers in the security queue.</td>
 <td align="left">Selection bias is minimised; Easy to understand and implement</td>
 <td align="left">Difficult for large populations; Risk of underrepresenting some groups</td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left">Systematic Sampling</td>
 <td align="left">After a random start, every kth individual is selected.</td>
 <td align="left">Choosing every 10th traveller in the security queue.</td>
 <td align="left">Easier and quicker than SRS; Ensures even coverage of the population</td>
 <td align="left">May not be fully random if there is an underlying pattern in the data (e.g., if people are queueing such that every 10th person has a large suitcase, only people with large suitcases will be selected)</td>
 </tr>
-<tr class="even">
+<tr>
 <td align="left">Stratified Sampling</td>
 <td align="left">The population is divided into strata, and a random sample is taken from each stratum.</td>
 <td align="left">Sampling a proportional number of travellers from each waiting area.</td>
 <td align="left">Ensures all groups are represented; Can be more reliable than SRS when strata are very different from each other</td>
 <td align="left">Needs a more in-depth understanding of the population to define suitable strata</td>
 </tr>
-<tr class="odd">
+<tr>
 <td align="left">Cluster Sampling</td>
 <td align="left">The population is divided into clusters, and entire clusters are randomly selected. In two-stage cluster sampling, samples are taken from the selected clusters.</td>
 <td align="left">Choosing waiting areas at random and then selecting all travellers in each selected area.</td>
@@ -451,7 +432,7 @@ The table below summarises the characteristics of each probabilistic sampling me
           </div>
         </div>
       </div>
-<a href="sampling-frames.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sampling-frame.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="non-probabilistic-sampling.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>

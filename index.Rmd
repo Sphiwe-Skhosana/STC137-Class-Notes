@@ -4,9 +4,6 @@ author: "Department of Statistics, University of Pretoria"
 date: 'Last Updated: `r Sys.Date()`'
 site: bookdown::bookdown_site
 documentclass: book
-bibliography:
-- book.bib
-- packages.bib
 description: |
   This is a minimal example of using the bookdown package to write a book.
   set in the _output.yml file.
