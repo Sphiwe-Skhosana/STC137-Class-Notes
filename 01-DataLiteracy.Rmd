@@ -910,7 +910,7 @@ Identify what is wrong with the above visualization.
 
 \newpage
 
-## Data analysis – Foundations and Concepts {#sec1-7}
+## Data Analysis – Foundations and Concepts {#sec1-7}
 
 Data analysis is the process of systematically using statistical techniques to explore, clean, transform and model data with the purpose of discovering useful information which can then be used to support decision-making.
 
