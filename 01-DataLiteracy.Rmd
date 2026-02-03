@@ -564,7 +564,95 @@ d\. The University of Pretoria and University of Johannesburg are collaborating 
 
 e\. Researchers at the United Nations Convention on Climate Change are conducting an environmental monitoring study. Their sensors are collecting data in different formats, they have no backup system for their data and there is no access control on the data.
 
-\newpage
+## Data Ethics {#sec1-4}
+
+Data ethics refers to the principles or practices that seek to preserve the trust of the owners of data, from how the data is collected to how it is stored and used. In essence, data ethics concerns the measures put in place to ensure that the data are handled appropriately throughout the data management process. This is an important issue in modern society given value and ubiquitous nature of data.
+
+### The importance of data ethics
+
+The following real-world examples are meant to demonstrate the consequences of unethical data management thus highlighting the importance of embedding ethical data management principles:
+
+-   In June 2018, Liberty Holdings, Africa’s largest life insurance company, suffered a major data breach in which hackers access confidential client information. This raised the concern of how organizations protect and store their client’s data.
+
+-   In September 2021, the South Africa Department of Justice experienced a ransomware attack in which the department’s IT systems were compromised affecting all electronic services such as bail services, email and the departmental website. This attack raised concerns over whether government systems are adequately secured, given that they manage sensitive citizen data.
+
+-   In October 2017, the Master Deeds experienced a massive data leak that exposed approximately 60 million South African citizens’ personally identifiable information (PII) such as ID numbers, contact details and addresses. The data was later found on a public and unsecured server. This incident raised concerned over people’s right to privacy. Furthermore, this revealed a poor or no strategy for data governance.
+
+These examples are a small snapshot of the poor management of data and its consequences for the owners of the data. Thus, ethical data management principles are important in order to:
+
+-   protect customer and, in general, human rights.
+
+-   protect customer or client loyalty to your business and society as a whole.
+
+-   ensure regulatory compliance and avoid penalty costs.
+
+-   reduce and, at best, prevent data breaches.
+
+Regardless of who you are, the significance of data ethics is apparent. Although data is a powerful asset that can be used to drive innovation and improve lives, without ethical safeguards, it can also be misused and thus leading to harm.
+
+Understanding data ethics enables us to better navigate how our information is used, ensuring that we can protect ourselves while still engaging in a data-drive society.
+
+### Data ethics principles
+
+The following are some of the fundamental principles that can guide ethical data management:
+
+-   **Ownership:** Each individual’s personal information is owned by themselves. It is therefore unlawful and unethical to collect information about an individual without their [consent]{.underline}. It can in fact be considered stealing. [Consent]{.underline} can be obtained from individuals through written agreements, agreeing toterms and conditions and accepting cookies on websites.
+
+-   **Transparency:** The individual whose data is collected has the right to know how it will be stored and used. It is therefore important for a company to publish a data policy documentation that will explain to the individuals how the data will be stored, why it is collected and how will it be used.
+
+-   **Privacy:** It is important that the company collecting and using personal information of individuals ensure that the information is kept private. Just because the individual gave the company consent to collect personal information, does not mean they want the information to be made public. Such information includes names, surnames, home address, contact information etc. The company should ensure that the data is securely stored so that it cannot end up in the wrong hands through hacking. When working with the data it can also be anonymised by removing the personal information so that an individual cannot be identified through the data.
+
+-   **Intention:** Before collecting data, one should clearly state why they need the data, what they will gain from using it and what possible changes, if any, will they make after making use of the data. If your intentions are to use the data to cause harm or for any other bad reason, it is unethical. Therefore, when collecting data it is important to do so with good intentions. Also, do not collect any data that is not necessary for the end goal.
+
+-   **Accountability:** The company collecting the data must take responsibility for the data collected including protecting it from data breaches and misuse. This important for maintaining trust between the company and its clients.
+
+-   **Bias:** The data as well as the algorithms used for the analysis should not have any inherent biases that will skew the results. Such biases can include amongst others racial, gender and socioeconomic biases.
+
+### Exercises to Section 1.4
+
+**Question 1**
+
+Which of the following is NOT a key principle of ethical data use?
+
+a\. Privacy
+
+b\. Bias
+
+c\. Profit maximization
+
+d\. Transparency
+
+**Question 2**
+
+What does “informed consent” mean in the context of data collection?
+
+a\. Data subjects must be informed about the specific use of their data and must voluntarily agree to it.
+
+b\. Data subjects must be forced to share data if it benefits society.
+
+c\. Data subjects should be informed only after data collection has taken place.
+
+d\. Data can be collected without consent if it is anonymised.
+
+**Question 3**
+
+What is “data minimization” in data ethics?
+
+a\. Limiting data collection to the minimum amount needed to achieve the stated purpose.
+
+b\. Deleting data after analysis to reduce storage costs.
+
+c\. Sharing data only with third parties who minimize its use.
+
+d\. Using smaller datasets for faster processing.
+
+**Question 4**
+
+Explain the concept of “bias” in data and why it can lead to unethical outcomes.
+
+**Question 5**
+
+What are the potential ethical concerns with using personal data collected for one purpose (e.g., marketing) for a different purpose (e.g., medical research)?
 
 ## Data Exploration – Foundations and Concepts {#sec1-5}
 
@@ -1015,93 +1103,3 @@ e\. The World Health Organization (WHO) wants to identify geographic hotspots fo
 f\. The WHO wants to understand public opinion about a new strain of virus from social media posts.
 
 g\. In order to inform their decision on the interest rate, the South African Reserve Bank (SARB) wants to forecast the average value of the rand per US dollar in the next 12 months.
-
-## Data Ethics {#sec1-4}
-
-Data ethics refers to the principles or practices that seek to preserve the trust of the owners of data, from how the data is collected to how it is stored and used. In essence, data ethics concerns the measures put in place to ensure that the data are handled appropriately throughout the data management process. This is an important issue in modern society given value and ubiquitous nature of data.
-
-### The importance of data ethics
-
-The following real-world examples are meant to demonstrate the consequences of unethical data management thus highlighting the importance of embedding ethical data management principles:
-
--   In June 2018, Liberty Holdings, Africa’s largest life insurance company, suffered a major data breach in which hackers access confidential client information. This raised the concern of how organizations protect and store their client’s data.
-
--   In September 2021, the South Africa Department of Justice experienced a ransomware attack in which the department’s IT systems were compromised affecting all electronic services such as bail services, email and the departmental website. This attack raised concerns over whether government systems are adequately secured, given that they manage sensitive citizen data.
-
--   In October 2017, the Master Deeds experienced a massive data leak that exposed approximately 60 million South African citizens’ personally identifiable information (PII) such as ID numbers, contact details and addresses. The data was later found on a public and unsecured server. This incident raised concerned over people’s right to privacy. Furthermore, this revealed a poor or no strategy for data governance.
-
-These examples are a small snapshot of the poor management of data and its consequences for the owners of the data. Thus, ethical data management principles are important in order to:
-
--   protect customer and, in general, human rights.
-
--   protect customer or client loyalty to your business and society as a whole.
-
--   ensure regulatory compliance and avoid penalty costs.
-
--   reduce and, at best, prevent data breaches.
-
-Regardless of who you are, the significance of data ethics is apparent. Although data is a powerful asset that can be used to drive innovation and improve lives, without ethical safeguards, it can also be misused and thus leading to harm.
-
-Understanding data ethics enables us to better navigate how our information is used, ensuring that we can protect ourselves while still engaging in a data-drive society.
-
-### Data ethics principles
-
-The following are some of the fundamental principles that can guide ethical data management:
-
--   **Ownership:** Each individual’s personal information is owned by themselves. It is therefore unlawful and unethical to collect information about an individual without their [consent]{.underline}. It can in fact be considered stealing. [Consent]{.underline} can be obtained from individuals through written agreements, agreeing toterms and conditions and accepting cookies on websites.
-
--   **Transparency:** The individual whose data is collected has the right to know how it will be stored and used. It is therefore important for a company to publish a data policy documentation that will explain to the individuals how the data will be stored, why it is collected and how will it be used.
-
--   **Privacy:** It is important that the company collecting and using personal information of individuals ensure that the information is kept private. Just because the individual gave the company consent to collect personal information, does not mean they want the information to be made public. Such information includes names, surnames, home address, contact information etc. The company should ensure that the data is securely stored so that it cannot end up in the wrong hands through hacking. When working with the data it can also be anonymised by removing the personal information so that an individual cannot be identified through the data.
-
--   **Intention:** Before collecting data, one should clearly state why they need the data, what they will gain from using it and what possible changes, if any, will they make after making use of the data. If your intentions are to use the data to cause harm or for any other bad reason, it is unethical. Therefore, when collecting data it is important to do so with good intentions. Also, do not collect any data that is not necessary for the end goal.
-
--   **Accountability:** The company collecting the data must take responsibility for the data collected including protecting it from data breaches and misuse. This important for maintaining trust between the company and its clients.
-
--   **Bias:** The data as well as the algorithms used for the analysis should not have any inherent biases that will skew the results. Such biases can include amongst others racial, gender and socioeconomic biases.
-
-### Exercises to Section 1.4
-
-**Question 1**
-
-Which of the following is NOT a key principle of ethical data use?
-
-a\. Privacy
-
-b\. Bias
-
-c\. Profit maximization
-
-d\. Transparency
-
-**Question 2**
-
-What does “informed consent” mean in the context of data collection?
-
-a\. Data subjects must be informed about the specific use of their data and must voluntarily agree to it.
-
-b\. Data subjects must be forced to share data if it benefits society.
-
-c\. Data subjects should be informed only after data collection has taken place.
-
-d\. Data can be collected without consent if it is anonymised.
-
-**Question 3**
-
-What is “data minimization” in data ethics?
-
-a\. Limiting data collection to the minimum amount needed to achieve the stated purpose.
-
-b\. Deleting data after analysis to reduce storage costs.
-
-c\. Sharing data only with third parties who minimize its use.
-
-d\. Using smaller datasets for faster processing.
-
-**Question 4**
-
-Explain the concept of “bias” in data and why it can lead to unethical outcomes.
-
-**Question 5**
-
-What are the potential ethical concerns with using personal data collected for one purpose (e.g., marketing) for a different purpose (e.g., medical research)?
